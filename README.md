@@ -44,15 +44,29 @@ sitemap, os dados estruturados, o `llms.txt` e a busca do site.
 Para importar o canal inteiro de uma vez:
 
 ```bash
-YOUTUBE_API_KEY=... YOUTUBE_CHANNEL_ID=UC... node scripts/importar-videos.mjs
+YOUTUBE_API_KEY=... YOUTUBE_CHANNEL_ID=UCqSwKBMOCEGFCJch2e_jD9w node scripts/importar-videos.mjs
 ```
 
 ## Deploy na Vercel
 
 1. Importe este repositório em vercel.com → New Project.
 2. Framework: Next.js (detectado sozinho). Build: `npm run build`.
-3. Variável de ambiente: `NEXT_PUBLIC_SITE_URL=https://seudominio.com.br`.
+3. Variáveis de ambiente:
+   - `NEXT_PUBLIC_SITE_URL` — a URL pública deste ambiente
+   - `NEXT_PUBLIC_AMBIENTE` — `producao` libera a indexação; **qualquer outro valor
+     (ex.: `beta`) marca o site inteiro como noindex**, o que é obrigatório em
+     ambientes de teste para não competir com o site oficial no Google.
 4. Aponte o domínio em Settings → Domains.
+
+### Ambiente de homologação (beta)
+
+```
+NEXT_PUBLIC_SITE_URL=https://beta.droliveira.adv.br
+NEXT_PUBLIC_AMBIENTE=beta
+```
+
+Com `NEXT_PUBLIC_AMBIENTE=beta`, o `robots.txt` passa a bloquear tudo, as páginas
+recebem `noindex, nofollow` e o `/llms.txt` deixa de expor o conteúdo às IAs.
 
 Rollback: Deployments → escolha o deploy anterior → **Promote to Production**.
 

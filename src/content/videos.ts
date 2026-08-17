@@ -1,12 +1,20 @@
+import { site } from './site'
+
 /**
  * Vídeos publicados por Caio Gracco no YouTube.
  *
- * Como atualizar:
- *  1. Abra o vídeo no YouTube e copie o ID da URL (a parte depois de `v=`).
- *  2. Acrescente um objeto abaixo. A miniatura é montada automaticamente.
- *  3. Rode `npm run search:index` para o vídeo entrar na busca do site.
+ * A galeria funciona de duas formas:
  *
- * Se preferir automatizar, veja `scripts/importar-videos.mjs`.
+ *  1. **Sem configuração nenhuma** — a página exibe o player da playlist de uploads
+ *     do canal, que sempre mostra os vídeos mais recentes. Não exige chave de API.
+ *
+ *  2. **Com vídeos cadastrados aqui** — cada vídeo ganha card próprio, entra na busca
+ *     do site e recebe dados estruturados (VideoObject) para o Google.
+ *     Para cadastrar: copie o ID da URL do vídeo (a parte depois de `v=`) e
+ *     acrescente um objeto ao array `videos`. Ou rode o importador:
+ *
+ *        YOUTUBE_API_KEY=... YOUTUBE_CHANNEL_ID=UCqSwKBMOCEGFCJch2e_jD9w \
+ *          node scripts/importar-videos.mjs
  */
 export type Video = {
   id: string
@@ -16,8 +24,12 @@ export type Video = {
   publicadoEm?: string
 }
 
-export const canalUrl = 'https://www.youtube.com/@terapeutacaiogracco'
-export const canalHandle = '@terapeutacaiogracco'
+export const canalUrl = site.redes.youtube
+export const canalHandle = site.redes.youtubeHandle
+export const canalId = site.redes.youtubeChannelId
+
+/** A playlist de uploads de um canal é sempre o ID do canal com "UC" trocado por "UU". */
+export const playlistUploads = `UU${canalId.slice(2)}`
 
 export const videos: Video[] = []
 

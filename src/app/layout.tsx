@@ -6,7 +6,7 @@ import { Rodape } from '@/components/Rodape'
 import { BotaoWhatsapp } from '@/components/BotaoWhatsapp'
 import { JsonLd } from '@/components/JsonLd'
 import { schemaNegocio, schemaPessoa } from '@/lib/estrutura'
-import { site } from '@/content/site'
+import { site, ehProducao } from '@/content/site'
 
 const display = Cormorant_Garamond({
   subsets: ['latin', 'latin-ext'],
@@ -54,11 +54,13 @@ export const metadata: Metadata = {
     description: site.descricao,
     images: ['/og.png'],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
-  },
+  robots: ehProducao
+    ? {
+        index: true,
+        follow: true,
+        googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+      }
+    : { index: false, follow: false, nocache: true },
   category: 'Saúde e bem-estar',
 }
 

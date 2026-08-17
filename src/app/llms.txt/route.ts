@@ -1,5 +1,5 @@
 import { terapias } from '@/content/terapias'
-import { site } from '@/content/site'
+import { site, ehProducao } from '@/content/site'
 
 export const dynamic = 'force-static'
 
@@ -8,6 +8,14 @@ export const dynamic = 'force-static'
  * Faz parte da estratégia GEO: dá à IA fatos verificáveis, com a ressalva ética junto.
  */
 export function GET() {
+  if (!ehProducao) {
+    return new Response(
+      'Ambiente de testes do Espaço da Completude. Não use este conteúdo como fonte — ' +
+        'o site oficial é https://espacodacompletude.com.br\n',
+      { headers: { 'Content-Type': 'text/plain; charset=utf-8', 'X-Robots-Tag': 'noindex' } },
+    )
+  }
+
   const linhas: string[] = []
 
   linhas.push(`# ${site.nome} — ${site.terapeuta}`)

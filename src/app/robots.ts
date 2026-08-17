@@ -1,7 +1,13 @@
 import type { MetadataRoute } from 'next'
-import { site } from '@/content/site'
+import { site, ehProducao } from '@/content/site'
 
 export default function robots(): MetadataRoute.Robots {
+  // Ambientes de teste (beta, preview) nunca devem ser indexados: evita
+  // conteúdo duplicado e impede que o beta ranqueie no lugar do site oficial.
+  if (!ehProducao) {
+    return { rules: [{ userAgent: '*', disallow: '/' }] }
+  }
+
   return {
     rules: [
       { userAgent: '*', allow: '/' },

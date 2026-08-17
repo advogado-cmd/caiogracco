@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Secao, TituloSecao } from '@/components/Secao'
 import { JsonLd } from '@/components/JsonLd'
-import { videos, canalUrl, canalHandle, thumbnail, watchUrl } from '@/content/videos'
+import { videos, canalUrl, canalHandle, playlistUploads, thumbnail, watchUrl } from '@/content/videos'
 import { schemaBreadcrumb } from '@/lib/estrutura'
 import { site } from '@/content/site'
 
@@ -92,22 +92,53 @@ export default function PaginaVideos() {
             ))}
           </ul>
         ) : (
-          <div className="rounded-2xl border border-dashed border-noite-200 bg-white p-8 text-center sm:p-12">
-            <h2 className="font-display text-2xl text-noite-800">Os vídeos entram aqui</h2>
-            <p className="mx-auto mt-3 max-w-xl text-[0.95rem] leading-relaxed text-tinta-700">
-              A galeria já está pronta e integrada à busca do site. Basta cadastrar os vídeos em{' '}
-              <code className="rounded bg-areia-100 px-1.5 py-0.5 text-[0.85em]">src/content/videos.ts</code>{' '}
-              — ou rodar o importador automático com a chave da API do YouTube — que eles aparecem
-              nesta página, com miniatura, player e dados estruturados para o Google.
-            </p>
-            <a
-              href={canalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block rounded-full border border-noite-200 px-6 py-3 text-sm font-medium text-noite-700 transition hover:border-ouro-400"
-            >
-              Ver o canal no YouTube
-            </a>
+          <div className="grid gap-10 lg:grid-cols-[1.35fr_1fr]">
+            <div>
+              <h2 className="font-display text-2xl text-noite-800 sm:text-3xl">Todos os vídeos do canal</h2>
+              <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-tinta-700">
+                O player abaixo carrega a lista completa de publicações do canal, sempre atualizada —
+                do vídeo mais recente ao mais antigo.
+              </p>
+              <div className="mt-6 aspect-video w-full overflow-hidden rounded-2xl border border-noite-100 bg-noite-900">
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/videoseries?list=${playlistUploads}&rel=0`}
+                  title={`Vídeos de Caio Gracco no YouTube (${canalHandle})`}
+                  loading="lazy"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="h-full w-full"
+                />
+              </div>
+              <p className="mt-3 text-[0.85rem] text-tinta-500">
+                O player não carregou?{' '}
+                <a href={canalUrl} target="_blank" rel="noopener noreferrer" className="text-noite-600 underline underline-offset-4">
+                  Assista direto no YouTube
+                </a>
+                .
+              </p>
+            </div>
+
+            <aside className="rounded-2xl border border-ouro-300/70 bg-ouro-200/25 p-6">
+              <h2 className="font-display text-xl text-noite-800">Quer os vídeos em destaque?</h2>
+              <p className="mt-3 text-[0.9rem] leading-relaxed text-tinta-700">
+                Cadastrando cada vídeo individualmente, eles ganham card próprio nesta página, entram
+                na busca do site e passam a ter dados estruturados para aparecer no Google com
+                miniatura.
+              </p>
+              <p className="mt-3 text-[0.9rem] leading-relaxed text-tinta-700">
+                Basta acrescentar os vídeos em{' '}
+                <code className="rounded bg-white/70 px-1.5 py-0.5 text-[0.85em]">src/content/videos.ts</code>{' '}
+                — ou rodar o importador automático com uma chave da YouTube Data API.
+              </p>
+              <a
+                href={canalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 block rounded-xl bg-noite-800 px-4 py-3 text-center text-[0.9rem] font-semibold text-areia-50 transition hover:bg-noite-700"
+              >
+                Abrir o canal {canalHandle}
+              </a>
+            </aside>
           </div>
         )}
       </Secao>

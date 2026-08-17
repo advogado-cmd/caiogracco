@@ -26,7 +26,9 @@ export const site = {
     instagram: 'https://www.instagram.com/terapeutacaiogracco/',
     instagramHandle: '@terapeutacaiogracco',
     facebook: 'https://www.facebook.com/caio.gracco.519235',
-    youtube: 'https://www.youtube.com/@terapeutacaiogracco',
+    youtube: 'https://www.youtube.com/@CaioGracco369',
+    youtubeHandle: '@CaioGracco369',
+    youtubeChannelId: 'UCqSwKBMOCEGFCJch2e_jD9w',
     threads: 'https://www.threads.net/@terapeutacaiogracco',
   },
   atendimento: {
@@ -42,7 +44,11 @@ export const site = {
   ],
   cnpj: '17.156.760/0001-95',
   desde: 2012,
+  /** 'producao' libera indexação; qualquer outro valor marca o site como noindex. */
+  ambiente: process.env.NEXT_PUBLIC_AMBIENTE || 'producao',
 } as const
+
+export const ehProducao = (process.env.NEXT_PUBLIC_AMBIENTE || 'producao') === 'producao'
 
 export function whatsappLink(mensagem?: string) {
   const texto = encodeURIComponent(mensagem || site.whatsappMensagem)
