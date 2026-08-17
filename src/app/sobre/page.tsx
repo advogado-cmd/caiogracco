@@ -6,6 +6,10 @@ import { AvisoCuidado } from '@/components/AvisoCuidado'
 import { site, whatsappLink } from '@/content/site'
 import { terapias } from '@/content/terapias'
 import { schemaBreadcrumb, schemaPessoa } from '@/lib/estrutura'
+import { Foto } from '@/components/Foto'
+import { Icone } from '@/components/Icone'
+import { CTA } from '@/components/CTA'
+import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 
 export const metadata: Metadata = {
   title: 'Sobre Caio Gracco',
@@ -18,12 +22,14 @@ export const metadata: Metadata = {
 export default function PaginaSobre() {
   return (
     <>
+      <BarraCompartilhar titulo="Sobre Caio Gracco — Espaço da Completude" />
       <JsonLd dados={[schemaPessoa(), schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Sobre', href: '/sobre' }])]} />
 
       <div className="aurora">
         <Secao className="pb-16 pt-14 lg:pb-20 lg:pt-20">
           <TituloSecao
             claro
+            icone="coracao"
             sobretitulo="Quem atende"
             titulo="Caio Gracco"
             nivel={1}
@@ -59,6 +65,10 @@ export default function PaginaSobre() {
               </p>
             </div>
 
+            <Foto numero={5} className="mt-10" />
+
+            <CTA variante="discreto" className="mt-10" titulo="Quer conversar com o Caio?" />
+
             <section aria-labelledby="formacao" className="mt-12">
               <h2 id="formacao" className="font-display text-2xl text-noite-800 sm:text-3xl">
                 Formação e credenciamento
@@ -86,9 +96,14 @@ export default function PaginaSobre() {
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {terapias.map((t) => (
                   <li key={t.slug}>
-                    <Link href={`/terapias/${t.slug}`} className="block rounded-xl border border-noite-100 bg-white px-5 py-4 transition hover:border-ouro-300">
-                      <span className="font-display text-[1.05rem] text-noite-800">{t.nome}</span>
-                      <span className="mt-0.5 block text-[0.82rem] text-tinta-500">{t.tagline}</span>
+                    <Link href={`/terapias/${t.slug}`} className="flex items-center gap-3 rounded-xl border border-noite-100 bg-white px-5 py-4 transition hover:border-ouro-300">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+                        <Icone nome={t.icone} tamanho={19} />
+                      </span>
+                      <span>
+                        <span className="block font-display text-[1.1rem] text-noite-800">{t.nome}</span>
+                        <span className="mt-0.5 block text-[0.85rem] text-tinta-500">{t.tagline}</span>
+                      </span>
                     </Link>
                   </li>
                 ))}
@@ -114,18 +129,17 @@ export default function PaginaSobre() {
               <div className="mt-6">
                 <AvisoCuidado />
               </div>
+
+              <CTA className="mt-12" />
             </section>
           </div>
 
           <aside className="lg:sticky lg:top-24 lg:h-fit">
             <div className="overflow-hidden rounded-2xl border border-noite-100 bg-white">
-              <div className="aurora flex items-center justify-center p-8">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/brand/logo-mark.svg" alt="" aria-hidden="true" width={160} height={160} className="h-32 w-32" />
-              </div>
+              <Foto numero={4} className="rounded-none" />
               <div className="p-6">
                 <p className="font-display text-lg text-noite-800">{site.nomeCompleto}</p>
-                <p className="mt-1 text-[0.85rem] text-tinta-500">Terapeuta integrativo · desde {site.desde} como MEI</p>
+                <p className="mt-1 text-[0.9rem] text-tinta-500">Terapeuta integrativo</p>
                 <dl className="mt-4 flex flex-col gap-2 text-[0.86rem] text-tinta-700">
                   <div><dt className="inline font-medium">Onde: </dt><dd className="inline">{site.endereco.cidade}/{site.endereco.estado}</dd></div>
                   <div><dt className="inline font-medium">Atende: </dt><dd className="inline">presencial e online</dd></div>

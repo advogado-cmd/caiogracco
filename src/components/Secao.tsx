@@ -1,3 +1,4 @@
+import { Icone, type NomeIcone } from './Icone'
 import type { ReactNode } from 'react'
 
 export function Secao({
@@ -11,11 +12,20 @@ export function Secao({
 }
 
 export function TituloSecao({
-  sobretitulo, titulo, texto, claro = false, id, nivel = 2,
-}: { sobretitulo?: string; titulo: string; texto?: string; claro?: boolean; id?: string; nivel?: 1 | 2 }) {
+  sobretitulo, titulo, texto, claro = false, id, nivel = 2, icone,
+}: { sobretitulo?: string; titulo: string; texto?: string; claro?: boolean; id?: string; nivel?: 1 | 2; icone?: NomeIcone }) {
   const Titulo = nivel === 1 ? 'h1' : 'h2'
   return (
     <header className="max-w-2xl">
+      {icone && (
+        <span
+          className={`mb-4 flex h-12 w-12 items-center justify-center rounded-full ${
+            claro ? 'bg-noite-900/40 text-ouro-400' : 'bg-ouro-200/50 text-ouro-600'
+          }`}
+        >
+          <Icone nome={icone} tamanho={24} />
+        </span>
+      )}
       {sobretitulo && (
         <p className={`text-[0.72rem] font-semibold uppercase tracking-[0.24em] ${claro ? 'text-ouro-400' : 'text-ouro-600'}`}>
           {sobretitulo}
@@ -25,7 +35,7 @@ export function TituloSecao({
         {titulo}
       </Titulo>
       {texto && (
-        <p className={`mt-4 text-[1.02rem] leading-relaxed ${claro ? 'text-noite-200' : 'text-tinta-700'}`}>{texto}</p>
+        <p className={`mt-4 text-[1.1rem] leading-relaxed ${claro ? 'text-noite-200' : 'text-tinta-700'}`}>{texto}</p>
       )}
     </header>
   )

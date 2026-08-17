@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { site, whatsappLink } from '@/content/site'
 import { terapias } from '@/content/terapias'
-import { navegacao } from '@/content/navegacao'
+import { navegacao, navLegal } from '@/content/navegacao'
+import { Icone } from './Icone'
 
 export function Rodape() {
   const ano = 2026
@@ -45,16 +46,13 @@ export function Rodape() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link href="/aviso-de-cuidado" className="text-noite-200 transition hover:text-areia-50">
-                  Aviso de cuidado
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacidade" className="text-noite-200 transition hover:text-areia-50">
-                  Privacidade e LGPD
-                </Link>
-              </li>
+              {navLegal.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-noite-200 transition hover:text-areia-50">
+                    {item.rotulo}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
 
@@ -76,19 +74,21 @@ export function Rodape() {
             </address>
 
             <div className="mt-5 flex gap-3">
-              {[
-                { href: site.redes.instagram, rotulo: 'Instagram' },
-                { href: site.redes.youtube, rotulo: 'YouTube' },
-                { href: site.redes.facebook, rotulo: 'Facebook' },
-              ].map((rede) => (
+              {([
+                { href: site.redes.instagram, icone: 'instagram', rotulo: 'Instagram' },
+                { href: site.redes.youtube, icone: 'youtube', rotulo: 'YouTube' },
+                { href: site.redes.facebook, icone: 'facebook', rotulo: 'Facebook' },
+              ] as const).map((rede) => (
                 <a
                   key={rede.rotulo}
                   href={rede.href}
                   target="_blank"
                   rel="noopener noreferrer me"
-                  className="rounded-full border border-noite-400/50 px-3 py-1.5 text-[0.75rem] text-noite-200 transition hover:border-ouro-400 hover:text-ouro-300"
+                  aria-label={`${rede.rotulo} de Caio Gracco`}
+                  title={rede.rotulo}
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-noite-400/50 text-noite-200 transition hover:border-ouro-400 hover:text-ouro-300"
                 >
-                  {rede.rotulo}
+                  <Icone nome={rede.icone} tamanho={20} />
                 </a>
               ))}
             </div>

@@ -6,6 +6,8 @@ import { JsonLd } from '@/components/JsonLd'
 import { terapias } from '@/content/terapias'
 import { schemaBreadcrumb } from '@/lib/estrutura'
 import { site } from '@/content/site'
+import { BarraCompartilhar } from '@/components/BarraCompartilhar'
+import { CTA } from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'Terapias — Osatoshi, Reiki, Shiatsu e mais',
@@ -18,6 +20,7 @@ export const metadata: Metadata = {
 export default function PaginaTerapias() {
   return (
     <>
+      <BarraCompartilhar titulo="Terapias — Espaço da Completude" />
       <JsonLd
         dados={[
           schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Terapias', href: '/terapias' }]),
@@ -39,6 +42,7 @@ export default function PaginaTerapias() {
         <Secao className="pb-16 pt-14 lg:pb-20 lg:pt-20">
           <TituloSecao
             claro
+            icone="folha"
             sobretitulo="Terapias"
             titulo="Oito tradições, reunidas num só cuidado"
             nivel={1}
@@ -85,6 +89,8 @@ export default function PaginaTerapias() {
         <div className="mt-10 max-w-3xl">
           <AvisoCuidado />
         </div>
+
+        <CTA className="mt-16" />
       </Secao>
     </>
   )

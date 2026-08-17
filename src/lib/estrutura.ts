@@ -39,6 +39,19 @@ export function schemaNegocio() {
     sameAs: [site.redes.instagram, site.redes.facebook, site.redes.youtube],
     founder: { '@id': `${site.url}/#caio` },
     openingHours: 'Mo-Sa 08:00-20:00',
+    currenciesAccepted: 'BRL',
+    knowsLanguage: 'pt-BR',
+    slogan: 'Um lugar para você voltar a ser inteiro',
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Terapias integrativas',
+      itemListElement: [
+        'Osatoshi', 'EMF Balancing Technique®', 'Elementoterapia Magnética', 'Reiki',
+        'Massagem Shiatsu', 'Acupuntura Sistêmica', 'Auriculoterapia', 'Seitai',
+      ].map((nome) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: nome } })),
+    },
+    isAccessibleForFree: false,
+    publicAccess: true,
   }
 }
 
@@ -83,6 +96,27 @@ export function schemaServico(t: Terapia) {
       : [{ '@type': 'City', name: 'Santa Rosa de Viterbo' }],
     audience: { '@type': 'Audience', audienceType: 'Pessoas adultas em busca de cuidado complementar' },
     termsOfService: `${site.url}/aviso-de-cuidado`,
+  }
+}
+
+/** Identifica o site como entidade e declara a busca interna — ajuda Google e motores de resposta. */
+export function schemaSite() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${site.url}/#site`,
+    name: site.nome,
+    alternateName: `${site.nome} — ${site.terapeuta}`,
+    url: site.url,
+    inLanguage: 'pt-BR',
+    description: site.descricao,
+    publisher: { '@id': `${site.url}/#espaco` },
+    about: { '@id': `${site.url}/#caio` },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: { '@type': 'EntryPoint', urlTemplate: `${site.url}/glossario?q={search_term_string}` },
+      'query-input': 'required name=search_term_string',
+    },
   }
 }
 

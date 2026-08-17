@@ -9,6 +9,11 @@ import { terapias, getTerapia } from '@/content/terapias'
 import { site, whatsappLink } from '@/content/site'
 import { schemaServico, schemaFAQ, schemaBreadcrumb } from '@/lib/estrutura'
 import { slugificar } from '@/lib/busca'
+import { Icone } from '@/components/Icone'
+import { Foto } from '@/components/Foto'
+import { CTA } from '@/components/CTA'
+import { BarraCompartilhar } from '@/components/BarraCompartilhar'
+import { fotoPorTerapia } from '@/content/fotos'
 
 export const dynamicParams = false
 
@@ -52,6 +57,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
 
   return (
     <>
+      <BarraCompartilhar titulo={`${t.nome} — Espaço da Completude`} />
       <JsonLd
         dados={[
           schemaServico(t),
@@ -77,7 +83,10 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
             </ol>
           </nav>
 
-          <h1 className="mt-6 max-w-3xl font-display text-4xl leading-tight text-areia-50 sm:text-5xl">{t.nome}</h1>
+          <span className="mt-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-noite-900/40 text-ouro-400">
+            <Icone nome={t.icone} tamanho={32} />
+          </span>
+          <h1 className="mt-5 max-w-3xl font-display text-4xl leading-tight text-areia-50 sm:text-5xl">{t.nome}</h1>
           <p className="mt-3 text-[0.8rem] uppercase tracking-[0.24em] text-ouro-400">{t.tagline}</p>
           <p className="mt-6 max-w-2xl text-[1.05rem] leading-relaxed text-noite-200">{t.resumo}</p>
 
@@ -99,9 +108,10 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
             href={whatsappLink(`Olá, Caio! Vi a página sobre ${t.nome} no site e gostaria de saber mais.`)}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-block rounded-full bg-ouro-400 px-6 py-3.5 text-[0.95rem] font-semibold text-noite-900 transition hover:bg-ouro-300"
+            className="mt-8 inline-flex items-center gap-2.5 rounded-full bg-ouro-400 px-6 py-3.5 text-[1rem] font-semibold text-noite-900 transition hover:bg-ouro-300"
           >
-            Tirar uma dúvida sobre {t.nomeCurto}
+            <Icone nome="whatsapp" tamanho={20} />
+            Quero iniciar minha terapia agora
           </a>
         </Secao>
       </div>
@@ -115,6 +125,8 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
                 {t.oQueE.map((p, i) => <p key={i}>{p}</p>)}
               </div>
             </section>
+
+            <Foto numero={fotoPorTerapia[t.slug]} className="mt-10" />
 
             <section aria-labelledby="origem" className="mt-12">
               <h2 id="origem" className="font-display text-2xl text-noite-800 sm:text-3xl">De onde vem</h2>
@@ -159,6 +171,13 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
               </dl>
             </section>
 
+            <CTA
+              variante="discreto"
+              className="mt-12"
+              titulo={`Quer saber se ${t.nomeCurto} é o caminho para você?`}
+              mensagem={`Olá, Caio! Estou lendo sobre ${t.nome} no site e queria entender se faz sentido para o meu caso.`}
+            />
+
             <section aria-labelledby="indicacoes" className="mt-12">
               <h2 id="indicacoes" className="font-display text-2xl text-noite-800 sm:text-3xl">
                 Para que as pessoas costumam procurar
@@ -202,6 +221,11 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
               </Link>
             </section>
 
+            <CTA
+              className="mt-14"
+              mensagem={`Olá, Caio! Quero iniciar minha terapia com ${t.nome}.`}
+            />
+
             {t.fontes.length > 0 && (
               <section aria-labelledby="fontes" className="mt-12">
                 <h2 id="fontes" className="font-display text-xl text-noite-800">Fontes consultadas</h2>
@@ -243,9 +267,14 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
               <ul className="mt-4 flex flex-col gap-3">
                 {outras.map((o) => (
                   <li key={o.slug}>
-                    <Link href={`/terapias/${o.slug}`} className="block rounded-xl border border-noite-100 bg-white p-4 transition hover:border-ouro-300">
-                      <span className="font-display text-[1.05rem] text-noite-800">{o.nome}</span>
-                      <span className="mt-1 block text-[0.8rem] text-tinta-500">{o.tagline}</span>
+                    <Link href={`/terapias/${o.slug}`} className="flex items-center gap-3 rounded-xl border border-noite-100 bg-white p-4 transition hover:border-ouro-300">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+                        <Icone nome={o.icone} tamanho={19} />
+                      </span>
+                      <span>
+                        <span className="block font-display text-[1.05rem] text-noite-800">{o.nome}</span>
+                        <span className="mt-0.5 block text-[0.82rem] text-tinta-500">{o.tagline}</span>
+                      </span>
                     </Link>
                   </li>
                 ))}

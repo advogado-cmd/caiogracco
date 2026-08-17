@@ -5,7 +5,7 @@ import { Cabecalho } from '@/components/Cabecalho'
 import { Rodape } from '@/components/Rodape'
 import { BotaoWhatsapp } from '@/components/BotaoWhatsapp'
 import { JsonLd } from '@/components/JsonLd'
-import { schemaNegocio, schemaPessoa } from '@/lib/estrutura'
+import { schemaNegocio, schemaPessoa, schemaSite } from '@/lib/estrutura'
 import { site, ehProducao } from '@/content/site'
 
 const display = Cormorant_Garamond({
@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR" className={`${display.variable} ${sans.variable}`}>
       <body className="min-h-screen antialiased">
-        <JsonLd dados={[schemaNegocio(), schemaPessoa()]} />
+        <JsonLd dados={[schemaSite(), schemaNegocio(), schemaPessoa()]} />
         <Cabecalho />
         <main id="conteudo">{children}</main>
         <Rodape />

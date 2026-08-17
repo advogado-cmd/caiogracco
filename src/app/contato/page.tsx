@@ -5,6 +5,11 @@ import { JsonLd } from '@/components/JsonLd'
 import { site, whatsappLink } from '@/content/site'
 import { terapias } from '@/content/terapias'
 import { schemaBreadcrumb, schemaNegocio } from '@/lib/estrutura'
+import { FormularioContato } from '@/components/FormularioContato'
+import { Foto } from '@/components/Foto'
+import { Icone } from '@/components/Icone'
+import { BarraCompartilhar } from '@/components/BarraCompartilhar'
+import { CTA } from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'Contato e agendamento',
@@ -23,12 +28,14 @@ export default function PaginaContato() {
 
   return (
     <>
+      <BarraCompartilhar titulo="Contato — Espaço da Completude" />
       <JsonLd dados={[schemaNegocio(), schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Contato', href: '/contato' }])]} />
 
       <div className="aurora">
         <Secao className="pb-16 pt-14 lg:pb-20 lg:pt-20">
           <TituloSecao
             claro
+            icone="conversa"
             sobretitulo="Contato"
             titulo="Vamos conversar"
             nivel={1}
@@ -54,9 +61,16 @@ export default function PaginaContato() {
       </div>
 
       <Secao className="py-14 lg:py-20">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1fr]">
+        <FormularioContato />
+
+        <div className="mt-16 grid gap-10 lg:grid-cols-[1fr_1fr]">
           <div>
-            <h2 className="font-display text-2xl text-noite-800 sm:text-3xl">Onde atendemos</h2>
+            <h2 className="flex items-center gap-3 font-display text-2xl text-noite-800 sm:text-3xl">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+                <Icone nome="mapa" tamanho={21} />
+              </span>
+              Onde atendemos
+            </h2>
 
             <div className="mt-6 rounded-2xl border border-noite-100 bg-white p-6">
               <h3 className="text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-ouro-600">Presencial</h3>
@@ -89,10 +103,25 @@ export default function PaginaContato() {
 
             <div className="mt-6 rounded-2xl border border-noite-100 bg-white p-6">
               <h3 className="text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-ouro-600">Nas redes</h3>
-              <ul className="mt-3 flex flex-col gap-2 text-[0.94rem]">
-                <li><a href={site.redes.instagram} target="_blank" rel="noopener noreferrer me" className="text-noite-600 underline underline-offset-4">Instagram {site.redes.instagramHandle}</a></li>
-                <li><a href={site.redes.youtube} target="_blank" rel="noopener noreferrer me" className="text-noite-600 underline underline-offset-4">YouTube</a></li>
-                <li><a href={site.redes.facebook} target="_blank" rel="noopener noreferrer me" className="text-noite-600 underline underline-offset-4">Facebook</a></li>
+              <ul className="mt-4 flex gap-3">
+                {([
+                  { href: site.redes.instagram, icone: 'instagram', rotulo: 'Instagram' },
+                  { href: site.redes.youtube, icone: 'youtube', rotulo: 'YouTube' },
+                  { href: site.redes.facebook, icone: 'facebook', rotulo: 'Facebook' },
+                ] as const).map((rede) => (
+                  <li key={rede.rotulo}>
+                    <a
+                      href={rede.href}
+                      target="_blank"
+                      rel="noopener noreferrer me"
+                      aria-label={`${rede.rotulo} de Caio Gracco`}
+                      title={rede.rotulo}
+                      className="flex h-12 w-12 items-center justify-center rounded-full border border-noite-200 text-tinta-700 transition hover:border-ouro-400 hover:text-noite-800"
+                    >
+                      <Icone nome={rede.icone} tamanho={21} />
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -102,6 +131,7 @@ export default function PaginaContato() {
           </div>
 
           <div>
+            <Foto numero={6} className="mb-8" />
             <h2 className="font-display text-2xl text-noite-800 sm:text-3xl">Como chegar</h2>
             <div className="mt-6 overflow-hidden rounded-2xl border border-noite-100">
               <iframe
@@ -132,6 +162,8 @@ export default function PaginaContato() {
             </div>
           </div>
         </div>
+
+        <CTA className="mt-16" />
       </Secao>
     </>
   )

@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/videos`, lastModified: agora, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${site.url}/contato`, lastModified: agora, changeFrequency: 'yearly', priority: 0.8 },
     { url: `${site.url}/aviso-de-cuidado`, lastModified: agora, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${site.url}/termos-de-uso`, lastModified: agora, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${site.url}/privacidade`, lastModified: agora, changeFrequency: 'yearly', priority: 0.3 },
   ]
 

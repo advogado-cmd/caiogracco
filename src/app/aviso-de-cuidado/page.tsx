@@ -4,6 +4,8 @@ import { Secao, TituloSecao } from '@/components/Secao'
 import { JsonLd } from '@/components/JsonLd'
 import { schemaBreadcrumb } from '@/lib/estrutura'
 import { site } from '@/content/site'
+import { BarraCompartilhar } from '@/components/BarraCompartilhar'
+import { CTA } from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'Aviso de cuidado',
@@ -16,12 +18,14 @@ export const metadata: Metadata = {
 export default function PaginaAviso() {
   return (
     <>
+      <BarraCompartilhar titulo="Aviso de cuidado — Espaço da Completude" />
       <JsonLd dados={schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Aviso de cuidado', href: '/aviso-de-cuidado' }])} />
 
       <div className="aurora">
         <Secao className="pb-16 pt-14 lg:pb-20 lg:pt-20">
           <TituloSecao
             claro
+            icone="escudo"
             sobretitulo="Transparência"
             titulo="O que estas práticas são — e o que elas não são"
             nivel={1}
@@ -110,6 +114,8 @@ export default function PaginaAviso() {
             cuidado.
           </p>
         </div>
+
+        <CTA className="mt-16" />
       </Secao>
     </>
   )

@@ -1,3 +1,5 @@
+import type { NomeIcone } from '@/components/Icone'
+
 export type FAQ = { pergunta: string; resposta: string }
 export type Termo = { termo: string; definicao: string; terapia?: string; origem?: string }
 export type Fonte = { titulo: string; url: string }
@@ -11,6 +13,7 @@ export type Terapia = {
   destaque: boolean
   ordem: number
   acento: 'ouro' | 'coral' | 'magenta' | 'violeta' | 'agua'
+  icone: NomeIcone
   origem: string
   oQueE: string[]
   comoFunciona: string[]

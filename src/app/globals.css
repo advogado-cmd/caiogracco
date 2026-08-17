@@ -50,6 +50,14 @@ body {
   font-family: var(--font-sans);
   font-synthesis-weight: none;
   text-rendering: optimizeLegibility;
+  /* Corpo de texto generoso: o público do site lê no celular, muitas vezes
+     em momento de cansaço. Tipo pequeno aqui custa leitura. */
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+@media (min-width: 768px) {
+  body { font-size: 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -90,11 +98,14 @@ body {
 }
 
 .prosa {
-  font-size: 1.0625rem;
-  line-height: 1.78;
+  font-size: 1.14rem;
+  line-height: 1.8;
   color: var(--color-tinta-700);
 }
-.prosa p + p { margin-top: 1.1rem; }
+.prosa p + p { margin-top: 1.25rem; }
+@media (min-width: 768px) {
+  .prosa { font-size: 1.2rem; }
+}
 .prosa strong { color: var(--color-tinta-900); font-weight: 600; }
 .prosa a { color: var(--color-noite-600); text-decoration: underline; text-underline-offset: 3px; }
 .prosa a:hover { color: var(--color-noite-500); }

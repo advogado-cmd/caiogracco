@@ -57,7 +57,7 @@ export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; v
   const escura = variante === 'escura'
 
   return (
-    <div ref={containerRef} className="relative w-full">
+    <div ref={containerRef} className="relative z-[45] w-full">
       <div
         className={`flex items-center gap-3 rounded-2xl border px-4 py-3 transition sm:px-5 sm:py-3.5 ${
           escura
@@ -81,7 +81,7 @@ export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; v
           aria-controls="resultados-busca"
           role="combobox"
           autoComplete="off"
-          className={`w-full bg-transparent text-[0.95rem] outline-none placeholder:text-[0.9rem] ${
+          className={`w-full bg-transparent text-[1rem] outline-none placeholder:text-[0.95rem] ${
             escura ? 'text-areia-50 placeholder:text-noite-300' : 'text-tinta-900 placeholder:text-tinta-500'
           }`}
         />
@@ -97,7 +97,7 @@ export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; v
         <div
           id="resultados-busca"
           role="listbox"
-          className="absolute left-0 right-0 top-[calc(100%+0.6rem)] z-40 max-h-[26rem] overflow-y-auto rounded-2xl border border-noite-200 bg-white p-2 shadow-2xl shadow-noite-900/15"
+          className="absolute left-0 right-0 top-[calc(100%+0.6rem)] z-[45] max-h-[26rem] overflow-y-auto rounded-2xl border border-noite-200 bg-white p-2 shadow-2xl shadow-noite-900/15"
         >
           {consulta.trim().length <= 1 ? (
             <div className="p-3">
@@ -140,9 +140,9 @@ export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; v
                       <span className={`rounded-full px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wide ${CORES[doc.tipo]}`}>
                         {doc.tipo}
                       </span>
-                      <span className="text-sm font-medium text-tinta-900">{doc.titulo}</span>
+                      <span className="text-[0.95rem] font-medium text-tinta-900">{doc.titulo}</span>
                     </span>
-                    <span className="line-clamp-2 text-[0.82rem] leading-snug text-tinta-500">{doc.trecho}</span>
+                    <span className="line-clamp-2 text-[0.88rem] leading-snug text-tinta-500">{doc.trecho}</span>
                   </Link>
                 </li>
               ))}

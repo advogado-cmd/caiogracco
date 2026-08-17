@@ -8,6 +8,8 @@ import { terapias } from '@/content/terapias'
 import { construirIndice } from '@/lib/busca'
 import { schemaBreadcrumb, schemaFAQ } from '@/lib/estrutura'
 import { site } from '@/content/site'
+import { BarraCompartilhar } from '@/components/BarraCompartilhar'
+import { CTA } from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'Perguntas frequentes sobre as terapias',
@@ -23,6 +25,7 @@ export default function PaginaPerguntas() {
 
   return (
     <>
+      <BarraCompartilhar titulo="Perguntas frequentes — Espaço da Completude" />
       <JsonLd
         dados={[
           schemaFAQ(todas),
@@ -34,6 +37,7 @@ export default function PaginaPerguntas() {
         <Secao className="pb-16 pt-14 lg:pb-20 lg:pt-20">
           <TituloSecao
             claro
+            icone="mente"
             sobretitulo="Perguntas frequentes"
             titulo="Tudo o que costumam perguntar"
             nivel={1}
@@ -69,6 +73,8 @@ export default function PaginaPerguntas() {
             </section>
           ))}
         </div>
+
+        <CTA className="mt-16" />
       </Secao>
     </>
   )

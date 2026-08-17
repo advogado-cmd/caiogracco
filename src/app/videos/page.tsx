@@ -4,6 +4,8 @@ import { JsonLd } from '@/components/JsonLd'
 import { videos, canalUrl, canalHandle, playlistUploads, thumbnail, watchUrl } from '@/content/videos'
 import { schemaBreadcrumb } from '@/lib/estrutura'
 import { site } from '@/content/site'
+import { BarraCompartilhar } from '@/components/BarraCompartilhar'
+import { CTA } from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'Vídeos de Caio Gracco',
@@ -18,6 +20,7 @@ export default function PaginaVideos() {
 
   return (
     <>
+      <BarraCompartilhar titulo="Vídeos de Caio Gracco — Espaço da Completude" />
       <JsonLd
         dados={[
           schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Vídeos', href: '/videos' }]),
@@ -48,6 +51,7 @@ export default function PaginaVideos() {
         <Secao className="pb-16 pt-14 lg:pb-20 lg:pt-20">
           <TituloSecao
             claro
+            icone="video"
             sobretitulo="Vídeos"
             titulo="O Caio explicando, com as próprias palavras"
             nivel={1}
@@ -141,6 +145,8 @@ export default function PaginaVideos() {
             </aside>
           </div>
         )}
+
+        <CTA className="mt-16" />
       </Secao>
     </>
   )

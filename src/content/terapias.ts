@@ -11,6 +11,7 @@ const grupo1: Terapia[] = [
     destaque: true,
     ordem: 1,
     acento: 'ouro',
+    icone: 'osatoshi',
     origem:
       'O Osatoshi foi desenvolvido no Japão por Masao Utsumi (1943–), que em 2001 recebeu o nome espiritual Reisui Kinsei. Segundo o relato da própria tradição, seus treinamentos espirituais começaram em 1975, no templo do Monte Minobu, e a partir de 1985 ele passou a desenvolver o método. A Associação Shinri — "Associação de Estudos da Verdade = Lei de Deus" — foi fundada formalmente em 15 de outubro de 2006. No Brasil, a expansão é conduzida por Choko Tereza Ito, representante internacional, com sede em Curitiba. Só pode praticar Osatoshi quem passou pela formação e recebeu credenciamento da Shinri.',
     oQueE: [
@@ -82,6 +83,7 @@ const grupo1: Terapia[] = [
     destaque: true,
     ordem: 2,
     acento: 'violeta',
+    icone: 'emf',
     origem:
       'A EMF Balancing Technique® foi desenvolvida a partir de 1988 nos Estados Unidos por Peggy Phoenix Dubro, terapeuta e escritora norte-americana. Não é uma tradição milenar: é um sistema autoral contemporâneo, formalizado em um programa de treze fases e difundido internacionalmente por praticantes licenciados. EMF é a sigla de Electro-Magnetic Field — campo eletromagnético.',
     oQueE: [
@@ -150,6 +152,7 @@ const grupo1: Terapia[] = [
     destaque: true,
     ordem: 3,
     acento: 'magenta',
+    icone: 'elementoterapia',
     origem:
       'A Elementoterapia Magnética foi sistematizada por Karoly Vieira Jardim, biomagnetista, diretora da Magnetium, a partir de estudos de alquimia, filosofia e fitoterapia. Insere-se no campo mais amplo do biomagnetismo e das chamadas PICMAG — Práticas Integrativas e Complementares Magnéticas. É uma sistematização recente e brasileira, distinta do biomagnetismo clássico mexicano de Isaac Goiz Durán.',
     oQueE: [
@@ -215,6 +218,7 @@ const grupo2: Terapia[] = [
     destaque: false,
     ordem: 4,
     acento: 'agua',
+    icone: 'reiki',
     origem:
       'O Reiki foi desenvolvido no Japão por Mikao Usui (1865–1926), que em 1922 fundou em Tóquio a Usui Reiki Ryoho Gakkai. A linhagem mais difundida no Ocidente passa por Chujiro Hayashi (1880–1940) e por Hawayo Takata (1900–1980), responsável por levar o Reiki aos Estados Unidos. Chegou ao Brasil pelas décadas de 1980 e 1990. O nome vem do japonês rei (universal) e ki (energia vital).',
     oQueE: [
@@ -277,6 +281,7 @@ const grupo2: Terapia[] = [
     destaque: false,
     ordem: 5,
     acento: 'coral',
+    icone: 'shiatsu',
     origem:
       'O Shiatsu — de shi (dedo) e atsu (pressão) — nasce das práticas manuais japonesas como o Anma, somadas a princípios da Medicina Tradicional Chinesa. Foi sistematizado no início do século XX por Tokujiro Namikoshi (1905–2000), responsável pelo reconhecimento oficial da técnica pelo Ministério da Saúde japonês em 1964, e ampliado por Shizuto Masunaga (1925–1981), criador do Shiatsu Zen. Chegou ao Brasil nas décadas de 1970 e 1980.',
     oQueE: [
@@ -344,6 +349,7 @@ const grupo3: Terapia[] = [
     destaque: false,
     ordem: 6,
     acento: 'agua',
+    icone: 'acupuntura',
     origem:
       'A acupuntura é uma das práticas mais antigas da Medicina Tradicional Chinesa, sistematizada sobretudo no clássico Huangdi Neijing. Não tem um criador único: é fruto de uma tradição médica coletiva desenvolvida ao longo de séculos. Chegou ao Ocidente em ondas sucessivas e se difundiu de forma decisiva a partir da década de 1970. No Brasil, é especialidade médica reconhecida pelo Conselho Federal de Medicina desde 1995 e integra a PNPIC desde 2006.',
     oQueE: [
@@ -408,6 +414,7 @@ const grupo3: Terapia[] = [
     destaque: false,
     ordem: 7,
     acento: 'coral',
+    icone: 'auriculoterapia',
     origem:
       'A auriculoterapia tem duas raízes. A chinesa antiga: textos como o Huangdi Neijing já mencionavam a relação entre a orelha e os órgãos internos. E a francesa moderna: o médico Paul Nogier (1908–1996), de Lyon, sistematizou a técnica a partir de 1956, desenvolvendo o mapa dos pontos auriculares — o "homúnculo invertido", em que a orelha representa um feto de cabeça para baixo. Seus estudos foram levados de volta à China e ali expandidos, num diálogo de mão dupla entre Oriente e Ocidente.',
     oQueE: [
@@ -470,6 +477,7 @@ const grupo3: Terapia[] = [
     destaque: false,
     ordem: 8,
     acento: 'violeta',
+    icone: 'seitai',
     origem:
       'O Seitai (整体) tem raízes em técnicas manuais japonesas antigas e foi sistematizado em sua forma moderna por Haruchika Noguchi (1911–1976). Dele vêm dois conceitos centrais: o Taiheki, tipologia constitucional do corpo, e o Katsugen Undo, o movimento regenerador espontâneo. Foi levado ao Ocidente por discípulos como Itsuo Tsuda. No Brasil convivem a linha mais fiel à tradição de Noguchi e versões comerciais adaptadas.',
     oQueE: [

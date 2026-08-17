@@ -1,25 +1,15 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { site, whatsappLink } from '@/content/site'
 
 /** Botão flutuante de WhatsApp. Aparece após a primeira dobra e some ao imprimir. */
 export function BotaoWhatsapp() {
-  const [visivel, setVisivel] = useState(false)
   const [aberto, setAberto] = useState(false)
-
-  useEffect(() => {
-    const aoRolar = () => setVisivel(window.scrollY > 320)
-    aoRolar()
-    window.addEventListener('scroll', aoRolar, { passive: true })
-    return () => window.removeEventListener('scroll', aoRolar)
-  }, [])
 
   return (
     <div
-      className={`sem-impressao fixed bottom-5 right-4 z-50 flex flex-col items-end gap-3 transition-all duration-500 sm:bottom-7 sm:right-6 ${
-        visivel ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-6 opacity-0'
-      }`}
+      className="sem-impressao fixed bottom-5 right-4 z-[60] flex flex-col items-end gap-3 sm:bottom-7 sm:right-6"
     >
       {aberto && (
         <div

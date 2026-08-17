@@ -8,6 +8,8 @@ import { construirIndice, slugificar, normalizar } from '@/lib/busca'
 import { schemaBreadcrumb } from '@/lib/estrutura'
 import { site } from '@/content/site'
 import type { Termo } from '@/content/tipos'
+import { BarraCompartilhar } from '@/components/BarraCompartilhar'
+import { CTA } from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'Glossário das terapias integrativas',
@@ -48,6 +50,7 @@ export default function PaginaGlossario() {
 
   return (
     <>
+      <BarraCompartilhar titulo="Glossário — Espaço da Completude" />
       <JsonLd
         dados={[
           schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Glossário', href: '/glossario' }]),
@@ -72,6 +75,7 @@ export default function PaginaGlossario() {
         <Secao className="pb-16 pt-14 lg:pb-20 lg:pt-20">
           <TituloSecao
             claro
+            icone="livro"
             sobretitulo="Glossário"
             titulo="As palavras destas tradições, sem mistério"
             nivel={1}
@@ -117,6 +121,8 @@ export default function PaginaGlossario() {
             </section>
           ))}
         </div>
+
+        <CTA className="mt-16" />
       </Secao>
     </>
   )
