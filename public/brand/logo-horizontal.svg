@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 800" width="2600" height="800" role="img" aria-label="Espaço da Completude — Caio Gracco">
+  <g transform="translate(40 -60) scale(0.86)">
+  
+  
+  <defs>
+    <linearGradient id="ec-ouro" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE3A3"/><stop offset="0.45" stop-color="#F8B740"/><stop offset="1" stop-color="#E8901F"/>
+    </linearGradient>
+    <linearGradient id="ec-tronco" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFDA8E"/><stop offset="0.5" stop-color="#F9B23F"/><stop offset="1" stop-color="#F09A24"/>
+    </linearGradient>
+    <linearGradient id="ec-crescente" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#F5451F"/><stop offset="0.45" stop-color="#E8305F"/><stop offset="1" stop-color="#AE2C88"/>
+    </linearGradient>
+    <linearGradient id="ec-asaE" x1="1" y1="0.2" x2="0" y2="0.8">
+      <stop offset="0" stop-color="#D62B72"/><stop offset="0.45" stop-color="#F04A26"/><stop offset="1" stop-color="#EE8A45"/>
+    </linearGradient>
+    <linearGradient id="ec-asaD" x1="0" y1="0.2" x2="1" y2="0.8">
+      <stop offset="0" stop-color="#D62B72"/><stop offset="0.5" stop-color="#B93088"/><stop offset="1" stop-color="#C99BD9"/>
+    </linearGradient>
+    <linearGradient id="ec-pena" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#CBA4DF"/><stop offset="1" stop-color="#EBA6C8"/>
+    </linearGradient>
+    <linearGradient id="ec-filigrana" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B98BD4" stop-opacity="0.3"/><stop offset="0.5" stop-color="#C86FA8"/><stop offset="1" stop-color="#B98BD4" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ASAS DE FOGO -->
+  <g>
+    <path d="M628 108c92 84 122 200 94 314-27 109-104 190-212 230 80-68 132-134 160-206 29-73 25-152-42-338z" fill="url(#ec-crescente)"/>
+    <path d="M658 306c48 66 52 144 12 208-40 63-110 96-188 92 70-18 120-44 152-84 33-40 44-96 24-216z" fill="url(#ec-crescente)" opacity="0.88"/>
+    <path d="M466 610c-96-8-192 10-286 54 48-4 90 0 126 12-50 4-94 20-130 48 56-12 104-10 144 6-33 13-59 33-78 58 80-56 160-82 240-78z" fill="url(#ec-asaE)"/>
+    <path d="M458 648c-70 10-135 37-196 78 46-15 85-19 120-15-37 15-68 37-91 67 65-43 128-62 190-60z" fill="url(#ec-pena)" opacity="0.7"/>
+    <path d="M482 626c-64 50-99 117-104 202 24-76 63-135 117-174z" fill="url(#ec-asaE)" opacity="0.8"/>
+    <path d="M534 612c100-8 200 10 298 58-50-6-93-2-130 10 52 6 98 24 137 54-59-13-109-11-150 4 35 13 63 35 85 63-85-61-170-89-257-85z" fill="url(#ec-asaD)"/>
+    <path d="M712 700c52-2 102 11 150 39-41-7-78-7-108 2 32 11 60 28 82 52-50-37-100-56-152-61z" fill="url(#ec-pena)" opacity="0.78"/>
+    <path d="M518 628c67 52 104 121 108 208-26-78-65-138-121-179z" fill="url(#ec-asaD)" opacity="0.78"/>
+  </g>
+
+  <!-- SOL E FLOR -->
+  <g fill="url(#ec-ouro)"><path d="M490.6 174.4Q491.1 151.9 508.1 138.2Q510.7 158.2 509.4 174.4Z M529.8 177.6Q534.8 166.0 552.0 163.6Q551.2 175.1 547.8 183.4Z M566.2 192.8Q579.8 175.0 601.7 173.9Q592.0 191.5 581.5 203.9Z M596.1 218.5Q606.9 212.1 622.3 220.2Q614.9 229.1 607.2 233.8Z M616.6 252.2Q638.1 245.8 656.4 257.7Q638.2 266.3 622.4 270.2Z M625.6 290.6Q638.2 291.7 645.8 307.3Q634.6 310.1 625.6 309.4Z M622.4 329.8Q643.6 337.3 651.4 357.7Q631.6 354.0 616.6 347.8Z M607.2 366.2Q616.6 374.5 613.7 391.6Q603.0 387.3 596.1 381.5Z M581.5 396.1Q594.2 414.5 588.6 435.7Q574.7 421.0 566.2 407.2Z M547.8 416.6Q550.6 428.8 538.1 440.9Q532.0 431.2 529.8 422.4Z M509.4 425.6Q508.9 448.1 491.9 461.8Q489.3 441.8 490.6 425.6Z M470.2 422.4Q465.2 434.0 448.0 436.4Q448.8 424.9 452.2 416.6Z M433.8 407.2Q420.2 425.0 398.3 426.1Q408.0 408.5 418.5 396.1Z M403.9 381.5Q393.1 387.9 377.7 379.8Q385.1 370.9 392.8 366.2Z M383.4 347.8Q361.9 354.2 343.6 342.3Q361.8 333.7 377.6 329.8Z M374.4 309.4Q361.8 308.3 354.2 292.7Q365.4 289.9 374.4 290.6Z M377.6 270.2Q356.4 262.7 348.6 242.3Q368.4 246.0 383.4 252.2Z M392.8 233.8Q383.4 225.5 386.3 208.4Q397.0 212.7 403.9 218.5Z M418.5 203.9Q405.8 185.5 411.4 164.3Q425.3 179.0 433.8 192.8Z M452.2 183.4Q449.4 171.2 461.9 159.1Q468.0 168.8 470.2 177.6Z"/><path d="M500.0 176.0Q518.0 134.7 500.0 90.0Q482.0 134.7 500.0 176.0Z M500.0 176.0Q535.8 160.8 538.0 119.6Q510.9 144.0 500.0 176.0Z M500.0 176.0Q489.1 144.0 462.0 119.6Q464.2 160.8 500.0 176.0Z M500.0 176.0Q528.5 181.9 543.1 155.0Q518.0 160.3 500.0 176.0Z M500.0 176.0Q482.0 160.3 456.9 155.0Q471.5 181.9 500.0 176.0Z M500 182 Q456 176 440 148 Q476 154 500 172 Z M500 182 Q544 176 560 148 Q524 154 500 172 Z"/></g>
+  <circle cx="500" cy="300" r="126" fill="none" stroke="url(#ec-ouro)" stroke-width="10"/>
+
+  <!-- PALMETA -->
+  <g fill="url(#ec-ouro)"><path d="M493 416h14v-134q0-6-7-6t-7 6z"/><path d="M505.1 398.8Q575.6 395.8 613.6 331.0Q552.3 358.5 505.1 398.8Z M494.9 398.8Q447.7 358.5 386.4 331.0Q424.4 395.8 494.9 398.8Z M504.7 352.3Q565.2 345.5 589.8 285.8Q540.6 314.0 504.7 352.3Z M495.3 352.3Q459.4 314.0 410.2 285.8Q434.8 345.5 495.3 352.3Z M504.3 307.8Q553.0 298.8 566.2 248.1Q529.4 274.4 504.3 307.8Z M495.7 307.8Q470.6 274.4 433.8 248.1Q447.0 298.8 495.7 307.8Z M500.0 282.0Q517.0 246.5 500.0 208.0Q483.0 246.5 500.0 282.0Z M502.2 288.7Q536.5 275.9 536.9 237.3Q511.6 259.1 502.2 288.7Z M497.8 288.7Q488.4 259.1 463.1 237.3Q463.5 275.9 497.8 288.7Z"/><path d="M500 416 L444 416 Q416 412 410 386 L468 402 Z M500 416 L556 416 Q584 412 590 386 L532 402 Z"/></g>
+
+  <!-- FIGURA / ÁRVORE -->
+  <g fill="url(#ec-tronco)">
+    <path d="M478 566c-32-12-59-36-80-72-12-20-27-52-35-76-5-16 15-25 22-10 14 28 30 58 46 78 17 21 36 38 57 50z"/>
+    <path d="M522 566c32-12 59-36 80-72 12-20 27-52 35-76 5-16-15-25-22-10-14 28-30 58-46 78-17 21-36 38-57 50z"/>
+    <path d="M372 416c-7-16-17-30-29-42-8-8 3-19 12-12 14 10 26 24 34 41zM396 402c-4-18-10-34-19-48-6-10 7-17 14-8 11 13 19 30 22 47z"/>
+    <path d="M628 416c7-16 17-30 29-42 8-8-3-19-12-12-14 10-26 24-34 41zM604 402c4-18 10-34 19-48 6-10-7-17-14-8-11 13-19 30-22 47z"/>
+    <circle cx="500" cy="516" r="42"/>
+    <path d="M458 512c6-24 22-38 42-38s36 14 42 38c-14-12-27-18-42-18s-28 6-42 18z" opacity="0.5"/>
+    <path d="M470 560h60c9 0 14 7 14 16l12 236c26 24 62 42 108 54 13 3 11 17-3 17H339c-14 0-16-14-3-17 46-12 82-30 108-54l12-236c0-9 5-16 14-16z"/>
+    <path d="M392 826c-44 16-80 34-108 54 42-16 82-24 120-22zM608 826c44 16 80 34 108 54-42-16-82-24-120-22zM596 834c38 12 70 26 96 42-36-10-70-14-102-10z" opacity="0.8"/>
+  </g>
+
+  <!-- FILIGRANA -->
+  <g fill="none" stroke="url(#ec-filigrana)" stroke-width="6" stroke-linecap="round">
+    <path d="M150 880c40-40 80-40 120 0s80 40 120 0 80-40 120 0 80 40 120 0 80-40 120 0 80 40 120 0"/>
+    <path d="M150 880c-14-17-35-17-45-2s-2 33 15 33 22-17 16-29"/>
+    <path d="M850 880c14-17 35-17 45-2s2 33-15 33-22-17-16-29"/>
+    <path d="M238 898c10 14 27 14 35 2M762 898c-10 14-27 14-35 2"/>
+  </g>
+  <g fill="#C86FA8" opacity="0.5">
+    <circle cx="302" cy="914" r="5"/><circle cx="698" cy="914" r="5"/>
+    <circle cx="198" cy="860" r="4"/><circle cx="802" cy="860" r="4"/>
+  </g>
+
+  <!-- FAÍSCAS -->
+  <g fill="url(#ec-ouro)">
+    <path d="M296 400l9 22 22 9-22 9-9 22-9-22-22-9 22-9z"/>
+    <path d="M334 480l7 17 17 7-17 7-7 17-7-17-17-7 17-7z"/>
+    <path d="M790 628l8 19 19 8-19 8-8 19-8-19-19-8 19-8z"/>
+  </g>
+</g>
+  <text x="950" y="352" font-family="Jost, 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif" font-size="98" font-weight="500" letter-spacing="8" fill="#F6F3EC">ESPAÇO DA COMPLETUDE</text>
+  <line x1="954" y1="424" x2="2440" y2="424" stroke="#F8B740" stroke-width="3" opacity="0.5"/>
+  <text x="956" y="518" font-family="Jost, 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif" font-size="66" font-weight="300" letter-spacing="24" fill="#F8B740">CAIO GRACCO</text>
+  <text x="958" y="596" font-family="Jost, 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif" font-size="42" letter-spacing="4" fill="#9FB0E0">Terapias integrativas · Santa Rosa de Viterbo, SP</text>
+</svg>

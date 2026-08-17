@@ -1,0 +1,26 @@
+{
+  "name": "espaco-da-completude",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional do Espaço da Completude — Caio Gracco, terapeuta holístico",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "search:index": "node scripts/build-search-index.mjs"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.3"
+  }
+}
