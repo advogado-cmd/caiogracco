@@ -8,9 +8,9 @@ import { terapias } from '@/content/terapias'
 import { schemaBreadcrumb, schemaPessoa } from '@/lib/estrutura'
 
 export const metadata: Metadata = {
-  title: 'Sobre Caio Gracco — terapeuta desde os 14 anos',
+  title: 'Sobre Caio Gracco',
   description:
-    'Caio Gracco começou sua missão como terapeuta aos 14 anos. Hoje atende no Espaço da Completude, em Santa Rosa de Viterbo (SP), com Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética e outras cinco abordagens.',
+    'Caio Gracco começou sua missão como terapeuta aos 14 anos. Atende no Espaço da Completude, em Santa Rosa de Viterbo (SP), com oito abordagens integrativas.',
   alternates: { canonical: '/sobre' },
   openGraph: { url: `${site.url}/sobre`, title: 'Sobre Caio Gracco — Espaço da Completude', type: 'profile' },
 }
@@ -26,6 +26,7 @@ export default function PaginaSobre() {
             claro
             sobretitulo="Quem atende"
             titulo="Caio Gracco"
+            nivel={1}
             texto="“Comecei minha missão como terapeuta aos 14 anos de idade e venho me dedicando até hoje.”"
           />
         </Secao>

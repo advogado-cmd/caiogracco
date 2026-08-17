@@ -8,9 +8,9 @@ import { schemaBreadcrumb } from '@/lib/estrutura'
 import { site } from '@/content/site'
 
 export const metadata: Metadata = {
-  title: 'Terapias oferecidas — Osatoshi, EMF Balancing, Reiki, Shiatsu e mais',
+  title: 'Terapias — Osatoshi, Reiki, Shiatsu e mais',
   description:
-    'As oito terapias integrativas atendidas por Caio Gracco no Espaço da Completude: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai.',
+    'As oito terapias atendidas por Caio Gracco: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura, Auriculoterapia e Seitai.',
   alternates: { canonical: '/terapias' },
   openGraph: { url: `${site.url}/terapias`, title: 'Terapias oferecidas no Espaço da Completude' },
 }
@@ -41,6 +41,7 @@ export default function PaginaTerapias() {
             claro
             sobretitulo="Terapias"
             titulo="Oito tradições, reunidas num só cuidado"
+            nivel={1}
             texto="Cada abordagem tem sua origem, seu jeito de olhar e seus limites. Aqui você encontra o que cada uma é, para quem costuma fazer sentido e o que ela não promete."
           />
         </Secao>

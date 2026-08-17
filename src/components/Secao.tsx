@@ -11,8 +11,9 @@ export function Secao({
 }
 
 export function TituloSecao({
-  sobretitulo, titulo, texto, claro = false, id,
-}: { sobretitulo?: string; titulo: string; texto?: string; claro?: boolean; id?: string }) {
+  sobretitulo, titulo, texto, claro = false, id, nivel = 2,
+}: { sobretitulo?: string; titulo: string; texto?: string; claro?: boolean; id?: string; nivel?: 1 | 2 }) {
+  const Titulo = nivel === 1 ? 'h1' : 'h2'
   return (
     <header className="max-w-2xl">
       {sobretitulo && (
@@ -20,9 +21,9 @@ export function TituloSecao({
           {sobretitulo}
         </p>
       )}
-      <h2 id={id} className={`mt-3 font-display text-3xl leading-tight sm:text-4xl ${claro ? 'text-areia-50' : 'text-noite-800'}`}>
+      <Titulo id={id} className={`mt-3 font-display leading-tight ${nivel === 1 ? 'text-4xl sm:text-5xl' : 'text-3xl sm:text-4xl'} ${claro ? 'text-areia-50' : 'text-noite-800'}`}>
         {titulo}
-      </h2>
+      </Titulo>
       {texto && (
         <p className={`mt-4 text-[1.02rem] leading-relaxed ${claro ? 'text-noite-200' : 'text-tinta-700'}`}>{texto}</p>
       )}

@@ -7,7 +7,7 @@ import { site } from '@/content/site'
 export const metadata: Metadata = {
   title: 'Privacidade e proteção de dados (LGPD)',
   description:
-    'Como o Espaço da Completude trata os dados de quem entra em contato: quais dados são coletados, para quê, por quanto tempo e como exercer seus direitos previstos na LGPD.',
+    'Como o Espaço da Completude trata seus dados: o que é coletado, para quê, por quanto tempo e como exercer os direitos previstos na LGPD.',
   alternates: { canonical: '/privacidade' },
   robots: { index: true, follow: true },
 }
@@ -23,6 +23,7 @@ export default function PaginaPrivacidade() {
             claro
             sobretitulo="LGPD"
             titulo="Privacidade e proteção de dados"
+            nivel={1}
             texto="O que acontece com as informações que você compartilha ao entrar em contato."
           />
         </Secao>

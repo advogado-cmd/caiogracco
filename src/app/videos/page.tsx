@@ -8,7 +8,7 @@ import { site } from '@/content/site'
 export const metadata: Metadata = {
   title: 'Vídeos de Caio Gracco',
   description:
-    'Os vídeos publicados por Caio Gracco no YouTube sobre Osatoshi, limpeza espiritual, EMF Balancing Technique® e as demais terapias do Espaço da Completude.',
+    'Os vídeos de Caio Gracco no YouTube sobre Osatoshi, limpeza espiritual, EMF Balancing Technique® e as demais terapias do Espaço da Completude.',
   alternates: { canonical: '/videos' },
   openGraph: { url: `${site.url}/videos`, title: 'Vídeos de Caio Gracco — Espaço da Completude' },
 }
@@ -50,6 +50,7 @@ export default function PaginaVideos() {
             claro
             sobretitulo="Vídeos"
             titulo="O Caio explicando, com as próprias palavras"
+            nivel={1}
             texto="Reunimos aqui os vídeos publicados no canal. São conversas curtas sobre carmas, proteção, como funciona o Osatoshi e o que esperar de cada terapia."
           />
           <a

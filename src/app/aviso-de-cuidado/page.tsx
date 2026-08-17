@@ -6,9 +6,9 @@ import { schemaBreadcrumb } from '@/lib/estrutura'
 import { site } from '@/content/site'
 
 export const metadata: Metadata = {
-  title: 'Aviso de cuidado — o que estas práticas são e o que não são',
+  title: 'Aviso de cuidado',
   description:
-    'Posição do Espaço da Completude sobre limites, evidência científica e responsabilidade: as terapias oferecidas são complementares e não substituem acompanhamento médico, psicológico ou psiquiátrico.',
+    'Limites, evidência e responsabilidade: as terapias do Espaço da Completude são complementares e não substituem acompanhamento médico ou psicológico.',
   alternates: { canonical: '/aviso-de-cuidado' },
   openGraph: { url: `${site.url}/aviso-de-cuidado`, title: 'Aviso de cuidado — Espaço da Completude' },
 }
@@ -24,6 +24,7 @@ export default function PaginaAviso() {
             claro
             sobretitulo="Transparência"
             titulo="O que estas práticas são — e o que elas não são"
+            nivel={1}
             texto="Esta página existe porque respeito você o bastante para não prometer o que não posso entregar."
           />
         </Secao>

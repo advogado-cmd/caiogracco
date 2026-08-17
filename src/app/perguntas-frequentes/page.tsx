@@ -12,7 +12,7 @@ import { site } from '@/content/site'
 export const metadata: Metadata = {
   title: 'Perguntas frequentes sobre as terapias',
   description:
-    'Todas as dúvidas respondidas, terapia por terapia: como funciona, se dói, se pode ser online, quantas sessões, contraindicações e limites de cada prática.',
+    'Dúvidas respondidas terapia por terapia: como funciona, se dói, se pode ser online, quantas sessões e as contraindicações de cada prática.',
   alternates: { canonical: '/perguntas-frequentes' },
   openGraph: { url: `${site.url}/perguntas-frequentes`, title: 'Perguntas frequentes — Espaço da Completude' },
 }
@@ -36,6 +36,7 @@ export default function PaginaPerguntas() {
             claro
             sobretitulo="Perguntas frequentes"
             titulo="Tudo o que costumam perguntar"
+            nivel={1}
             texto="Organizado por terapia. Se a sua dúvida não estiver aqui, escreva — ela provavelmente merece entrar nesta página."
           />
           <div className="mt-8 max-w-xl">

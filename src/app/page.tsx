@@ -12,8 +12,9 @@ import { construirIndice } from '@/lib/busca'
 import { schemaFAQ } from '@/lib/estrutura'
 
 export const metadata: Metadata = {
-  title: 'Espaço da Completude — Caio Gracco | Terapias Integrativas em Santa Rosa de Viterbo',
-  description: site.descricao,
+  title: 'Terapias Integrativas em Santa Rosa de Viterbo, SP',
+  description:
+    'Osatoshi, EMF Balancing Technique®, Reiki, Shiatsu e mais cinco terapias com Caio Gracco. Atendimento presencial em Santa Rosa de Viterbo (SP) e online.',
   alternates: { canonical: '/' },
 }
 

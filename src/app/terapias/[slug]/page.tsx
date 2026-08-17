@@ -20,16 +20,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   const t = getTerapia(slug)
   if (!t) return {}
-  const titulo = `${t.nome} — o que é, como funciona e para quem`
+  const titulo = `${t.nomeCurto} — o que é e como funciona`
+  const onde = t.sessao.distancia === 'sim' ? 'Santa Rosa de Viterbo (SP) e online' : 'Santa Rosa de Viterbo (SP)'
+  const descricao = `${t.nome}: ${t.tagline.toLowerCase()}. ${t.resumo.split('. ')[0]}. Com Caio Gracco, em ${onde}.`
   return {
     title: titulo,
-    description: `${t.resumo} Atendimento com Caio Gracco no Espaço da Completude, em Santa Rosa de Viterbo (SP)${t.sessao.distancia === 'sim' ? ' e à distância' : ''}.`.slice(0, 300),
+    description: descricao.length > 158 ? `${descricao.slice(0, 155).trimEnd()}…` : descricao,
     alternates: { canonical: `/terapias/${t.slug}` },
     keywords: t.keywords,
     openGraph: {
       url: `${site.url}/terapias/${t.slug}`,
       title: titulo,
-      description: t.resumo,
+      description: descricao,
       type: 'article',
     },
   }

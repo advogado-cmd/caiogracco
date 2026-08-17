@@ -10,9 +10,9 @@ import { site } from '@/content/site'
 import type { Termo } from '@/content/tipos'
 
 export const metadata: Metadata = {
-  title: 'Glossário das terapias integrativas — do Ki ao Katsugen Undo',
+  title: 'Glossário das terapias integrativas',
   description:
-    'Dicionário dos termos usados nas terapias do Espaço da Completude: Osatoshi, Shinri, Omamori, Ki, Qi, meridianos, tsubo, hara, De Qi, Taiheki, Katsugen Undo, UCL e mais — explicados em linguagem simples.',
+    'Os termos das terapias explicados em linguagem simples: Osatoshi, Shinri, Omamori, Ki, Qi, meridianos, tsubo, hara, De Qi, Taiheki, Katsugen Undo, UCL e outros.',
   alternates: { canonical: '/glossario' },
   openGraph: { url: `${site.url}/glossario`, title: 'Glossário das terapias integrativas' },
 }
@@ -74,6 +74,7 @@ export default function PaginaGlossario() {
             claro
             sobretitulo="Glossário"
             titulo="As palavras destas tradições, sem mistério"
+            nivel={1}
             texto="Cada prática traz seu vocabulário — em japonês, em chinês, em inglês. Aqui estão todos os termos usados no site, explicados em uma ou duas frases."
           />
           <div className="mt-8 max-w-xl">

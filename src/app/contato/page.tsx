@@ -8,7 +8,7 @@ import { schemaBreadcrumb, schemaNegocio } from '@/lib/estrutura'
 
 export const metadata: Metadata = {
   title: 'Contato e agendamento',
-  description: `Agende um atendimento com Caio Gracco: WhatsApp ${site.telefoneFormatado}, e-mail ${site.email}. Espaço da Completude, ${site.endereco.rua}, ${site.endereco.cidade}/${site.endereco.estado}. Atendimento presencial e online.`,
+  description: `Agende com Caio Gracco pelo WhatsApp ${site.telefoneFormatado}. Espaço da Completude, ${site.endereco.rua}, ${site.endereco.cidade}/${site.endereco.estado}. Presencial e online.`,
   alternates: { canonical: '/contato' },
   openGraph: { url: `${site.url}/contato`, title: 'Contato — Espaço da Completude' },
 }
@@ -31,6 +31,7 @@ export default function PaginaContato() {
             claro
             sobretitulo="Contato"
             titulo="Vamos conversar"
+            nivel={1}
             texto="O primeiro passo é uma mensagem. Conte o que está acontecendo, com suas palavras — não precisa saber o nome da terapia."
           />
           <div className="mt-8 flex flex-wrap gap-3">
