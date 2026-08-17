@@ -1,3 +1,25 @@
+const URL_PADRAO = 'https://espacodacompletude.com.br'
+
+/**
+ * Normaliza a URL vinda de variável de ambiente.
+ *
+ * Sem isto, um valor digitado sem o esquema (ex.: "beta.droliveira.adv.br")
+ * faz `new URL()` lançar e derruba o build inteiro com exit 1 — um erro caro,
+ * porque só aparece no deploy e a mensagem não aponta para a causa.
+ * Aqui: apara espaços e barras finais, acrescenta https:// quando falta e,
+ * se ainda assim o valor for inválido, cai no padrão em vez de quebrar.
+ */
+function normalizarUrl(valor: string | undefined): string {
+  const bruto = (valor ?? '').trim().replace(/\/+$/, '')
+  if (!bruto) return URL_PADRAO
+  const comEsquema = /^https?:\/\//i.test(bruto) ? bruto : `https://${bruto}`
+  try {
+    return new URL(comEsquema).origin
+  } catch {
+    return URL_PADRAO
+  }
+}
+
 export const site = {
   nome: 'Espaço da Completude',
   terapeuta: 'Caio Gracco',
@@ -5,7 +27,7 @@ export const site = {
   titulo: 'Espaço da Completude — Caio Gracco | Terapias Integrativas',
   descricao:
     'Espaço da Completude, de Caio Gracco: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura, Auriculoterapia e Seitai. Atendimento online e presencial em Santa Rosa de Viterbo, SP.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://espacodacompletude.com.br',
+  url: normalizarUrl(process.env.NEXT_PUBLIC_SITE_URL),
   locale: 'pt_BR',
   telefone: '+5516992292629',
   telefoneFormatado: '(16) 99229-2629',
@@ -45,10 +67,11 @@ export const site = {
   cnpj: '17.156.760/0001-95',
   desde: 2012,
   /** 'producao' libera indexação; qualquer outro valor marca o site como noindex. */
-  ambiente: process.env.NEXT_PUBLIC_AMBIENTE || 'producao',
+  ambiente: (process.env.NEXT_PUBLIC_AMBIENTE || 'producao').trim().toLowerCase(),
 } as const
 
-export const ehProducao = (process.env.NEXT_PUBLIC_AMBIENTE || 'producao') === 'producao'
+export const ehProducao =
+  (process.env.NEXT_PUBLIC_AMBIENTE || 'producao').trim().toLowerCase() === 'producao'
 
 export function whatsappLink(mensagem?: string) {
   const texto = encodeURIComponent(mensagem || site.whatsappMensagem)
