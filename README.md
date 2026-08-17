@@ -1,7 +1,7 @@
 # Espaço da Completude — Caio Gracco
 
 Site institucional do terapeuta **Caio Gracco** (Santa Rosa de Viterbo, SP), construído em
-Next.js 15 (App Router) + TypeScript + Tailwind CSS 4, 100% estático e pronto para a Vercel.
+Next.js 16 (App Router) + TypeScript + Tailwind CSS 4, 100% estático e pronto para a Vercel.
 
 ## Rodar localmente
 
