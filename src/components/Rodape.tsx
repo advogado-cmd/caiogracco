@@ -3,6 +3,7 @@ import { site, whatsappLink } from '@/content/site'
 import { terapias } from '@/content/terapias'
 import { navegacao, navLegal } from '@/content/navegacao'
 import { Icone } from './Icone'
+import { BotaoPreferenciasCookies } from './ConsentimentoCookies'
 
 export function Rodape() {
   const ano = 2026
@@ -53,6 +54,9 @@ export function Rodape() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <BotaoPreferenciasCookies className="text-left text-noite-200 transition hover:text-areia-50" />
+              </li>
             </ul>
           </nav>
 
