@@ -67,6 +67,13 @@ export function schemaPessoa() {
     description:
       'Caio Gracco é terapeuta integrativo em Santa Rosa de Viterbo (SP). Iniciou sua trajetória aos 14 anos e hoje se dedica sobretudo ao Osatoshi, técnica japonesa da Shinri, além de EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai.',
     url: `${site.url}/sobre`,
+    image: {
+      '@type': 'ImageObject',
+      url: `${site.url}/retrato-caio-gracco.jpg`,
+      width: 1200,
+      height: 1200,
+      caption: 'Caio Gracco, terapeuta integrativo',
+    },
     email: site.email,
     telephone: site.telefone,
     worksFor: { '@id': `${site.url}/#espaco` },

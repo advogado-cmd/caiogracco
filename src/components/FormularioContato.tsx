@@ -67,12 +67,17 @@ export function FormularioContato() {
 
   return (
     <form onSubmit={enviarEmail} noValidate className="rounded-2xl border border-noite-100 bg-cartao p-6 sm:p-8">
-      <h2 className="flex items-center gap-3 font-display text-2xl text-noite-800">
-        <span className="flex h-11 w-11 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
-          <Icone nome="email" tamanho={21} />
-        </span>
-        Escreva para o Caio
-      </h2>
+      <div className="flex items-center gap-4">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/retrato-caio-gracco.webp"
+          alt="Caio Gracco, terapeuta integrativo"
+          width={72}
+          height={72}
+          className="h-16 w-16 shrink-0 rounded-full object-cover ring-2 ring-areia-200 sm:h-[4.5rem] sm:w-[4.5rem]"
+        />
+        <h2 className="font-display text-2xl text-noite-800">Escreva para o Caio</h2>
+      </div>
       <p className="mt-3 text-[1rem] leading-relaxed text-tinta-700">
         Preencha e o seu programa de e-mail abre com a mensagem pronta, endereçada ao Caio. Nada é
         enviado a terceiros nem fica guardado neste site.
