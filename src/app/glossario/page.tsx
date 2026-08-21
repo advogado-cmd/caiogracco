@@ -58,7 +58,7 @@ export default function PaginaGlossario() {
             '@context': 'https://schema.org',
             '@type': 'DefinedTermSet',
             '@id': `${site.url}/glossario#conjunto`,
-            name: 'Glossário de Terapias Integrativas — Espaço da Completude',
+            name: 'Glossário de Terapias Integrativas — Terapias da Completude',
             description: 'Termos das tradições japonesas, chinesas e contemporâneas praticadas por Caio Gracco.',
             url: `${site.url}/glossario`,
             hasDefinedTerm: verbetes.map((v) => ({
@@ -93,7 +93,7 @@ export default function PaginaGlossario() {
             <a
               key={l}
               href={`#letra-${l}`}
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-noite-100 bg-white text-sm font-medium text-noite-700 transition hover:border-ouro-400 hover:text-noite-800"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-noite-100 bg-cartao text-sm font-medium text-noite-700 transition hover:border-ouro-400 hover:text-noite-800"
             >
               {l}
             </a>
@@ -107,7 +107,7 @@ export default function PaginaGlossario() {
               <div className="regua-ouro mt-2" />
               <dl className="mt-6 grid gap-5 sm:grid-cols-2">
                 {grupos.get(letra)!.map((v) => (
-                  <div key={v.termo} id={slugificar(v.termo)} className="scroll-mt-24 rounded-2xl border border-noite-100 bg-white p-5">
+                  <div key={v.termo} id={slugificar(v.termo)} className="scroll-mt-24 rounded-2xl border border-noite-100 bg-cartao p-5">
                     <dt className="font-display text-lg text-noite-800">{v.termo}</dt>
                     <dd className="mt-2 text-[0.92rem] leading-relaxed text-tinta-700">{v.definicao}</dd>
                     <dd className="mt-3">

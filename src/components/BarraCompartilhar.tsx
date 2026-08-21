@@ -56,7 +56,7 @@ export function BarraCompartilhar({ titulo, className = '' }: Props) {
             rel="noopener noreferrer"
             aria-label={o.rotulo}
             title={o.rotulo}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-noite-200 bg-white text-tinta-700 shadow-sm transition hover:border-ouro-400 hover:text-noite-800"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-noite-200 bg-cartao text-tinta-700 shadow-sm transition hover:border-ouro-400 hover:text-noite-800"
           >
             <Icone nome={o.icone} tamanho={19} />
           </a>
@@ -66,7 +66,7 @@ export function BarraCompartilhar({ titulo, className = '' }: Props) {
           onClick={copiar}
           aria-label="Copiar o endereço desta página"
           title={copiado ? 'Endereço copiado' : 'Copiar endereço'}
-          className={`flex h-11 w-11 items-center justify-center rounded-full border bg-white shadow-sm transition ${
+          className={`flex h-11 w-11 items-center justify-center rounded-full border bg-cartao shadow-sm transition ${
             copiado ? 'border-ouro-400 text-ouro-600' : 'border-noite-200 text-tinta-700 hover:border-ouro-400 hover:text-noite-800'
           }`}
         >
@@ -76,7 +76,7 @@ export function BarraCompartilhar({ titulo, className = '' }: Props) {
       </aside>
 
       {/* Mobile e tablet — faixa em linha */}
-      <div className="sem-impressao mt-10 flex items-center gap-3 rounded-2xl border border-noite-100 bg-white px-5 py-4 xl:hidden">
+      <div className="sem-impressao mt-10 flex items-center gap-3 rounded-2xl border border-noite-100 bg-cartao px-5 py-4 xl:hidden">
         <span className="flex items-center gap-2 text-[0.85rem] font-medium text-tinta-700">
           <Icone nome="compartilhar" tamanho={18} />
           Compartilhar

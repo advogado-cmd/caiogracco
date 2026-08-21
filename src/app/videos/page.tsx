@@ -10,9 +10,9 @@ import { CTA } from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'Vídeos de Caio Gracco',
   description:
-    'Os vídeos de Caio Gracco no YouTube sobre Osatoshi, limpeza espiritual, EMF Balancing Technique® e as demais terapias do Espaço da Completude.',
+    'Os vídeos de Caio Gracco no YouTube sobre Osatoshi, limpeza espiritual, EMF Balancing Technique® e as demais terapias que ele atende.',
   alternates: { canonical: '/videos' },
-  openGraph: { url: `${site.url}/videos`, title: 'Vídeos de Caio Gracco — Espaço da Completude' },
+  openGraph: { url: `${site.url}/videos`, title: 'Vídeos de Caio Gracco — Terapias da Completude' },
 }
 
 export default function PaginaVideos() {
@@ -73,7 +73,7 @@ export default function PaginaVideos() {
           <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {videos.map((v) => (
               <li key={v.id} id={v.id} className="scroll-mt-24">
-                <article className="overflow-hidden rounded-2xl border border-noite-100 bg-white">
+                <article className="overflow-hidden rounded-2xl border border-noite-100 bg-cartao">
                   <div className="relative aspect-video w-full bg-noite-900">
                     <iframe
                       src={`https://www.youtube-nocookie.com/embed/${v.id}`}
@@ -122,7 +122,7 @@ export default function PaginaVideos() {
               </p>
             </div>
 
-            <aside className="rounded-2xl border border-ouro-300/70 bg-ouro-200/25 p-6">
+            <aside className="rounded-2xl border border-ouro-500/45 bg-areia-200/40 p-6">
               <h2 className="font-display text-xl text-noite-800">Quer os vídeos em destaque?</h2>
               <p className="mt-3 text-[0.9rem] leading-relaxed text-tinta-700">
                 Cadastrando cada vídeo individualmente, eles ganham card próprio nesta página, entram
@@ -131,14 +131,14 @@ export default function PaginaVideos() {
               </p>
               <p className="mt-3 text-[0.9rem] leading-relaxed text-tinta-700">
                 Basta acrescentar os vídeos em{' '}
-                <code className="rounded bg-white/70 px-1.5 py-0.5 text-[0.85em]">src/content/videos.ts</code>{' '}
+                <code className="rounded bg-cartao/70 px-1.5 py-0.5 text-[0.85em]">src/content/videos.ts</code>{' '}
                 — ou rodar o importador automático com uma chave da YouTube Data API.
               </p>
               <a
                 href={canalUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 block rounded-xl bg-noite-800 px-4 py-3 text-center text-[0.9rem] font-semibold text-areia-50 transition hover:bg-noite-700"
+                className="mt-5 block rounded-xl bg-noite-600 px-4 py-3 text-center text-[0.9rem] font-semibold text-areia-50 transition hover:bg-noite-400"
               >
                 Abrir o canal {canalHandle}
               </a>

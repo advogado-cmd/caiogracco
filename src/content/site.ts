@@ -1,4 +1,4 @@
-const URL_PADRAO = 'https://espacodacompletude.com.br'
+const URL_PADRAO = 'https://caiogracco.com.br'
 
 /**
  * Normaliza a URL vinda de variável de ambiente.
@@ -24,19 +24,19 @@ export const site = {
   /** Nome de exibição do site: o terapeuta vem primeiro, o espaço em seguida. */
   nomeSite: 'Caio Gracco',
   /** Nome do espaço terapêutico — a entidade de negócio. */
-  nome: 'Espaço da Completude',
+  nome: 'Terapias da Completude',
   terapeuta: 'Caio Gracco',
   nomeCompleto: 'Caio Gracco de Freitas Araújo',
-  titulo: 'Caio Gracco — Espaço da Completude | Terapias Integrativas',
+  titulo: 'Caio Gracco — Terapias da Completude | Terapias Integrativas',
   descricao:
-    'Caio Gracco, do Espaço da Completude: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura, Auriculoterapia e Seitai. Atendimento online e presencial em Santa Rosa de Viterbo, SP.',
+    'Caio Gracco, das Terapias da Completude: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura, Auriculoterapia e Seitai. Atendimento online e presencial em Santa Rosa de Viterbo, SP.',
   url: normalizarUrl(process.env.NEXT_PUBLIC_SITE_URL),
   locale: 'pt_BR',
   telefone: '+5516992292629',
   telefoneFormatado: '(16) 99229-2629',
   whatsapp: '5516992292629',
   whatsappMensagem:
-    'Olá, Caio! Cheguei pelo site do Espaço da Completude e gostaria de saber mais sobre os atendimentos.',
+    'Olá, Caio! Cheguei pelo seu site e gostaria de saber mais sobre os atendimentos.',
   email: 'caiograccoterapeuta@gmail.com',
   endereco: {
     rua: 'Rua Paride Cervi, 43',

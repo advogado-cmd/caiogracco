@@ -6,7 +6,7 @@ export default function NaoEncontrado() {
     <div className="aurora">
       <Secao className="flex min-h-[60vh] flex-col items-center justify-center py-24 text-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/brand/logo-mark.svg" alt="" aria-hidden="true" width={120} height={120} className="h-28 w-28 opacity-90" />
+        <img src="/brand/logo-mark-escuro.svg" alt="" aria-hidden="true" width={120} height={120} className="h-28 w-28 opacity-90" />
         <h1 className="mt-8 font-display text-4xl text-areia-50">Esta página não existe</h1>
         <p className="mt-4 max-w-md text-[1rem] leading-relaxed text-noite-200">
           O endereço pode ter mudado. Volte ao início ou veja todas as terapias oferecidas.

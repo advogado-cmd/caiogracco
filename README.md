@@ -1,4 +1,4 @@
-# Espaço da Completude — Caio Gracco
+# Terapias da Completude — Caio Gracco
 
 Site institucional do terapeuta **Caio Gracco** (Santa Rosa de Viterbo, SP), construído em
 Next.js 16 (App Router) + TypeScript + Tailwind CSS 4, 100% estático e pronto para a Vercel.

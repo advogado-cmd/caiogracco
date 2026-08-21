@@ -62,7 +62,7 @@ export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; v
         className={`flex items-center gap-3 rounded-2xl border px-4 py-3 transition sm:px-5 sm:py-3.5 ${
           escura
             ? 'border-noite-400/45 bg-noite-900/45 backdrop-blur focus-within:border-ouro-400/70'
-            : 'border-noite-200 bg-white shadow-sm focus-within:border-ouro-400'
+            : 'border-noite-200 bg-cartao shadow-sm focus-within:border-ouro-400'
         }`}
       >
         <svg viewBox="0 0 24 24" className={`h-5 w-5 shrink-0 ${escura ? 'text-ouro-400' : 'text-noite-400'}`} fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
@@ -97,7 +97,7 @@ export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; v
         <div
           id="resultados-busca"
           role="listbox"
-          className="absolute left-0 right-0 top-[calc(100%+0.6rem)] z-[45] max-h-[26rem] overflow-y-auto rounded-2xl border border-noite-200 bg-white p-2 shadow-2xl shadow-noite-900/15"
+          className="absolute left-0 right-0 top-[calc(100%+0.6rem)] z-[45] max-h-[26rem] overflow-y-auto rounded-2xl border border-noite-200 bg-cartao p-2 shadow-2xl shadow-noite-900/15"
         >
           {consulta.trim().length <= 1 ? (
             <div className="p-3">
@@ -133,7 +133,7 @@ export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; v
                     role="option"
                     aria-selected={i === destaque}
                     className={`flex flex-col gap-1 rounded-xl px-3 py-2.5 transition ${
-                      i === destaque ? 'bg-noite-100' : 'hover:bg-areia-100'
+                      i === destaque ? 'bg-noite-100' : 'hover:bg-areia-200/40'
                     }`}
                   >
                     <span className="flex items-center gap-2">

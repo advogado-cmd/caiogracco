@@ -10,6 +10,7 @@ import { Icone, type NomeIcone } from '@/components/Icone'
 import { Foto } from '@/components/Foto'
 import { CTA } from '@/components/CTA'
 import { SecaoVideos } from '@/components/SecaoVideos'
+import { Carrossel } from '@/components/Carrossel'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { terapias, terapiasDestaque } from '@/content/terapias'
 import { site, whatsappLink } from '@/content/site'
@@ -40,12 +41,12 @@ const ETAPAS: { icone: NomeIcone; titulo: string; texto: string }[] = [
 ]
 
 const PERGUNTAS_GERAIS = [
-  { pergunta: 'Quem é Caio Gracco?', resposta: 'Caio Gracco é terapeuta integrativo em Santa Rosa de Viterbo, interior de São Paulo. Começou sua caminhada como terapeuta aos 14 anos e hoje se dedica sobretudo ao Osatoshi, técnica japonesa da Shinri, além de EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Atende no Espaço da Completude e também à distância.' },
-  { pergunta: 'Quais terapias são oferecidas no Espaço da Completude?', resposta: 'Oito abordagens: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Massagem Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Osatoshi, EMF Balancing e Reiki podem ser feitos à distância; as demais são presenciais.' },
+  { pergunta: 'Quem é Caio Gracco?', resposta: 'Caio Gracco é terapeuta integrativo em Santa Rosa de Viterbo, interior de São Paulo. Começou sua caminhada como terapeuta aos 14 anos e hoje se dedica sobretudo ao Osatoshi, técnica japonesa da Shinri, além de EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Atende em seu espaço, no centro da cidade, e também à distância.' },
+  { pergunta: 'Quais terapias Caio Gracco oferece?', resposta: 'Oito abordagens: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Massagem Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Osatoshi, EMF Balancing e Reiki podem ser feitos à distância; as demais são presenciais.' },
   { pergunta: 'O atendimento pode ser feito online?', resposta: 'Sim, para as práticas que a tradição permite à distância — Osatoshi, EMF Balancing Technique® e Reiki. As terapias manuais (Shiatsu, Seitai, Acupuntura e Auriculoterapia) exigem presença física em Santa Rosa de Viterbo.' },
   { pergunta: 'Como escolher a terapia certa para o meu caso?', resposta: 'Não é preciso escolher sozinho. Escreva contando o que está acontecendo e o Caio indica o caminho que faz mais sentido — inclusive dizendo quando o melhor caminho é outro profissional, e não uma sessão.' },
   { pergunta: 'Essas terapias substituem tratamento médico?', resposta: 'Não, em nenhuma hipótese. São práticas complementares de bem-estar. Não substituem diagnóstico, medicação, cirurgia, psicoterapia ou acompanhamento psiquiátrico, e nenhum tratamento em curso deve ser interrompido por causa delas.' },
-  { pergunta: 'Onde fica o Espaço da Completude?', resposta: `Na ${site.endereco.rua}, ${site.endereco.bairro}, ${site.endereco.cidade}/${site.endereco.estado}, CEP ${site.endereco.cep}. O atendimento é feito com hora marcada.` },
+  { pergunta: 'Onde Caio Gracco atende?', resposta: `Na ${site.endereco.rua}, ${site.endereco.bairro}, ${site.endereco.cidade}/${site.endereco.estado}, CEP ${site.endereco.cep}. O atendimento é feito com hora marcada.` },
 ]
 
 export default function Home() {
@@ -54,7 +55,7 @@ export default function Home() {
   return (
     <>
       <JsonLd dados={schemaFAQ(PERGUNTAS_GERAIS)} />
-      <BarraCompartilhar titulo="Caio Gracco — Espaço da Completude" />
+      <BarraCompartilhar titulo="Caio Gracco — Terapias da Completude" />
 
       {/* ---------- Abertura ---------- */}
       <div className="aurora relative">
@@ -67,9 +68,9 @@ export default function Home() {
               Um lugar para você <span className="texto-ouro">voltar a ser inteiro</span>.
             </h1>
             <p className="mt-6 max-w-xl text-[1.15rem] leading-relaxed text-noite-200">
-              Comecei minha missão como terapeuta aos 14 anos e não parei mais. Hoje, no Espaço da
-              Completude, reúno oito caminhos de cuidado — do Osatoshi japonês ao toque do Shiatsu —
-              para acompanhar quem está atravessando algo difícil e quer recomeçar com clareza.
+              Comecei minha missão como terapeuta aos 14 anos e não parei mais. Hoje reúno oito
+              caminhos de cuidado — do Osatoshi japonês ao toque do Shiatsu — para acompanhar
+              quem está atravessando algo difícil e quer recomeçar com clareza.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -103,8 +104,8 @@ export default function Home() {
             <Foto numero={1} prioridade className="max-w-[22rem] border border-noite-400/25" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/brand/logo-mark.svg"
-              alt="Símbolo do Espaço da Completude: uma figura humana de braços erguidos que é o tronco da árvore da vida, coroada por um sol de chamas e envolvida por asas de fogo."
+              src="/brand/logo-mark-escuro.svg"
+              alt="Símbolo de Caio Gracco: um sol de raios dourados e rosados irradiando de um núcleo de ouro, dentro de um círculo delicado."
               width={220}
               height={220}
               className="w-32 drop-shadow-2xl sm:w-40"
@@ -124,8 +125,8 @@ export default function Home() {
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.5fr_1fr]">
           <ul className="grid gap-4 sm:grid-cols-2">
             {MOTIVOS.map((m) => (
-              <li key={m.titulo} className="rounded-2xl border border-noite-100 bg-white p-6">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+              <li key={m.titulo} className="rounded-2xl border border-noite-100 bg-cartao p-6">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
                   <Icone nome={m.icone} tamanho={21} />
                 </span>
                 <h3 className="mt-4 font-display text-xl text-noite-800">{m.titulo}</h3>
@@ -148,7 +149,7 @@ export default function Home() {
       </Secao>
 
       {/* ---------- Destaque ---------- */}
-      <div className="bg-areia-100/70 py-16 lg:py-24">
+      <div className="border-y border-areia-200 bg-areia-200/25 py-16 lg:py-24">
         <Secao>
           <TituloSecao
             icone="estrela"
@@ -186,11 +187,26 @@ export default function Home() {
         </Link>
       </Secao>
 
-      {/* ---------- Vídeos ---------- */}
+      {/* ---------- Formação em imagens ---------- */}
       <div className="aurora py-16 text-areia-100 lg:py-24">
         <Secao>
           <TituloSecao
             claro
+            icone="foto"
+            sobretitulo="Formação e trajetória"
+            titulo="Décadas de estudo deixam rastro"
+            texto="Cursos, formaturas e exames internacionais — do curso de Acupuntura do CEMETRAC ao exame de proficiência da Federação Mundial das Sociedades de Medicina Chinesa."
+          />
+          <div className="mt-10">
+            <Carrossel />
+          </div>
+        </Secao>
+      </div>
+
+      {/* ---------- Vídeos ---------- */}
+      <div className="border-y border-areia-200 bg-areia-200/25 py-16 lg:py-24">
+        <Secao>
+          <TituloSecao
             icone="video"
             sobretitulo="No canal"
             titulo="O Caio explicando, com as próprias palavras"
@@ -212,9 +228,9 @@ export default function Home() {
         />
         <ol className="mt-10 grid gap-6 md:grid-cols-4">
           {ETAPAS.map((e, i) => (
-            <li key={e.titulo} className="rounded-2xl border border-noite-100 bg-white p-6">
+            <li key={e.titulo} className="rounded-2xl border border-noite-100 bg-cartao p-6">
               <div className="flex items-center gap-3">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
                   <Icone nome={e.icone} tamanho={21} />
                 </span>
                 <span className="font-display text-3xl text-ouro-500">{String(i + 1).padStart(2, '0')}</span>
@@ -227,7 +243,7 @@ export default function Home() {
       </Secao>
 
       {/* ---------- Perguntas ---------- */}
-      <div className="bg-areia-100/70 py-16 lg:py-24">
+      <div className="border-y border-areia-200 bg-areia-200/25 py-16 lg:py-24">
         <Secao>
           <TituloSecao
             icone="mente"

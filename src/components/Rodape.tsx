@@ -14,11 +14,11 @@ export function Rodape() {
         <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-4">
           <div className="lg:col-span-1">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/logo-mark.svg" alt="" aria-hidden="true" width={64} height={64} className="h-16 w-16" />
+            <img src="/brand/logo-mark-escuro.svg" alt="" aria-hidden="true" width={64} height={64} className="h-16 w-16" />
             <p className="mt-4 font-display text-lg uppercase tracking-[0.24em] text-areia-50">
               Caio Gracco
             </p>
-            <p className="mt-1.5 text-[0.68rem] uppercase tracking-[0.26em] text-ouro-400">Espaço da Completude</p>
+            <p className="mt-1.5 text-[0.68rem] uppercase tracking-[0.26em] text-ouro-400">Terapias da Completude</p>
             <p className="mt-4 max-w-xs text-[0.86rem] leading-relaxed text-noite-200">
               Cuidado integrativo em Santa Rosa de Viterbo e, à distância, para todo o Brasil.
             </p>
@@ -102,7 +102,7 @@ export function Rodape() {
         <div className="regua-ouro my-9" />
 
         <div className="flex flex-col gap-3 text-[0.78rem] text-noite-300 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {ano} Caio Gracco · Espaço da Completude · CNPJ {site.cnpj}</p>
+          <p>© {ano} Caio Gracco · Terapias da Completude · CNPJ {site.cnpj}</p>
           <p className="max-w-xl sm:text-right">
             Práticas complementares de bem-estar. Não substituem acompanhamento médico, psicológico ou psiquiátrico.
           </p>

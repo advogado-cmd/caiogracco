@@ -13,7 +13,7 @@ export function SecaoVideos({ limite = 3 }: { limite?: number }) {
         <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {destaques.map((v) => (
             <li key={v.id}>
-              <article className="overflow-hidden rounded-2xl border border-noite-100 bg-white">
+              <article className="overflow-hidden rounded-2xl border border-noite-100 bg-cartao">
                 <div className="relative aspect-video w-full bg-noite-900">
                   <iframe
                     src={`https://www.youtube-nocookie.com/embed/${v.id}?rel=0`}
@@ -33,7 +33,7 @@ export function SecaoVideos({ limite = 3 }: { limite?: number }) {
           ))}
         </ul>
       ) : (
-        <div className="overflow-hidden rounded-2xl border border-noite-400/30 bg-noite-900/30">
+        <div className="overflow-hidden rounded-2xl border border-noite-200 bg-noite-900">
           <div className="aspect-video w-full">
             <iframe
               src={`https://www.youtube-nocookie.com/embed/videoseries?list=${playlistUploads}&rel=0`}
@@ -52,14 +52,14 @@ export function SecaoVideos({ limite = 3 }: { limite?: number }) {
           href={canalUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-full bg-ouro-400 px-6 py-3 text-[0.95rem] font-semibold text-noite-900 transition hover:bg-ouro-300"
+          className="inline-flex items-center gap-2 rounded-full bg-noite-600 px-6 py-3 text-[0.95rem] font-semibold text-areia-50 transition hover:bg-noite-400"
         >
           <Icone nome="youtube" tamanho={19} />
           Ver o canal {canalHandle}
         </a>
         <Link
           href="/videos"
-          className="inline-flex items-center gap-2 rounded-full border border-noite-300/50 px-6 py-3 text-[0.95rem] font-medium text-areia-100 transition hover:border-ouro-400 hover:text-ouro-300"
+          className="inline-flex items-center gap-2 rounded-full border border-noite-200 px-6 py-3 text-[0.95rem] font-medium text-noite-700 transition hover:border-brasa-500 hover:text-brasa-500"
         >
           Todos os vídeos
           <Icone nome="seta" tamanho={17} />

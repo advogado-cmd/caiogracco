@@ -2,7 +2,6 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { Secao, TituloSecao } from '@/components/Secao'
 import { JsonLd } from '@/components/JsonLd'
-import { AvisoCuidado } from '@/components/AvisoCuidado'
 import { site, whatsappLink } from '@/content/site'
 import { terapias } from '@/content/terapias'
 import { schemaBreadcrumb, schemaPessoa } from '@/lib/estrutura'
@@ -16,9 +15,9 @@ import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 export const metadata: Metadata = {
   title: 'Sobre Caio Gracco',
   description:
-    'Caio Gracco começou sua missão como terapeuta aos 14 anos. Atende no Espaço da Completude, em Santa Rosa de Viterbo (SP), com oito abordagens integrativas.',
+    'Caio Gracco começou sua missão como terapeuta aos 14 anos. Atende em Santa Rosa de Viterbo (SP), com oito abordagens integrativas.',
   alternates: { canonical: '/sobre' },
-  openGraph: { url: `${site.url}/sobre`, title: 'Sobre Caio Gracco — Espaço da Completude', type: 'profile' },
+  openGraph: { url: `${site.url}/sobre`, title: 'Sobre Caio Gracco — Terapias da Completude', type: 'profile' },
 }
 
 export default function PaginaSobre() {
@@ -71,7 +70,7 @@ export default function PaginaSobre() {
                 mais se dedica.
               </p>
               <p>
-                O <strong>Espaço da Completude</strong> nasceu dessa reunião. O nome não é acidental:
+                O <strong>Terapias da Completude</strong> nasceu dessa reunião. O nome não é acidental:
                 a proposta é olhar a pessoa inteira — corpo, emoção, história e sentido — em vez de
                 atacar sintomas isolados. Em muitos atendimentos, mais de uma abordagem se combina, e
                 em alguns o caminho mais honesto é encaminhar para outro profissional. Essa honestidade
@@ -95,7 +94,7 @@ export default function PaginaSobre() {
               </h2>
               <ul className="mt-5 flex flex-col gap-3">
                 {site.credenciais.map((c) => (
-                  <li key={c} className="flex gap-3 rounded-xl border border-noite-100 bg-white px-5 py-4 text-[0.94rem] text-tinta-700">
+                  <li key={c} className="flex gap-3 rounded-xl border border-noite-100 bg-cartao px-5 py-4 text-[0.94rem] text-tinta-700">
                     <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ouro-500" />
                     {c}
                   </li>
@@ -116,8 +115,8 @@ export default function PaginaSobre() {
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {terapias.map((t) => (
                   <li key={t.slug}>
-                    <Link href={`/terapias/${t.slug}`} className="flex items-center gap-3 rounded-xl border border-noite-100 bg-white px-5 py-4 transition hover:border-ouro-300">
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+                    <Link href={`/terapias/${t.slug}`} className="flex items-center gap-3 rounded-xl border border-noite-100 bg-cartao px-5 py-4 transition hover:border-ouro-300">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
                         <Icone nome={t.icone} tamanho={19} />
                       </span>
                       <span>
@@ -132,7 +131,7 @@ export default function PaginaSobre() {
 
             <section id="galeria" aria-labelledby="galeria-titulo" className="mt-14 scroll-mt-24">
               <h2 id="galeria-titulo" className="flex items-center gap-3 font-display text-2xl text-noite-800 sm:text-3xl">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
                   <Icone nome="foto" tamanho={21} />
                 </span>
                 Formação e trajetória
@@ -150,22 +149,25 @@ export default function PaginaSobre() {
 
             <section aria-labelledby="postura" className="mt-14">
               <h2 id="postura" className="font-display text-2xl text-noite-800 sm:text-3xl">
-                Como este trabalho se apresenta
+                O jeito como eu trabalho
               </h2>
               <div className="prosa mt-4">
                 <p>
-                  Nada do que é oferecido aqui promete cura. As práticas têm origens, linguagens e
-                  níveis de comprovação bem diferentes entre si — algumas integram as políticas públicas
-                  de saúde, outras pertencem inteiramente ao campo da tradição e da fé. Em cada página
-                  de terapia, isso está dito com clareza, sem exagero para mais nem para menos.
+                  Cada uma dessas tradições chegou até mim por um caminho diferente, e todas me
+                  ensinaram a mesma coisa: quem procura ajuda não está atrás de promessa. Está atrás
+                  de ser levado a sério.
                 </p>
                 <p>
-                  O compromisso é simples: acolher sem prometer, informar sem confundir e nunca ocupar
-                  o lugar de um profissional de saúde.
+                  Então é isso que ofereço. Escuto sem pressa. Explico o que vamos fazer e por quê,
+                  em palavras que você entenda. E digo com franqueza quando percebo que o caminho é
+                  outro — às vezes o melhor que posso fazer por alguém é indicar um médico, um
+                  psicólogo, alguém mais preparado para o que aquela pessoa está atravessando.
                 </p>
-              </div>
-              <div className="mt-6">
-                <AvisoCuidado />
+                <p>
+                  Nas páginas de cada terapia você encontra o que ela é, de onde veio e o que
+                  esperar de uma sessão. Não por formalidade, mas porque acho que ninguém deveria
+                  começar um processo sem saber onde está pisando.
+                </p>
               </div>
 
               <CTA className="mt-12" />
@@ -173,7 +175,7 @@ export default function PaginaSobre() {
           </div>
 
           <aside className="lg:sticky lg:top-24 lg:h-fit">
-            <div className="overflow-hidden rounded-2xl border border-noite-100 bg-white">
+            <div className="overflow-hidden rounded-2xl border border-noite-100 bg-cartao">
               <Foto numero={4} className="rounded-none" />
               <div className="p-6">
                 <p className="font-display text-lg text-noite-800">{site.nomeCompleto}</p>
@@ -187,7 +189,7 @@ export default function PaginaSobre() {
                   href={whatsappLink()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 block rounded-xl bg-noite-800 px-4 py-3 text-center text-[0.9rem] font-semibold text-areia-50 transition hover:bg-noite-700"
+                  className="mt-5 block rounded-xl bg-noite-600 px-4 py-3 text-center text-[0.9rem] font-semibold text-areia-50 transition hover:bg-noite-400"
                 >
                   Falar com o Caio
                 </a>

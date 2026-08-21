@@ -11,7 +11,7 @@ export function Perguntas({ perguntas, titulo, id = 'perguntas' }: Props) {
           {titulo}
         </h2>
       )}
-      <div className="mt-6 divide-y divide-noite-100 rounded-2xl border border-noite-100 bg-white">
+      <div className="mt-6 divide-y divide-noite-100 rounded-2xl border border-noite-100 bg-cartao">
         {perguntas.map((f) => (
           <details key={f.pergunta} className="group px-5 py-4 sm:px-6">
             <summary className="flex cursor-pointer list-none items-start justify-between gap-4 text-[0.98rem] font-medium text-noite-800 marker:content-none">

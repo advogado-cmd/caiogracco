@@ -139,8 +139,8 @@ export function construirIndice(): Documento[] {
   }
 
   const paginas: Documento[] = [
-    { id: 'pag-sobre', titulo: 'Sobre Caio Gracco', trecho: 'A trajetória do terapeuta, iniciada aos 14 anos, e o que sustenta o trabalho do Espaço da Completude.', href: '/sobre', tipo: 'Página', corpo: 'sobre caio gracco terapeuta trajetoria historia missao formacao credenciamento shinri santa rosa de viterbo quem é' },
-    { id: 'pag-terapias', titulo: 'Todas as terapias', trecho: 'As oito abordagens atendidas no Espaço da Completude, com o que cada uma é e para quem faz sentido.', href: '/terapias', tipo: 'Página', corpo: 'terapias abordagens tratamentos praticas integrativas lista todas' },
+    { id: 'pag-sobre', titulo: 'Sobre Caio Gracco', trecho: 'A trajetória do terapeuta, iniciada aos 14 anos, e o que sustenta o trabalho de hoje.', href: '/sobre', tipo: 'Página', corpo: 'sobre caio gracco terapeuta trajetoria historia missao formacao credenciamento shinri santa rosa de viterbo quem é' },
+    { id: 'pag-terapias', titulo: 'Todas as terapias', trecho: 'As oito abordagens atendidas por Caio Gracco, com o que cada uma é e para quem faz sentido.', href: '/terapias', tipo: 'Página', corpo: 'terapias abordagens tratamentos praticas integrativas lista todas' },
     { id: 'pag-contato', titulo: 'Contato e agendamento', trecho: 'Como marcar um atendimento presencial ou online, endereço, WhatsApp e e-mail.', href: '/contato', tipo: 'Página', corpo: 'contato agendar marcar horario whatsapp telefone email endereco onde fica como chegar preco valor quanto custa' },
     { id: 'pag-videos', titulo: 'Vídeos', trecho: 'Os vídeos publicados por Caio Gracco no YouTube, reunidos por tema.', href: '/videos', tipo: 'Página', corpo: 'videos youtube canal aulas explicacoes depoimentos' },
     { id: 'pag-glossario', titulo: 'Glossário', trecho: 'Os termos das tradições atendidas aqui, explicados em linguagem simples.', href: '/glossario', tipo: 'Página', corpo: 'glossario termos dicionario significado o que quer dizer vocabulario' },

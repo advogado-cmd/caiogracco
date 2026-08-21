@@ -9,7 +9,7 @@ import { site } from '@/content/site'
 export const metadata: Metadata = {
   title: 'Termos de uso',
   description:
-    'Condições de uso do site do Espaço da Completude: natureza do conteúdo, limites das terapias, propriedade intelectual, responsabilidades e foro.',
+    'Condições de uso do site de Caio Gracco: natureza do conteúdo, limites das terapias, propriedade intelectual, responsabilidades e foro.',
   alternates: { canonical: '/termos-de-uso' },
 }
 
@@ -24,7 +24,7 @@ export default function PaginaTermos() {
           {
             '@context': 'https://schema.org',
             '@type': 'WebPage',
-            name: 'Termos de uso — Espaço da Completude',
+            name: 'Termos de uso — Terapias da Completude',
             url: `${site.url}/termos-de-uso`,
             dateModified: '2026-08-17',
             publisher: { '@id': `${site.url}/#espaco` },

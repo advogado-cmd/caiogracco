@@ -32,7 +32,7 @@ export function FormularioContato() {
       'Mensagem:',
       mensagem,
       '',
-      '— Enviado pelo formulário do site espacodacompletude',
+      '— Enviado pelo formulário do site caiogracco',
     ]
       .filter(Boolean)
       .join('\n')
@@ -62,13 +62,13 @@ export function FormularioContato() {
   }
 
   const campo =
-    'mt-1.5 w-full rounded-xl border border-noite-200 bg-white px-4 py-3 text-[1rem] text-tinta-900 outline-none transition placeholder:text-tinta-500 focus:border-ouro-400'
+    'mt-1.5 w-full rounded-xl border border-noite-200 bg-cartao px-4 py-3 text-[1rem] text-tinta-900 outline-none transition placeholder:text-tinta-500 focus:border-ouro-400'
   const rotulo = 'block text-[0.9rem] font-medium text-noite-800'
 
   return (
-    <form onSubmit={enviarEmail} noValidate className="rounded-2xl border border-noite-100 bg-white p-6 sm:p-8">
+    <form onSubmit={enviarEmail} noValidate className="rounded-2xl border border-noite-100 bg-cartao p-6 sm:p-8">
       <h2 className="flex items-center gap-3 font-display text-2xl text-noite-800">
-        <span className="flex h-11 w-11 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+        <span className="flex h-11 w-11 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
           <Icone nome="email" tamanho={21} />
         </span>
         Escreva para o Caio
@@ -126,7 +126,7 @@ export function FormularioContato() {
         </div>
       </div>
 
-      <div className="mt-5 flex items-start gap-3 rounded-xl bg-areia-100/80 p-4">
+      <div className="mt-5 flex items-start gap-3 rounded-xl bg-areia-200/35 p-4">
         <input id="consentimento" name="consentimento" type="checkbox" required checked={consentimento}
           onChange={(e) => setConsentimento(e.target.checked)}
           className="mt-1 h-5 w-5 shrink-0 rounded border-noite-300 accent-[#9c5d08]" />
@@ -145,12 +145,12 @@ export function FormularioContato() {
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
         <button type="submit"
-          className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-noite-800 px-6 py-3.5 text-[1rem] font-semibold text-areia-50 transition hover:bg-noite-700">
+          className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-noite-600 px-6 py-3.5 text-[1rem] font-semibold text-areia-50 transition hover:bg-noite-400">
           <Icone nome="email" tamanho={19} />
           Enviar por e-mail
         </button>
         <button type="button" onClick={enviarWhatsapp}
-          className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#128C7E] px-6 py-3.5 text-[1rem] font-semibold text-white transition hover:bg-[#0e7267]">
+          className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#0E7267] px-6 py-3.5 text-[1rem] font-semibold text-white transition hover:bg-[#0B5C53]">
           <Icone nome="whatsapp" tamanho={19} />
           Enviar pelo WhatsApp
         </button>

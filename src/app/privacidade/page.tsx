@@ -50,7 +50,7 @@ export default function PaginaPrivacidade() {
           {
             '@context': 'https://schema.org',
             '@type': 'WebPage',
-            name: 'Política de Privacidade — Caio Gracco, Espaço da Completude',
+            name: 'Política de Privacidade — Caio Gracco, Terapias da Completude',
             url: `${site.url}/privacidade`,
             dateModified: '2026-08-21',
             inLanguage: 'pt-BR',
@@ -113,7 +113,7 @@ export default function PaginaPrivacidade() {
             </p>
 
             <h2 id="s3" className="mt-12 scroll-mt-24 font-display text-2xl text-noite-800">3. Resumo em linguagem simples</h2>
-            <div className="not-prose mt-4 rounded-2xl border border-ouro-300/70 bg-ouro-200/25 p-6">
+            <div className="not-prose mt-4 rounded-2xl border border-ouro-500/45 bg-areia-200/40 p-6">
               <ul className="flex list-disc flex-col gap-2 pl-5 text-[1rem] leading-relaxed text-tinta-700">
                 <li>O conteúdo do site funciona <strong>sem nenhum cookie</strong>. Ler qualquer página não exige aceitar nada.</li>
                 <li>A busca interna roda no seu navegador. O que você digita <strong>não é enviado</strong> a servidor algum.</li>
@@ -151,10 +151,10 @@ export default function PaginaPrivacidade() {
               Cookies são pequenos arquivos gravados no seu dispositivo. Este site trabalha com três
               categorias, e apenas a primeira é obrigatória:
             </p>
-            <div className="not-prose mt-5 overflow-x-auto rounded-2xl border border-noite-100 bg-white">
+            <div className="not-prose mt-5 overflow-x-auto rounded-2xl border border-noite-100 bg-cartao">
               <table className="w-full min-w-[40rem] text-left text-[0.92rem]">
                 <caption className="sr-only">Categorias de cookies utilizadas, finalidade, responsável e prazo</caption>
-                <thead className="bg-areia-100 text-[0.76rem] uppercase tracking-wider text-tinta-700">
+                <thead className="bg-areia-200/45 text-[0.76rem] uppercase tracking-wider text-tinta-700">
                   <tr>
                     <th scope="col" className="px-5 py-3 font-semibold">Categoria</th>
                     <th scope="col" className="px-5 py-3 font-semibold">Para que serve</th>
@@ -294,10 +294,10 @@ export default function PaginaPrivacidade() {
             </p>
 
             <h2 id="s9" className="mt-12 scroll-mt-24 font-display text-2xl text-noite-800">9. Finalidades e bases legais</h2>
-            <div className="not-prose mt-4 overflow-x-auto rounded-2xl border border-noite-100 bg-white">
+            <div className="not-prose mt-4 overflow-x-auto rounded-2xl border border-noite-100 bg-cartao">
               <table className="w-full min-w-[38rem] text-left text-[0.92rem]">
                 <caption className="sr-only">Finalidade de cada tratamento e a base legal correspondente na LGPD</caption>
-                <thead className="bg-areia-100 text-[0.76rem] uppercase tracking-wider text-tinta-700">
+                <thead className="bg-areia-200/45 text-[0.76rem] uppercase tracking-wider text-tinta-700">
                   <tr>
                     <th scope="col" className="px-5 py-3 font-semibold">Para quê</th>
                     <th scope="col" className="px-5 py-3 font-semibold">Base legal (LGPD)</th>

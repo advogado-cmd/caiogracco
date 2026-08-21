@@ -10,9 +10,9 @@ import { CTA } from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'Aviso de cuidado',
   description:
-    'Limites, evidência e responsabilidade: as terapias do Espaço da Completude são complementares e não substituem acompanhamento médico ou psicológico.',
+    'Limites, evidência e responsabilidade: as terapias oferecidas por Caio Gracco são complementares e não substituem acompanhamento médico ou psicológico.',
   alternates: { canonical: '/aviso-de-cuidado' },
-  openGraph: { url: `${site.url}/aviso-de-cuidado`, title: 'Aviso de cuidado — Espaço da Completude' },
+  openGraph: { url: `${site.url}/aviso-de-cuidado`, title: 'Aviso de cuidado — Terapias da Completude' },
 }
 
 export default function PaginaAviso() {
@@ -38,7 +38,7 @@ export default function PaginaAviso() {
         <div className="prosa max-w-3xl">
           <h2 className="font-display text-2xl text-noite-800">São práticas complementares</h2>
           <p>
-            Tudo o que é oferecido no Espaço da Completude pertence ao campo das práticas
+            Tudo o que é oferecido aqui pertence ao campo das práticas
             complementares de bem-estar. Isso significa que elas podem caminhar <strong>ao lado</strong>{' '}
             do seu cuidado de saúde — nunca no lugar dele. Nenhuma sessão aqui diagnostica doença,
             prescreve medicamento ou substitui exame, consulta, cirurgia, psicoterapia ou

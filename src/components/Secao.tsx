@@ -20,7 +20,7 @@ export function TituloSecao({
       {icone && (
         <span
           className={`mb-4 flex h-12 w-12 items-center justify-center rounded-full ${
-            claro ? 'bg-noite-900/40 text-ouro-400' : 'bg-ouro-200/50 text-ouro-600'
+            claro ? 'bg-noite-700/70 text-magenta-400' : 'bg-areia-200/55 text-brasa-500'
           }`}
         >
           <Icone nome={icone} tamanho={24} />

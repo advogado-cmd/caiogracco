@@ -28,7 +28,7 @@ export function BarraLeitura() {
 
   return (
     <div
-      className="sem-impressao absolute inset-x-0 bottom-0 h-[3px] bg-noite-900/40"
+      className="sem-impressao absolute inset-x-0 bottom-0 h-[3px] bg-areia-200"
       role="progressbar"
       aria-label="Progresso de leitura da página"
       aria-valuenow={Math.round(progresso)}
@@ -36,7 +36,7 @@ export function BarraLeitura() {
       aria-valuemax={100}
     >
       <div
-        className="h-full bg-gradient-to-r from-ouro-300 via-ouro-400 to-brasa-400 transition-[width] duration-150 ease-out"
+        className="h-full bg-gradient-to-r from-ouro-500 via-magenta-500 to-noite-600 transition-[width] duration-150 ease-out"
         style={{ width: `${progresso}%` }}
       />
     </div>

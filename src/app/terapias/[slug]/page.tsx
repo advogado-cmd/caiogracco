@@ -83,7 +83,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
             </ol>
           </nav>
 
-          <span className="mt-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-noite-900/40 text-ouro-400">
+          <span className="mt-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-noite-700/70 text-magenta-400">
             <Icone nome={t.icone} tamanho={32} />
           </span>
           <h1 className="mt-5 max-w-3xl font-display text-4xl leading-tight text-areia-50 sm:text-5xl">{t.nome}</h1>
@@ -156,7 +156,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
 
             <section aria-labelledby="sessao" className="mt-12">
               <h2 id="sessao" className="font-display text-2xl text-noite-800 sm:text-3xl">Como é a sessão</h2>
-              <dl className="mt-4 divide-y divide-noite-100 rounded-2xl border border-noite-100 bg-white">
+              <dl className="mt-4 divide-y divide-noite-100 rounded-2xl border border-noite-100 bg-cartao">
                 {[
                   ['Duração', t.sessao.duracao],
                   ['Formato', t.sessao.formato],
@@ -184,7 +184,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
               </h2>
               <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
                 {t.indicacoes.map((i) => (
-                  <li key={i} className="flex gap-2.5 rounded-xl bg-areia-100/70 px-4 py-3 text-[0.92rem] text-tinta-700">
+                  <li key={i} className="flex gap-2.5 rounded-xl bg-areia-200/35 px-4 py-3 text-[0.92rem] text-tinta-700">
                     <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ouro-500" />
                     {i}
                   </li>
@@ -210,7 +210,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
               </h2>
               <dl className="mt-4 grid gap-4 sm:grid-cols-2">
                 {t.termos.map((termo) => (
-                  <div key={termo.termo} id={slugificar(termo.termo)} className="scroll-mt-24 rounded-2xl border border-noite-100 bg-white p-5">
+                  <div key={termo.termo} id={slugificar(termo.termo)} className="scroll-mt-24 rounded-2xl border border-noite-100 bg-cartao p-5">
                     <dt className="font-display text-lg text-noite-800">{termo.termo}</dt>
                     <dd className="mt-1.5 text-[0.9rem] leading-relaxed text-tinta-700">{termo.definicao}</dd>
                   </div>
@@ -244,7 +244,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
 
           {/* Coluna lateral */}
           <aside className="lg:sticky lg:top-24 lg:h-fit">
-            <div className="rounded-2xl border border-ouro-300/70 bg-ouro-200/25 p-6">
+            <div className="rounded-2xl border border-ouro-500/45 bg-areia-200/40 p-6">
               <p className="font-display text-lg text-noite-800">Quer conversar antes?</p>
               <p className="mt-2 text-[0.88rem] leading-relaxed text-tinta-700">
                 Conte o que está acontecendo. O Caio responde pessoalmente e diz com honestidade se o
@@ -254,7 +254,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
                 href={whatsappLink(`Olá, Caio! Gostaria de saber mais sobre ${t.nome}.`)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 block rounded-xl bg-noite-800 px-4 py-3 text-center text-[0.9rem] font-semibold text-areia-50 transition hover:bg-noite-700"
+                className="mt-4 block rounded-xl bg-noite-600 px-4 py-3 text-center text-[0.9rem] font-semibold text-areia-50 transition hover:bg-noite-400"
               >
                 Falar no WhatsApp
               </a>
@@ -267,8 +267,8 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
               <ul className="mt-4 flex flex-col gap-3">
                 {outras.map((o) => (
                   <li key={o.slug}>
-                    <Link href={`/terapias/${o.slug}`} className="flex items-center gap-3 rounded-xl border border-noite-100 bg-white p-4 transition hover:border-ouro-300">
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+                    <Link href={`/terapias/${o.slug}`} className="flex items-center gap-3 rounded-xl border border-noite-100 bg-cartao p-4 transition hover:border-ouro-300">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
                         <Icone nome={o.icone} tamanho={19} />
                       </span>
                       <span>

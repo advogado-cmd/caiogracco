@@ -1,22 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 10 980 980" width="1000" height="1000" role="img" aria-labelledby="cgT cgD">
-  <title id="cgT">Caio Gracco — Espaço da Completude</title>
-  <desc id="cgD">Duas correntes em espiral convergindo para um ponto de luz ao centro: a luz que desce e a alma que se ergue para recebê-la.</desc>
-  <rect width="1000" height="1000" rx="220" fill="#0B1A5C"/><defs>
-    <linearGradient id="cg-ouro" x1="0.15" y1="0" x2="0.9" y2="0.9">
-      <stop offset="0" stop-color="#FFE8BC"/><stop offset="0.45" stop-color="#F8B740"/><stop offset="1" stop-color="#E08E22"/>
-    </linearGradient>
-    <linearGradient id="cg-rosa" x1="0.9" y1="0.9" x2="0.15" y2="0">
-      <stop offset="0" stop-color="#B9569E"/><stop offset="0.45" stop-color="#E0628F"/><stop offset="1" stop-color="#F5A177"/>
-    </linearGradient>
-    <radialGradient id="cg-luz" cx="0.5" cy="0.38" r="0.58">
-      <stop offset="0" stop-color="#FFF8E6"/><stop offset="0.5" stop-color="#FBC85C"/><stop offset="1" stop-color="#EFA02A"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="-24 -24 248 248">
+  <rect x="-24.0" y="-24.0" width="248.0" height="248.0" rx="54.6" fill="#F7EEDB"/><defs>
+    
+
+    <radialGradient id="bgLight" cx="26%" cy="46%" r="60%">
+      <stop offset="0" stop-color="#FDF8ED"></stop>
+      <stop offset="0.42" stop-color="#F7EEDB"></stop>
+      <stop offset="1" stop-color="#F7EEDB" stop-opacity="0"></stop>
     </radialGradient>
-  </defs>
-  <g fill="none" stroke-linecap="round">
-    <path d="M500.0 108.0L505.7 108.1L511.5 108.2L517.2 108.5L523.0 108.9L528.7 109.4L534.4 109.9L540.1 110.6L545.8 111.5L551.4 112.4L557.1 113.4L562.7 114.5L568.3 115.7L573.9 117.0L579.4 118.5L584.9 120.0L590.4 121.6L595.9 123.4L601.3 125.2L606.6 127.1L612.0 129.1L617.3 131.3L622.5 133.5L627.7 135.8L632.8 138.2L637.9 140.7L643.0 143.2L648.0 145.9L652.9 148.6L657.8 151.5L662.6 154.4L667.4 157.4L672.1 160.5L676.7 163.7L681.3 166.9L685.8 170.2L690.3 173.6L694.6 177.1L698.9 180.6L703.2 184.2L707.3 187.9L711.4 191.7L715.4 195.5L719.4 199.4L723.2 203.3L727.0 207.3L730.7 211.4L734.4 215.5L737.9 219.7L741.4 223.9L744.7 228.2L748.0 232.5L751.3 236.9L754.4 241.3L757.4 245.8L760.4 250.3L763.3 254.9L766.0 259.4L768.7 264.1L771.3 268.7L773.9 273.4L776.3 278.2L778.6 282.9L780.9 287.7L783.1 292.5L785.1 297.4L787.1 302.2L789.0 307.1L790.8 312.0L792.5 316.9L794.2 321.9L795.7 326.8L797.1 331.8L798.5 336.7L799.7 341.7L800.9 346.7L802.0 351.7L803.0 356.6L803.9 361.6L804.7 366.6L805.4 371.6L806.1 376.6L806.6 381.6L807.1 386.5L807.5 391.5L807.8 396.4L808.0 401.4L808.1 406.3L808.1 411.2L808.1 416.1L808.0 420.9L807.8 425.8L807.5 430.6L807.1 435.4L806.6 440.2L806.1 444.9L805.5 449.6L804.8 454.3L804.1 459.0L803.2 463.6L802.3 468.2L801.3 472.8L800.3 477.3L799.1 481.8L797.9 486.3L796.7 490.7L795.3 495.1L793.9 499.4L792.5 503.7L790.9 507.9L789.3 512.1L787.7 516.3L786.0 520.4L784.2 524.5L782.3 528.5L780.4 532.4L778.5 536.4L776.5 540.2L774.4 544.1L772.3 547.8L770.1 551.5L767.9 555.2L765.6 558.8L763.3 562.3L761.0 565.8L758.6 569.3L756.1 572.7L753.6 576.0L751.1 579.3L748.5 582.5L745.9 585.6L743.3 588.7L740.6 591.8L737.9 594.8L735.1 597.7L732.4 600.5L729.5 603.4L726.7 606.1L723.8 608.8L720.9 611.4L718.0 614.0L715.1 616.5L712.1 618.9L709.1 621.3L706.1 623.7L703.1 625.9L700.1 628.1L697.0 630.3L693.9 632.4L690.8 634.4L687.7 636.4L684.6 638.3L681.5 640.2L678.3 642.0L675.2 643.7L672.1 645.4L668.9 647.0L665.7 648.6L662.6 650.1L659.4 651.6L656.2 653.0L653.1 654.3L649.9 655.6L646.7 656.9L643.5 658.1L640.4 659.2L637.2 660.3L634.1 661.4L630.9 662.3L627.8 663.3L624.6 664.2L621.5 665.0L618.4 665.8L615.2 666.5L612.1 667.2L609.0 667.9L605.9 668.5L602.9 669.1L599.8 669.6L596.8 670.1L593.7 670.5L590.7 670.9L587.7 671.2L584.7 671.6L581.7 671.8L578.8 672.1L575.8 672.3L572.9 672.4L570.0 672.5L567.1 672.6L564.2 672.7L561.4 672.7L558.5 672.7L555.7 672.6L552.9 672.6L550.1 672.5L547.3 672.3L544.6 672.2L541.9 672.0L539.1 671.7L536.5 671.5L533.8 671.2L531.1 670.9L528.5 670.6L525.9 670.3L523.3 669.9L520.7 669.5L518.1 669.1L515.6 668.7L513.1 668.2L510.6 667.7L508.1 667.2L505.6 666.7L503.1 666.2L500.7 665.6L498.3 665.1L495.9 664.5L493.5 663.9L491.1 663.3L488.7 662.7L486.4 662.0L484.1 661.4L481.7 660.7L479.4 660.0L477.2 659.4L474.9 658.7L472.6 657.9L470.4 657.2L468.1 656.5L465.9 655.7L463.6 655.0L461.4 654.2L459.2 653.4L457.0 652.7L454.8 651.9L452.7 651.1L450.5 650.2L448.3 649.4L446.2 648.6L444.0 647.8L441.8 646.9" stroke="url(#cg-ouro)" stroke-width="104"/>
-    <g transform="rotate(180 500 500)">
-      <path d="M500.0 108.0L505.7 108.1L511.5 108.2L517.2 108.5L523.0 108.9L528.7 109.4L534.4 109.9L540.1 110.6L545.8 111.5L551.4 112.4L557.1 113.4L562.7 114.5L568.3 115.7L573.9 117.0L579.4 118.5L584.9 120.0L590.4 121.6L595.9 123.4L601.3 125.2L606.6 127.1L612.0 129.1L617.3 131.3L622.5 133.5L627.7 135.8L632.8 138.2L637.9 140.7L643.0 143.2L648.0 145.9L652.9 148.6L657.8 151.5L662.6 154.4L667.4 157.4L672.1 160.5L676.7 163.7L681.3 166.9L685.8 170.2L690.3 173.6L694.6 177.1L698.9 180.6L703.2 184.2L707.3 187.9L711.4 191.7L715.4 195.5L719.4 199.4L723.2 203.3L727.0 207.3L730.7 211.4L734.4 215.5L737.9 219.7L741.4 223.9L744.7 228.2L748.0 232.5L751.3 236.9L754.4 241.3L757.4 245.8L760.4 250.3L763.3 254.9L766.0 259.4L768.7 264.1L771.3 268.7L773.9 273.4L776.3 278.2L778.6 282.9L780.9 287.7L783.1 292.5L785.1 297.4L787.1 302.2L789.0 307.1L790.8 312.0L792.5 316.9L794.2 321.9L795.7 326.8L797.1 331.8L798.5 336.7L799.7 341.7L800.9 346.7L802.0 351.7L803.0 356.6L803.9 361.6L804.7 366.6L805.4 371.6L806.1 376.6L806.6 381.6L807.1 386.5L807.5 391.5L807.8 396.4L808.0 401.4L808.1 406.3L808.1 411.2L808.1 416.1L808.0 420.9L807.8 425.8L807.5 430.6L807.1 435.4L806.6 440.2L806.1 444.9L805.5 449.6L804.8 454.3L804.1 459.0L803.2 463.6L802.3 468.2L801.3 472.8L800.3 477.3L799.1 481.8L797.9 486.3L796.7 490.7L795.3 495.1L793.9 499.4L792.5 503.7L790.9 507.9L789.3 512.1L787.7 516.3L786.0 520.4L784.2 524.5L782.3 528.5L780.4 532.4L778.5 536.4L776.5 540.2L774.4 544.1L772.3 547.8L770.1 551.5L767.9 555.2L765.6 558.8L763.3 562.3L761.0 565.8L758.6 569.3L756.1 572.7L753.6 576.0L751.1 579.3L748.5 582.5L745.9 585.6L743.3 588.7L740.6 591.8L737.9 594.8L735.1 597.7L732.4 600.5L729.5 603.4L726.7 606.1L723.8 608.8L720.9 611.4L718.0 614.0L715.1 616.5L712.1 618.9L709.1 621.3L706.1 623.7L703.1 625.9L700.1 628.1L697.0 630.3L693.9 632.4L690.8 634.4L687.7 636.4L684.6 638.3L681.5 640.2L678.3 642.0L675.2 643.7L672.1 645.4L668.9 647.0L665.7 648.6L662.6 650.1L659.4 651.6L656.2 653.0L653.1 654.3L649.9 655.6L646.7 656.9L643.5 658.1L640.4 659.2L637.2 660.3L634.1 661.4L630.9 662.3L627.8 663.3L624.6 664.2L621.5 665.0L618.4 665.8L615.2 666.5L612.1 667.2L609.0 667.9L605.9 668.5L602.9 669.1L599.8 669.6L596.8 670.1L593.7 670.5L590.7 670.9L587.7 671.2L584.7 671.6L581.7 671.8L578.8 672.1L575.8 672.3L572.9 672.4L570.0 672.5L567.1 672.6L564.2 672.7L561.4 672.7L558.5 672.7L555.7 672.6L552.9 672.6L550.1 672.5L547.3 672.3L544.6 672.2L541.9 672.0L539.1 671.7L536.5 671.5L533.8 671.2L531.1 670.9L528.5 670.6L525.9 670.3L523.3 669.9L520.7 669.5L518.1 669.1L515.6 668.7L513.1 668.2L510.6 667.7L508.1 667.2L505.6 666.7L503.1 666.2L500.7 665.6L498.3 665.1L495.9 664.5L493.5 663.9L491.1 663.3L488.7 662.7L486.4 662.0L484.1 661.4L481.7 660.7L479.4 660.0L477.2 659.4L474.9 658.7L472.6 657.9L470.4 657.2L468.1 656.5L465.9 655.7L463.6 655.0L461.4 654.2L459.2 653.4L457.0 652.7L454.8 651.9L452.7 651.1L450.5 650.2L448.3 649.4L446.2 648.6L444.0 647.8L441.8 646.9" stroke="url(#cg-rosa)" stroke-width="92"/>
+    <radialGradient id="bgBase" cx="50%" cy="44%" r="70%">
+      <stop offset="0" stop-color="#F2E6CE"></stop>
+      <stop offset="0.58" stop-color="#E4D2B2"></stop>
+      <stop offset="1" stop-color="#D3BC96"></stop>
+    </radialGradient>
+    <linearGradient id="bgTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B89C6F" stop-opacity="0.32"></stop>
+      <stop offset="0.3" stop-color="#B89C6F" stop-opacity="0"></stop>
+    </linearGradient>
+    <linearGradient id="bgFloor" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#96794E" stop-opacity="0.34"></stop>
+      <stop offset="0.26" stop-color="#96794E" stop-opacity="0.06"></stop>
+      <stop offset="0.46" stop-color="#96794E" stop-opacity="0"></stop>
+    </linearGradient>
+
+    <linearGradient id="fgL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8DC9C"></stop>
+      <stop offset="1" stop-color="#D89B2A"></stop>
+    </linearGradient>
+    <linearGradient id="fgD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C1841D"></stop>
+      <stop offset="1" stop-color="#8C5B0F"></stop>
+    </linearGradient>
+    <linearGradient id="frL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2B4CC"></stop>
+      <stop offset="1" stop-color="#C55388"></stop>
+    </linearGradient>
+    <linearGradient id="frD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A93C6F"></stop>
+      <stop offset="1" stop-color="#77234B"></stop>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#E289AE"></stop>
+      <stop offset="0.6" stop-color="#C55388"></stop>
+      <stop offset="1" stop-color="#9E3467"></stop>
+    </linearGradient>
+    <linearGradient id="core" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#F4D07A"></stop>
+      <stop offset="0.5" stop-color="#DDA436"></stop>
+      <stop offset="1" stop-color="#BC821E"></stop>
+    </linearGradient>
+    <linearGradient id="nameBlue" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#24487F"></stop>
+      <stop offset="0.38" stop-color="#16305F"></stop>
+      <stop offset="0.68" stop-color="#0D1A4A"></stop>
+      <stop offset="1" stop-color="#071033"></stop>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="1.2" dy="2.2" stdDeviation="2.4" flood-color="#6D5119" flood-opacity="0.32"></feDropShadow>
+    </filter>
+
+    <g id="ribLongG"><rect x="110.1" y="20" width="1.9" height="50" fill="url(#fgL)"></rect><rect x="112" y="21.4" width="1.9" height="48.6" fill="url(#fgD)"></rect></g>
+    <g id="ribShortG"><rect x="110.1" y="38" width="1.9" height="32" fill="url(#fgL)"></rect><rect x="112" y="39.2" width="1.9" height="30.8" fill="url(#fgD)"></rect></g>
+    <g id="ribLongR"><rect x="110.1" y="20" width="1.9" height="50" fill="url(#frL)"></rect><rect x="112" y="21.4" width="1.9" height="48.6" fill="url(#frD)"></rect></g>
+    <g id="ribShortR"><rect x="110.1" y="38" width="1.9" height="32" fill="url(#frL)"></rect><rect x="112" y="39.2" width="1.9" height="30.8" fill="url(#frD)"></rect></g>
+
+    <g id="sun">
+      <circle cx="100" cy="100" r="96" fill="none" stroke="url(#ring)" stroke-width="1.4"></circle>
+      <g filter="url(#soft)">
+        <use href="#ribLongG"></use>
+        <use href="#ribShortG" transform="rotate(20 100 100)"></use>
+        <use href="#ribLongG" transform="rotate(40 100 100)"></use>
+        <use href="#ribShortG" transform="rotate(60 100 100)"></use>
+        <use href="#ribLongG" transform="rotate(80 100 100)"></use>
+        <use href="#ribShortG" transform="rotate(100 100 100)"></use>
+        <use href="#ribLongG" transform="rotate(120 100 100)"></use>
+        <use href="#ribShortG" transform="rotate(140 100 100)"></use>
+        <use href="#ribLongG" transform="rotate(160 100 100)"></use>
+        <use href="#ribShortR" transform="rotate(180 100 100)"></use>
+        <use href="#ribLongR" transform="rotate(200 100 100)"></use>
+        <use href="#ribShortR" transform="rotate(220 100 100)"></use>
+        <use href="#ribLongR" transform="rotate(240 100 100)"></use>
+        <use href="#ribShortR" transform="rotate(260 100 100)"></use>
+        <use href="#ribLongR" transform="rotate(280 100 100)"></use>
+        <use href="#ribShortR" transform="rotate(300 100 100)"></use>
+        <use href="#ribLongR" transform="rotate(320 100 100)"></use>
+        <use href="#ribShortR" transform="rotate(340 100 100)"></use>
+      </g>
+      <circle cx="100" cy="100" r="26" fill="url(#core)" filter="url(#soft)"></circle>
     </g>
-  </g>
-  <circle cx="500" cy="500" r="92" fill="url(#cg-luz)"/>
+  </defs>
+  <use href="#sun"></use>
 </svg>

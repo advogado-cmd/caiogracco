@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     'Dúvidas respondidas terapia por terapia: como funciona, se dói, se pode ser online, quantas sessões e as contraindicações de cada prática.',
   alternates: { canonical: '/perguntas-frequentes' },
-  openGraph: { url: `${site.url}/perguntas-frequentes`, title: 'Perguntas frequentes — Espaço da Completude' },
+  openGraph: { url: `${site.url}/perguntas-frequentes`, title: 'Perguntas frequentes — Terapias da Completude' },
 }
 
 export default function PaginaPerguntas() {
@@ -52,7 +52,7 @@ export default function PaginaPerguntas() {
       <Secao className="py-14 lg:py-20">
         <nav aria-label="Ir para uma terapia" className="flex flex-wrap gap-2">
           {terapias.map((t) => (
-            <a key={t.slug} href={`#faq-${t.slug}`} className="rounded-full border border-noite-100 bg-white px-4 py-2 text-[0.82rem] text-tinta-700 transition hover:border-ouro-400">
+            <a key={t.slug} href={`#faq-${t.slug}`} className="rounded-full border border-noite-100 bg-cartao px-4 py-2 text-[0.82rem] text-tinta-700 transition hover:border-ouro-400">
               {t.nomeCurto}
             </a>
           ))}

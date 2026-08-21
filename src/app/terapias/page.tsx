@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     'As oito terapias atendidas por Caio Gracco: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura, Auriculoterapia e Seitai.',
   alternates: { canonical: '/terapias' },
-  openGraph: { url: `${site.url}/terapias`, title: 'Terapias oferecidas no Espaço da Completude' },
+  openGraph: { url: `${site.url}/terapias`, title: 'Terapias oferecidas por Caio Gracco' },
 }
 
 export default function PaginaTerapias() {
@@ -27,7 +27,7 @@ export default function PaginaTerapias() {
           {
             '@context': 'https://schema.org',
             '@type': 'ItemList',
-            name: 'Terapias oferecidas no Espaço da Completude',
+            name: 'Terapias oferecidas por Caio Gracco',
             itemListElement: terapias.map((t, i) => ({
               '@type': 'ListItem',
               position: i + 1,
@@ -58,12 +58,12 @@ export default function PaginaTerapias() {
           ))}
         </div>
 
-        <div className="mt-14 overflow-x-auto rounded-2xl border border-noite-100 bg-white">
+        <div className="mt-14 overflow-x-auto rounded-2xl border border-noite-100 bg-cartao">
           <table className="w-full min-w-[46rem] text-left text-[0.9rem]">
             <caption className="sr-only">
               Comparativo das terapias: formato de atendimento, duração e ciclo sugerido
             </caption>
-            <thead className="bg-areia-100 text-[0.78rem] uppercase tracking-wider text-tinta-700">
+            <thead className="bg-areia-200/45 text-[0.78rem] uppercase tracking-wider text-tinta-700">
               <tr>
                 <th scope="col" className="px-5 py-3.5 font-semibold">Terapia</th>
                 <th scope="col" className="px-5 py-3.5 font-semibold">À distância</th>

@@ -1,38 +1,51 @@
 @import "tailwindcss";
 
 @theme {
-  /* ---- Paleta Espaço da Completude ---- */
-  --color-noite-900: #050f38;
-  --color-noite-800: #0b1a5c;
-  --color-noite-700: #122678;
-  --color-noite-600: #152e92;
-  --color-noite-500: #2440b4;
-  --color-noite-400: #4a63d0;
-  --color-noite-300: #8497e3;
-  --color-noite-200: #b9c4f0;
-  --color-noite-100: #e3e8fb;
+  /* =====================================================================
+     PALETA OFICIAL — Caio Gracco · Terapias da Completude
+     Tokens conforme o manual de marca. Os nomes históricos foram mantidos
+     para não quebrar as classes já espalhadas pelo site; o que mudou foram
+     os VALORES. Assim a troca alcança todas as páginas de uma só vez.
+     ===================================================================== */
 
-  --color-ouro-600: #9c5d08;
-  --color-ouro-500: #e8901f;
-  --color-ouro-400: #f8b740;
-  --color-ouro-300: #ffd98c;
-  --color-ouro-200: #ffe9bf;
+  /* --- Escala de azuis --- */
+  --color-noite-900: #071033;  /* rodapé                        */
+  --color-noite-800: #0d1a4a;  /* base da marca, topo e rodapé  */
+  --color-noite-700: #16305f;  /* seções cheias                 */
+  --color-noite-600: #24487f;  /* botões e links                */
+  --color-noite-500: #2c5596;
+  --color-noite-400: #4a72ab;  /* hover, ícones                 */
+  --color-noite-300: #7fa0cb;
+  --color-noite-200: #a6c2df;  /* bordas, gráficos              */
+  --color-noite-100: #dce8f5;  /* filetes suaves                */
 
-  --color-brasa-500: #f5451f;
-  --color-brasa-400: #f7663f;
-  --color-magenta-500: #d62b72;
-  --color-magenta-400: #e8558f;
-  --color-violeta-500: #8b4fb0;
-  --color-violeta-400: #b07fd0;
-  --color-agua-500: #217589;
-  --color-agua-400: #63bdd3;
+  /* --- Champagne e cartões --- */
+  --color-areia-50: #f7eedb;   /* CHAMPAGNE 100 · fundo padrão e texto sobre azul */
+  --color-areia-100: #eef4fa;  /* BLUE 50 · cards e faixas claras                 */
+  --color-areia-200: #e4d2b2;  /* CHAMPAGNE 300 · divisores                       */
+  --color-cartao: #eef4fa;     /* fundo de cartão                                 */
 
-  --color-areia-50: #fbf8f2;
-  --color-areia-100: #f4eee2;
-  --color-areia-200: #e6dcc8;
-  --color-tinta-900: #1a1d29;
-  --color-tinta-700: #3d4356;
-  --color-tinta-500: #6b7288;
+  /* --- Ouro: filetes, números e detalhes --- */
+  --color-ouro-600: #8c5c14;   /* texto sobre claro — escurecido para atingir 4.98:1 */
+  --color-ouro-500: #d89b2a;   /* GOLD 500 · acento nobre  */
+  --color-ouro-400: #d89b2a;   /* acento sobre azul        */
+  --color-ouro-300: #e8b65a;   /* realce e hover sobre azul */
+  --color-ouro-200: #e4d2b2;   /* tinta de fundo quente     */
+
+  /* --- Rosa: títulos de apoio e ícones --- */
+  --color-brasa-500: #a64375;  /* texto sobre claro — 4.95:1 */
+  --color-brasa-400: #e289ae;
+  --color-magenta-500: #b1477c; /* ROSE 600 · sobre champagne */
+  --color-magenta-400: #e289ae; /* ROSE 300 · sobre azul      */
+  --color-violeta-500: #b1477c;
+  --color-violeta-400: #e289ae;
+  --color-agua-500: #24487f;
+  --color-agua-400: #a6c2df;
+
+  /* --- Texto --- */
+  --color-tinta-900: #2e2a24;  /* INK · texto corrido    */
+  --color-tinta-700: #4c463d;  /* corpo de texto         */
+  --color-tinta-500: #5c554a;  /* apoio e legendas — 4.66:1 sobre champagne-300 */
 
   --font-display: var(--fonte-display), Georgia, 'Times New Roman', serif;
   --font-sans: var(--fonte-sans), ui-sans-serif, system-ui, sans-serif;
@@ -71,7 +84,7 @@ body {
 
 /* Foco visível e acessível em toda a interface */
 :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
-  outline: 3px solid var(--color-ouro-400);
+  outline: 3px solid var(--color-noite-600);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -79,14 +92,14 @@ body {
 /* Fundo noturno com auras — assinatura visual da marca */
 .aurora {
   background:
-    radial-gradient(58% 46% at 22% 24%, rgba(74, 99, 208, 0.55) 0%, transparent 62%),
-    radial-gradient(48% 42% at 80% 30%, rgba(139, 79, 176, 0.42) 0%, transparent 64%),
-    radial-gradient(60% 50% at 62% 82%, rgba(47, 156, 184, 0.28) 0%, transparent 66%),
-    linear-gradient(160deg, #0b1a5c 0%, #122678 46%, #081447 100%);
+    radial-gradient(62% 52% at 18% 18%, rgba(74, 114, 171, 0.30) 0%, transparent 64%),
+    radial-gradient(52% 46% at 82% 26%, rgba(177, 71, 124, 0.16) 0%, transparent 66%),
+    linear-gradient(162deg, #0d1a4a 0%, #16305f 52%, #0b1740 100%);
 }
 
+
 .texto-ouro {
-  background: linear-gradient(92deg, #ffd98c 0%, #f8b740 46%, #e8901f 100%);
+  background: linear-gradient(92deg, #f0c878 0%, #d89b2a 48%, #b4761a 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -94,7 +107,7 @@ body {
 
 .regua-ouro {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(248, 183, 64, 0.75), transparent);
+  background: linear-gradient(90deg, transparent, rgba(216, 155, 42, 0.8), transparent);
 }
 
 .prosa {
@@ -108,7 +121,7 @@ body {
 }
 .prosa strong { color: var(--color-tinta-900); font-weight: 600; }
 .prosa a { color: var(--color-noite-600); text-decoration: underline; text-underline-offset: 3px; }
-.prosa a:hover { color: var(--color-noite-500); }
+.prosa a:hover { color: var(--color-noite-400); }
 
 /* Impressão limpa */
 @media print {

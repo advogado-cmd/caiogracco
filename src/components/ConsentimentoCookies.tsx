@@ -54,7 +54,7 @@ export function ConsentimentoCookies() {
     id: string; ligado: boolean; aoMudar?: (v: boolean) => void
     titulo: string; texto: string; fixo?: boolean
   }) => (
-    <div className="flex items-start gap-4 rounded-xl border border-noite-100 bg-white p-4">
+    <div className="flex items-start gap-4 rounded-xl border border-noite-100 bg-cartao p-4">
       <input
         id={id}
         type="checkbox"
@@ -139,7 +139,7 @@ export function ConsentimentoCookies() {
                 Recusar todos
               </button>
               <button type="button" onClick={() => decidir({ analise: true, publicidade: true })}
-                className="rounded-xl bg-noite-800 px-5 py-3 text-[0.95rem] font-semibold text-areia-50 transition hover:bg-noite-700">
+                className="rounded-xl bg-noite-600 px-5 py-3 text-[0.95rem] font-semibold text-areia-50 transition hover:bg-noite-400">
                 Aceitar todos
               </button>
             </>
@@ -150,7 +150,7 @@ export function ConsentimentoCookies() {
                 Recusar todos
               </button>
               <button type="button" onClick={() => decidir({ analise, publicidade })}
-                className="rounded-xl bg-noite-800 px-5 py-3 text-[0.95rem] font-semibold text-areia-50 transition hover:bg-noite-700">
+                className="rounded-xl bg-noite-600 px-5 py-3 text-[0.95rem] font-semibold text-areia-50 transition hover:bg-noite-400">
                 Salvar minhas escolhas
               </button>
             </div>

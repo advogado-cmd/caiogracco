@@ -13,18 +13,18 @@ const ACENTOS: Record<Terapia['acento'], string> = {
 export function CartaoTerapia({ terapia, destaque = false }: { terapia: Terapia; destaque?: boolean }) {
   return (
     <article
-      className={`group relative flex flex-col overflow-hidden rounded-2xl border bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-noite-900/8 ${
+      className={`group relative flex flex-col overflow-hidden rounded-2xl border bg-cartao transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-noite-900/8 ${
         destaque ? 'border-ouro-300' : 'border-noite-100'
       }`}
     >
       <span className={`h-1 w-full bg-gradient-to-r ${ACENTOS[terapia.acento]}`} aria-hidden="true" />
       <div className="flex flex-1 flex-col p-6">
         <div className="flex items-start justify-between gap-3">
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
             <Icone nome={terapia.icone} tamanho={21} />
           </span>
           {terapia.sessao.distancia === 'sim' && (
-            <span className="rounded-full bg-agua-400/15 px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-wide text-agua-500">
+            <span className="rounded-full bg-noite-600/10 px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-wide text-noite-600">
               Online
             </span>
           )}

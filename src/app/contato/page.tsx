@@ -13,9 +13,9 @@ import { CTA } from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'Contato e agendamento',
-  description: `Agende com Caio Gracco pelo WhatsApp ${site.telefoneFormatado}. Espaço da Completude, ${site.endereco.rua}, ${site.endereco.cidade}/${site.endereco.estado}. Presencial e online.`,
+  description: `Agende com Caio Gracco pelo WhatsApp ${site.telefoneFormatado}. Terapias da Completude, ${site.endereco.rua}, ${site.endereco.cidade}/${site.endereco.estado}. Presencial e online.`,
   alternates: { canonical: '/contato' },
-  openGraph: { url: `${site.url}/contato`, title: 'Contato — Espaço da Completude' },
+  openGraph: { url: `${site.url}/contato`, title: 'Contato — Terapias da Completude' },
 }
 
 const mapa = `https://www.google.com/maps?q=${encodeURIComponent(
@@ -46,7 +46,7 @@ export default function PaginaContato() {
               href={whatsappLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-[#25D366] px-6 py-3.5 text-[0.95rem] font-semibold text-white transition hover:bg-[#1FBB59]"
+              className="rounded-full bg-[#0E7267] px-6 py-3.5 text-[0.95rem] font-semibold text-white transition hover:bg-[#0B5C53]"
             >
               WhatsApp {site.telefoneFormatado}
             </a>
@@ -66,13 +66,13 @@ export default function PaginaContato() {
         <div className="mt-16 grid gap-10 lg:grid-cols-[1fr_1fr]">
           <div>
             <h2 className="flex items-center gap-3 font-display text-2xl text-noite-800 sm:text-3xl">
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
                 <Icone nome="mapa" tamanho={21} />
               </span>
               Onde atendemos
             </h2>
 
-            <div className="mt-6 rounded-2xl border border-noite-100 bg-white p-6">
+            <div className="mt-6 rounded-2xl border border-noite-100 bg-cartao p-6">
               <h3 className="text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-ouro-600">Presencial</h3>
               <address className="mt-3 not-italic text-[0.98rem] leading-relaxed text-tinta-700">
                 {site.nome}
@@ -84,24 +84,24 @@ export default function PaginaContato() {
               <p className="mt-4 text-[0.88rem] text-tinta-500">{site.atendimento.horario}. Atendimento com hora marcada.</p>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {presencial.map((t) => (
-                  <li key={t.slug} className="rounded-full bg-areia-100 px-3 py-1.5 text-[0.78rem] text-tinta-700">{t.nomeCurto}</li>
+                  <li key={t.slug} className="rounded-full bg-areia-200/45 px-3 py-1.5 text-[0.78rem] text-tinta-700">{t.nomeCurto}</li>
                 ))}
               </ul>
             </div>
 
-            <div className="mt-6 rounded-2xl border border-noite-100 bg-white p-6">
+            <div className="mt-6 rounded-2xl border border-noite-100 bg-cartao p-6">
               <h3 className="text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-ouro-600">À distância</h3>
               <p className="mt-3 text-[0.98rem] leading-relaxed text-tinta-700">
                 Para todo o Brasil, nas práticas em que a tradição permite o atendimento remoto.
               </p>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {online.map((t) => (
-                  <li key={t.slug} className="rounded-full bg-agua-400/15 px-3 py-1.5 text-[0.78rem] text-agua-500">{t.nomeCurto}</li>
+                  <li key={t.slug} className="rounded-full bg-noite-600/10 px-3 py-1.5 text-[0.78rem] text-noite-600">{t.nomeCurto}</li>
                 ))}
               </ul>
             </div>
 
-            <div className="mt-6 rounded-2xl border border-noite-100 bg-white p-6">
+            <div className="mt-6 rounded-2xl border border-noite-100 bg-cartao p-6">
               <h3 className="text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-ouro-600">Nas redes</h3>
               <ul className="mt-4 flex gap-3">
                 {([
@@ -143,7 +143,7 @@ export default function PaginaContato() {
               />
             </div>
 
-            <div className="mt-8 rounded-2xl border border-ouro-300/70 bg-ouro-200/25 p-6">
+            <div className="mt-8 rounded-2xl border border-ouro-500/45 bg-areia-200/40 p-6">
               <h3 className="font-display text-lg text-noite-800">O que escrever na primeira mensagem</h3>
               <ul className="mt-3 flex flex-col gap-2 text-[0.92rem] leading-relaxed text-tinta-700">
                 <li>· O que está acontecendo, do seu jeito — sem precisar de termos técnicos.</li>
@@ -155,7 +155,7 @@ export default function PaginaContato() {
                 href={whatsappLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 block rounded-xl bg-noite-800 px-4 py-3 text-center text-[0.9rem] font-semibold text-areia-50 transition hover:bg-noite-700"
+                className="mt-5 block rounded-xl bg-noite-600 px-4 py-3 text-center text-[0.9rem] font-semibold text-areia-50 transition hover:bg-noite-400"
               >
                 Escrever agora
               </a>

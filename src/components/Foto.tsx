@@ -38,7 +38,7 @@ export function Foto({ numero, className = '', prioridade = false }: Props) {
       className={`${proporcao} flex w-full flex-col items-center justify-center gap-3 rounded-2xl border-2 border-dashed border-noite-200 bg-areia-100/70 p-6 text-center ${className}`}
       aria-label={`Espaço reservado para a foto ${String(numero).padStart(2, '0')}`}
     >
-      <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-ouro-600 shadow-sm">
+      <span className="flex h-12 w-12 items-center justify-center rounded-full bg-cartao text-ouro-600 shadow-sm">
         <Icone nome="foto" tamanho={22} />
       </span>
       <figcaption className="max-w-xs">

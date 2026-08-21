@@ -24,13 +24,13 @@ export function CTA({
 }: Props) {
   if (variante === 'discreto') {
     return (
-      <div className={`flex flex-col gap-3 rounded-2xl border border-ouro-300/70 bg-ouro-200/25 px-5 py-5 sm:flex-row sm:items-center sm:justify-between ${className}`}>
+      <div className={`flex flex-col gap-3 rounded-2xl border border-ouro-500/45 bg-areia-200/40 px-5 py-5 sm:flex-row sm:items-center sm:justify-between ${className}`}>
         <p className="text-[1rem] font-medium text-noite-800">{titulo}</p>
         <a
           href={whatsappLink(mensagem)}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex shrink-0 items-center justify-center gap-2 rounded-full bg-noite-800 px-5 py-3 text-[0.92rem] font-semibold text-areia-50 transition hover:bg-noite-700"
+          className="flex shrink-0 items-center justify-center gap-2 rounded-full bg-noite-600 px-5 py-3 text-[0.92rem] font-semibold text-areia-50 transition hover:bg-noite-400"
         >
           <Icone nome="whatsapp" tamanho={18} />
           {rotulo}
@@ -40,8 +40,8 @@ export function CTA({
   }
 
   return (
-    <div className={`rounded-3xl border border-ouro-300/70 bg-gradient-to-br from-ouro-200/50 to-areia-100 px-6 py-12 text-center sm:px-12 ${className}`}>
-      <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white text-ouro-600 shadow-sm">
+    <div className={`rounded-3xl border border-ouro-500/45 bg-gradient-to-br from-areia-200/55 to-areia-100 px-6 py-12 text-center sm:px-12 ${className}`}>
+      <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-cartao text-ouro-600 shadow-sm">
         <Icone nome="semente" tamanho={26} />
       </span>
       <h2 className="mt-5 font-display text-3xl text-noite-800 sm:text-4xl">{titulo}</h2>
@@ -50,7 +50,7 @@ export function CTA({
         href={whatsappLink(mensagem)}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-8 inline-flex items-center gap-2.5 rounded-full bg-noite-800 px-8 py-4 text-[1rem] font-semibold text-areia-50 transition hover:bg-noite-700"
+        className="mt-8 inline-flex items-center gap-2.5 rounded-full bg-noite-600 px-8 py-4 text-[1rem] font-semibold text-areia-50 transition hover:bg-noite-400"
       >
         <Icone nome="whatsapp" tamanho={20} />
         {rotulo}

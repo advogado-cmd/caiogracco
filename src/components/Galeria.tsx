@@ -37,7 +37,7 @@ export function Galeria() {
             <button
               type="button"
               onClick={() => setAberta(i)}
-              className="group relative block w-full overflow-hidden rounded-xl border border-noite-100 bg-white"
+              className="group relative block w-full overflow-hidden rounded-xl border border-noite-100 bg-cartao"
               aria-label={`Ampliar: ${g.legenda}`}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}

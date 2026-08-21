@@ -4,7 +4,7 @@ import Link from 'next/link'
 export function AvisoCuidado({ compacto = false }: { compacto?: boolean }) {
   return (
     <aside
-      className={`rounded-2xl border border-ouro-300/60 bg-ouro-200/25 ${compacto ? 'p-4' : 'p-5 sm:p-6'}`}
+      className={`rounded-2xl border border-ouro-500/45 bg-areia-200/40 ${compacto ? 'p-4' : 'p-5 sm:p-6'}`}
       aria-labelledby="aviso-titulo"
     >
       <p id="aviso-titulo" className="text-sm font-semibold tracking-wide text-noite-800">

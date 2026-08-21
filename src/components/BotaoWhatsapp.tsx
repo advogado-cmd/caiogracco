@@ -15,7 +15,7 @@ export function BotaoWhatsapp() {
         <div
           role="dialog"
           aria-label="Falar pelo WhatsApp"
-          className="w-[17.5rem] rounded-2xl border border-noite-200 bg-white p-4 shadow-2xl shadow-noite-900/20"
+          className="w-[17.5rem] rounded-2xl border border-noite-200 bg-cartao p-4 shadow-2xl shadow-noite-900/20"
         >
           <p className="font-display text-base text-noite-800">Vamos conversar?</p>
           <p className="mt-1.5 text-sm leading-relaxed text-tinta-700">
@@ -25,7 +25,7 @@ export function BotaoWhatsapp() {
             href={whatsappLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-[#128C7E] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0e7267]"
+            className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-[#0E7267] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0B5C53]"
           >
             Abrir o WhatsApp
           </a>
@@ -44,7 +44,7 @@ export function BotaoWhatsapp() {
           onClick={() => setAberto((v) => !v)}
           aria-expanded={aberto}
           aria-label={aberto ? 'Fechar contato por WhatsApp' : 'Abrir contato por WhatsApp'}
-          className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl shadow-[#25D366]/35 transition hover:scale-105 hover:bg-[#1FBB59] active:scale-95"
+          className="flex h-14 w-14 items-center justify-center rounded-full bg-[#128C7E] text-white shadow-xl shadow-[#128C7E]/35 transition hover:scale-105 hover:bg-[#0E7267] active:scale-95"
         >
           {aberto ? (
             <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2.2" aria-hidden="true">

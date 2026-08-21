@@ -40,7 +40,7 @@ export const espacosFoto: EspacoFoto[] = [
     alt: 'Turma de formatura do curso de Acupuntura do CEMETRAC, em 2011' },
   { numero: 6, local: 'Contato — o espaço', proporcao: '4/3', arquivo: null,
     descricao: 'Fachada ou entrada do espaço, para quem vai chegar de primeira viagem reconhecer.',
-    alt: 'Entrada do Espaço da Completude, em Santa Rosa de Viterbo' },
+    alt: 'Entrada do espaço de atendimento, em Santa Rosa de Viterbo' },
   { numero: 7, local: 'Terapia — Osatoshi', proporcao: '4/3', arquivo: '/fotos/07.webp',
     descricao: 'Momento de recolhimento no jardim, evocando o trabalho espiritual.',
     alt: 'Momento de recolhimento e silêncio, no jardim' },
