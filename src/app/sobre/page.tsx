@@ -9,6 +9,8 @@ import { schemaBreadcrumb, schemaPessoa } from '@/lib/estrutura'
 import { Foto } from '@/components/Foto'
 import { Icone } from '@/components/Icone'
 import { CTA } from '@/components/CTA'
+import { Galeria } from '@/components/Galeria'
+import { galeria, grande } from '@/content/galeria'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 
 export const metadata: Metadata = {
@@ -22,7 +24,25 @@ export const metadata: Metadata = {
 export default function PaginaSobre() {
   return (
     <>
-      <BarraCompartilhar titulo="Sobre Caio Gracco — Espaço da Completude" />
+      <BarraCompartilhar titulo="Sobre Caio Gracco — Caio Gracco" />
+      <JsonLd
+        dados={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'ImageGallery',
+            name: 'Formação e trajetória de Caio Gracco',
+            description:
+              'Registros dos cursos, formaturas e exames internacionais que compõem a formação de Caio Gracco em terapias integrativas.',
+            url: `${site.url}/sobre#galeria`,
+            image: galeria.map((g) => ({
+              '@type': 'ImageObject',
+              contentUrl: `${site.url}${grande(g.id)}`,
+              name: g.legenda,
+              description: `${g.contexto}${g.ano ? ` · ${g.ano}` : ''}`,
+            })),
+          },
+        ]}
+      />
       <JsonLd dados={[schemaPessoa(), schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Sobre', href: '/sobre' }])]} />
 
       <div className="aurora">
@@ -110,7 +130,25 @@ export default function PaginaSobre() {
               </ul>
             </section>
 
-            <section aria-labelledby="postura" className="mt-12">
+            <section id="galeria" aria-labelledby="galeria-titulo" className="mt-14 scroll-mt-24">
+              <h2 id="galeria-titulo" className="flex items-center gap-3 font-display text-2xl text-noite-800 sm:text-3xl">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-ouro-200/50 text-ouro-600">
+                  <Icone nome="foto" tamanho={21} />
+                </span>
+                Formação e trajetória
+              </h2>
+              <p className="mt-4 max-w-2xl text-[1.05rem] leading-relaxed text-tinta-700">
+                Décadas de estudo deixam rastro. Estas são imagens dos cursos, formaturas e exames
+                internacionais que sustentam o trabalho de hoje — do curso de Acupuntura do CEMETRAC
+                ao exame de proficiência da Federação Mundial das Sociedades de Medicina Chinesa.
+                Clique em qualquer foto para ampliar.
+              </p>
+              <div className="mt-8">
+                <Galeria />
+              </div>
+            </section>
+
+            <section aria-labelledby="postura" className="mt-14">
               <h2 id="postura" className="font-display text-2xl text-noite-800 sm:text-3xl">
                 Como este trabalho se apresenta
               </h2>

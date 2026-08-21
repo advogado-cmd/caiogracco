@@ -28,7 +28,7 @@ export default function PaginaContato() {
 
   return (
     <>
-      <BarraCompartilhar titulo="Contato — Espaço da Completude" />
+      <BarraCompartilhar titulo="Contato — Caio Gracco" />
       <JsonLd dados={[schemaNegocio(), schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Contato', href: '/contato' }])]} />
 
       <div className="aurora">

@@ -14,6 +14,7 @@ export const navPrincipal: ItemNav[] = [
 export const navDrawer: ItemNav[] = [
   { href: '/glossario', rotulo: 'Glossário', icone: 'livro', descricao: 'Os termos das tradições, explicados em linguagem simples' },
   { href: '/videos', rotulo: 'Vídeos', icone: 'video', descricao: 'O Caio explicando cada terapia, no canal do YouTube' },
+  { href: '/sobre#galeria', rotulo: 'Formação e trajetória', icone: 'foto', descricao: 'Cursos, formaturas e exames internacionais em imagens' },
   { href: '/perguntas-frequentes', rotulo: 'Perguntas Frequentes', icone: 'mente', descricao: 'Dúvidas respondidas, terapia por terapia' },
   { href: '/aviso-de-cuidado', rotulo: 'Aviso de cuidado', icone: 'escudo', descricao: 'O que estas práticas são e o que não são' },
 ]

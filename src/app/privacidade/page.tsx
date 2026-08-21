@@ -31,7 +31,7 @@ export default function PaginaPrivacidade() {
           },
         ]}
       />
-      <BarraCompartilhar titulo="Política de Privacidade — Espaço da Completude" />
+      <BarraCompartilhar titulo="Política de Privacidade — Caio Gracco" />
 
       <div className="aurora">
         <Secao className="pb-16 pt-14 lg:pb-20 lg:pt-20">

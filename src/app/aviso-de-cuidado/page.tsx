@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function PaginaAviso() {
   return (
     <>
-      <BarraCompartilhar titulo="Aviso de cuidado — Espaço da Completude" />
+      <BarraCompartilhar titulo="Aviso de cuidado — Caio Gracco" />
       <JsonLd dados={schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Aviso de cuidado', href: '/aviso-de-cuidado' }])} />
 
       <div className="aurora">

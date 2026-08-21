@@ -11,7 +11,7 @@ export function Logo({ variante = 'clara', compacta = false, className = '' }: P
     <Link
       href="/"
       className={`group flex items-center gap-3 ${className}`}
-      aria-label="Espaço da Completude — Caio Gracco, página inicial"
+      aria-label="Caio Gracco — Espaço da Completude, página inicial"
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
@@ -24,12 +24,12 @@ export function Logo({ variante = 'clara', compacta = false, className = '' }: P
       />
       <span className="flex flex-col leading-none">
         <span
-          className={`font-display ${compacta ? 'text-[0.95rem]' : 'text-[1.05rem]'} tracking-[0.2em] uppercase ${corNome}`}
+          className={`font-display ${compacta ? 'text-[1.15rem]' : 'text-[1.3rem]'} tracking-[0.24em] uppercase ${corNome}`}
         >
-          Espaço da Completude
-        </span>
-        <span className={`mt-1.5 text-[0.7rem] tracking-[0.42em] uppercase ${corSub}`}>
           Caio Gracco
+        </span>
+        <span className={`mt-1.5 text-[0.62rem] tracking-[0.26em] uppercase ${corSub}`}>
+          Espaço da Completude
         </span>
       </span>
     </Link>

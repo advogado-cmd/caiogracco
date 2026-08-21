@@ -21,12 +21,15 @@ function normalizarUrl(valor: string | undefined): string {
 }
 
 export const site = {
+  /** Nome de exibição do site: o terapeuta vem primeiro, o espaço em seguida. */
+  nomeSite: 'Caio Gracco',
+  /** Nome do espaço terapêutico — a entidade de negócio. */
   nome: 'Espaço da Completude',
   terapeuta: 'Caio Gracco',
   nomeCompleto: 'Caio Gracco de Freitas Araújo',
-  titulo: 'Espaço da Completude — Caio Gracco | Terapias Integrativas',
+  titulo: 'Caio Gracco — Espaço da Completude | Terapias Integrativas',
   descricao:
-    'Espaço da Completude, de Caio Gracco: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura, Auriculoterapia e Seitai. Atendimento online e presencial em Santa Rosa de Viterbo, SP.',
+    'Caio Gracco, do Espaço da Completude: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura, Auriculoterapia e Seitai. Atendimento online e presencial em Santa Rosa de Viterbo, SP.',
   url: normalizarUrl(process.env.NEXT_PUBLIC_SITE_URL),
   locale: 'pt_BR',
   telefone: '+5516992292629',

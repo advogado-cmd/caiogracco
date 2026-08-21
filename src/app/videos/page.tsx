@@ -20,7 +20,7 @@ export default function PaginaVideos() {
 
   return (
     <>
-      <BarraCompartilhar titulo="Vídeos de Caio Gracco — Espaço da Completude" />
+      <BarraCompartilhar titulo="Vídeos de Caio Gracco — Caio Gracco" />
       <JsonLd
         dados={[
           schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Vídeos', href: '/videos' }]),

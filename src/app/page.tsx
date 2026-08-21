@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <>
       <JsonLd dados={schemaFAQ(PERGUNTAS_GERAIS)} />
-      <BarraCompartilhar titulo="Espaço da Completude — Caio Gracco" />
+      <BarraCompartilhar titulo="Caio Gracco — Espaço da Completude" />
 
       {/* ---------- Abertura ---------- */}
       <div className="aurora relative">

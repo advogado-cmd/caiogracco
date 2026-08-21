@@ -57,7 +57,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
 
   return (
     <>
-      <BarraCompartilhar titulo={`${t.nome} — Espaço da Completude`} />
+      <BarraCompartilhar titulo={`${t.nome} — Caio Gracco`} />
       <JsonLd
         dados={[
           schemaServico(t),

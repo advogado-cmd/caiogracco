@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function PaginaTerapias() {
   return (
     <>
-      <BarraCompartilhar titulo="Terapias — Espaço da Completude" />
+      <BarraCompartilhar titulo="Terapias — Caio Gracco" />
       <JsonLd
         dados={[
           schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Terapias', href: '/terapias' }]),

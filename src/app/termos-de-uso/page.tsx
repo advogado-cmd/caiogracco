@@ -31,7 +31,7 @@ export default function PaginaTermos() {
           },
         ]}
       />
-      <BarraCompartilhar titulo="Termos de uso — Espaço da Completude" />
+      <BarraCompartilhar titulo="Termos de uso — Caio Gracco" />
 
       <div className="aurora">
         <Secao className="pb-16 pt-14 lg:pb-20 lg:pt-20">

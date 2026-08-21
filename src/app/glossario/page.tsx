@@ -50,7 +50,7 @@ export default function PaginaGlossario() {
 
   return (
     <>
-      <BarraCompartilhar titulo="Glossário — Espaço da Completude" />
+      <BarraCompartilhar titulo="Glossário — Caio Gracco" />
       <JsonLd
         dados={[
           schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Glossário', href: '/glossario' }]),
