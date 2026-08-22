@@ -15,7 +15,7 @@ import { galeria, grande } from '@/content/galeria'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 
 export const metadata: Metadata = {
-  title: 'Sobre Caio Gracco',
+  title: 'Quem é Caio Gracco',
   description:
     'Caio Gracco começou sua missão como terapeuta aos 14 anos. Atende online para todo o Brasil e presencialmente, com oito abordagens integrativas.',
   alternates: { canonical: '/sobre' },
@@ -51,10 +51,10 @@ export default function PaginaSobre() {
           <TituloSecao
             claro
             icone="coracao"
-            sobretitulo="Quem atende"
-            titulo="Caio Gracco"
+            sobretitulo="Quem eu sou"
+            titulo="Prazer, sou o Caio"
             nivel={1}
-            texto="“Comecei minha missão como terapeuta aos 14 anos de idade e venho me dedicando até hoje.”"
+            texto="Comecei minha missão como terapeuta aos 14 anos de idade e venho me dedicando até hoje."
           />
         </Secao>
       </div>
@@ -64,35 +64,34 @@ export default function PaginaSobre() {
           <div className="max-w-3xl">
             <div className="prosa">
               <p>
-                A caminhada de Caio Gracco começou cedo, aos 14 anos, quando o cuidado com o outro
-                deixou de ser curiosidade e virou vocação. De lá para cá, foram décadas de estudo e de
-                prática, passando por tradições muito diferentes entre si: o toque das terapias manuais
-                japonesas, os pontos da medicina chinesa, o trabalho energético contemporâneo e, mais
-                recentemente, o Osatoshi, a técnica japonesa transmitida pela Shinri, à qual ele hoje
-                mais se dedica.
+                Comecei cedo, aos 14 anos. Não foi uma escolha de carreira, foi uma coisa que se
+                impôs: o cuidado com o outro deixou de ser curiosidade e virou o que eu queria fazer
+                da vida. De lá para cá foram quase trinta anos passando por tradições bem diferentes
+                entre si, o toque das terapias manuais japonesas, os pontos da medicina chinesa, o
+                trabalho energético contemporâneo e, nos últimos anos, o Osatoshi, a prática
+                espiritual transmitida pela Shinri, à qual hoje me dedico mais.
               </p>
               <p>
-                A primeira formação é de 1997, em Reiki, quando ele tinha 16 anos. Depois vieram o
-                Shiatsu, em 2002, e o curso mais longo de todos: dois anos de Acupuntura Tradicional
-                Chinesa no CEMETRAC, em São Paulo, sob direção do Mestre Liu Chih Ming, com 1.206
-                horas de aula. Em 2011 prestou e foi aprovado no exame internacional de qualificação
-                em acupuntura da Federação Mundial das Sociedades de Medicina Chinesa. De lá para cá
-                não parou: craniopuntura de Yamamoto, acupuntura da língua, Seitai com o professor
-                Jóji Enómoto, mesmerismo, hipnose e, em 2026, o credenciamento nas quatro primeiras
-                fases do EMF Balancing Technique®. São dezessete formações guardadas em papel, e
-                todas estão logo abaixo, para quem quiser conferir.
+                Meu primeiro certificado é de 1997, em Reiki, quando eu tinha 16 anos. Depois veio o
+                Shiatsu, em 2002, e o curso mais longo que já fiz: dois anos de Acupuntura Tradicional
+                Chinesa no CEMETRAC, em São Paulo, com o Mestre Liu Chih Ming. Em 2011 prestei e passei
+                no exame internacional de qualificação em acupuntura da Federação Mundial das Sociedades
+                de Medicina Chinesa. Depois disso não parei mais: craniopuntura de Yamamoto, acupuntura
+                da língua, Seitai com o professor Jóji Enómoto, mesmerismo, hipnose e, em fevereiro
+                deste ano, o credenciamento nas quatro primeiras fases do EMF Balancing Technique®.
+                Guardei tudo, e deixei tudo aqui embaixo para quem quiser conferir.
               </p>
               <p>
-                O <strong>Terapias da Completude</strong> nasceu dessa reunião. O nome não é acidental:
-                a proposta é olhar a pessoa inteira (corpo, emoção, história e sentido) em vez de
-                atacar sintomas isolados. Em muitos atendimentos, mais de uma abordagem se combina, e
-                em alguns o caminho mais honesto é encaminhar para outro profissional. Essa honestidade
-                faz parte do trabalho.
+                O <strong>Terapias da Completude</strong> nasceu dessa reunião toda. O nome não é
+                acidental: eu quero olhar a pessoa inteira, corpo, emoção, história e sentido, em vez
+                de atacar sintoma isolado. Em muitos atendimentos mais de uma abordagem se combina. E
+                em alguns o caminho mais honesto é dizer que não sou eu, e indicar outro profissional.
+                Isso também faz parte do trabalho.
               </p>
               <p>
-                Boa parte do trabalho acontece à distância, com pessoas de todo o Brasil. O Osatoshi,
-                o EMF Balancing e o Reiki não pedem que você esteja na mesma sala. As terapias de toque
-                são atendidas presencialmente, no espaço do Caio. Quem chega costuma vir com
+                Boa parte do que faço acontece à distância, com pessoas de todo o Brasil. O Osatoshi,
+                o EMF Balancing e o Reiki não pedem que você esteja na mesma sala comigo. As terapias
+                de toque eu atendo presencialmente, no meu espaço. Quem me procura costuma chegar com
                 algo que se repete: uma dor que volta, um ciclo que não fecha, um cansaço que dormir
                 não resolve.
               </p>
@@ -100,11 +99,11 @@ export default function PaginaSobre() {
 
             <Foto numero={5} className="mt-10" />
 
-            <CTA variante="discreto" className="mt-10" titulo="Quer conversar com o Caio?" />
+            <CTA variante="discreto" className="mt-10" titulo="Quer conversar comigo?" />
 
             <section aria-labelledby="formacao" className="mt-12">
               <h2 id="formacao" className="font-display text-2xl text-noite-800 sm:text-3xl">
-                Formação e credenciamento
+                Onde estou credenciado
               </h2>
               <ul className="mt-5 flex flex-col gap-3">
                 {site.credenciais.map((c) => (
@@ -115,7 +114,7 @@ export default function PaginaSobre() {
                 ))}
               </ul>
               <p className="mt-4 text-[0.85rem] text-tinta-500">
-                O credenciamento em Osatoshi pode ser verificado na lista pública de terapeutas da{' '}
+                Meu credenciamento em Osatoshi pode ser conferido na lista pública de terapeutas da{' '}
                 <a href="https://www.osatoshi.com.br/terapeutas-credenciados" target="_blank" rel="noopener noreferrer nofollow" className="underline underline-offset-2">
                   Shinri do Brasil
                 </a>.
@@ -124,7 +123,7 @@ export default function PaginaSobre() {
 
             <section aria-labelledby="abordagens" className="mt-12">
               <h2 id="abordagens" className="font-display text-2xl text-noite-800 sm:text-3xl">
-                As abordagens que domina hoje
+                As abordagens que atendo hoje
               </h2>
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {terapias.map((t) => (
@@ -148,12 +147,14 @@ export default function PaginaSobre() {
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
                   <Icone nome="livro" tamanho={21} />
                 </span>
-                Onde ele estudou
+                Onde eu estudei
               </h2>
               <p className="mt-4 max-w-2xl text-[1.05rem] leading-relaxed text-tinta-700">
-                São {certificados.length} formações guardadas em papel, de 1997 até hoje, somando mais de{' '}
-                {horasFormacao.toLocaleString('pt-BR')} horas de curso entre as que declaram carga horária.
-                Toque em qualquer uma para ver o certificado inteiro.
+                Vinte e nove anos separam o meu primeiro certificado do último. O de 1997 é de Reiki,
+                feito aos 16 anos, numa época em que quase ninguém no interior falava disso. O mais
+                recente é de fevereiro deste ano. No meio couberam dois anos de acupuntura em São
+                Paulo, um exame internacional que prestei em 2011 e mestres japoneses que me ensinaram
+                o que a mão precisa saber. Guardei tudo, e está tudo aqui.
               </p>
 
               <dl className="mt-7 grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -176,8 +177,8 @@ export default function PaginaSobre() {
 
               <p className="mt-6 max-w-2xl text-[0.85rem] leading-relaxed text-tinta-500">
                 O exame da Federação Mundial das Sociedades de Medicina Chinesa é uma qualificação
-                internacional em acupuntura, prestada e aprovada em 2011. Não é registro profissional
-                brasileiro e não confere título de médico no Brasil.
+                internacional em acupuntura, que prestei e fui aprovado em 2011. Não é registro
+                profissional brasileiro e não me dá título de médico no Brasil.
               </p>
             </section>
 
@@ -189,7 +190,7 @@ export default function PaginaSobre() {
                 As turmas, as salas, os mestres
               </h2>
               <p className="mt-4 max-w-2xl text-[1.05rem] leading-relaxed text-tinta-700">
-                Formaturas, aulas e viagens de estudo. Clique em qualquer foto para ampliar.
+                Formaturas, aulas e as pessoas com quem estudei. Clique em qualquer foto para ampliar.
               </p>
               <div className="mt-8">
                 <Galeria />
@@ -240,7 +241,7 @@ export default function PaginaSobre() {
                   rel="noopener noreferrer"
                   className="mt-5 block rounded-xl bg-noite-600 px-4 py-3 text-center text-[0.9rem] font-semibold text-areia-50 transition hover:bg-noite-400"
                 >
-                  Falar com o Caio
+                  Falar comigo
                 </a>
               </div>
             </div>

@@ -38,16 +38,16 @@ const MOTIVOS: { icone: NomeIcone; titulo: string; texto: string }[] = [
 
 const ETAPAS: { icone: NomeIcone; titulo: string; texto: string }[] = [
   { icone: 'conversa', titulo: 'Você escreve', texto: 'Manda uma mensagem no WhatsApp contando, com suas palavras, o que está acontecendo.' },
-  { icone: 'coracao', titulo: 'Conversamos', texto: 'Caio ouve, tira dúvidas e indica qual abordagem faz sentido, ou se o caminho é outro.' },
+  { icone: 'coracao', titulo: 'Conversamos', texto: 'Eu escuto, tiro dúvidas e indico qual abordagem faz sentido, ou se o caminho é outro.' },
   { icone: 'relogio', titulo: 'Marcamos', texto: 'Online, de onde você estiver, ou presencial, conforme a terapia e a sua disponibilidade.' },
   { icone: 'folha', titulo: 'Seguimos juntos', texto: 'Algumas práticas pedem um ciclo. Você é orientado sobre o que esperar em cada etapa.' },
 ]
 
 const PERGUNTAS_GERAIS = [
-  { pergunta: 'Quem é Caio Gracco?', resposta: 'Caio Gracco é terapeuta integrativo. Começou sua caminhada como terapeuta aos 14 anos e hoje se dedica sobretudo ao Osatoshi, técnica japonesa da Shinri, além de EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Atende à distância, para todo o Brasil, e também presencialmente em seu espaço.' },
+  { pergunta: 'Quem é Caio Gracco?', resposta: 'Sou terapeuta integrativo. Comecei aos 14 anos e hoje me dedico sobretudo ao Osatoshi, técnica japonesa da Shinri, além de EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Atendo à distância, para todo o Brasil, e também presencialmente no meu espaço.' },
   { pergunta: 'Quais terapias Caio Gracco oferece?', resposta: 'Oito abordagens: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Massagem Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Osatoshi, EMF Balancing e Reiki podem ser feitos à distância; as demais são presenciais.' },
   { pergunta: 'O atendimento pode ser feito online?', resposta: 'Sim. Osatoshi, EMF Balancing Technique® e Reiki são atendidos à distância, para qualquer lugar do Brasil, porque a tradição permite. Já as terapias manuais (Shiatsu, Seitai, Acupuntura e Auriculoterapia) dependem do toque e por isso são presenciais.' },
-  { pergunta: 'Como escolher a terapia certa para o meu caso?', resposta: 'Não é preciso escolher sozinho. Escreva contando o que está acontecendo e o Caio indica o caminho que faz mais sentido, inclusive dizendo quando o melhor caminho é outro profissional, e não uma sessão.' },
+  { pergunta: 'Como escolher a terapia certa para o meu caso?', resposta: 'Não é preciso escolher sozinho. Escreva contando o que está acontecendo e eu indico o caminho que faz mais sentido, inclusive quando esse caminho é outro profissional, e não uma sessão.' },
   { pergunta: 'Essas terapias substituem tratamento médico?', resposta: 'Não, em nenhuma hipótese. São práticas complementares de bem-estar. Não substituem diagnóstico, medicação, cirurgia, psicoterapia ou acompanhamento psiquiátrico, e nenhum tratamento em curso deve ser interrompido por causa delas.' },
   { pergunta: 'Onde Caio Gracco atende?', resposta: `As terapias à distância (Osatoshi, EMF Balancing Technique® e Reiki) atendem todo o Brasil, por WhatsApp ou chamada de vídeo. As presenciais acontecem no espaço do Caio, na ${site.endereco.rua}, ${site.endereco.bairro}, ${site.endereco.cidade}/${site.endereco.estado}, CEP ${site.endereco.cep}, sempre com hora marcada.` },
 ]
@@ -157,7 +157,7 @@ export default function Home() {
             icone="estrela"
             sobretitulo="O trabalho principal"
             titulo="Osatoshi, e o que mais tem sido pedido hoje"
-            texto="Três abordagens concentram a maior parte dos atendimentos. O Osatoshi, técnica japonesa da Shinri, é o trabalho ao qual Caio mais tem se dedicado."
+            texto="Três abordagens concentram a maior parte dos meus atendimentos. O Osatoshi, técnica japonesa da Shinri, é o trabalho ao qual mais tenho me dedicado."
           />
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {terapiasDestaque.map((t) => (
@@ -210,9 +210,9 @@ export default function Home() {
         <Secao>
           <TituloSecao
             icone="conversa"
-            sobretitulo="Quem já passou por aqui"
-            titulo="O que chega depois"
-            texto="Mensagens de pessoas atendidas, do jeito que elas escreveram."
+            sobretitulo="Depoimentos"
+            titulo="Elas voltaram para contar"
+            texto="Não pedi nada disso. São mensagens que chegaram no meu WhatsApp depois do atendimento, e que eu guardei. Estão aqui como vieram, sem retoque."
           />
           <Depoimentos className="mt-10" />
         </Secao>
@@ -237,7 +237,7 @@ export default function Home() {
           <TituloSecao
             icone="video"
             sobretitulo="No canal"
-            titulo="O Caio explicando, com as próprias palavras"
+            titulo="Eu explicando, com as minhas palavras"
             texto="Conversas curtas sobre carmas, proteção, como funciona o Osatoshi e o que esperar de cada terapia."
           />
           <div className="mt-10">
@@ -294,7 +294,7 @@ export default function Home() {
           <Foto numero={3} larguras="(min-width: 1152px) 1152px, 100vw" />
           <CTA
             titulo="Se você chegou até aqui, já deu o primeiro passo"
-            texto="Escreva sem compromisso. Contar o que está acontecendo já é parte do processo, e o Caio responde pessoalmente."
+            texto="Escreva sem compromisso. Contar o que está acontecendo já é parte do processo, e quem responde sou eu."
           />
         </div>
       </Secao>

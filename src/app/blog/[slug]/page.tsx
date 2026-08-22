@@ -115,7 +115,7 @@ export default async function PaginaArtigo({ params }: { params: Promise<{ slug:
               variante="discreto"
               className="mt-12"
               titulo="Quer conversar sobre o seu caso?"
-              rotulo="Falar com o Caio"
+              rotulo="Falar comigo"
               mensagem={`Olá, Caio! Li o texto "${artigo.tituloCurto ?? artigo.titulo}" no site e gostaria de conversar.`}
             />
 

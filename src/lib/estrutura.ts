@@ -87,7 +87,6 @@ export function schemaPessoa() {
       credentialCategory: 'Certificado de curso',
       dateCreated: String(c.ano),
       recognizedBy: { '@type': 'Organization', name: c.instituicao },
-      ...(c.horas ? { educationalLevel: `${c.horas} horas` } : {}),
     })),
     address: enderecoSchema,
     knowsAbout: [

@@ -36,7 +36,7 @@ export function BotaoWhatsapp() {
       <div className="flex items-center gap-2">
         {!aberto && (
           <span className="hidden rounded-full bg-noite-800/95 px-3.5 py-2 text-xs font-medium text-areia-100 shadow-lg sm:block">
-            Fale com o Caio
+            Fale comigo
           </span>
         )}
         <button

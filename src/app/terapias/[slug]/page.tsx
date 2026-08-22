@@ -56,7 +56,7 @@ const FORMATO: Record<string, string> = {
 const ALCANCE: Record<string, string> = {
   sim: 'Todo o Brasil, à distância',
   parcial: 'Todo o Brasil na avaliação inicial',
-  nao: 'No espaço do Caio, com hora marcada',
+  nao: 'No meu espaço, com hora marcada',
 }
 
 export default async function PaginaTerapia({ params }: { params: Promise<{ slug: string }> }) {
@@ -220,10 +220,10 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
             {relatos.length > 0 && (
               <section aria-labelledby="relatos" className="mt-14">
                 <h2 id="relatos" className="font-display text-2xl text-noite-800 sm:text-3xl">
-                  O que chega depois
+                  Elas voltaram para contar
                 </h2>
                 <p className="mt-3 max-w-2xl text-[1rem] leading-relaxed text-tinta-700">
-                  Mensagens de pessoas atendidas, do jeito que elas escreveram.
+                  Mensagens que chegaram depois do atendimento, do jeito que vieram.
                 </p>
                 <Depoimentos lista={relatos} className="mt-8" />
               </section>

@@ -11,6 +11,11 @@ const grande = (a: string) => `/certificados/${a}.webp`
  * Formação em dois registros ao mesmo tempo: a lista, que é o que se lê, e os
  * certificados, que são o que se confere. Clicar em um deles abre o documento
  * inteiro, navegável pelo teclado.
+ *
+ * A carga horária de cada curso não aparece na lista de propósito. Alguns são
+ * de dois dias e outros de dois anos, e pôr o número ao lado de cada um faz o
+ * curto parecer pequeno em vez de complementar. O total continua no resumo,
+ * onde ele diz o que de fato importa: o tanto de estudo acumulado.
  */
 export function Certificados() {
   const [aberto, setAberto] = useState<number | null>(null)
@@ -69,14 +74,7 @@ export function Certificados() {
               />
 
               <span className="min-w-0 flex-1">
-                <span className="flex items-baseline gap-2.5">
-                  <span className="font-display text-[1.5rem] leading-none text-ouro-600">{c.ano}</span>
-                  {c.horas ? (
-                    <span className="text-[0.72rem] font-semibold uppercase tracking-wide text-tinta-500">
-                      {c.horas.toLocaleString('pt-BR')} horas
-                    </span>
-                  ) : null}
-                </span>
+                <span className="font-display text-[1.5rem] leading-none text-ouro-600">{c.ano}</span>
                 <span className="mt-1.5 block font-display text-[1.1rem] leading-snug text-noite-800">
                   {c.titulo}
                 </span>
@@ -154,7 +152,6 @@ export function Certificados() {
             <p className="mt-1 text-[0.9rem] text-noite-200">
               {item.instituicao}
               {item.data ? `, ${item.data}` : `, ${item.ano}`}
-              {item.horas ? `, ${item.horas.toLocaleString('pt-BR')} horas` : ''}
             </p>
           </div>
         </div>

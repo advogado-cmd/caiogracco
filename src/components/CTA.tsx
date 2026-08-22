@@ -16,7 +16,7 @@ type Props = {
  */
 export function CTA({
   titulo = 'Quero iniciar minha terapia agora',
-  texto = 'Escreva contando o que está acontecendo. O Caio responde pessoalmente, sem compromisso de agendamento.',
+  texto = 'Escreva contando o que está acontecendo. Eu respondo pessoalmente, sem compromisso de agendamento.',
   rotulo = 'Quero iniciar minha terapia agora',
   mensagem,
   variante = 'faixa',

@@ -99,6 +99,10 @@ export function Rodape() {
           </div>
         </div>
 
+        <p className="mt-12 text-center font-display text-3xl italic leading-tight text-ouro-400 sm:text-4xl">
+          Muito, Muito Agradecido Sempre!
+        </p>
+
         <div className="regua-ouro my-9" />
 
         <div className="flex flex-col gap-3 text-[0.78rem] text-noite-300 sm:flex-row sm:items-center sm:justify-between">
