@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   keywords: [
     'Osatoshi', 'EMF Balancing Technique', 'Elementoterapia Magnética', 'Reiki', 'Shiatsu',
     'Acupuntura sistêmica', 'Auriculoterapia', 'Seitai', 'terapia integrativa',
-    'terapeuta holístico', 'Santa Rosa de Viterbo', 'terapia online', 'Caio Gracco',
+    'terapeuta holístico', 'terapia online', 'terapia à distância Brasil', 'Caio Gracco',
   ],
   alternates: { canonical: '/' },
   openGraph: {

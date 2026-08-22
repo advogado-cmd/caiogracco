@@ -29,7 +29,7 @@ const grupo1: Terapia[] = [
       'O Osatoshi é uma prática espiritual e religiosa. Não existem estudos científicos revisados por pares que comprovem seus efeitos, e ele não deve ser apresentado nem compreendido como tratamento de saúde.',
     sessao: {
       duracao: 'Varia conforme o atendimento',
-      formato: 'Presencial em Santa Rosa de Viterbo ou à distância, com nome completo, data e local de nascimento e a descrição de até três questões principais.',
+      formato: 'À distância, para qualquer lugar do Brasil, ou presencial — com nome completo, data e local de nascimento e a descrição de até três questões principais.',
       sensacao: 'Por ser um trabalho espiritual, a vivência relatada é sobretudo subjetiva: sensação de alívio, leveza, clareza e desanuviamento nos dias seguintes.',
       frequencia: 'A tradição recomenda um ciclo de três atendimentos, com cerca de uma semana de intervalo entre eles.',
       distancia: 'sim',

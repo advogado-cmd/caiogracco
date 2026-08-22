@@ -18,9 +18,9 @@ import { construirIndice } from '@/lib/busca'
 import { schemaFAQ } from '@/lib/estrutura'
 
 export const metadata: Metadata = {
-  title: 'Terapias Integrativas em Santa Rosa de Viterbo, SP',
+  title: 'Terapias Integrativas com Caio Gracco — online para todo o Brasil',
   description:
-    'Osatoshi, EMF Balancing Technique®, Reiki, Shiatsu e mais cinco terapias com Caio Gracco. Atendimento presencial em Santa Rosa de Viterbo (SP) e online.',
+    'Osatoshi, EMF Balancing Technique®, Reiki, Shiatsu e mais quatro terapias com Caio Gracco. Atendimento online para todo o Brasil e presencial, com hora marcada.',
   alternates: { canonical: '/' },
 }
 
@@ -36,17 +36,17 @@ const MOTIVOS: { icone: NomeIcone; titulo: string; texto: string }[] = [
 const ETAPAS: { icone: NomeIcone; titulo: string; texto: string }[] = [
   { icone: 'conversa', titulo: 'Você escreve', texto: 'Manda uma mensagem no WhatsApp contando, com suas palavras, o que está acontecendo.' },
   { icone: 'coracao', titulo: 'Conversamos', texto: 'Caio ouve, tira dúvidas e indica qual abordagem faz sentido — ou se o caminho é outro.' },
-  { icone: 'relogio', titulo: 'Marcamos', texto: 'Presencial em Santa Rosa de Viterbo ou online, conforme a terapia e a sua disponibilidade.' },
+  { icone: 'relogio', titulo: 'Marcamos', texto: 'Online, de onde você estiver, ou presencial — conforme a terapia e a sua disponibilidade.' },
   { icone: 'folha', titulo: 'Seguimos juntos', texto: 'Algumas práticas pedem um ciclo. Você é orientado sobre o que esperar em cada etapa.' },
 ]
 
 const PERGUNTAS_GERAIS = [
-  { pergunta: 'Quem é Caio Gracco?', resposta: 'Caio Gracco é terapeuta integrativo em Santa Rosa de Viterbo, interior de São Paulo. Começou sua caminhada como terapeuta aos 14 anos e hoje se dedica sobretudo ao Osatoshi, técnica japonesa da Shinri, além de EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Atende em seu espaço, no centro da cidade, e também à distância.' },
+  { pergunta: 'Quem é Caio Gracco?', resposta: 'Caio Gracco é terapeuta integrativo. Começou sua caminhada como terapeuta aos 14 anos e hoje se dedica sobretudo ao Osatoshi, técnica japonesa da Shinri, além de EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Atende à distância, para todo o Brasil, e também presencialmente em seu espaço.' },
   { pergunta: 'Quais terapias Caio Gracco oferece?', resposta: 'Oito abordagens: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Massagem Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Osatoshi, EMF Balancing e Reiki podem ser feitos à distância; as demais são presenciais.' },
-  { pergunta: 'O atendimento pode ser feito online?', resposta: 'Sim, para as práticas que a tradição permite à distância — Osatoshi, EMF Balancing Technique® e Reiki. As terapias manuais (Shiatsu, Seitai, Acupuntura e Auriculoterapia) exigem presença física em Santa Rosa de Viterbo.' },
+  { pergunta: 'O atendimento pode ser feito online?', resposta: 'Sim. Osatoshi, EMF Balancing Technique® e Reiki são atendidos à distância, para qualquer lugar do Brasil — a tradição permite. Já as terapias manuais (Shiatsu, Seitai, Acupuntura e Auriculoterapia) dependem do toque e por isso são presenciais.' },
   { pergunta: 'Como escolher a terapia certa para o meu caso?', resposta: 'Não é preciso escolher sozinho. Escreva contando o que está acontecendo e o Caio indica o caminho que faz mais sentido — inclusive dizendo quando o melhor caminho é outro profissional, e não uma sessão.' },
   { pergunta: 'Essas terapias substituem tratamento médico?', resposta: 'Não, em nenhuma hipótese. São práticas complementares de bem-estar. Não substituem diagnóstico, medicação, cirurgia, psicoterapia ou acompanhamento psiquiátrico, e nenhum tratamento em curso deve ser interrompido por causa delas.' },
-  { pergunta: 'Onde Caio Gracco atende?', resposta: `Na ${site.endereco.rua}, ${site.endereco.bairro}, ${site.endereco.cidade}/${site.endereco.estado}, CEP ${site.endereco.cep}. O atendimento é feito com hora marcada.` },
+  { pergunta: 'Onde Caio Gracco atende?', resposta: `As terapias à distância — Osatoshi, EMF Balancing Technique® e Reiki — atendem todo o Brasil, por WhatsApp ou chamada de vídeo. As presenciais acontecem no espaço do Caio, na ${site.endereco.rua}, ${site.endereco.bairro}, ${site.endereco.cidade}/${site.endereco.estado}, CEP ${site.endereco.cep}, sempre com hora marcada.` },
 ]
 
 export default function Home() {
@@ -62,7 +62,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-28 lg:pt-24">
           <div>
             <p className="text-[0.75rem] font-semibold uppercase tracking-[0.28em] text-ouro-400">
-              Terapias integrativas · Santa Rosa de Viterbo, SP
+              Terapias integrativas · online para todo o Brasil
             </p>
             <h1 className="mt-5 font-display text-4xl leading-[1.1] text-areia-50 sm:text-5xl lg:text-[3.5rem]">
               Um lugar para você <span className="texto-ouro">voltar a ser inteiro</span>.
@@ -174,7 +174,7 @@ export default function Home() {
           texto="Cada tradição olha para a pessoa de um ângulo diferente. Em muitos casos, elas se combinam."
         />
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {terapias.filter((t) => !t.destaque).map((t) => (
+          {terapias.map((t) => (
             <CartaoTerapia key={t.slug} terapia={t} />
           ))}
         </div>

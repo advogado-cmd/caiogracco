@@ -40,7 +40,7 @@ export const espacosFoto: EspacoFoto[] = [
     alt: 'Turma de formatura do curso de Acupuntura do CEMETRAC, em 2011' },
   { numero: 6, local: 'Contato — o espaço', proporcao: '4/3', arquivo: null,
     descricao: 'Fachada ou entrada do espaço, para quem vai chegar de primeira viagem reconhecer.',
-    alt: 'Entrada do espaço de atendimento, em Santa Rosa de Viterbo' },
+    alt: 'Entrada do espaço de atendimento de Caio Gracco' },
   { numero: 7, local: 'Terapia — Osatoshi', proporcao: '4/3', arquivo: '/fotos/07.webp',
     descricao: 'Momento de recolhimento no jardim, evocando o trabalho espiritual.',
     alt: 'Momento de recolhimento e silêncio, no jardim' },
@@ -59,12 +59,12 @@ export const espacosFoto: EspacoFoto[] = [
   { numero: 12, local: 'Terapia — Acupuntura Sistêmica', proporcao: '4/3', arquivo: '/fotos/12.webp',
     descricao: 'Agulhas aplicadas, enquadramento respeitoso e limpo.',
     alt: 'Turma brasileira no exame internacional da Federação Mundial das Sociedades de Medicina Chinesa' },
-  { numero: 13, local: 'Terapia — Auriculoterapia', proporcao: '4/3', arquivo: null,
+  { numero: 13, local: 'Terapia — Auriculoterapia', proporcao: '4/3', arquivo: '/fotos/13.webp',
     descricao: 'Detalhe da orelha com sementes ou esferas aplicadas.',
-    alt: 'Aplicação de auriculoterapia' },
-  { numero: 14, local: 'Terapia — Seitai', proporcao: '4/3', arquivo: null,
+    alt: 'Detalhe de uma orelha com os pontos da auriculoterapia mapeados em espiral' },
+  { numero: 14, local: 'Terapia — Seitai', proporcao: '4/3', arquivo: '/fotos/14.webp',
     descricao: 'Manobra manual em maca, mostrando o toque e o alinhamento.',
-    alt: 'Sessão de Seitai' },
+    alt: 'Mãos aplicando pressão firme sobre as costas de uma pessoa deitada, em sessão de terapia manual' },
 ]
 
 export function getFoto(numero: number) {

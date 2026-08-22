@@ -26,8 +26,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const t = getTerapia(slug)
   if (!t) return {}
   const titulo = `${t.nomeCurto} — o que é e como funciona`
-  const onde = t.sessao.distancia === 'sim' ? 'Santa Rosa de Viterbo (SP) e online' : 'Santa Rosa de Viterbo (SP)'
-  const descricao = `${t.nome}: ${t.tagline.toLowerCase()}. ${t.resumo.split('. ')[0]}. Com Caio Gracco, em ${onde}.`
+  const onde = t.sessao.distancia === 'sim' ? 'online, para todo o Brasil' : 'presencialmente, com hora marcada'
+  const descricao = `${t.nome}: ${t.tagline.toLowerCase()}. ${t.resumo.split('. ')[0]}. Com Caio Gracco, ${onde}.`
   return {
     title: titulo,
     description: descricao.length > 158 ? `${descricao.slice(0, 155).trimEnd()}…` : descricao,
@@ -46,6 +46,13 @@ const FORMATO: Record<string, string> = {
   sim: 'Presencial e à distância',
   parcial: 'Presencial (avaliação inicial pode ser online)',
   nao: 'Somente presencial',
+}
+
+/** Alcance da prática. As que a tradição permite à distância atendem o país inteiro. */
+const ALCANCE: Record<string, string> = {
+  sim: 'Todo o Brasil, à distância',
+  parcial: 'Todo o Brasil na avaliação inicial',
+  nao: 'No espaço do Caio, com hora marcada',
 }
 
 export default async function PaginaTerapia({ params }: { params: Promise<{ slug: string }> }) {
@@ -95,7 +102,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
               ['Formato', FORMATO[t.sessao.distancia]],
               ['Duração', t.sessao.duracao],
               ['Ciclo sugerido', t.sessao.frequencia],
-              ['Onde', `${site.endereco.cidade}/${site.endereco.estado}`],
+              ['Onde', ALCANCE[t.sessao.distancia]],
             ].map(([rotulo, valor]) => (
               <div key={rotulo} className="rounded-2xl border border-noite-400/30 bg-noite-900/25 p-4">
                 <dt className="text-[0.7rem] font-semibold uppercase tracking-wider text-ouro-400">{rotulo}</dt>

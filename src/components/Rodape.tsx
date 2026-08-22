@@ -20,7 +20,7 @@ export function Rodape() {
             </p>
             <p className="mt-1.5 text-[0.68rem] uppercase tracking-[0.26em] text-ouro-400">Terapias da Completude</p>
             <p className="mt-4 max-w-xs text-[0.86rem] leading-relaxed text-noite-200">
-              Cuidado integrativo em Santa Rosa de Viterbo e, à distância, para todo o Brasil.
+              Cuidado integrativo à distância, para todo o Brasil — e presencial, com hora marcada.
             </p>
           </div>
 

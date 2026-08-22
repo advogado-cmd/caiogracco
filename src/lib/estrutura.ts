@@ -28,9 +28,9 @@ export function schemaNegocio() {
     address: enderecoSchema,
     geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
     areaServed: [
-      { '@type': 'City', name: 'Santa Rosa de Viterbo' },
-      { '@type': 'State', name: 'São Paulo' },
       { '@type': 'Country', name: 'Brasil' },
+      { '@type': 'State', name: 'São Paulo' },
+      { '@type': 'City', name: 'Santa Rosa de Viterbo' },
     ],
     availableService: [
       { '@type': 'Service', name: 'Atendimento presencial' },
@@ -65,7 +65,7 @@ export function schemaPessoa() {
     alternateName: site.nomeCompleto,
     jobTitle: 'Terapeuta integrativo',
     description:
-      'Caio Gracco é terapeuta integrativo em Santa Rosa de Viterbo (SP). Iniciou sua trajetória aos 14 anos e hoje se dedica sobretudo ao Osatoshi, técnica japonesa da Shinri, além de EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai.',
+      'Caio Gracco é terapeuta integrativo, com atendimento à distância para todo o Brasil e presencial no interior de São Paulo. Iniciou sua trajetória aos 14 anos e hoje se dedica sobretudo ao Osatoshi, técnica japonesa da Shinri, além de EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai.',
     url: `${site.url}/sobre`,
     image: {
       '@type': 'ImageObject',

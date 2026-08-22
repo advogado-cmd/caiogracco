@@ -15,7 +15,7 @@ import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 export const metadata: Metadata = {
   title: 'Sobre Caio Gracco',
   description:
-    'Caio Gracco começou sua missão como terapeuta aos 14 anos. Atende em Santa Rosa de Viterbo (SP), com oito abordagens integrativas.',
+    'Caio Gracco começou sua missão como terapeuta aos 14 anos. Atende online para todo o Brasil e presencialmente, com oito abordagens integrativas.',
   alternates: { canonical: '/sobre' },
   openGraph: { url: `${site.url}/sobre`, title: 'Sobre Caio Gracco — Terapias da Completude', type: 'profile' },
 }
@@ -77,8 +77,9 @@ export default function PaginaSobre() {
                 faz parte do trabalho.
               </p>
               <p>
-                O atendimento acontece em Santa Rosa de Viterbo, no interior paulista, e também à
-                distância — para as práticas em que a tradição permite. Quem chega costuma vir com
+                Boa parte do trabalho acontece à distância, com pessoas de todo o Brasil — o Osatoshi,
+                o EMF Balancing e o Reiki não pedem que você esteja na mesma sala. As terapias de toque
+                são atendidas presencialmente, no espaço do Caio. Quem chega costuma vir com
                 algo que se repete: uma dor que volta, um ciclo que não fecha, um cansaço que dormir
                 não resolve.
               </p>
@@ -181,8 +182,8 @@ export default function PaginaSobre() {
                 <p className="font-display text-lg text-noite-800">{site.nomeCompleto}</p>
                 <p className="mt-1 text-[0.9rem] text-tinta-500">Terapeuta integrativo</p>
                 <dl className="mt-4 flex flex-col gap-2 text-[0.86rem] text-tinta-700">
-                  <div><dt className="inline font-medium">Onde: </dt><dd className="inline">{site.endereco.cidade}/{site.endereco.estado}</dd></div>
-                  <div><dt className="inline font-medium">Atende: </dt><dd className="inline">presencial e online</dd></div>
+                  <div><dt className="inline font-medium">Onde: </dt><dd className="inline">todo o Brasil, à distância</dd></div>
+                  <div><dt className="inline font-medium">Atende: </dt><dd className="inline">online e presencial</dd></div>
                   <div><dt className="inline font-medium">Instagram: </dt><dd className="inline">{site.redes.instagramHandle}</dd></div>
                 </dl>
                 <a

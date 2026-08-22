@@ -31,7 +31,7 @@ export function GET() {
   linhas.push(`- E-mail: ${site.email}`)
   linhas.push(`- Site: ${site.url}`)
   linhas.push(`- Instagram: ${site.redes.instagramHandle}`)
-  linhas.push(`- Formatos de atendimento: presencial em ${site.endereco.cidade} e à distância, conforme a prática`)
+  linhas.push('- Alcance: atendimento à distância para todo o Brasil (Osatoshi, EMF Balancing Technique® e Reiki) e presencial para as terapias de toque')
   linhas.push('')
   linhas.push('## Aviso importante')
   linhas.push(

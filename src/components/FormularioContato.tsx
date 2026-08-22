@@ -116,7 +116,7 @@ export function FormularioContato() {
           <select id="formato" name="formato" value={formato}
             onChange={(e) => setFormato(e.target.value)} className={campo}>
             <option>Ainda não sei</option>
-            <option>Presencial, em Santa Rosa de Viterbo</option>
+            <option>Presencial, no espaço do Caio</option>
             <option>À distância (online)</option>
           </select>
         </div>
