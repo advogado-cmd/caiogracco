@@ -10,15 +10,18 @@ import { Icone, type NomeIcone } from '@/components/Icone'
 import { Foto } from '@/components/Foto'
 import { CTA } from '@/components/CTA'
 import { SecaoVideos } from '@/components/SecaoVideos'
+import { SecaoBlog } from '@/components/SecaoBlog'
 import { Carrossel } from '@/components/Carrossel'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { terapias, terapiasDestaque } from '@/content/terapias'
 import { site, whatsappLink } from '@/content/site'
-import { construirIndice } from '@/lib/busca'
+import { construirIndice } from '@/lib/indice'
 import { schemaFAQ } from '@/lib/estrutura'
 
 export const metadata: Metadata = {
-  title: 'Terapias Integrativas com Caio Gracco — online para todo o Brasil',
+  // Título da aba do navegador, pedido pelo cliente. As palavras-chave ficam no H1
+  // e na descrição — o Google usa os dois para montar o resultado de busca.
+  title: 'Caio Gracco - Terapias da Completude',
   description:
     'Osatoshi, EMF Balancing Technique®, Reiki, Shiatsu e mais quatro terapias com Caio Gracco. Atendimento online para todo o Brasil e presencial, com hora marcada.',
   alternates: { canonical: '/' },
@@ -202,6 +205,19 @@ export default function Home() {
           </div>
         </Secao>
       </div>
+
+      {/* ---------- Blog ---------- */}
+      <Secao className="py-16 lg:py-24">
+        <TituloSecao
+          icone="artigo"
+          sobretitulo="Do blog"
+          titulo="As leituras que mais têm ajudado quem chega aqui"
+          texto="Textos sobre o que se repete na família, a dor que os exames não explicam, o dinheiro que não para na mão e o que cada prática faz — e o que não faz."
+        />
+        <div className="mt-10">
+          <SecaoBlog />
+        </div>
+      </Secao>
 
       {/* ---------- Vídeos ---------- */}
       <div className="border-y border-areia-200 bg-areia-200/25 py-16 lg:py-24">

@@ -27,7 +27,7 @@ export const site = {
   nome: 'Terapias da Completude',
   terapeuta: 'Caio Gracco',
   nomeCompleto: 'Caio Gracco de Freitas Araújo',
-  titulo: 'Caio Gracco — Terapias da Completude | Terapias Integrativas',
+  titulo: 'Caio Gracco - Terapias da Completude',
   descricao:
     'Caio Gracco, das Terapias da Completude: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura, Auriculoterapia e Seitai. Atendimento online para todo o Brasil e presencial, com hora marcada.',
   url: normalizarUrl(process.env.NEXT_PUBLIC_SITE_URL),

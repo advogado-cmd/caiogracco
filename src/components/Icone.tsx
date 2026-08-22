@@ -4,7 +4,7 @@ export type NomeIcone =
   | 'osatoshi' | 'emf' | 'elementoterapia' | 'reiki' | 'shiatsu'
   | 'acupuntura' | 'auriculoterapia' | 'seitai'
   | 'bussola' | 'coracao' | 'mente' | 'casa' | 'trabalho' | 'semente'
-  | 'sol' | 'onda' | 'maos' | 'livro' | 'video' | 'conversa' | 'mapa'
+  | 'sol' | 'onda' | 'maos' | 'livro' | 'artigo' | 'video' | 'conversa' | 'mapa'
   | 'escudo' | 'relogio' | 'estrela' | 'folha' | 'instagram' | 'youtube'
   | 'facebook' | 'whatsapp' | 'compartilhar' | 'link' | 'menu' | 'fechar'
   | 'seta' | 'foto' | 'email' | 'telefone'
@@ -30,6 +30,7 @@ const CAMINHOS: Record<NomeIcone, React.ReactNode> = {
   sol: <><circle cx="12" cy="12" r="4" /><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4" /></>,
   onda: <><path d="M3 9c2-2 4-2 6 0s4 2 6 0 4-2 6 0M3 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0" /></>,
   maos: <><path d="M7 13V7.5a1.5 1.5 0 0 1 3 0V12M10 12V6a1.5 1.5 0 0 1 3 0v6M13 12V7.5a1.5 1.5 0 0 1 3 0V15c0 3-2.2 5.5-5.5 5.5S5 18 5 15v-2.5a1.5 1.5 0 0 1 2-1.4" /></>,
+  artigo: <><path d="M5 4.5h11l3 3V19a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19z" /><path d="M15.5 4.5V8h3.2" /><path d="M8.5 12h7M8.5 15.5h7M8.5 8.5h3.5" /></>,
   livro: <><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5z" /><path d="M4 5.5v15M19 18v3H6.5" /></>,
   video: <><rect x="3" y="5.5" width="18" height="13" rx="2.5" /><path d="M10.5 9.5l4.5 2.5-4.5 2.5z" /></>,
   conversa: <><path d="M20 12.5c0 3.6-3.6 6.5-8 6.5-1 0-2-.15-2.9-.42L4 20.5l1.4-3.6C4.5 15.7 4 14.2 4 12.5 4 8.9 7.6 6 12 6s8 2.9 8 6.5z" /></>,

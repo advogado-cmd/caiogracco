@@ -45,8 +45,11 @@ export function BarraCompartilhar({ titulo, className = '' }: Props) {
         aria-label="Compartilhar esta página"
         className={`sem-impressao fixed left-4 top-1/2 z-30 hidden -translate-y-1/2 flex-col items-center gap-2 xl:flex ${className}`}
       >
-        <span className="mb-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-tinta-500">
-          Compartilhar
+        {/* O rótulo escrito transbordava a coluna e cobria o texto da página.
+            Os botões já se identificam por title e aria-label. */}
+        <span className="sr-only">Compartilhar</span>
+        <span aria-hidden="true" className="mb-1 flex h-9 w-9 items-center justify-center rounded-full border border-noite-200 bg-cartao text-tinta-500 shadow-sm">
+          <Icone nome="compartilhar" tamanho={16} />
         </span>
         {opcoes.map((o) => (
           <a

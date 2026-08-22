@@ -19,6 +19,7 @@ const CORES: Record<Documento['tipo'], string> = {
   'Glossário': 'bg-violeta-400/20 text-violeta-500',
   'Página': 'bg-agua-400/20 text-agua-500',
   'Vídeo': 'bg-brasa-400/20 text-brasa-500',
+  Artigo: 'bg-magenta-400/20 text-magenta-500',
 }
 
 export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; variante?: 'clara' | 'escura' }) {

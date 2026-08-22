@@ -6,6 +6,7 @@ export type ItemNav = { href: string; rotulo: string; icone: NomeIcone; descrica
 export const navPrincipal: ItemNav[] = [
   { href: '/', rotulo: 'Início', icone: 'sol' },
   { href: '/terapias', rotulo: 'Terapias', icone: 'folha' },
+  { href: '/blog', rotulo: 'Blog', icone: 'artigo' },
   { href: '/sobre', rotulo: 'Sobre o Caio', icone: 'coracao' },
   { href: '/contato', rotulo: 'Contato', icone: 'conversa' },
 ]
@@ -24,5 +25,7 @@ export const navLegal: ItemNav[] = [
   { href: '/privacidade', rotulo: 'Privacidade e LGPD', icone: 'escudo' },
 ]
 
-/** Tudo junto, para o rodapé e o mapa do site. */
-export const navegacao = [...navPrincipal, ...navDrawer]
+/** Tudo junto, para o rodapé e o mapa do site — sem repetir o que aparece nos dois grupos. */
+export const navegacao = [...navPrincipal, ...navDrawer].filter(
+  (item, i, lista) => lista.findIndex((x) => x.href === item.href) === i,
+)

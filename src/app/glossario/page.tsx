@@ -4,22 +4,24 @@ import { Secao, TituloSecao } from '@/components/Secao'
 import { BuscaIA } from '@/components/BuscaIA'
 import { JsonLd } from '@/components/JsonLd'
 import { terapias } from '@/content/terapias'
-import { construirIndice, slugificar, normalizar } from '@/lib/busca'
+import { construirIndice } from '@/lib/indice'
+import { slugificar, normalizar } from '@/lib/busca'
 import { schemaBreadcrumb } from '@/lib/estrutura'
 import { site } from '@/content/site'
 import type { Termo } from '@/content/tipos'
+import { glossarioExtra } from '@/content/glossario-extra'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { CTA } from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'Glossário das terapias integrativas',
   description:
-    'Os termos das terapias explicados em linguagem simples: Osatoshi, Shinri, Omamori, Ki, Qi, meridianos, tsubo, hara, De Qi, Taiheki, Katsugen Undo, UCL e outros.',
+    'Os termos das terapias integrativas explicados em linguagem simples: Osatoshi, Shinri, Ki, Qi, meridianos, carma, egrégora, PNPIC, PICS e as 29 práticas integrativas do SUS.',
   alternates: { canonical: '/glossario' },
   openGraph: { url: `${site.url}/glossario`, title: 'Glossário das terapias integrativas' },
 }
 
-type Verbete = Termo & { terapiaNome: string; terapiaSlug: string }
+type Verbete = Termo & { terapiaNome?: string; terapiaSlug?: string; grupo?: string }
 
 function montarVerbetes(): Verbete[] {
   const mapa = new Map<string, Verbete>()
@@ -31,6 +33,13 @@ function montarVerbetes(): Verbete[] {
       }
     }
   }
+  // Verbetes do campo mais amplo — as práticas da PNPIC e o vocabulário das tradições.
+  // Não sobrescrevem os termos das terapias atendidas aqui, que têm precedência.
+  for (const extra of glossarioExtra) {
+    const chave = normalizar(extra.termo)
+    if (!mapa.has(chave)) mapa.set(chave, extra)
+  }
+
   return [...mapa.values()].sort((a, b) =>
     normalizar(a.termo).localeCompare(normalizar(b.termo), 'pt-BR'),
   )
@@ -79,7 +88,7 @@ export default function PaginaGlossario() {
             sobretitulo="Glossário"
             titulo="As palavras destas tradições, sem mistério"
             nivel={1}
-            texto="Cada prática traz seu vocabulário — em japonês, em chinês, em inglês. Aqui estão todos os termos usados no site, explicados em uma ou duas frases."
+            texto="Cada tradição traz seu vocabulário — em japonês, em chinês, em sânscrito, em inglês. Aqui estão os termos usados no site e também os do campo mais amplo das práticas integrativas, incluindo as 29 reconhecidas pelo Ministério da Saúde. Cada um explicado em uma ou duas frases."
           />
           <div className="mt-8 max-w-xl">
             <BuscaIA indice={indice} variante="escura" />
@@ -110,11 +119,21 @@ export default function PaginaGlossario() {
                   <div key={v.termo} id={slugificar(v.termo)} className="scroll-mt-24 rounded-2xl border border-noite-100 bg-cartao p-5">
                     <dt className="font-display text-lg text-noite-800">{v.termo}</dt>
                     <dd className="mt-2 text-[0.92rem] leading-relaxed text-tinta-700">{v.definicao}</dd>
-                    <dd className="mt-3">
-                      <Link href={`/terapias/${v.terapiaSlug}`} className="text-[0.78rem] font-medium uppercase tracking-wide text-ouro-600 underline underline-offset-4">
-                        {v.terapiaNome}
-                      </Link>
-                    </dd>
+                    {v.terapiaSlug && v.terapiaNome ? (
+                      <dd className="mt-3">
+                        <Link href={`/terapias/${v.terapiaSlug}`} className="text-[0.78rem] font-medium uppercase tracking-wide text-ouro-600 underline underline-offset-4">
+                          {v.terapiaNome}
+                        </Link>
+                      </dd>
+                    ) : (
+                      <dd className="mt-3 text-[0.72rem] font-medium uppercase tracking-wide text-tinta-500">
+                        {v.grupo === 'pnpic'
+                          ? 'Práticas integrativas no SUS'
+                          : v.grupo === 'institucional'
+                            ? 'Como o campo se organiza'
+                            : 'Vocabulário das tradições'}
+                      </dd>
+                    )}
                   </div>
                 ))}
               </dl>

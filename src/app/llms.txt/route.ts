@@ -1,5 +1,6 @@
 import { terapias } from '@/content/terapias'
 import { site, ehProducao } from '@/content/site'
+import { todosArtigos, CATEGORIAS } from '@/lib/blog'
 
 export const dynamic = 'force-static'
 
@@ -59,6 +60,18 @@ export function GET() {
     linhas.push('')
   }
 
+  linhas.push('## Blog')
+  linhas.push(`Artigos assinados por ${site.terapeuta}. Índice em ${site.url}/blog · RSS em ${site.url}/blog/rss.xml`)
+  linhas.push('')
+  for (const a of todosArtigos()) {
+    linhas.push(`### ${a.titulo}`)
+    linhas.push(`- URL: ${site.url}/blog/${a.slug}`)
+    linhas.push(`- Categoria: ${CATEGORIAS[a.categoria].nome}`)
+    linhas.push(`- Publicado em: ${a.publicadoEm}`)
+    linhas.push(`- Resumo: ${a.resumo}`)
+    linhas.push('')
+  }
+
   linhas.push('## Páginas')
   linhas.push(`- Início: ${site.url}/`)
   linhas.push(`- Todas as terapias: ${site.url}/terapias`)
@@ -66,6 +79,7 @@ export function GET() {
   linhas.push(`- Glossário: ${site.url}/glossario`)
   linhas.push(`- Perguntas frequentes: ${site.url}/perguntas-frequentes`)
   linhas.push(`- Vídeos: ${site.url}/videos`)
+  linhas.push(`- Blog: ${site.url}/blog`)
   linhas.push(`- Contato e agendamento: ${site.url}/contato`)
   linhas.push(`- Aviso de cuidado: ${site.url}/aviso-de-cuidado`)
   linhas.push(`- Privacidade (LGPD): ${site.url}/privacidade`)

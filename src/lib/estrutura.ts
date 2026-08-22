@@ -161,3 +161,65 @@ export function schemaDefinicao(termo: string, definicao: string) {
     inDefinedTermSet: { '@type': 'DefinedTermSet', name: 'Glossário de Terapias Integrativas', url: `${site.url}/glossario` },
   }
 }
+
+/**
+ * Artigo do blog. Reúne autoria, datas e o vínculo com a entidade do espaço —
+ * é o que permite ao Google e aos motores de resposta atribuírem o texto a
+ * uma pessoa real, com formação declarada, e não a um site anônimo.
+ */
+export function schemaArtigo(artigo: {
+  titulo: string
+  descricao: string
+  slug: string
+  publicadoEm: string
+  atualizadoEm?: string
+  palavrasChave: string[]
+  minutos: number
+  categoria: string
+}) {
+  const url = `${site.url}/blog/${artigo.slug}`
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': `${url}#artigo`,
+    headline: artigo.titulo.slice(0, 110),
+    description: artigo.descricao,
+    url,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    datePublished: artigo.publicadoEm,
+    dateModified: artigo.atualizadoEm ?? artigo.publicadoEm,
+    inLanguage: 'pt-BR',
+    articleSection: artigo.categoria,
+    keywords: artigo.palavrasChave.join(', '),
+    timeRequired: `PT${artigo.minutos}M`,
+    author: { '@id': `${site.url}/#caio` },
+    publisher: { '@id': `${site.url}/#espaco` },
+    image: `${site.url}/og.png`,
+    isAccessibleForFree: true,
+  }
+}
+
+/** O blog como coleção — ajuda o rastreamento a entender a hierarquia das páginas. */
+export function schemaBlog(artigos: { titulo: string; slug: string; publicadoEm: string; resumo: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    '@id': `${site.url}/blog#blog`,
+    name: `Blog — ${site.nome}`,
+    description:
+      'Textos de Caio Gracco sobre carma, trauma, prosperidade, limpeza espiritual e as oito práticas que ele atende.',
+    url: `${site.url}/blog`,
+    inLanguage: 'pt-BR',
+    publisher: { '@id': `${site.url}/#espaco` },
+    author: { '@id': `${site.url}/#caio` },
+    blogPost: artigos.map((a) => ({
+      '@type': 'BlogPosting',
+      '@id': `${site.url}/blog/${a.slug}#artigo`,
+      headline: a.titulo.slice(0, 110),
+      description: a.resumo,
+      url: `${site.url}/blog/${a.slug}`,
+      datePublished: a.publicadoEm,
+      author: { '@id': `${site.url}/#caio` },
+    })),
+  }
+}

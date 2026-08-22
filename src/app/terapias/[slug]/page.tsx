@@ -13,6 +13,8 @@ import { Icone } from '@/components/Icone'
 import { Foto } from '@/components/Foto'
 import { CTA } from '@/components/CTA'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
+import { CartaoArtigo } from '@/components/CartaoArtigo'
+import { artigosDaTerapia } from '@/lib/blog'
 import { fotoPorTerapia } from '@/content/fotos'
 
 export const dynamicParams = false
@@ -59,6 +61,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
   const { slug } = await params
   const t = getTerapia(slug)
   if (!t) notFound()
+  const leituras = artigosDaTerapia(t.slug, 3)
 
   const outras = terapias.filter((o) => o.slug !== t.slug).slice(0, 3)
 
@@ -210,6 +213,22 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
             <div className="mt-12">
               <Perguntas perguntas={t.faq} titulo={`Perguntas sobre ${t.nomeCurto}`} />
             </div>
+
+            {leituras.length > 0 && (
+              <section aria-labelledby="leituras" className="mt-14">
+                <h2 id="leituras" className="font-display text-2xl text-noite-800 sm:text-3xl">
+                  Para ler sobre {t.nomeCurto}
+                </h2>
+                <p className="mt-3 max-w-2xl text-[1rem] leading-relaxed text-tinta-700">
+                  Textos que aprofundam o que esta página resume.
+                </p>
+                <div className="mt-7 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {leituras.map((a) => (
+                    <CartaoArtigo key={a.slug} artigo={a} compacto />
+                  ))}
+                </div>
+              </section>
+            )}
 
             <section aria-labelledby="termos" className="mt-12">
               <h2 id="termos" className="font-display text-2xl text-noite-800 sm:text-3xl">
