@@ -14,6 +14,8 @@ import { Foto } from '@/components/Foto'
 import { CTA } from '@/components/CTA'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { CartaoArtigo } from '@/components/CartaoArtigo'
+import { Depoimentos } from '@/components/Depoimentos'
+import { depoimentosDaTerapia } from '@/content/depoimentos'
 import { artigosDaTerapia } from '@/lib/blog'
 import { fotoPorTerapia } from '@/content/fotos'
 
@@ -62,6 +64,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
   const t = getTerapia(slug)
   if (!t) notFound()
   const leituras = artigosDaTerapia(t.slug, 3)
+  const relatos = depoimentosDaTerapia(t.slug)
 
   const outras = terapias.filter((o) => o.slug !== t.slug).slice(0, 3)
 
@@ -213,6 +216,18 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
             <div className="mt-12">
               <Perguntas perguntas={t.faq} titulo={`Perguntas sobre ${t.nomeCurto}`} />
             </div>
+
+            {relatos.length > 0 && (
+              <section aria-labelledby="relatos" className="mt-14">
+                <h2 id="relatos" className="font-display text-2xl text-noite-800 sm:text-3xl">
+                  O que chega depois
+                </h2>
+                <p className="mt-3 max-w-2xl text-[1rem] leading-relaxed text-tinta-700">
+                  Mensagens de pessoas atendidas, do jeito que elas escreveram.
+                </p>
+                <Depoimentos lista={relatos} className="mt-8" />
+              </section>
+            )}
 
             {leituras.length > 0 && (
               <section aria-labelledby="leituras" className="mt-14">

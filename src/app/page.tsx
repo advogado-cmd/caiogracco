@@ -11,6 +11,7 @@ import { Foto } from '@/components/Foto'
 import { CTA } from '@/components/CTA'
 import { SecaoVideos } from '@/components/SecaoVideos'
 import { SecaoBlog } from '@/components/SecaoBlog'
+import { Depoimentos } from '@/components/Depoimentos'
 import { Carrossel } from '@/components/Carrossel'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { terapias, terapiasDestaque } from '@/content/terapias'
@@ -201,6 +202,19 @@ export default function Home() {
           <div className="mt-10">
             <Carrossel />
           </div>
+        </Secao>
+      </div>
+
+      {/* ---------- Depoimentos ---------- */}
+      <div className="border-y border-areia-200 bg-areia-200/25 py-16 lg:py-24">
+        <Secao>
+          <TituloSecao
+            icone="conversa"
+            sobretitulo="Quem já passou por aqui"
+            titulo="O que chega depois"
+            texto="Mensagens de pessoas atendidas, do jeito que elas escreveram."
+          />
+          <Depoimentos className="mt-10" />
         </Secao>
       </div>
 
