@@ -16,7 +16,9 @@ import type { NomeIcone } from '@/components/Icone'
  * estruturados se atualizam sozinhos na próxima build.
  */
 
-export type CategoriaBlog = 'osatoshi' | 'relacionamentos' | 'corpo' | 'espiritual' | 'praticas' | 'orientacao'
+export type CategoriaBlog =
+  | 'osatoshi' | 'relacionamentos' | 'familia' | 'convivencia' | 'prosperidade'
+  | 'corpo' | 'espiritual' | 'praticas' | 'orientacao'
 
 export type MetaArtigo = {
   titulo: string
@@ -59,6 +61,27 @@ export const CATEGORIAS: Record<CategoriaBlog, { nome: string; slug: string; des
     descricao:
       'O que se repete no amor, o vínculo que não se desfaz, o casamento que esfriou e o ciúme que não passa.',
     icone: 'coracao',
+  },
+  familia: {
+    nome: 'Família e filhos',
+    slug: 'familia-e-filhos',
+    descricao:
+      'A relação com a mãe e com o pai, os filhos, os irmãos, a casa em conflito e o que atravessa gerações sem ninguém falar.',
+    icone: 'familia',
+  },
+  convivencia: {
+    nome: 'Amizades e convivência',
+    slug: 'amizades-e-convivencia',
+    descricao:
+      'Amizades que acabam, gente que drena, inveja, ambiente de trabalho pesado e a solidão que aparece mesmo cercado de gente.',
+    icone: 'amizade',
+  },
+  prosperidade: {
+    nome: 'Dinheiro e prosperidade',
+    slug: 'dinheiro-e-prosperidade',
+    descricao:
+      'O dinheiro que não para na mão, o trabalho que não deslancha, a herança de escassez que veio de casa e o que fazer em cada camada disso.',
+    icone: 'moeda',
   },
   corpo: {
     nome: 'Corpo e sintomas',

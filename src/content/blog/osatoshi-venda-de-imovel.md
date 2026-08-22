@@ -31,7 +31,7 @@
     },
     {
       "pergunta": "Preciso ser o dono do imóvel para pedir?",
-      "resposta": "O trabalho é pedido por quem tem a relação com o imóvel — proprietário, herdeiro, quem está conduzindo a venda. Os dados essenciais são o endereço completo, a função do lugar, há quanto tempo está à venda e o histórico do que se sabe sobre ele."
+      "resposta": "O trabalho é pedido por quem tem a relação com o imóvel: proprietário, herdeiro, quem está conduzindo a venda. Os dados essenciais são o endereço completo, a função do lugar, há quanto tempo está à venda e o histórico do que se sabe sobre ele."
     },
     {
       "pergunta": "Casa onde alguém morreu vende pior?",
@@ -43,31 +43,31 @@
 
 O imóvel está anunciado há oito meses. Você já baixou o preço uma vez, já trocou de imobiliária, já ouviu do corretor que "o mercado está parado", e começa a desconfiar que tem alguma coisa ali que não é de ordem prática. É nesse ponto que muita gente digita "simpatia para vender imóvel" ou "limpeza espiritual para vender casa" no Google e chega em textos que prometem resultado em sete dias.
 
-Este texto vai fazer o contrário. **Nenhum trabalho espiritual vende imóvel, e quem promete venda está prometendo o que não pode entregar.** Antes de considerar qualquer coisa desse tipo, existe uma lista concreta e razoavelmente curta de motivos pelos quais imóveis ficam parados — e ela explica a maioria esmagadora dos casos. Vale passar por ela primeiro, honestamente, item por item.
+Este texto vai fazer o contrário. **Nenhum trabalho espiritual vende imóvel, e quem promete venda está prometendo o que não pode entregar.** Antes de considerar qualquer coisa desse tipo, existe uma lista concreta e razoavelmente curta de motivos pelos quais imóveis ficam parados, e ela explica a maioria esmagadora dos casos. Passe por ela primeiro, item por item.
 
 ## O que checar antes de qualquer leitura espiritual
 
-**Preço.** É a causa número um, e não fica nem perto da segunda. Existe um teste simples: se o imóvel recebe visitas e não recebe propostas, o preço está acima do que aquele mercado aceita. Se recebe propostas e você recusa todas por estarem "muito abaixo", talvez o mercado esteja lhe dizendo qual é o valor real. Compare com imóveis efetivamente vendidos na região nos últimos meses — não com o que os vizinhos estão pedindo. Preço de anúncio é desejo; preço de escritura é mercado.
+**Preço.** É a causa número um, e não fica nem perto da segunda. Existe um teste simples: se o imóvel recebe visitas e não recebe propostas, o preço está acima do que aquele mercado aceita. Se recebe propostas e você recusa todas por estarem "muito abaixo", talvez o mercado esteja lhe dizendo qual é o valor real. Compare com imóveis efetivamente vendidos na região nos últimos meses, não com o que os vizinhos estão pedindo. Preço de anúncio é desejo; preço de escritura é mercado.
 
 **As fotos e o anúncio.** Se o imóvel nem recebe visitas, o problema quase sempre está aqui. Foto escura, tirada na vertical, com a cama desfeita e a bagunça na bancada. Anúncio sem metragem clara, sem planta, sem informação sobre condomínio e IPTU. Poucos canais de divulgação. Imóvel bem fotografado, com luz natural, ambientes vazios e organizados, recebe uma quantidade de visitas incomparável ao mesmo imóvel mal fotografado.
 
-**Documentação.** Averbação pendente, construção não regularizada, inventário não concluído, dívida de condomínio, pendência de IPTU, matrícula desatualizada. Comprador que precisa de financiamento simplesmente não consegue avançar, e o negócio morre na análise do banco sem que ninguém explique direito o motivo. Vale levar a matrícula a um profissional antes de anunciar, não depois de oito meses parado.
+**Documentação.** Averbação pendente, construção não regularizada, inventário não concluído, dívida de condomínio, pendência de IPTU, matrícula desatualizada. Comprador que precisa de financiamento simplesmente não consegue avançar, e o negócio morre na análise do banco sem que ninguém explique direito o motivo. Leve a matrícula a um profissional antes de anunciar, não depois de oito meses parado.
 
-**O corretor.** Nem todo corretor atende bem todo tipo de imóvel. Alguém especializado em lançamentos pode não ter carteira para uma casa antiga em bairro consolidado. Vale perguntar quantas visitas foram agendadas no último mês, de onde vieram os contatos e o que os visitantes disseram. Se ninguém sabe responder isso, o problema não é espiritual.
+**O corretor.** Nem todo corretor atende bem todo tipo de imóvel. Alguém especializado em lançamentos pode não ter carteira para uma casa antiga em bairro consolidado. Pergunte quantas visitas foram agendadas no último mês, de onde vieram os contatos e o que os visitantes disseram. Se ninguém sabe responder isso, o problema não é espiritual.
 
 **O estado do imóvel.** Reforma que assusta é um dos maiores travadores de venda. Comprador olha infiltração, fiação aparente e piso quebrado e mentalmente soma um valor sempre maior do que o custo real. Muitas vezes vale mais fazer um reparo básico e pintar do que baixar o preço.
 
 :::destaque
-Essa ordem é o que dá credibilidade ao assunto. Preço, anúncio, documentação, corretor e estado do imóvel explicam a imensa maioria das vendas travadas — e todos são verificáveis. O trabalho espiritual, se entrar, entra depois disso, como complemento, sem promessa de resultado. Quem oferece Osatoshi como método de vender imóvel está oferecendo o que ele não é.
+Essa ordem é o que dá credibilidade ao assunto. Preço, anúncio, documentação, corretor e estado do imóvel explicam a imensa maioria das vendas travadas, e todos são verificáveis. O trabalho espiritual, se entrar, entra depois disso, como complemento, sem promessa de resultado. Quem oferece Osatoshi como método de vender imóvel está oferecendo o que ele não é.
 :::
 
 ## O que a tradição da Shinri propõe
 
 Feita essa parte, o que a tradição efetivamente descreve.
 
-O Osatoshi para venda de imóvel é apresentado pela [Shinri](/terapias/osatoshi) como uma variação do [Osatoshi do lugar](/blog/osatoshi-do-lugar). A premissa é a mesma: a tradição entende que espíritos podem ficar ligados a um endereço — antigos moradores falecidos, pessoas que tiveram vínculo forte com aquele espaço, situações que ali aconteceram. O trabalho se dirige a isso, e o que a tradição chama de salvação não é expulsão nem exorcismo: é conduzir à reparação e ao encaminhamento. A diferença de postura importa e está explicada em [salvação de espíritos na tradição japonesa](/blog/salvacao-de-espiritos).
+O Osatoshi para venda de imóvel é apresentado pela [Shinri](/terapias/osatoshi) como uma variação do [Osatoshi do lugar](/blog/osatoshi-do-lugar). A premissa é a mesma: a tradição entende que espíritos podem ficar ligados a um endereço. Antigos moradores falecidos, pessoas que tiveram vínculo forte com aquele espaço, situações que ali aconteceram. O trabalho se dirige a isso, e o que a tradição chama de salvação não é expulsão nem exorcismo: é conduzir à reparação e ao encaminhamento. A diferença de postura importa e está explicada em [salvação de espíritos na tradição japonesa](/blog/salvacao-de-espiritos).
 
-Aplicada ao imóvel parado, a leitura da tradição é a de um lugar com vínculo ainda aberto — alguém que morou ali e não se desligou, um apego que permanece, um assunto que ficou naquele endereço. O trabalho se dirige a esses vínculos, não à negociação, não ao comprador e não ao preço.
+Aplicada ao imóvel parado, a leitura da tradição é a de um lugar com vínculo ainda aberto: alguém que morou ali e não se desligou, um apego que permanece, um assunto que ficou naquele endereço. O trabalho se dirige a esses vínculos, não à negociação, não ao comprador e não ao preço.
 
 Isso é leitura de tradição, e precisa ser dito assim. Não existe fonte independente sobre a Shinri, não existe estudo, não existe mecanismo demonstrado. Quem procura, procura por sentido próprio.
 
@@ -76,16 +76,16 @@ Isso é leitura de tradição, e precisa ser dito assim. Não existe fonte indep
 - Endereço completo do imóvel, com número e complemento.
 - Qual é a função do lugar: casa, apartamento, terreno, sala comercial, imóvel de herança.
 - Há quanto tempo está à venda ou para alugar, e o que já se tentou.
-- O que se sabe da história daquele endereço — quem morou, o que aconteceu, se houve falecimento, conflito familiar, disputa de herança.
+- O que se sabe da história daquele endereço: quem morou, o que aconteceu, se houve falecimento, conflito familiar, disputa de herança.
 - O relato do que está acontecendo agora: se há visitas, se há propostas, onde os negócios travam.
 
 A orientação geral é uma série de três trabalhos, com pelo menos uma semana de intervalo. A tradição usa a imagem de camadas de cebola: o segundo alcança o que o primeiro não alcançava.
 
 ## Quando o assunto do imóvel é, na verdade, o assunto da família
 
-Existe um padrão que aparece com frequência e que vale nomear.
+Existe um padrão que aparece com frequência e precisa de nome.
 
-Imóvel de inventário. Três irmãos que não se falam, um que quer vender, outro que quer morar, o terceiro que não responde mensagem. O imóvel fica anos parado, e a explicação não é espiritual nem de mercado — é que ninguém ali quer efetivamente vender, porque vender significa encerrar alguma coisa que ninguém teve coragem de encerrar.
+Imóvel de inventário. Três irmãos que não se falam, um que quer vender, outro que quer morar, o terceiro que não responde mensagem. O imóvel fica anos parado, e a explicação não é espiritual nem de mercado. É que ninguém ali quer efetivamente vender, porque vender significa encerrar alguma coisa que ninguém teve coragem de encerrar. É o terreno de [herança e briga de família](/blog/heranca-e-briga-de-familia).
 
 Ou a casa em que os pais moraram, que precisa ser vendida por razão financeira e que carrega a vida inteira de alguém. A pessoa põe à venda por um valor que não é de mercado, recusa propostas razoáveis, some quando aparece interessado. Do lado de fora, isso parece azar. Do lado de dentro, é luto.
 
@@ -101,6 +101,6 @@ Desconfie de qualquer oferta que garanta venda, que prometa prazo, que peça val
 
 Relato, nunca prova. O que as pessoas descrevem com mais frequência é uma mudança na própria disposição em relação ao imóvel: voltar a responder mensagens de corretor, tomar a decisão de ajustar o preço que estava travada há meses, conseguir resolver a papelada que estava adiada, aceitar uma proposta que antes teria sido recusada por razão emocional.
 
-Isso é muito menos glamouroso do que "o imóvel vendeu em uma semana", e é bem mais honesto. Boa parte do que trava uma venda passa por decisões de quem vende — e decisão travada é assunto que tradições espirituais, psicoterapia e uma conversa franca com um corretor competente abordam, cada uma do seu jeito.
+Isso é muito menos glamouroso do que "o imóvel vendeu em uma semana", e é bem mais honesto. Boa parte do que trava uma venda passa por decisões de quem vende. E decisão travada é assunto que tradições espirituais, psicoterapia e uma conversa franca com um corretor competente abordam, cada uma do seu jeito.
 
-Se o seu imóvel está parado, comece pelo que dá para medir. Peça três avaliações, refaça as fotos, leve a matrícula a alguém que entenda, e pergunte ao corretor quantas visitas houve no último mês. Se depois de tudo isso ainda sobrar uma inquietação, ela pode ser conversada — o [contato](/contato) está aberto, inclusive para eu dizer que, no seu caso, o caminho é o corretor e não eu.
+Se o seu imóvel está parado, comece pelo que dá para medir. Peça três avaliações, refaça as fotos, leve a matrícula a alguém que entenda, e pergunte ao corretor quantas visitas houve no último mês. Se depois de tudo isso ainda sobrar uma inquietação, ela pode ser conversada. O [contato](/contato) está aberto, inclusive para eu dizer que, no seu caso, o caminho é o corretor e não eu.

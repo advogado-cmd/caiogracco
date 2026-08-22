@@ -23,7 +23,10 @@ export default function PaginaBlog() {
   const populares = artigosPopulares(3)
   const destacados = new Set(populares.map((a) => a.slug))
   const restantes = artigos.filter((a) => !destacados.has(a.slug))
-  const ordem: CategoriaBlog[] = ['osatoshi', 'espiritual', 'relacionamentos', 'corpo', 'praticas', 'orientacao']
+  const ordem: CategoriaBlog[] = [
+    'osatoshi', 'espiritual', 'relacionamentos', 'familia', 'convivencia',
+    'prosperidade', 'corpo', 'praticas', 'orientacao',
+  ]
 
   return (
     <>
@@ -78,7 +81,12 @@ export default function PaginaBlog() {
 
       <div className="border-y border-areia-200 bg-areia-200/25 py-14 lg:py-20">
         <Secao>
-          <TituloSecao icone="artigo" sobretitulo="Todos os textos" titulo={`${artigos.length} leituras, organizadas por assunto`} />
+          <TituloSecao
+            icone="artigo"
+            sobretitulo="Por assunto"
+            titulo="Cada dor tem um lugar aqui"
+            texto="Umas pessoas chegam pelo corpo, outras pelo que se repete na família, outras porque um vínculo não se desfaz. Procure pelo que está acontecendo com você."
+          />
 
           <div className="mt-10 flex flex-col gap-14">
             {ordem.map((c) => {

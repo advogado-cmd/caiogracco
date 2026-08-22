@@ -8,7 +8,9 @@ import { CartaoArtigo } from '@/components/CartaoArtigo'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { Icone, type NomeIcone } from '@/components/Icone'
 import { todosArtigos, getArtigo, artigosRelacionados, CATEGORIAS } from '@/lib/blog'
-import { renderizarMarkdown } from '@/lib/markdown'
+import { renderizarMarkdown, textoPuro } from '@/lib/markdown'
+import { dicionarioDeLigacoes } from '@/lib/ligacoes'
+import { OuvirTexto } from '@/components/OuvirTexto'
 import { schemaArtigo, schemaBreadcrumb, schemaFAQ } from '@/lib/estrutura'
 import { getTerapia } from '@/content/terapias'
 import { site } from '@/content/site'
@@ -53,6 +55,8 @@ export default async function PaginaArtigo({ params }: { params: Promise<{ slug:
 
   const cat = CATEGORIAS[artigo.categoria]
   const relacionados = artigosRelacionados(artigo, 3)
+  // Ligação automática: tudo do dicionário, menos o que aponta para esta própria página.
+  const ligacoes = dicionarioDeLigacoes().filter((l) => l.href !== `/blog/${artigo.slug}`)
   const terapias = (artigo.terapias ?? []).map(getTerapia).filter((t) => Boolean(t))
 
   return (
@@ -103,7 +107,9 @@ export default async function PaginaArtigo({ params }: { params: Promise<{ slug:
       <Secao className="py-12 lg:py-16">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_17rem]">
           <article className="max-w-[46rem] text-[1.08rem]">
-            {renderizarMarkdown(artigo.corpo)}
+            <OuvirTexto titulo={artigo.titulo} texto={textoPuro(artigo.corpo)} />
+
+            {renderizarMarkdown(artigo.corpo, ligacoes)}
 
             <CTA
               variante="discreto"

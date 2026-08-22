@@ -55,7 +55,7 @@ export default function PaginaVideos() {
             sobretitulo="Vídeos"
             titulo="O Caio explicando, com as próprias palavras"
             nivel={1}
-            texto="Reunimos aqui os vídeos publicados no canal. São conversas curtas sobre carmas, proteção, como funciona o Osatoshi e o que esperar de cada terapia."
+            texto="Conversas curtas sobre carmas, proteção, como funciona o Osatoshi e o que esperar de cada terapia. Às vezes ouvir a pessoa falando diz mais do que qualquer texto."
           />
           <a
             href={canalUrl}
@@ -99,8 +99,8 @@ export default function PaginaVideos() {
           <div className="mx-auto max-w-3xl">
             <h2 className="font-display text-2xl text-noite-800 sm:text-3xl">Todos os vídeos do canal</h2>
             <p className="mt-3 text-[0.95rem] leading-relaxed text-tinta-700">
-              O player abaixo carrega a lista completa de publicações, sempre atualizada — do vídeo
-              mais recente ao mais antigo. É só apertar o play e ir passando.
+              É só apertar o play. Os vídeos vêm do mais recente ao mais antigo, e novas
+              publicações aparecem aqui sozinhas.
             </p>
             <div className="mt-6 aspect-video w-full overflow-hidden rounded-2xl border border-noite-100 bg-noite-900">
               <iframe

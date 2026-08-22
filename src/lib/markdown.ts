@@ -117,8 +117,51 @@ function dividirEmBlocos(md: string): Bloco[] {
   return blocos
 }
 
+export type Ligacao = { termo: string; href: string; normalizado: string }
+
+/** Estado da ligação automática durante a renderização de um artigo. */
+type Contexto = { ligacoes: Ligacao[]; usados: Set<string>; restantes: number }
+
+function normalizarTexto(t: string) {
+  return t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+}
+
+/**
+ * Liga a primeira ocorrência de uma expressão do dicionário à sua página.
+ * Recebe apenas o texto puro entre marcações, então nunca cria link dentro de
+ * link, dentro de negrito ou dentro de código.
+ */
+function ligarAutomatico(trecho: string, ctx: Contexto | undefined, chave: string): ReactNode[] {
+  if (!ctx || ctx.restantes <= 0 || !trecho.trim()) return [trecho]
+  const alvo = normalizarTexto(trecho)
+
+  for (const lig of ctx.ligacoes) {
+    if (ctx.usados.has(lig.normalizado)) continue
+    const i = alvo.indexOf(lig.normalizado)
+    if (i < 0) continue
+    // Só liga palavra inteira.
+    const antes = i === 0 ? ' ' : alvo[i - 1]
+    const depois = alvo[i + lig.normalizado.length] ?? ' '
+    if (/[a-z0-9]/.test(antes) || /[a-z0-9]/.test(depois)) continue
+
+    ctx.usados.add(lig.normalizado)
+    ctx.restantes -= 1
+    const original = trecho.slice(i, i + lig.normalizado.length)
+    return [
+      ...ligarAutomatico(trecho.slice(0, i), ctx, `${chave}a`),
+      h('a', {
+        key: `${chave}-lig`,
+        href: lig.href,
+        className: 'text-noite-600 underline decoration-noite-600/35 underline-offset-[3px] transition hover:decoration-noite-600',
+      }, original),
+      ...ligarAutomatico(trecho.slice(i + lig.normalizado.length), ctx, `${chave}b`),
+    ]
+  }
+  return [trecho]
+}
+
 /** Formatação dentro da linha: negrito, itálico, link e código. */
-function inline(texto: string, chaveBase: string): ReactNode[] {
+function inline(texto: string, chaveBase: string, ctx?: Contexto): ReactNode[] {
   const partes: ReactNode[] = []
   const padrao = /(\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]\([^)]+\)|`[^`]+`)/g
   let ultimo = 0
@@ -126,7 +169,7 @@ function inline(texto: string, chaveBase: string): ReactNode[] {
   let n = 0
 
   while ((m = padrao.exec(texto)) !== null) {
-    if (m.index > ultimo) partes.push(texto.slice(ultimo, m.index))
+    if (m.index > ultimo) partes.push(...ligarAutomatico(texto.slice(ultimo, m.index), ctx, `${chaveBase}-${n}`))
     const t = m[0]
     const chave = `${chaveBase}-${n++}`
 
@@ -153,12 +196,19 @@ function inline(texto: string, chaveBase: string): ReactNode[] {
     ultimo = m.index + t.length
   }
 
-  if (ultimo < texto.length) partes.push(texto.slice(ultimo))
+  if (ultimo < texto.length) partes.push(...ligarAutomatico(texto.slice(ultimo), ctx, `${chaveBase}-f`))
   return partes
 }
 
-export function renderizarMarkdown(md: string): ReactNode {
+export function renderizarMarkdown(
+  md: string,
+  ligacoes: Ligacao[] = [],
+  maximo = 7,
+): ReactNode {
   const blocos = dividirEmBlocos(md)
+  // A ligação automática entra só no corpo do texto: parágrafo, lista e caixa.
+  // Título, citação e tabela ficam de fora, para o texto não virar um mural de links.
+  const ctx: Contexto = { ligacoes, usados: new Set(), restantes: maximo }
 
   return h(
     Fragment,
@@ -178,13 +228,13 @@ export function renderizarMarkdown(md: string): ReactNode {
             className: 'mt-9 font-display text-xl leading-snug text-noite-700',
           }, ...inline(b.texto, k))
         case 'p':
-          return h('p', { key: k, className: 'mt-5 leading-[1.85] text-tinta-700' }, ...inline(b.texto, k))
+          return h('p', { key: k, className: 'mt-5 leading-[1.85] text-tinta-700' }, ...inline(b.texto, k, ctx))
         case 'ul':
           return h('ul', { key: k, className: 'mt-5 flex flex-col gap-2.5' },
             ...b.itens.map((item, j) =>
               h('li', { key: `${k}-${j}`, className: 'flex gap-3 leading-[1.8] text-tinta-700' },
                 h('span', { className: 'mt-[0.65em] h-1.5 w-1.5 shrink-0 rounded-full bg-ouro-500' }),
-                h('span', null, ...inline(item, `${k}-${j}`)),
+                h('span', null, ...inline(item, `${k}-${j}`, ctx)),
               ),
             ),
           )
@@ -215,7 +265,7 @@ export function renderizarMarkdown(md: string): ReactNode {
             h('p', { className: 'text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-' + (b.variante === 'cuidado' ? 'brasa-500' : 'ouro-600') },
               b.variante === 'cuidado' ? 'Vale dizer com clareza' : 'Em resumo'),
             ...b.linhas.map((l, j) =>
-              h('p', { key: `${k}-${j}`, className: 'mt-3 text-[0.98rem] leading-relaxed text-tinta-700' }, ...inline(l, `${k}-${j}`)),
+              h('p', { key: `${k}-${j}`, className: 'mt-3 text-[0.98rem] leading-relaxed text-tinta-700' }, ...inline(l, `${k}-${j}`, ctx)),
             ),
           )
         case 'tabela':

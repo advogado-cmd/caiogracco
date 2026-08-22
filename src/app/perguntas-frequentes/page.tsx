@@ -41,7 +41,7 @@ export default function PaginaPerguntas() {
             sobretitulo="Perguntas frequentes"
             titulo="Tudo o que costumam perguntar"
             nivel={1}
-            texto="Organizado por terapia. Se a sua dúvida não estiver aqui, escreva — ela provavelmente merece entrar nesta página."
+            texto="Dói? Preciso tirar a roupa? Quantas sessões? Funciona à distância? As perguntas que quase ninguém faz em voz alta, respondidas sem rodeio."
           />
           <div className="mt-8 max-w-xl">
             <BuscaIA indice={indice} variante="escura" />

@@ -211,8 +211,8 @@ export default function Home() {
         <TituloSecao
           icone="artigo"
           sobretitulo="Do blog"
-          titulo="As leituras que mais têm ajudado quem chega aqui"
-          texto="Textos sobre o que se repete na família, a dor que os exames não explicam, o dinheiro que não para na mão e o que cada prática faz — e o que não faz."
+          titulo="Talvez você reconheça alguma coisa aqui"
+          texto="O que se repete na família. A dor que os exames não explicam. O dinheiro que não para na mão. O vínculo que não se desfaz."
         />
         <div className="mt-10">
           <SecaoBlog />

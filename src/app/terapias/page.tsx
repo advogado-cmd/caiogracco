@@ -46,7 +46,7 @@ export default function PaginaTerapias() {
             sobretitulo="Terapias"
             titulo="Oito tradições, reunidas num só cuidado"
             nivel={1}
-            texto="Cada abordagem tem sua origem, seu jeito de olhar e seus limites. Aqui você encontra o que cada uma é, para quem costuma fazer sentido e o que ela não promete."
+            texto="Cada uma tem sua origem, seu jeito de olhar e seus limites. Você não precisa escolher sozinho — mas conhecer ajuda a chegar na conversa sabendo o que perguntar."
           />
         </Secao>
       </div>

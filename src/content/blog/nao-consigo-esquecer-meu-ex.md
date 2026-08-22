@@ -23,7 +23,7 @@
     },
     {
       "pergunta": "Quanto tempo demora para superar um relacionamento?",
-      "resposta": "Não existe número honesto para isso, e desconfie de quem dá um. O que se observa é que o pior costuma ser o primeiro trimestre, que a intensidade cai por ondas e não em linha reta, e que relações longas ou com convivência diária deixam rastro maior. O que mais alonga o processo não é o tempo em si — é o contato intermitente."
+      "resposta": "Não existe número honesto para isso, e desconfie de quem dá um. O que se observa é que o pior costuma ser o primeiro trimestre, que a intensidade cai por ondas e não em linha reta, e que relações longas ou com convivência diária deixam rastro maior. O que mais alonga o processo não é o tempo em si, é o contato intermitente."
     },
     {
       "pergunta": "Qual a diferença entre saudade e vínculo que não se desfaz?",
@@ -35,7 +35,7 @@
     },
     {
       "pergunta": "Bloquear nas redes ajuda mesmo?",
-      "resposta": "Costuma ajudar mais do que qualquer outra medida isolada, e é a que as pessoas mais adiam. Cada vez que você acompanha a vida da pessoa, o assunto recebe material novo e o processo recomeça do zero. Bloquear não é imaturidade nem rancor — é interromper a alimentação diária do vínculo."
+      "resposta": "Costuma ajudar mais do que qualquer outra medida isolada, e é a que as pessoas mais adiam. Cada vez que você acompanha a vida da pessoa, o assunto recebe material novo e o processo recomeça do zero. Bloquear não é imaturidade nem rancor. É interromper a alimentação diária do vínculo."
     }
   ]
 }
@@ -43,15 +43,15 @@
 
 Faz sete meses. Você já tirou as fotos, já ouviu de todo mundo que ele não te merecia, já teve semanas boas. E aí acorda numa terça qualquer com a pessoa inteira na cabeça, o peito apertado, checando o perfil dela antes de levantar. E começa a achar que tem algo errado com você, porque todo mundo parece superar em três meses e você não.
 
-Não tem nada de errado com você. Duas coisas explicam quase tudo aqui. A primeira é que o corpo trata separação de vínculo intenso de um jeito muito parecido com abstinência: o que sustentava a rotina, a previsão de futuro e a regulação do humor sumiu de uma vez, e o organismo protesta. A segunda é que esquecer não é o que acontece — o que acontece é a coisa perder volume, aos poucos, com recaídas. Este texto trata do que mantém o vínculo aceso, do que costuma prolongá-lo por anos, do tempo real que isso leva e do que fazer quando você já tentou de tudo.
+Não tem nada de errado com você. Duas coisas explicam quase tudo aqui. A primeira é que o corpo trata separação de vínculo intenso de um jeito muito parecido com abstinência: o que sustentava a rotina, a previsão de futuro e a regulação do humor sumiu de uma vez, e o organismo protesta. A segunda é que esquecer não é o que acontece. O que acontece é a coisa perder volume, aos poucos, com recaídas. Este texto trata do que mantém o vínculo aceso, do que costuma prolongá-lo por anos, do tempo real que isso leva e do que fazer quando você já tentou de tudo.
 
 ## Por que dói como abstinência
 
 Um relacionamento não é só afeto. É um conjunto de coisas que passaram a organizar o seu dia: a mensagem de bom dia, a previsibilidade da noite, alguém que sabia da sua vida sem precisar de resumo, um futuro imaginado com endereço, uma identidade.
 
-Quando termina, tudo isso vai embora junto e ao mesmo tempo. O que fica não é só tristeza: é desregulação. Sono ruim, apetite estranho, dificuldade de concentração, sensação de urgência no corpo. E o alívio conhecido — a mensagem, o encontro, a voz da pessoa — está a um clique de distância, o que torna a comparação com abstinência ainda mais exata. O que reduz o desconforto imediato é justamente o que reinicia o ciclo.
+Quando termina, tudo isso vai embora junto e ao mesmo tempo. O que fica não é só tristeza. É desregulação. Sono ruim, apetite estranho, dificuldade de concentração, sensação de urgência no corpo. E o alívio conhecido, a mensagem, o encontro, a voz da pessoa, está a um clique de distância, o que torna a comparação com abstinência ainda mais exata. O que reduz o desconforto imediato é justamente o que reinicia o ciclo.
 
-Vale um detalhe que muda a leitura de quem se culpa: quando a relação foi instável, com fases muito boas e fases muito ruins, a dificuldade de sair costuma ser **maior**, não menor. Afeto imprevisível fixa mais do que afeto constante. Sofrer mais por quem te tratou pior não é ilógico nem masoquismo — é como o vínculo se formou.
+Vale um detalhe que muda a leitura de quem se culpa. Quando a relação foi instável, com fases muito boas e fases muito ruins, a dificuldade de sair costuma ser **maior**, não menor. Afeto imprevisível fixa mais do que afeto constante. Sofrer mais por quem te tratou pior não é ilógico nem masoquismo. É como o vínculo se formou.
 
 ## Saudade não é a mesma coisa que vínculo aberto
 
@@ -61,7 +61,7 @@ Essa distinção vale a leitura devagar, porque ela muda o que se deve fazer.
 
 **Vínculo que não se desfaz** ocupa território. Os sinais são de funcionamento, não de sentimento: pensamento em repetição, conversas mentais ensaiadas há meses, checagem de redes várias vezes ao dia, reação física quando o nome aparece, incapacidade de investir em qualquer coisa nova porque tudo é comparado, e a sensação de estar esperando algo que você mesma não sabe nomear.
 
-Saudade se atravessa. Vínculo aberto precisa ser encerrado — e encerramento é um ato, não uma passagem do tempo.
+Saudade se atravessa. Vínculo aberto precisa ser encerrado, e encerramento é um ato, não uma passagem do tempo.
 
 :::destaque
 Superar não é deixar de sentir. É o assunto deixar de decidir o seu dia. Muita gente adia a própria vida esperando o dia em que não vai mais doer, e esse dia não chega assim: primeiro a vida volta, depois a dor diminui. Nessa ordem, quase sempre.
@@ -71,35 +71,35 @@ Superar não é deixar de sentir. É o assunto deixar de decidir o seu dia. Muit
 
 Existe um vocabulário que muita gente usa para descrever exatamente essa sensação: a de que a pessoa saiu da sua vida mas continua ligada em você.
 
-Nas tradições que trabalham com isso, a convivência intensa cria um canal, e enquanto ele estiver aberto você continua respondendo àquela pessoa mesmo sem contato. O sinal descrito é sempre a desproporção: você pensa mais do que faria sentido, reage no corpo a algo que não está mais acontecendo, gasta energia com uma relação que já não existe.
+Nas tradições que trabalham com isso, a convivência intensa cria um canal, e enquanto ele estiver aberto você continua respondendo àquela pessoa mesmo sem contato. O sinal descrito é sempre a desproporção. Você pensa mais do que faria sentido, reage no corpo a algo que não está mais acontecendo, gasta energia com uma relação que já não existe.
 
 É uma chave de sentido, e é honesto dizer o tamanho dela: não há estudo, não há mecanismo demonstrado, não há como medir. O que existe é uma tradição longa e relatos de pessoas que se sentiram diferentes depois de um trabalho conduzido. Se é esse o caminho que te interessa, [corte de laços](/blog/corte-de-lacos) explica em detalhe o que ele se propõe a fazer e tudo o que não faz. Para separações formais, com casamento, bens e história de vida dividida, o [divórcio energético](/blog/divorcio-energetico) trata do encerramento nessa outra escala.
 
-Duas advertências valem para qualquer trabalho desse tipo. Nenhum deles apaga sentimento. E nenhum deles é feito para trazer alguém de volta — trabalho endereçado a mexer na vontade de outra pessoa não pertence a essa prática, por mais que a internet esteja cheia de ofertas assim.
+Duas advertências valem para qualquer trabalho desse tipo. Nenhum deles apaga sentimento. E nenhum deles é feito para trazer alguém de volta: trabalho endereçado a mexer na vontade de outra pessoa não pertence a essa prática, por mais que a internet esteja cheia de ofertas assim.
 
-## O que prolonga o vínculo — a lista honesta
+## O que prolonga o vínculo
 
 Na prática, o que estica o processo por anos costuma ser sempre a mesma coisa. Vale reconhecer quantos itens são a sua rotina de hoje.
 
-- **Contato intermitente.** A mensagem de aniversário. O "só queria saber se você está bem". O encontro que não devia ter acontecido. Cada contato, por menor que seja, devolve o processo ao começo — e o alívio dura horas, enquanto o custo dura semanas.
+- **Contato intermitente.** A mensagem de aniversário. O "só queria saber se você está bem". O encontro que não devia ter acontecido. Cada contato, por menor que seja, devolve o processo ao começo, e o alívio dura horas, enquanto o custo dura semanas.
 - **Redes sociais.** Acompanhar a vida da pessoa é alimentar o assunto todo dia com material novo. Não existe superação em curso enquanto existe atualização diária.
 - **História não concluída.** Término sem explicação, traição descoberta pela metade, promessa quebrada sem conversa. O que ficou sem resposta continua sendo processado, porque a cabeça insiste em completar.
-- **Esperança guardada em segredo.** Aquela que você não confessa nem para a amiga mais próxima: a de que um dia ele volte diferente. Enquanto ela existir, você não está terminando — está aguardando.
+- **Esperança guardada em segredo.** Aquela que você não confessa nem para a amiga mais próxima: a de que um dia ele volte diferente. Enquanto ela existir, você não está terminando. Está aguardando.
 - **A memória editada.** Depois de um tempo, a lembrança conserva as melhores cenas e apaga o motivo do fim. É por isso que tanta gente sente mais falta no oitavo mês do que no segundo.
-- **Solidão prática.** Casa vazia, agenda vazia, ninguém com quem dividir o dia. Não é fraqueza afetiva: é falta de vida ao redor.
+- **Solidão prática.** Casa vazia, agenda vazia, ninguém com quem dividir o dia. Não é fraqueza afetiva. É falta de vida ao redor.
 - **Contato inevitável.** Filhos, trabalho, mesmo círculo. Aqui não dá para cortar, e o trabalho é outro: reduzir o assunto ao mínimo operacional e parar de usar o encontro para procurar sinais.
 
 ## Quanto tempo isso leva de verdade
 
-Você vai encontrar fórmulas na internet — metade do tempo de relação, um mês para cada ano. Não use nenhuma. Não há base para esses números, e eles servem para fazer quem está no décimo mês se sentir atrasada.
+Você vai encontrar fórmulas na internet, do tipo metade do tempo de relação ou um mês para cada ano. Não use nenhuma. Não há base para esses números, e eles servem para fazer quem está no décimo mês se sentir atrasada.
 
-O que se observa, sem prometer nada, é isto: o período mais agudo costuma ser o primeiro trimestre; a intensidade cai por ondas e não em linha reta, então recaída aos seis meses não significa recomeço; datas, música, cheiro e lugar reabrem o assunto por um ou dois dias e depois ele fecha de novo; relações longas, com convivência diária ou com projeto de vida em comum deixam rastro maior. E o fator que mais alonga tudo não é a duração da relação — é a frequência de contato depois do fim.
+O que se observa, sem prometer nada, é isto. O período mais agudo costuma ser o primeiro trimestre. A intensidade cai por ondas e não em linha reta, então recaída aos seis meses não significa recomeço. Datas, música, cheiro e lugar reabrem o assunto por um ou dois dias e depois ele fecha de novo. Relações longas, com convivência diária ou com projeto de vida em comum deixam rastro maior. E o fator que mais alonga tudo não é a duração da relação. É a frequência de contato depois do fim.
 
 Um sinal razoável de que o processo anda: você continua sentindo, mas já não organiza o dia em torno daquilo. Não é ausência de dor. É recuperação de território.
 
 ## O que ajuda
 
-Não é receita, é o que costuma sustentar quem atravessa.
+Não é receita. É o que costuma sustentar quem atravessa.
 
 **Corte de contato de verdade, e por um prazo que você combine consigo mesma.** Bloquear não é rancor. É retirar a fonte diária de material novo. Se houver filhos ou trabalho em comum, reduza ao operacional: assunto, decisão, fim.
 
@@ -107,24 +107,24 @@ Não é receita, é o que costuma sustentar quem atravessa.
 
 **Recoloque coisas na agenda antes de ter vontade.** Vontade vem depois, não antes. Aula, caminhada, curso, amigas, qualquer coisa com hora marcada e outra pessoa esperando.
 
-**Cuide do corpo, porque é ele que está pagando.** Se o corpo virou o lugar onde a separação se instalou — insônia, aperto no peito, imunidade baixa —, [término que não passa](/blog/termino-que-nao-passa) trata exatamente disso.
+**Cuide do corpo, porque é ele que está pagando.** Se o corpo virou o lugar onde a separação se instalou, com insônia, aperto no peito e imunidade baixa, [término que não passa](/blog/termino-que-nao-passa) trata exatamente disso.
 
 **Procure método, não só apoio.** Psicoterapia é o recurso mais indicado quando o assunto ocupa a vida há meses. Amiga é fundamental e não substitui.
 
-**Se o caminho espiritual faz sentido para você**, ele existe e tem tamanho definido. O [Osatoshi](/terapias/osatoshi) trabalha a ideia de pendência e encerramento na tradição japonesa da Shinri — é caminho espiritual, nunca tratamento de doença. O [Reiki](/terapias/reiki) entra como apoio ao estado geral de quem está exausta: está na política nacional de práticas integrativas desde 2017, o que não equivale a comprovação de eficácia — a revisão Cochrane de 2015 sobre depressão e ansiedade concluiu que os estudos são poucos e de baixa qualidade. O que existe são relatos de descanso.
+**Se o caminho espiritual faz sentido para você**, ele existe e tem tamanho definido. O [Osatoshi](/terapias/osatoshi) trabalha a ideia de pendência e encerramento na tradição japonesa da Shinri, como caminho espiritual e nunca como tratamento de doença. O [Reiki](/terapias/reiki) entra como apoio ao estado geral de quem está exausta: está na política nacional de práticas integrativas desde 2017, o que não equivale a comprovação de eficácia, já que a [revisão Cochrane de 2015 sobre depressão e ansiedade](https://www.cochrane.org/CD006833/DEPRESSN_reiki-for-depression-and-anxiety) concluiu que os estudos são poucos e de baixa qualidade. O que existe são relatos de descanso.
 
-E uma coisa que não se faz aqui, com todas as letras: não existe trabalho para reconquistar, para fazer voltar, nem amarração. Não porque seria difícil — porque a premissa é errada. Nada endereçado a dobrar a vontade de outra pessoa pertence a essa prática.
+E uma coisa que não se faz aqui, com todas as letras: não existe trabalho para reconquistar, para fazer voltar, nem amarração. Não porque seria difícil, mas porque a premissa é errada. Nada endereçado a dobrar a vontade de outra pessoa pertence a essa prática.
 
 :::cuidado
-Se existe perseguição, ameaça, medo, controle sobre a sua rotina, mensagens ou aparições que você não autorizou, isso não é assunto de terapia — é rede de proteção. Ligue 180, a Central de Atendimento à Mulher: gratuito, sigiloso, 24 horas, orienta sobre denúncia e medida protetiva. Em risco imediato, 190. Delegacias da Mulher e Defensoria Pública atendem sem custo.
+Se existe perseguição, ameaça, medo, controle sobre a sua rotina, mensagens ou aparições que você não autorizou, isso não é assunto de terapia. É rede de proteção. Ligue [180, a Central de Atendimento à Mulher](https://www.gov.br/mdh/pt-br/ligue180): gratuito, sigiloso, 24 horas, orienta sobre denúncia e medida protetiva. Em risco imediato, 190. Delegacias da Mulher e Defensoria Pública atendem sem custo.
 
-E se, com a separação, você está há semanas sem dormir, sem comer, sem conseguir trabalhar, ou teve pensamentos de morte, procure profissional de saúde: psicólogo, psiquiatra, a Unidade Básica de Saúde do seu bairro ou o CAPS da sua região. Havendo pensamento de morte, o CVV atende no 188, gratuito e 24 horas. Encaminhar faz parte do trabalho, e os limites dele estão no [aviso de cuidado](/aviso-de-cuidado).
+E se, com a separação, você está há semanas sem dormir, sem comer, sem conseguir trabalhar, ou teve pensamentos de morte, procure profissional de saúde: psicólogo, psiquiatra, a Unidade Básica de Saúde do seu bairro ou o CAPS da sua região. Havendo pensamento de morte, o [CVV](https://www.cvv.org.br/) atende no 188, gratuito e 24 horas. Encaminhar faz parte do trabalho, e os limites dele estão no [aviso de cuidado](/aviso-de-cuidado).
 :::
 
 ## Quando o problema não é o ex
 
 Vale uma última consideração, porque ela poupa anos.
 
-Às vezes o que não passa não é aquela pessoa: é o padrão. Se antes dele houve outro parecido, e antes outro, e a sensação de perda é sempre a mesma, o assunto muda de lugar — e é sobre isso que trata [relacionamento kármico ou dependência emocional](/blog/relacionamento-karmico-ou-dependencia-emocional).
+Às vezes o que não passa não é aquela pessoa. É o padrão. Se antes dele houve outro parecido, e antes outro, e a sensação de perda é sempre a mesma, o assunto muda de lugar, e é sobre isso que trata [relacionamento kármico ou dependência emocional](/blog/relacionamento-karmico-ou-dependencia-emocional).
 
-Vínculo não termina no dia em que a relação termina. Ele termina quando para de receber alimento — e quase toda a dificuldade está em admitir por onde você ainda o alimenta.
+Vínculo não termina no dia em que a relação termina. Ele termina quando para de receber alimento, e quase toda a dificuldade está em admitir por onde você ainda o alimenta.

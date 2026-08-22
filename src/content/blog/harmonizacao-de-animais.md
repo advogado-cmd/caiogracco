@@ -43,19 +43,19 @@
 
 Duas gatas que dividiram a casa em pazes por seis anos e de repente não se suportam mais. O cachorro que era grudado em você e ficou arisco depois que o bebê chegou. O bicho que decidiu que o seu novo companheiro é inimigo e rosna toda vez que ele senta no sofá. São três situações diferentes, com uma coisa em comum: a casa inteira fica tensa, e você começa a se sentir refém de uma convivência que não sabe como consertar.
 
-Antes de qualquer coisa, a ordem que importa. **Veterinário primeiro. Depois, um bom adestrador ou consultor de comportamento animal. Só então, se ainda fizer sentido, o trabalho espiritual como complemento.** Essa sequência não é formalidade — é o que separa resolver o problema de gastar dinheiro sem resolver.
+Antes de qualquer coisa, a ordem que importa. **Veterinário primeiro. Depois, um bom adestrador ou consultor de comportamento animal. Só então, se ainda fizer sentido, o trabalho espiritual como complemento.** Essa sequência não é formalidade. É o que separa resolver o problema de gastar dinheiro sem resolver.
 
 ## Por que agressividade súbita costuma ser dor
 
 Se existe uma frase para levar deste texto, é esta: mudança brusca de comportamento em animal é motivo de consulta veterinária, não de interpretação.
 
-Um cão que sempre aceitou ser tocado e passou a rosnar quando encostam nele pode estar com dor articular, dor de ouvido, problema dentário, desconforto abdominal. Uma gata que sempre conviveu bem com a outra e começou a atacá-la pode estar doente e defendendo um espaço que agora precisa proteger. Animal com dor fica irritável exatamente como gente com dor fica irritável — só que ele não consegue avisar.
+Um cão que sempre aceitou ser tocado e passou a rosnar quando encostam nele pode estar com dor articular, dor de ouvido, problema dentário, desconforto abdominal. Uma gata que sempre conviveu bem com a outra e começou a atacá-la pode estar doente e defendendo um espaço que agora precisa proteger. Animal com dor fica irritável exatamente como gente com dor fica irritável. Só que ele não consegue avisar.
 
-Há também a chamada agressão redirecionada, muito comum entre gatos: um deles se assusta com algo externo (um gato de rua na janela, um barulho) e ataca quem estiver por perto, que é justamente o companheiro de casa. A partir daí a relação entre os dois se rompe, mesmo depois que o estímulo original desapareceu. Isso tem protocolo de manejo conhecido, e não tem nada de espiritual.
+Há também a chamada agressão redirecionada, muito comum entre gatos: um deles se assusta com algo externo, um gato de rua na janela, um barulho, e ataca quem estiver por perto, que é justamente o companheiro de casa. A partir daí a relação entre os dois se rompe, mesmo depois que o estímulo original desapareceu. Isso tem protocolo de manejo conhecido, e não tem nada de espiritual.
 
 ## O que um profissional de comportamento resolve e quase ninguém procura
 
-O Brasil aprendeu a chamar de "adestrador" quem ensina o cachorro a dar a pata. A área é bem maior que isso. Um profissional sério de comportamento animal trabalha com apresentação entre animais, ressensibilização, manejo ambiental e reorganização de rotina — e resolve, com método, boa parte do que os tutores tratam como caso perdido.
+O Brasil aprendeu a chamar de "adestrador" quem ensina o cachorro a dar a pata. A área é bem maior que isso. Um profissional sério de comportamento animal trabalha com apresentação entre animais, ressensibilização, manejo ambiental e reorganização de rotina, e resolve, com método, boa parte do que os tutores tratam como caso perdido.
 
 Alguns exemplos concretos de coisas que têm solução técnica:
 
@@ -64,25 +64,25 @@ Alguns exemplos concretos de coisas que têm solução técnica:
 - **Animal que rejeita a pessoa nova.** O caminho quase sempre passa por deixar de forçar. Contato imposto piora. A pessoa nova é quem alimenta, quem oferece o petisco, quem não tenta pegar no colo. Semanas, não dias.
 
 :::cuidado
-Agressividade dirigida a criança pequena é situação de risco e pede ajuda profissional imediata — veterinário e profissional de comportamento animal, agora, não depois. Nesse cenário, nenhum trabalho espiritual deve ser considerado como caminho, e supervisão constante é obrigatória enquanto a situação não estiver avaliada.
+Agressividade dirigida a criança pequena é situação de risco e pede ajuda profissional imediata, com veterinário e profissional de comportamento animal, agora, não depois. Nesse cenário, nenhum trabalho espiritual deve ser considerado como caminho, e supervisão constante é obrigatória enquanto a situação não estiver avaliada.
 
-Do mesmo modo, qualquer mudança recente de comportamento — agressividade, apatia, perda de apetite, alteração no xixi ou nas fezes, dificuldade para se mover — é consulta veterinária. Nenhuma prática espiritual identifica doença em animal. Diagnóstico é ato de médico-veterinário. Os limites do que atendo estão no [aviso de cuidado](/aviso-de-cuidado).
+Do mesmo modo, qualquer mudança recente de comportamento, como agressividade, apatia, perda de apetite, alteração no xixi ou nas fezes e dificuldade para se mover, é consulta veterinária. Nenhuma prática espiritual identifica doença em animal. Diagnóstico é ato de médico-veterinário. Os limites do que atendo estão no [aviso de cuidado](/aviso-de-cuidado).
 :::
 
 ## O que a harmonização de animais propõe, na tradição
 
-Esgotado o que está acima — e só aí —, existe o que a tradição da [Shinri](/terapias/osatoshi) chama de harmonização de animais.
+Esgotado o que está acima, e só aí, existe o que a tradição da [Shinri](/terapias/osatoshi) chama de harmonização de animais.
 
-A ideia geral: a tradição entende que existe algo como uma desarmonia entre seres, que pode se dar entre duas pessoas, entre pessoa e animal, ou entre dois animais da mesma casa. O trabalho se dirige a essa desarmonia. Na descrição da própria tradição, ele envolve o que ela chama de reparação entre as almas envolvidas e, quando necessário, a salvação de espíritos ligados à situação — que na Shinri nunca significa expulsar, e sim encaminhar. Escrevi sobre essa lógica em [salvação de espíritos na tradição japonesa](/blog/salvacao-de-espiritos).
+A ideia geral é a seguinte. A tradição entende que existe algo como uma desarmonia entre seres, que pode se dar entre duas pessoas, entre pessoa e animal, ou entre dois animais da mesma casa. O trabalho se dirige a essa desarmonia. Na descrição da [própria tradição](https://osatoshi.com.br/), ele envolve o que ela chama de reparação entre as almas envolvidas e, quando necessário, a salvação de espíritos ligados à situação, que na Shinri nunca significa expulsar, e sim encaminhar. Escrevi sobre essa lógica em [salvação de espíritos na tradição japonesa](/blog/salvacao-de-espiritos).
 
-A harmonização de animais não tem pré-requisito dentro do sistema: qualquer pessoa pode pedir, sem precisar ter feito outros trabalhos antes. É feita à distância, e o animal não participa de nada — não precisa ficar parado, não muda de rotina, não sabe que existe.
+A harmonização de animais não tem pré-requisito dentro do sistema: qualquer pessoa pode pedir, sem precisar ter feito outros trabalhos antes. É feita à distância, e o animal não participa de nada. Não precisa ficar parado, não muda de rotina, não sabe que existe.
 
 Os dados pedidos são simples: nomes dos animais envolvidos, espécies, idades aproximadas, há quanto tempo vivem na casa, quem mais mora ali, e um relato do que está acontecendo com datas. Quando a desarmonia é entre um animal e uma pessoa, os dados dessa pessoa também entram. A orientação geral é uma série de três trabalhos, com pelo menos uma semana entre eles.
 
 E vale o mesmo aviso de sempre: isso é leitura de tradição, não fato verificado. Não há estudo, não há mecanismo demonstrado, e ninguém pode prometer que dois animais vão passar a se dar bem.
 
 :::destaque
-A ordem é veterinário, profissional de comportamento animal, ajuste de manejo — e só então, se ainda fizer sentido, trabalho espiritual como complemento. Harmonização de animais é prática espiritual sem comprovação científica. Ela não trata dor, não corrige manejo, não substitui protocolo de comportamento e não garante convivência pacífica.
+A ordem é veterinário, profissional de comportamento animal, ajuste de manejo, e só então, se ainda fizer sentido, trabalho espiritual como complemento. Harmonização de animais é prática espiritual sem comprovação científica. Ela não trata dor, não corrige manejo, não substitui protocolo de comportamento e não garante convivência pacífica.
 :::
 
 ## As três situações que mais aparecem
@@ -91,14 +91,14 @@ A ordem é veterinário, profissional de comportamento animal, ajuste de manejo 
 
 **A chegada de um bebê.** Aqui há uma sobreposição de fatores concretos: a casa muda de som, de cheiro e de horário; os tutores estão exaustos; o animal passa a receber menos atenção e mais correção. Muita coisa que se lê como ciúme é, na verdade, uma rotina inteira desfeita sem aviso.
 
-**A chegada de um companheiro novo.** Essa é a que mais mistura assunto de bicho com assunto de gente. Às vezes o animal reage a um estranho na casa, o que é normal e passa com tempo e método. Às vezes o que ele está reagindo é ao clima entre as pessoas — e aí o trabalho, se for feito, talvez não seja com o animal. A própria tradição observa algo parecido em relação a gente: muita gente pede harmonização quando o mais indicado seria começar por si.
+**A chegada de um companheiro novo.** Essa é a que mais mistura assunto de bicho com assunto de gente. Às vezes o animal reage a um estranho na casa, o que é normal e passa com tempo e método. Às vezes o que ele está reagindo é ao clima entre as pessoas, e aí o trabalho, se for feito, talvez não seja com o animal. A própria tradição observa algo parecido em relação a gente: muita gente pede harmonização quando o mais indicado seria começar por si.
 
-Quando o desconforto é da casa inteira e não de um vínculo específico, vale olhar para o ambiente — assunto tratado em [energia pesada em casa](/blog/energia-pesada-em-casa) e no [Osatoshi do lugar](/blog/osatoshi-do-lugar). E se o comportamento de um único animal é o problema, e não a relação entre eles, o recorte é outro, descrito em [Osatoshi de animais](/blog/osatoshi-de-animais).
+Quando o desconforto é da casa inteira e não de um vínculo específico, vale olhar para o ambiente, assunto tratado em [energia pesada em casa](/blog/energia-pesada-em-casa) e no [Osatoshi do lugar](/blog/osatoshi-do-lugar). E se o comportamento de um único animal é o problema, e não a relação entre eles, o recorte é outro, descrito em [Osatoshi de animais](/blog/osatoshi-de-animais).
 
 ## O que se costuma observar depois
 
-Relato, não evidência — é assim que isso precisa ser dito. O que os tutores contam com mais frequência é uma diminuição da tensão geral da casa: menos episódios de conflito, animais que voltam a dividir o mesmo cômodo sem se encarar, cão que volta a se aproximar de quem estava evitando. Também há quem descreva alguns dias de agitação maior antes de qualquer melhora, o que a tradição lê como movimento.
+Relato, não evidência: é assim que isso precisa ser dito. O que os tutores contam com mais frequência é uma diminuição da tensão geral da casa. Menos episódios de conflito, animais que voltam a dividir o mesmo cômodo sem se encarar, cão que volta a se aproximar de quem estava evitando. Também há quem descreva alguns dias de agitação maior antes de qualquer melhora, o que a tradição lê como movimento.
 
 E há quem não note nada. Isso precisa ser dito antes, não depois.
 
-Uma casa com bicho é uma casa com um morador que não tem palavras. Quando a convivência azeda, o mais respeitoso que se pode fazer por ele é começar pelas explicações que se pode verificar — dor, doença, manejo, rotina — e deixar o resto para depois. Se sobrar alguma coisa depois disso, aí sim vale conversar.
+Uma casa com bicho é uma casa com um morador que não tem palavras. Quando a convivência azeda, o mais respeitoso que se pode fazer por ele é começar pelas explicações que se pode verificar, como dor, doença, manejo e rotina, e deixar o resto para depois. Se sobrar alguma coisa depois disso, aí sim vale conversar.

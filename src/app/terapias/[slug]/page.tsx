@@ -220,7 +220,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
                   Para ler sobre {t.nomeCurto}
                 </h2>
                 <p className="mt-3 max-w-2xl text-[1rem] leading-relaxed text-tinta-700">
-                  Textos que aprofundam o que esta página resume.
+                  Se ficou alguma dúvida, ou se você quer entender melhor antes de marcar.
                 </p>
                 <div className="mt-7 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {leituras.map((a) => (

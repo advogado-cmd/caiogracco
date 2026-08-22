@@ -5,6 +5,7 @@ export type NomeIcone =
   | 'acupuntura' | 'auriculoterapia' | 'seitai'
   | 'bussola' | 'coracao' | 'mente' | 'casa' | 'trabalho' | 'semente'
   | 'sol' | 'onda' | 'maos' | 'livro' | 'artigo' | 'video' | 'conversa' | 'mapa'
+  | 'som' | 'pausa' | 'parar' | 'moeda' | 'familia' | 'amizade'
   | 'escudo' | 'relogio' | 'estrela' | 'folha' | 'instagram' | 'youtube'
   | 'facebook' | 'whatsapp' | 'compartilhar' | 'link' | 'menu' | 'fechar'
   | 'seta' | 'foto' | 'email' | 'telefone'
@@ -30,6 +31,12 @@ const CAMINHOS: Record<NomeIcone, React.ReactNode> = {
   sol: <><circle cx="12" cy="12" r="4" /><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4" /></>,
   onda: <><path d="M3 9c2-2 4-2 6 0s4 2 6 0 4-2 6 0M3 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0" /></>,
   maos: <><path d="M7 13V7.5a1.5 1.5 0 0 1 3 0V12M10 12V6a1.5 1.5 0 0 1 3 0v6M13 12V7.5a1.5 1.5 0 0 1 3 0V15c0 3-2.2 5.5-5.5 5.5S5 18 5 15v-2.5a1.5 1.5 0 0 1 2-1.4" /></>,
+  familia: <><circle cx="8" cy="7.5" r="2.6" /><circle cx="16" cy="7.5" r="2.6" /><path d="M3.5 19.5c0-2.8 2-4.6 4.5-4.6s4.5 1.8 4.5 4.6" /><path d="M12.5 19.5c0-2.8 1.5-4.6 3.5-4.6s4.5 1.8 4.5 4.6" /></>,
+  amizade: <><circle cx="9" cy="8" r="3" /><circle cx="16.5" cy="9.5" r="2.4" /><path d="M3.5 20c0-3.2 2.4-5.4 5.5-5.4S14.5 16.8 14.5 20" /><path d="M15 14.8c2.6.2 4.5 2 4.5 5.2" /></>,
+  som: <><path d="M4 9.5h3.2L12 5.5v13l-4.8-4H4z" /><path d="M16 9.2a4 4 0 0 1 0 5.6M18.6 6.6a7.6 7.6 0 0 1 0 10.8" /></>,
+  pausa: <><rect x="7.5" y="5" width="3.2" height="14" rx="1" /><rect x="13.3" y="5" width="3.2" height="14" rx="1" /></>,
+  parar: <><rect x="6" y="6" width="12" height="12" rx="2" /></>,
+  moeda: <><circle cx="12" cy="12" r="8.5" /><path d="M12 7.2v9.6M14.6 9.4c-.6-.8-1.6-1.2-2.6-1.2-1.5 0-2.6.8-2.6 2s1 1.8 2.6 2 2.7.6 2.7 2-1.2 2.1-2.7 2.1c-1.1 0-2.1-.4-2.7-1.3" /></>,
   artigo: <><path d="M5 4.5h11l3 3V19a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19z" /><path d="M15.5 4.5V8h3.2" /><path d="M8.5 12h7M8.5 15.5h7M8.5 8.5h3.5" /></>,
   livro: <><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5z" /><path d="M4 5.5v15M19 18v3H6.5" /></>,
   video: <><rect x="3" y="5.5" width="18" height="13" rx="2.5" /><path d="M10.5 9.5l4.5 2.5-4.5 2.5z" /></>,

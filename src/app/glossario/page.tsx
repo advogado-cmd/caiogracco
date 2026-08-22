@@ -16,7 +16,7 @@ import { CTA } from '@/components/CTA'
 export const metadata: Metadata = {
   title: 'Glossário das terapias integrativas',
   description:
-    'Os termos das terapias integrativas explicados em linguagem simples: Osatoshi, Shinri, Ki, Qi, meridianos, carma, egrégora, PNPIC, PICS e as 29 práticas integrativas do SUS.',
+    'Ki, carma, egrégora, meridiano, PNPIC e as 29 práticas integrativas do SUS: o vocabulário das terapias explicado em uma ou duas frases.',
   alternates: { canonical: '/glossario' },
   openGraph: { url: `${site.url}/glossario`, title: 'Glossário das terapias integrativas' },
 }
@@ -88,7 +88,7 @@ export default function PaginaGlossario() {
             sobretitulo="Glossário"
             titulo="As palavras destas tradições, sem mistério"
             nivel={1}
-            texto="Cada tradição traz seu vocabulário — em japonês, em chinês, em sânscrito, em inglês. Aqui estão os termos usados no site e também os do campo mais amplo das práticas integrativas, incluindo as 29 reconhecidas pelo Ministério da Saúde. Cada um explicado em uma ou duas frases."
+            texto="Ki, carma, egrégora, meridiano, tsubo. Cada tradição chegou até aqui trazendo as próprias palavras, e ninguém é obrigado a saber o que elas querem dizer. Procure a que travou a leitura."
           />
           <div className="mt-8 max-w-xl">
             <BuscaIA indice={indice} variante="escura" />

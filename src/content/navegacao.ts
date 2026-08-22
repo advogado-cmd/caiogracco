@@ -5,9 +5,9 @@ export type ItemNav = { href: string; rotulo: string; icone: NomeIcone; descrica
 /** Links principais, visíveis na barra superior em telas grandes. */
 export const navPrincipal: ItemNav[] = [
   { href: '/', rotulo: 'Início', icone: 'sol' },
+  { href: '/sobre', rotulo: 'Sobre o Caio', icone: 'coracao' },
   { href: '/terapias', rotulo: 'Terapias', icone: 'folha' },
   { href: '/blog', rotulo: 'Blog', icone: 'artigo' },
-  { href: '/sobre', rotulo: 'Sobre o Caio', icone: 'coracao' },
   { href: '/contato', rotulo: 'Contato', icone: 'conversa' },
 ]
 
