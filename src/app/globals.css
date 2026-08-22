@@ -123,6 +123,59 @@ body {
 .prosa a { color: var(--color-noite-600); text-decoration: underline; text-underline-offset: 3px; }
 .prosa a:hover { color: var(--color-noite-400); }
 
+/* ---------------------------------------------------------------------------
+   O sol da marca. Só os raios se movem.
+   Os raios longos e os curtos irradiam em tempos opostos — um se estende
+   enquanto o outro recolhe. O anel externo, o núcleo e a divisão
+   dourado/rosa ficam parados, exatamente como no manual.
+--------------------------------------------------------------------------- */
+.sol {
+  display: block;
+  overflow: visible;
+}
+.sol .sol-raios-longos,
+.sol .sol-raios-curtos {
+  transform-box: view-box;
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.sol .sol-raios-longos {
+  animation: sol-irradia 5s ease-in-out infinite;
+}
+.sol .sol-raios-curtos {
+  animation: sol-irradia 5s ease-in-out infinite;
+  animation-delay: -2.5s;
+}
+
+.sol--parado .sol-raios-longos,
+.sol--parado .sol-raios-curtos {
+  animation: none;
+}
+
+/* Ao passar o mouse na assinatura, os raios pulsam um pouco mais vivos. */
+.grupo-marca:hover .sol .sol-raios-longos,
+.grupo-marca:hover .sol .sol-raios-curtos,
+.grupo-marca:focus-visible .sol .sol-raios-longos,
+.grupo-marca:focus-visible .sol .sol-raios-curtos {
+  animation-duration: 2.6s;
+}
+
+@keyframes sol-irradia {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sol .sol-raios-longos,
+  .sol .sol-raios-curtos { animation: none !important; }
+}
+
+@media print {
+  .sol .sol-raios-longos,
+  .sol .sol-raios-curtos { animation: none !important; }
+}
+
 /* Impressão limpa */
 @media print {
   .sem-impressao { display: none !important; }

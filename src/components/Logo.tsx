@@ -1,33 +1,33 @@
 import Link from 'next/link'
+import { SimboloSol } from './SimboloSol'
 
-type Props = { variante?: 'clara' | 'escura'; compacta?: boolean; className?: string }
+type Props = {
+  variante?: 'clara' | 'escura'
+  compacta?: boolean
+  className?: string
+  /** Símbolo animado (padrão). Desligue em contextos estáticos. */
+  animado?: boolean
+}
 
 /**
  * Assinatura da marca, montada a partir do símbolo oficial.
  * `variante`: 'escura' = sobre fundo champagne (padrão da marca);
- *             'clara'  = sobre fundo azul, com o símbolo sem o disco de fundo.
+ *             'clara'  = sobre fundo azul.
  */
-export function Logo({ variante = 'escura', compacta = false, className = '' }: Props) {
+export function Logo({ variante = 'escura', compacta = false, className = '', animado = true }: Props) {
   const sobreAzul = variante === 'clara'
   const corNome = sobreAzul ? 'text-areia-50' : 'text-noite-800'
   const corSub = sobreAzul ? 'text-magenta-400' : 'text-brasa-500'
-  const simbolo = sobreAzul
-    ? '/brand/simbolo-oficial-transparente.svg'
-    : '/brand/simbolo-oficial.svg'
 
   return (
     <Link
       href="/"
-      className={`group flex items-center gap-3 ${className}`}
+      className={`grupo-marca group flex items-center gap-3 ${className}`}
       aria-label="Caio Gracco — Terapias da Completude, página inicial"
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={simbolo}
-        alt=""
-        aria-hidden="true"
-        width={56}
-        height={56}
+      <SimboloSol
+        variante={variante}
+        animado={animado}
         className={`${compacta ? 'h-12 w-12' : 'h-16 w-16'} shrink-0 transition-transform duration-500 group-hover:scale-105`}
       />
       <span className="flex flex-col leading-none">

@@ -96,53 +96,29 @@ export default function PaginaVideos() {
             ))}
           </ul>
         ) : (
-          <div className="grid gap-10 lg:grid-cols-[1.35fr_1fr]">
-            <div>
-              <h2 className="font-display text-2xl text-noite-800 sm:text-3xl">Todos os vídeos do canal</h2>
-              <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-tinta-700">
-                O player abaixo carrega a lista completa de publicações do canal, sempre atualizada —
-                do vídeo mais recente ao mais antigo.
-              </p>
-              <div className="mt-6 aspect-video w-full overflow-hidden rounded-2xl border border-noite-100 bg-noite-900">
-                <iframe
-                  src={`https://www.youtube-nocookie.com/embed/videoseries?list=${playlistUploads}&rel=0`}
-                  title={`Vídeos de Caio Gracco no YouTube (${canalHandle})`}
-                  loading="lazy"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="h-full w-full"
-                />
-              </div>
-              <p className="mt-3 text-[0.85rem] text-tinta-500">
-                O player não carregou?{' '}
-                <a href={canalUrl} target="_blank" rel="noopener noreferrer" className="text-noite-600 underline underline-offset-4">
-                  Assista direto no YouTube
-                </a>
-                .
-              </p>
+          <div className="mx-auto max-w-3xl">
+            <h2 className="font-display text-2xl text-noite-800 sm:text-3xl">Todos os vídeos do canal</h2>
+            <p className="mt-3 text-[0.95rem] leading-relaxed text-tinta-700">
+              O player abaixo carrega a lista completa de publicações, sempre atualizada — do vídeo
+              mais recente ao mais antigo. É só apertar o play e ir passando.
+            </p>
+            <div className="mt-6 aspect-video w-full overflow-hidden rounded-2xl border border-noite-100 bg-noite-900">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/videoseries?list=${playlistUploads}&rel=0`}
+                title={`Vídeos de Caio Gracco no YouTube (${canalHandle})`}
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="h-full w-full"
+              />
             </div>
-
-            <aside className="rounded-2xl border border-ouro-500/45 bg-areia-200/40 p-6">
-              <h2 className="font-display text-xl text-noite-800">Quer os vídeos em destaque?</h2>
-              <p className="mt-3 text-[0.9rem] leading-relaxed text-tinta-700">
-                Cadastrando cada vídeo individualmente, eles ganham card próprio nesta página, entram
-                na busca do site e passam a ter dados estruturados para aparecer no Google com
-                miniatura.
-              </p>
-              <p className="mt-3 text-[0.9rem] leading-relaxed text-tinta-700">
-                Basta acrescentar os vídeos em{' '}
-                <code className="rounded bg-cartao/70 px-1.5 py-0.5 text-[0.85em]">src/content/videos.ts</code>{' '}
-                — ou rodar o importador automático com uma chave da YouTube Data API.
-              </p>
-              <a
-                href={canalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 block rounded-xl bg-noite-600 px-4 py-3 text-center text-[0.9rem] font-semibold text-areia-50 transition hover:bg-noite-400"
-              >
-                Abrir o canal {canalHandle}
+            <p className="mt-3 text-[0.85rem] text-tinta-500">
+              O player não carregou?{' '}
+              <a href={canalUrl} target="_blank" rel="noopener noreferrer" className="text-noite-600 underline underline-offset-4">
+                Assista direto no YouTube
               </a>
-            </aside>
+              .
+            </p>
           </div>
         )}
 
