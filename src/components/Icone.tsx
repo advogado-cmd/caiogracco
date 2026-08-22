@@ -10,7 +10,7 @@ export type NomeIcone =
   | 'facebook' | 'whatsapp' | 'compartilhar' | 'link' | 'menu' | 'fechar'
   | 'seta' | 'foto' | 'email' | 'telefone'
 
-/** Traços do sistema: 1.6px, cantos arredondados, sem preenchimento — leves sobre fundo claro e escuro. */
+/** Traços do sistema: 1.6px, cantos arredondados, sem preenchimento, leves sobre fundo claro e escuro. */
 const CAMINHOS: Record<NomeIcone, React.ReactNode> = {
   // --- terapias ---
   osatoshi: <><circle cx="12" cy="8" r="4.2" /><path d="M12 12.2v8.3M8.4 15.4h7.2M6 20.5c1.6-1.4 3.7-2.2 6-2.2s4.4.8 6 2.2" /></>,

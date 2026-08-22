@@ -17,7 +17,7 @@ export function schemaNegocio() {
     '@type': 'HealthAndBeautyBusiness',
     '@id': `${site.url}/#espaco`,
     name: site.nome,
-    alternateName: `${site.terapeuta} — ${site.nome}`,
+    alternateName: `${site.terapeuta}, ${site.nome}`,
     description: site.descricao,
     url: site.url,
     telephone: site.telefone,
@@ -55,7 +55,7 @@ export function schemaNegocio() {
   }
 }
 
-/** Entidade pessoa: quem atende. Essencial para GEO — dá à IA um sujeito identificável. */
+/** Entidade pessoa: quem atende. Essencial para GEO: dá à IA um sujeito identificável. */
 export function schemaPessoa() {
   return {
     '@context': 'https://schema.org',
@@ -106,13 +106,13 @@ export function schemaServico(t: Terapia) {
   }
 }
 
-/** Identifica o site como entidade e declara a busca interna — ajuda Google e motores de resposta. */
+/** Identifica o site como entidade e declara a busca interna, o que ajuda Google e motores de resposta. */
 export function schemaSite() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': `${site.url}/#site`,
-    name: `${site.terapeuta} — ${site.nome}`,
+    name: `${site.terapeuta}, ${site.nome}`,
     alternateName: site.nome,
     url: site.url,
     inLanguage: 'pt-BR',
@@ -163,8 +163,8 @@ export function schemaDefinicao(termo: string, definicao: string) {
 }
 
 /**
- * Artigo do blog. Reúne autoria, datas e o vínculo com a entidade do espaço —
- * é o que permite ao Google e aos motores de resposta atribuírem o texto a
+ * Artigo do blog. Reúne autoria, datas e o vínculo com a entidade do espaço.
+ * É o que permite ao Google e aos motores de resposta atribuírem o texto a
  * uma pessoa real, com formação declarada, e não a um site anônimo.
  */
 export function schemaArtigo(artigo: {
@@ -199,13 +199,13 @@ export function schemaArtigo(artigo: {
   }
 }
 
-/** O blog como coleção — ajuda o rastreamento a entender a hierarquia das páginas. */
+/** O blog como coleção: ajuda o rastreamento a entender a hierarquia das páginas. */
 export function schemaBlog(artigos: { titulo: string; slug: string; publicadoEm: string; resumo: string }[]) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Blog',
     '@id': `${site.url}/blog#blog`,
-    name: `Blog — ${site.nome}`,
+    name: `Blog, ${site.nome}`,
     description:
       'Textos de Caio Gracco sobre carma, trauma, prosperidade, limpeza espiritual e as oito práticas que ele atende.',
     url: `${site.url}/blog`,

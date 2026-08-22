@@ -10,7 +10,7 @@ import { galeriaFormacao, mini } from '@/content/galeria'
  *
  * Rola por scroll nativo com `scroll-snap`, o que mantém o gesto de arrastar
  * funcionando no celular sem biblioteca. O avanço automático pausa ao passar o
- * mouse, ao focar pelo teclado e quando a aba está oculta — e não roda para
+ * mouse, ao focar pelo teclado e quando a aba está oculta, e não roda para
  * quem pediu menos movimento no sistema.
  */
 export function Carrossel({ intervalo = 4200 }: { intervalo?: number }) {
@@ -89,7 +89,7 @@ export function Carrossel({ intervalo = 4200 }: { intervalo?: number }) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={mini(g.id)}
-                alt={`${g.legenda} — ${g.contexto}`}
+                alt={`${g.legenda}, ${g.contexto}`}
                 loading="lazy"
                 width={640}
                 height={640}

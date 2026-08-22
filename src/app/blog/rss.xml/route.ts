@@ -7,7 +7,7 @@ export const dynamic = 'force-static'
 const escapar = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
-/** Feed do blog. Serve a leitores de RSS e a agregadores — e é mais um caminho de descoberta. */
+/** Feed do blog. Serve a leitores de RSS e a agregadores, e é mais um caminho de descoberta. */
 export function GET() {
   const artigos = todosArtigos()
   const itens = artigos
@@ -28,7 +28,7 @@ export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog — ${escapar(site.nome)}</title>
+    <title>Blog, ${escapar(site.nome)}</title>
     <link>${site.url}/blog</link>
     <description>Textos de ${escapar(site.terapeuta)} sobre carma, trauma, prosperidade, limpeza espiritual e as práticas integrativas.</description>
     <language>pt-BR</language>

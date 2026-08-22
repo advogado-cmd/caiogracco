@@ -5,10 +5,10 @@ import { site } from './site'
  *
  * A galeria funciona de duas formas:
  *
- *  1. **Sem configuração nenhuma** — a página exibe o player da playlist de uploads
+ *  1. **Sem configuração nenhuma**: a página exibe o player da playlist de uploads
  *     do canal, que sempre mostra os vídeos mais recentes. Não exige chave de API.
  *
- *  2. **Com vídeos cadastrados aqui** — cada vídeo ganha card próprio, entra na busca
+ *  2. **Com vídeos cadastrados aqui**: cada vídeo ganha card próprio, entra na busca
  *     do site e recebe dados estruturados (VideoObject) para o Google.
  *     Para cadastrar: copie o ID da URL do vídeo (a parte depois de `v=`) e
  *     acrescente um objeto ao array `videos`. Ou rode o importador:

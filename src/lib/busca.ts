@@ -50,7 +50,7 @@ export function normalizar(texto: string) {
     .trim()
 }
 
-/** Radical simples para português — reduz plurais e sufixos comuns. */
+/** Radical simples para português: reduz plurais e sufixos comuns. */
 export function radical(palavra: string) {
   let p = palavra
   if (p.length > 5) {

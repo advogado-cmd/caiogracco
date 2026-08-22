@@ -24,14 +24,14 @@ export default function PaginaTermos() {
           {
             '@context': 'https://schema.org',
             '@type': 'WebPage',
-            name: 'Termos de uso — Terapias da Completude',
+            name: 'Termos de uso, Terapias da Completude',
             url: `${site.url}/termos-de-uso`,
             dateModified: '2026-08-17',
             publisher: { '@id': `${site.url}/#espaco` },
           },
         ]}
       />
-      <BarraCompartilhar titulo="Termos de uso — Caio Gracco" />
+      <BarraCompartilhar titulo="Termos de uso, Caio Gracco" />
 
       <div className="aurora">
         <Secao className="pb-16 pt-14 lg:pb-20 lg:pt-20">
@@ -68,7 +68,7 @@ export default function PaginaTermos() {
           <p>
             As terapias descritas são <strong>práticas complementares de bem-estar</strong>, baseadas
             em tradições próprias de sua origem, com níveis de comprovação científica diferentes entre
-            si — o que está declarado em cada página. Elas <strong>não constituem tratamento
+            si, o que está declarado em cada página. Elas <strong>não constituem tratamento
             médico</strong> e não substituem diagnóstico, exame, medicação, cirurgia, psicoterapia ou
             acompanhamento psiquiátrico.
           </p>
@@ -106,7 +106,7 @@ export default function PaginaTermos() {
 
           <h2 className="mt-10 font-display text-2xl text-noite-800">6. Conteúdo e serviços de terceiros</h2>
           <p>
-            Algumas páginas incorporam recursos externos — vídeos do YouTube, em modo sem cookies, e o
+            Algumas páginas incorporam recursos externos: vídeos do YouTube, em modo sem cookies, e o
             mapa do Google Maps na página de contato. Ao interagir com esses elementos, aplicam-se as
             políticas dos respectivos fornecedores. Links para sites de terceiros são oferecidos como
             referência; não temos controle sobre o conteúdo deles nem respondemos por ele.

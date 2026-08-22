@@ -10,7 +10,7 @@ import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { CTA } from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: 'Terapias — Osatoshi, Reiki, Shiatsu e mais',
+  title: 'Terapias: Osatoshi, Reiki, Shiatsu e mais',
   description:
     'As oito terapias atendidas por Caio Gracco: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura, Auriculoterapia e Seitai.',
   alternates: { canonical: '/terapias' },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function PaginaTerapias() {
   return (
     <>
-      <BarraCompartilhar titulo="Terapias — Caio Gracco" />
+      <BarraCompartilhar titulo="Terapias, Caio Gracco" />
       <JsonLd
         dados={[
           schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Terapias', href: '/terapias' }]),
@@ -46,7 +46,7 @@ export default function PaginaTerapias() {
             sobretitulo="Terapias"
             titulo="Oito tradições, reunidas num só cuidado"
             nivel={1}
-            texto="Cada uma tem sua origem, seu jeito de olhar e seus limites. Você não precisa escolher sozinho — mas conhecer ajuda a chegar na conversa sabendo o que perguntar."
+            texto="Cada uma tem sua origem, seu jeito de olhar e seus limites. Você não precisa escolher sozinho, mas conhecer ajuda a chegar na conversa sabendo o que perguntar."
           />
         </Secao>
       </div>

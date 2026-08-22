@@ -117,8 +117,8 @@ export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; v
           ) : resultados.length === 0 ? (
             <div className="p-4">
               <p className="text-sm text-tinta-700">
-                Não encontrei nada com essas palavras. Tente descrever a sensação ou a situação —
-                por exemplo, <em>&ldquo;acordo cansado&rdquo;</em> ou <em>&ldquo;brigas em casa&rdquo;</em>.
+                Não encontrei nada com essas palavras. Tente descrever a sensação ou a situação. Por
+                exemplo, <em>&ldquo;acordo cansado&rdquo;</em> ou <em>&ldquo;brigas em casa&rdquo;</em>.
               </p>
               <Link href="/contato" className="mt-3 inline-block text-sm font-medium text-noite-600 underline underline-offset-4">
                 Ou pergunte direto ao Caio

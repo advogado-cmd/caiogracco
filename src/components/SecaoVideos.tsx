@@ -3,7 +3,7 @@ import { Icone } from './Icone'
 import { videos, canalUrl, canalHandle, playlistUploads } from '@/content/videos'
 
 /** Vídeos do canal, incorporados. Se ainda não há vídeos cadastrados um a um,
- *  entra o player da playlist de uploads — que se atualiza sozinho. */
+ *  entra o player da playlist de uploads, que se atualiza sozinho. */
 export function SecaoVideos({ limite = 3 }: { limite?: number }) {
   const destaques = videos.slice(0, limite)
 

@@ -24,7 +24,7 @@ export function ConsentimentoCookies() {
       aplicarConsentimento(salvo)
       return
     }
-    // Sem tag configurada não há o que consentir — não incomodamos ninguém à toa.
+    // Sem tag configurada não há o que consentir, e não incomodamos ninguém à toa.
     if (!temTagsConfiguradas()) return
     const t = setTimeout(() => setEstado('aviso'), 900)
     return () => clearTimeout(t)
@@ -97,7 +97,7 @@ export function ConsentimentoCookies() {
             </h2>
             <p className="mt-2 text-[0.95rem] leading-relaxed text-tinta-700">
               O conteúdo aqui funciona sem nenhum cookie. Usamos cookies apenas para medir a audiência
-              e para mostrar anúncios a quem já visitou o site — e só se você permitir. Você pode mudar
+              e para mostrar anúncios a quem já visitou o site, e só se você permitir. Você pode mudar
               de ideia a qualquer momento.{' '}
               <Link href="/privacidade" className="underline underline-offset-2 hover:text-noite-600">
                 Leia a Política de Privacidade
@@ -117,7 +117,7 @@ export function ConsentimentoCookies() {
             <Chave
               id="c-analise" ligado={analise} aoMudar={setAnalise}
               titulo="Medição de audiência"
-              texto="Google Analytics, com IP anonimizado. Mostram quantas pessoas visitam o site e quais páginas ajudam mais — sem identificar quem é você."
+              texto="Google Analytics, com IP anonimizado. Mostram quantas pessoas visitam o site e quais páginas ajudam mais, sem identificar quem é você."
             />
             <Chave
               id="c-publicidade" ligado={publicidade} aoMudar={setPublicidade}
@@ -161,7 +161,7 @@ export function ConsentimentoCookies() {
   )
 }
 
-/** Link que reabre o painel — usado no rodapé e na política. */
+/** Link que reabre o painel, usado no rodapé e na política. */
 export function BotaoPreferenciasCookies({ className = '' }: { className?: string }) {
   return (
     <button

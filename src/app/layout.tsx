@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: '%s | Caio Gracco',
   },
   description: site.descricao,
-  applicationName: `${site.nomeSite} — ${site.nome}`,
+  applicationName: `${site.nomeSite}, ${site.nome}`,
   authors: [{ name: site.terapeuta, url: `${site.url}/sobre` }],
   creator: site.terapeuta,
   publisher: site.nome,
@@ -45,10 +45,10 @@ export const metadata: Metadata = {
     type: 'website',
     locale: site.locale,
     url: site.url,
-    siteName: `${site.nomeSite} — ${site.nome}`,
+    siteName: `${site.nomeSite}, ${site.nome}`,
     title: site.titulo,
     description: site.descricao,
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Caio Gracco — Terapias da Completude' }],
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Caio Gracco, Terapias da Completude' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -78,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/*
           Consent Mode v2: os sinais entram NEGADOS antes de qualquer tag.
-          Sem isto, o gtag assumiria consentimento — que é exatamente o que a
+          Sem isto, o gtag assumiria consentimento, que é exatamente o que a
           LGPD e a Política de Consentimento do Usuário do Google proíbem.
         */}
         <Script id="consent-default" strategy="beforeInteractive">

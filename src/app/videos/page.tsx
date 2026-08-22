@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     'Os vídeos de Caio Gracco no YouTube sobre Osatoshi, limpeza espiritual, EMF Balancing Technique® e as demais terapias que ele atende.',
   alternates: { canonical: '/videos' },
-  openGraph: { url: `${site.url}/videos`, title: 'Vídeos de Caio Gracco — Terapias da Completude' },
+  openGraph: { url: `${site.url}/videos`, title: 'Vídeos de Caio Gracco, Terapias da Completude' },
 }
 
 export default function PaginaVideos() {
@@ -20,7 +20,7 @@ export default function PaginaVideos() {
 
   return (
     <>
-      <BarraCompartilhar titulo="Vídeos de Caio Gracco — Caio Gracco" />
+      <BarraCompartilhar titulo="Vídeos de Caio Gracco" />
       <JsonLd
         dados={[
           schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Vídeos', href: '/videos' }]),

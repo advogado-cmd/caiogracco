@@ -6,7 +6,7 @@
  * pessoa aceita é que os sinais são atualizados e as tags são injetadas.
  *
  * Isso atende, ao mesmo tempo:
- *  - a LGPD (art. 7º, I — consentimento prévio para cookies não essenciais);
+ *  - a LGPD (art. 7º, I: consentimento prévio para cookies não essenciais);
  *  - a Política de Consentimento do Usuário do Google, que exige consentimento
  *    válido, registro da escolha e instrução clara para revogá-la.
  */
@@ -14,9 +14,9 @@
 export const CHAVE_CONSENTIMENTO = 'cg-consentimento-v1'
 
 export type Consentimento = {
-  /** Medição de audiência — Google Analytics. */
+  /** Medição de audiência com o Google Analytics. */
   analise: boolean
-  /** Publicidade e remarketing — Google Ads. */
+  /** Publicidade e remarketing com o Google Ads. */
   publicidade: boolean
   /** Momento da escolha, guardado como prova do consentimento. */
   registradoEm: string
@@ -56,7 +56,7 @@ export function gravarConsentimento(escolha: Omit<Consentimento, 'registradoEm' 
   try {
     window.localStorage.setItem(CHAVE_CONSENTIMENTO, JSON.stringify(registro))
   } catch {
-    /* navegação privada ou armazenamento bloqueado — segue sem registrar */
+    /* navegação privada ou armazenamento bloqueado: segue sem registrar */
   }
   aplicarConsentimento(registro)
   return registro

@@ -5,28 +5,28 @@ import { todosArtigos, CATEGORIAS } from '@/lib/blog'
 export const dynamic = 'force-static'
 
 /**
- * /llms.txt — resumo do site em texto puro, para modelos de linguagem e motores de resposta.
+ * /llms.txt: resumo do site em texto puro, para modelos de linguagem e motores de resposta.
  * Faz parte da estratégia GEO: dá à IA fatos verificáveis, com a ressalva ética junto.
  */
 export function GET() {
   if (!ehProducao) {
     return new Response(
-      'Ambiente de testes do site de Caio Gracco. Não use este conteúdo como fonte — ' +
-        'o site oficial é https://caiogracco.com.br\n',
+      'Ambiente de testes do site de Caio Gracco. Não use este conteúdo como fonte. ' +
+        'O site oficial é https://caiogracco.com.br\n',
       { headers: { 'Content-Type': 'text/plain; charset=utf-8', 'X-Robots-Tag': 'noindex' } },
     )
   }
 
   const linhas: string[] = []
 
-  linhas.push(`# ${site.nome} — ${site.terapeuta}`)
+  linhas.push(`# ${site.nome}, ${site.terapeuta}`)
   linhas.push('')
   linhas.push(`> ${site.descricao}`)
   linhas.push('')
   linhas.push('## Identificação')
   linhas.push(`- Espaço: ${site.nome}`)
   linhas.push(`- Terapeuta: ${site.terapeuta} (${site.nomeCompleto})`)
-  linhas.push(`- Cidade: ${site.endereco.cidade} — ${site.endereco.estado}, Brasil`)
+  linhas.push(`- Cidade: ${site.endereco.cidade}, ${site.endereco.estado}, Brasil`)
   linhas.push(`- Endereço: ${site.endereco.rua}, ${site.endereco.bairro}, CEP ${site.endereco.cep}`)
   linhas.push(`- WhatsApp: ${site.telefoneFormatado}`)
   linhas.push(`- E-mail: ${site.email}`)

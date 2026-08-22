@@ -14,7 +14,7 @@ export function AvisoCuidado({ compacto = false }: { compacto?: boolean }) {
         As práticas oferecidas aqui são abordagens complementares de bem-estar, baseadas em tradições
         próprias de sua origem. Elas <strong className="font-semibold">não substituem</strong> diagnóstico,
         tratamento ou acompanhamento médico, psicológico ou psiquiátrico. Diante de qualquer sintoma físico
-        ou mental, procure um profissional habilitado — e não interrompa nenhum tratamento em curso.{' '}
+        ou mental, procure um profissional habilitado, e não interrompa nenhum tratamento em curso.{' '}
         <Link href="/aviso-de-cuidado" className="underline underline-offset-2 hover:text-noite-600">
           Entenda melhor
         </Link>

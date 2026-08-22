@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const ATUALIZACAO = '21 de agosto de 2026'
 
-/** Sumário navegável — exigência prática de "informação proeminente e acessível". */
+/** Sumário navegável, exigência prática de "informação proeminente e acessível". */
 const SUMARIO = [
   ['1', 'Quem trata os seus dados'],
   ['2', 'A quem esta política se aplica'],
@@ -50,7 +50,7 @@ export default function PaginaPrivacidade() {
           {
             '@context': 'https://schema.org',
             '@type': 'WebPage',
-            name: 'Política de Privacidade — Caio Gracco, Terapias da Completude',
+            name: 'Política de Privacidade de Caio Gracco, Terapias da Completude',
             url: `${site.url}/privacidade`,
             dateModified: '2026-08-21',
             inLanguage: 'pt-BR',
@@ -58,7 +58,7 @@ export default function PaginaPrivacidade() {
           },
         ]}
       />
-      <BarraCompartilhar titulo="Política de Privacidade — Caio Gracco" />
+      <BarraCompartilhar titulo="Política de Privacidade de Caio Gracco" />
 
       <div className="aurora">
         <Secao className="pb-16 pt-14 lg:pb-20 lg:pt-20">
@@ -117,7 +117,7 @@ export default function PaginaPrivacidade() {
               <ul className="flex list-disc flex-col gap-2 pl-5 text-[1rem] leading-relaxed text-tinta-700">
                 <li>O conteúdo do site funciona <strong>sem nenhum cookie</strong>. Ler qualquer página não exige aceitar nada.</li>
                 <li>A busca interna roda no seu navegador. O que você digita <strong>não é enviado</strong> a servidor algum.</li>
-                <li>Cookies de medição e de publicidade só existem <strong>se você aceitar</strong> — e começam desligados.</li>
+                <li>Cookies de medição e de publicidade só existem <strong>se você aceitar</strong>, e começam desligados.</li>
                 <li>O formulário de contato não grava nada aqui: ele abre o seu e-mail ou o WhatsApp.</li>
                 <li>Não vendemos, alugamos nem cedemos dados pessoais a ninguém.</li>
                 <li><strong>Nenhum dado sobre a sua saúde é usado para direcionar anúncios.</strong></li>
@@ -130,7 +130,7 @@ export default function PaginaPrivacidade() {
             <h2 id="s4" className="mt-12 scroll-mt-24 font-display text-2xl text-noite-800">4. Dados que coletamos</h2>
             <p><strong>4.1. Dados que você nos fornece.</strong> Quando você escreve por WhatsApp, e-mail ou
             pelo formulário: nome, e-mail, telefone, a terapia de interesse, o formato de atendimento
-            desejado e o relato do que você busca. Em algumas práticas — o Osatoshi, por exemplo — a
+            desejado e o relato do que você busca. Em algumas práticas, como o Osatoshi, a
             tradição pede também data e local de nascimento.</p>
 
             <p><strong>4.2. Dados coletados automaticamente pelo servidor.</strong> O provedor de
@@ -138,8 +138,7 @@ export default function PaginaPrivacidade() {
             acesso, páginas visitadas, tipo de navegador e sistema operacional, e o site de origem.
             Esses registros são mantidos em caráter técnico e não são usados para criar perfis.</p>
 
-            <p><strong>4.3. Dados coletados por cookies, mediante consentimento.</strong> Se — e somente
-            se — você autorizar, ferramentas do Google passam a registrar páginas vistas, tempo de
+            <p><strong>4.3. Dados coletados por cookies, mediante consentimento.</strong> Somente se você autorizar, ferramentas do Google passam a registrar páginas vistas, tempo de
             permanência, origem da visita, dispositivo, cidade aproximada e interações relevantes
             (como um clique no botão de WhatsApp). Os detalhes estão nas seções 5, 6 e 7.</p>
 
@@ -186,7 +185,7 @@ export default function PaginaPrivacidade() {
             </div>
             <p className="mt-5">
               <strong>Consentimento prévio de verdade.</strong> Enquanto você não decidir, os sinais de
-              publicidade e de medição permanecem <em>negados</em> — usamos o Modo de Consentimento v2
+              publicidade e de medição permanecem <em>negados</em>. Usamos o Modo de Consentimento v2
               do Google, que bloqueia a gravação desses cookies antes da sua autorização. Você pode
               rever a escolha a qualquer momento em{' '}
               <BotaoPreferenciasCookies className="underline underline-offset-2 hover:text-noite-600" />,
@@ -202,7 +201,7 @@ export default function PaginaPrivacidade() {
             </p>
             <p>
               Caso os relatórios de Dados Demográficos e Interesses estejam ativos, o Google poderá
-              estimar faixa etária, gênero e interesses gerais a partir de cookies de publicidade — sempre
+              estimar faixa etária, gênero e interesses gerais a partir de cookies de publicidade, sempre
               de forma agregada e nunca vinculada ao seu nome. Você pode desativar essa coleta a
               qualquer momento nas{' '}
               <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer nofollow">
@@ -235,7 +234,7 @@ export default function PaginaPrivacidade() {
               <li>
                 Usamos <strong>remarketing</strong>: quem visitou o site pode voltar a ver nossos
                 anúncios em outros sites e aplicativos da rede do Google. Isso <em>não</em> revela quem
-                você é para nós — trabalhamos apenas com listas anônimas administradas pelo Google.
+                você é para nós: trabalhamos apenas com listas anônimas administradas pelo Google.
               </li>
               <li>
                 Usamos <strong>acompanhamento de conversões</strong> para saber se um anúncio resultou
@@ -282,7 +281,7 @@ export default function PaginaPrivacidade() {
             <p>
               Assumimos um compromisso que vai além do exigido:{' '}
               <strong>nenhuma informação sobre a sua saúde, condição, sintoma ou crença é utilizada
-              para segmentar, personalizar ou direcionar anúncios</strong> — nem por nós, nem por meio
+              para segmentar, personalizar ou direcionar anúncios</strong>, nem por nós, nem por meio
               de listas fornecidas a plataformas de publicidade. Não criamos públicos personalizados a
               partir de dados de saúde, em linha com a política do Google que restringe a publicidade
               personalizada em categorias sensíveis.
@@ -305,13 +304,13 @@ export default function PaginaPrivacidade() {
                 </thead>
                 <tbody className="divide-y divide-noite-100 align-top">
                   {[
-                    ['Responder a mensagens e agendar atendimentos', 'Execução de contrato ou diligências preliminares a pedido do titular — art. 7º, V'],
-                    ['Conduzir e acompanhar o atendimento', 'Consentimento específico e destacado — art. 11, I'],
-                    ['Manter o site no ar, com segurança', 'Legítimo interesse — art. 7º, IX'],
-                    ['Medir audiência com o Google Analytics', 'Consentimento — art. 7º, I'],
-                    ['Publicidade, remarketing e conversões', 'Consentimento — art. 7º, I'],
-                    ['Cumprir obrigações fiscais e legais', 'Obrigação legal ou regulatória — art. 7º, II'],
-                    ['Exercer direitos em processo, se necessário', 'Exercício regular de direitos — art. 7º, VI'],
+                    ['Responder a mensagens e agendar atendimentos', 'Execução de contrato ou diligências preliminares a pedido do titular (art. 7º, V)'],
+                    ['Conduzir e acompanhar o atendimento', 'Consentimento específico e destacado (art. 11, I)'],
+                    ['Manter o site no ar, com segurança', 'Legítimo interesse (art. 7º, IX)'],
+                    ['Medir audiência com o Google Analytics', 'Consentimento (art. 7º, I)'],
+                    ['Publicidade, remarketing e conversões', 'Consentimento (art. 7º, I)'],
+                    ['Cumprir obrigações fiscais e legais', 'Obrigação legal ou regulatória (art. 7º, II)'],
+                    ['Exercer direitos em processo, se necessário', 'Exercício regular de direitos (art. 7º, VI)'],
                   ].map(([f, b]) => (
                     <tr key={f}>
                       <th scope="row" className="px-5 py-4 font-medium text-noite-800">{f}</th>
@@ -328,11 +327,11 @@ export default function PaginaPrivacidade() {
               compartilhamento se limita ao estritamente necessário, com os seguintes destinatários:
             </p>
             <ul className="mt-4 flex list-disc flex-col gap-2 pl-5">
-              <li><strong>Google LLC</strong> — Analytics e Ads, apenas se você consentir com os cookies correspondentes.</li>
-              <li><strong>Vercel Inc.</strong> — hospedagem do site e registros técnicos de acesso.</li>
-              <li><strong>Meta Platforms</strong> — se você optar por falar pelo WhatsApp, a conversa passa a ser regida pelas políticas do aplicativo.</li>
-              <li><strong>Provedor do seu e-mail</strong> — se você optar por escrever por e-mail.</li>
-              <li><strong>Autoridades públicas</strong> — apenas mediante determinação legal ou ordem judicial.</li>
+              <li><strong>Google LLC</strong>: Analytics e Ads, apenas se você consentir com os cookies correspondentes.</li>
+              <li><strong>Vercel Inc.</strong>: hospedagem do site e registros técnicos de acesso.</li>
+              <li><strong>Meta Platforms</strong>: se você optar por falar pelo WhatsApp, a conversa passa a ser regida pelas políticas do aplicativo.</li>
+              <li><strong>Provedor do seu e-mail</strong>: se você optar por escrever por e-mail.</li>
+              <li><strong>Autoridades públicas</strong>: apenas mediante determinação legal ou ordem judicial.</li>
             </ul>
 
             <h2 id="s11" className="mt-12 scroll-mt-24 font-display text-2xl text-noite-800">11. Transferência internacional</h2>
@@ -358,7 +357,7 @@ export default function PaginaPrivacidade() {
               cifrado por HTTPS, dispositivos protegidos por senha, acesso restrito ao terapeuta,
               hospedagem em infraestrutura com padrões reconhecidos de segurança e sigilo profissional
               sobre tudo o que é dito em atendimento. Nenhum sistema é infalível, e não prometemos
-              segurança absoluta — prometemos diligência e transparência.
+              segurança absoluta. Prometemos diligência e transparência.
             </p>
 
             <h2 id="s14" className="mt-12 scroll-mt-24 font-display text-2xl text-noite-800">14. Seus direitos como titular</h2>
@@ -378,7 +377,7 @@ export default function PaginaPrivacidade() {
             <p className="mt-4">
               Basta escrever para <a href={`mailto:${site.email}`}>{site.email}</a>. Respondemos no
               menor prazo possível e, nos casos em que a lei fixa limite, em até 15 dias. Podemos pedir
-              confirmação de identidade antes de atender — é uma proteção para você, não um obstáculo.
+              confirmação de identidade antes de atender. É uma proteção para você, não um obstáculo.
             </p>
 
             <h2 id="s15" className="mt-12 scroll-mt-24 font-display text-2xl text-noite-800">15. Como revogar o consentimento</h2>
@@ -412,8 +411,8 @@ export default function PaginaPrivacidade() {
 
             <h2 id="s18" className="mt-12 scroll-mt-24 font-display text-2xl text-noite-800">18. Sites de terceiros</h2>
             <p>
-              O site incorpora vídeos do YouTube em modo <em>sem cookies</em> — que não gravam nada
-              antes de você dar play — e um mapa do Google Maps na página de contato. Ao interagir com
+              O site incorpora vídeos do YouTube em modo <em>sem cookies</em>, que não gravam nada
+              antes de você dar play, e um mapa do Google Maps na página de contato. Ao interagir com
               esses elementos, aplicam-se as políticas do Google. Links para outros sites são oferecidos
               como referência; não controlamos seu conteúdo nem suas práticas de privacidade.
             </p>

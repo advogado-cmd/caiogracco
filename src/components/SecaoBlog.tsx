@@ -8,7 +8,7 @@ import { artigosPopulares } from '@/lib/blog'
  *
  * A ordem vem de `src/content/populares.json`, que pode ser regerado a partir
  * dos dados de audiência (ver `scripts/atualizar-populares.mjs`). Sem esse
- * arquivo, entra o peso editorial definido em cada artigo — ou seja, a seção
+ * arquivo, entra o peso editorial definido em cada artigo, ou seja, a seção
  * funciona desde o primeiro dia e fica mais precisa quando houver audiência.
  */
 export function SecaoBlog({ limite = 3 }: { limite?: number }) {

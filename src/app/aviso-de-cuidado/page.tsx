@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   description:
     'Limites, evidência e responsabilidade: as terapias oferecidas por Caio Gracco são complementares e não substituem acompanhamento médico ou psicológico.',
   alternates: { canonical: '/aviso-de-cuidado' },
-  openGraph: { url: `${site.url}/aviso-de-cuidado`, title: 'Aviso de cuidado — Terapias da Completude' },
+  openGraph: { url: `${site.url}/aviso-de-cuidado`, title: 'Aviso de cuidado, Terapias da Completude' },
 }
 
 export default function PaginaAviso() {
   return (
     <>
-      <BarraCompartilhar titulo="Aviso de cuidado — Caio Gracco" />
+      <BarraCompartilhar titulo="Aviso de cuidado, Caio Gracco" />
       <JsonLd dados={schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Aviso de cuidado', href: '/aviso-de-cuidado' }])} />
 
       <div className="aurora">
@@ -27,7 +27,7 @@ export default function PaginaAviso() {
             claro
             icone="escudo"
             sobretitulo="Transparência"
-            titulo="O que estas práticas são — e o que elas não são"
+            titulo="O que estas práticas são e o que elas não são"
             nivel={1}
             texto="Esta página existe porque respeito você o bastante para não prometer o que não posso entregar."
           />
@@ -40,7 +40,7 @@ export default function PaginaAviso() {
           <p>
             Tudo o que é oferecido aqui pertence ao campo das práticas
             complementares de bem-estar. Isso significa que elas podem caminhar <strong>ao lado</strong>{' '}
-            do seu cuidado de saúde — nunca no lugar dele. Nenhuma sessão aqui diagnostica doença,
+            do seu cuidado de saúde, nunca no lugar dele. Nenhuma sessão aqui diagnostica doença,
             prescreve medicamento ou substitui exame, consulta, cirurgia, psicoterapia ou
             acompanhamento psiquiátrico.
           </p>
@@ -49,7 +49,7 @@ export default function PaginaAviso() {
           <p>
             Se você faz uso de medicação, acompanhamento psicológico, psiquiátrico ou qualquer
             tratamento médico, mantenha. Nada do que acontece numa sessão justifica suspender o que
-            um profissional de saúde indicou. Se em algum momento alguém — inclusive um terapeuta —
+            um profissional de saúde indicou. Se em algum momento alguém, inclusive um terapeuta,
             sugerir o contrário, desconfie.
           </p>
 
@@ -68,7 +68,7 @@ export default function PaginaAviso() {
               reconhecimento institucional consolidado no SUS.
             </li>
             <li>
-              O <strong>Reiki</strong> integra as práticas do SUS desde 2017 — o que é reconhecimento de
+              O <strong>Reiki</strong> integra as práticas do SUS desde 2017, o que é reconhecimento de
               política pública, e não validação científica de eficácia.
             </li>
             <li>
@@ -85,7 +85,7 @@ export default function PaginaAviso() {
             </li>
           </ul>
           <p className="mt-4">
-            Dizer isso não diminui nenhuma dessas práticas. Só coloca cada uma no seu lugar — que é
+            Dizer isso não diminui nenhuma dessas práticas. Só coloca cada uma no seu lugar, que é
             onde ela funciona melhor.
           </p>
 
@@ -93,7 +93,7 @@ export default function PaginaAviso() {
           <p>
             Há situações em que a resposta honesta não é marcar uma sessão. Sinais de sofrimento
             psíquico intenso, pensamentos de morte, dores persistentes sem investigação, febre, perda
-            de peso inexplicada, alterações neurológicas — tudo isso pede avaliação profissional
+            de peso inexplicada, alterações neurológicas: tudo isso pede avaliação profissional
             imediata. Em caso de crise emocional, o <strong>CVV</strong> atende gratuitamente pelo
             telefone <strong>188</strong>, 24 horas por dia. Em emergência, procure o SAMU (192) ou a
             unidade de saúde mais próxima.
@@ -104,7 +104,7 @@ export default function PaginaAviso() {
             Não há garantia de resultado em nenhuma das práticas oferecidas. As respostas variam de
             pessoa para pessoa, e parte do que se sente numa sessão é subjetivo por natureza. Você
             será sempre informado sobre o que esperar, o que não esperar e quantas sessões costumam
-            fazer sentido — sem pressão para continuar.
+            fazer sentido, sem pressão para continuar.
           </p>
 
           <h2 className="mt-10 font-display text-2xl text-noite-800">Perguntas são bem-vindas</h2>

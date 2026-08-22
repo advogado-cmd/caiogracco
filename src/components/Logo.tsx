@@ -23,7 +23,7 @@ export function Logo({ variante = 'escura', compacta = false, className = '', an
     <Link
       href="/"
       className={`grupo-marca group flex items-center gap-3 ${className}`}
-      aria-label="Caio Gracco — Terapias da Completude, página inicial"
+      aria-label="Caio Gracco: Terapias da Completude, página inicial"
     >
       <SimboloSol
         variante={variante}

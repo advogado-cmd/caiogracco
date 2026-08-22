@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     'Textos de Caio Gracco sobre limpeza espiritual, carma familiar, trauma guardado no corpo, bloqueio financeiro e as oito práticas que ele atende.',
   alternates: { canonical: '/blog', types: { 'application/rss+xml': `${site.url}/blog/rss.xml` } },
-  openGraph: { url: `${site.url}/blog`, title: `Blog — ${site.nome}` },
+  openGraph: { url: `${site.url}/blog`, title: `Blog, ${site.nome}` },
 }
 
 export default function PaginaBlog() {
@@ -30,7 +30,7 @@ export default function PaginaBlog() {
 
   return (
     <>
-      <BarraCompartilhar titulo={`Blog — ${site.nome}`} />
+      <BarraCompartilhar titulo={`Blog, ${site.nome}`} />
       <JsonLd
         dados={[
           schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Blog', href: '/blog' }]),
@@ -46,7 +46,7 @@ export default function PaginaBlog() {
             sobretitulo="Blog"
             titulo="O que costuma trazer alguém até aqui"
             nivel={1}
-            texto="Carma que se repete na família, dor que os exames não explicam, dinheiro que não para na mão, um vínculo que não se desfaz. São os assuntos que mais aparecem nas conversas — e que ficam melhor explicados por escrito, com calma."
+            texto="Carma que se repete na família, dor que os exames não explicam, dinheiro que não para na mão, um vínculo que não se desfaz. São os assuntos que mais aparecem nas conversas, e que ficam melhor explicados por escrito, com calma."
           />
 
           <div className="mt-9 flex flex-wrap gap-2.5">
@@ -120,7 +120,7 @@ export default function PaginaBlog() {
       <Secao className="py-14 lg:py-20">
         <CTA
           titulo="Quero iniciar minha terapia agora"
-          texto="Ler ajuda a entender. Mas o que se repete há anos costuma pedir uma conversa. Escreva contando o que está acontecendo — o Caio responde pessoalmente."
+          texto="Ler ajuda a entender. Mas o que se repete há anos costuma pedir uma conversa. Escreva contando o que está acontecendo. O Caio responde pessoalmente."
         />
       </Secao>
     </>

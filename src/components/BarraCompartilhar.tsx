@@ -40,7 +40,7 @@ export function BarraCompartilhar({ titulo, className = '' }: Props) {
 
   return (
     <>
-      {/* Desktop — coluna fixa */}
+      {/* Desktop: coluna fixa */}
       <aside
         aria-label="Compartilhar esta página"
         className={`sem-impressao fixed left-4 top-1/2 z-30 hidden -translate-y-1/2 flex-col items-center gap-2 xl:flex ${className}`}
@@ -78,7 +78,7 @@ export function BarraCompartilhar({ titulo, className = '' }: Props) {
         <span aria-live="polite" className="sr-only">{copiado ? 'Endereço copiado' : ''}</span>
       </aside>
 
-      {/* Mobile e tablet — faixa em linha */}
+      {/* Mobile e tablet: faixa em linha */}
       <div className="sem-impressao mt-10 flex items-center gap-3 rounded-2xl border border-noite-100 bg-cartao px-5 py-4 xl:hidden">
         <span className="flex items-center gap-2 text-[0.85rem] font-medium text-tinta-700">
           <Icone nome="compartilhar" tamanho={18} />

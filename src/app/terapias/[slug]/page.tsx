@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   const t = getTerapia(slug)
   if (!t) return {}
-  const titulo = `${t.nomeCurto} — o que é e como funciona`
+  const titulo = `${t.nomeCurto}: o que é e como funciona`
   const onde = t.sessao.distancia === 'sim' ? 'online, para todo o Brasil' : 'presencialmente, com hora marcada'
   const descricao = `${t.nome}: ${t.tagline.toLowerCase()}. ${t.resumo.split('. ')[0]}. Com Caio Gracco, ${onde}.`
   return {
@@ -67,7 +67,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
 
   return (
     <>
-      <BarraCompartilhar titulo={`${t.nome} — Caio Gracco`} />
+      <BarraCompartilhar titulo={`${t.nome}, Caio Gracco`} />
       <JsonLd
         dados={[
           schemaServico(t),
@@ -157,7 +157,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
 
             <section aria-labelledby="evidencia" className="mt-12">
               <h2 id="evidencia" className="font-display text-2xl text-noite-800 sm:text-3xl">
-                O que se sabe — e o que não se sabe
+                O que se sabe e o que não se sabe
               </h2>
               <div className="mt-4 rounded-2xl border-l-4 border-noite-400 bg-noite-100/60 p-5 sm:p-6">
                 <p className="text-[0.98rem] leading-relaxed text-tinta-700">{t.evidencia}</p>
@@ -274,7 +274,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
               <p className="font-display text-lg text-noite-800">Quer conversar antes?</p>
               <p className="mt-2 text-[0.88rem] leading-relaxed text-tinta-700">
                 Conte o que está acontecendo. O Caio responde pessoalmente e diz com honestidade se o
-                {' '}{t.nomeCurto} é o caminho — ou se há um melhor.
+                {' '}{t.nomeCurto} é o caminho, ou se há um melhor.
               </p>
               <a
                 href={whatsappLink(`Olá, Caio! Gostaria de saber mais sobre ${t.nome}.`)}

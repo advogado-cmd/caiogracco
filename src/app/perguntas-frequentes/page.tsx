@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     'Dúvidas respondidas terapia por terapia: como funciona, se dói, se pode ser online, quantas sessões e as contraindicações de cada prática.',
   alternates: { canonical: '/perguntas-frequentes' },
-  openGraph: { url: `${site.url}/perguntas-frequentes`, title: 'Perguntas frequentes — Terapias da Completude' },
+  openGraph: { url: `${site.url}/perguntas-frequentes`, title: 'Perguntas frequentes, Terapias da Completude' },
 }
 
 export default function PaginaPerguntas() {
@@ -25,7 +25,7 @@ export default function PaginaPerguntas() {
 
   return (
     <>
-      <BarraCompartilhar titulo="Perguntas frequentes — Caio Gracco" />
+      <BarraCompartilhar titulo="Perguntas frequentes, Caio Gracco" />
       <JsonLd
         dados={[
           schemaFAQ(todas),

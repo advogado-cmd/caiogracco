@@ -7,7 +7,7 @@ type Props = {
 }
 
 /**
- * Símbolo oficial — o sol da Completude — desenhado inline para poder animar.
+ * Símbolo oficial, o sol da Completude, desenhado inline para poder animar.
  *
  * Só os raios se movem: os longos e os curtos irradiam em tempos opostos,
  * um estendendo enquanto o outro recolhe. O anel, o núcleo e a divisão
@@ -80,7 +80,7 @@ export function SimboloSol({ variante = 'escura', className = '', animado = true
       {/* anel externo */}
       <circle cx="100" cy="100" r="96" fill="none" stroke={raio('ring')} strokeWidth="1.4" />
 
-      {/* coroa de raios — os longos e os curtos irradiam em tempos opostos */}
+      {/* coroa de raios: os longos e os curtos irradiam em tempos opostos */}
       <g filter={`url(#${p}-soft)`}>
         <g className="sol-raios-longos">
           <use href={`#${p}-ribLongG`} />

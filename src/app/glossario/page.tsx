@@ -33,7 +33,7 @@ function montarVerbetes(): Verbete[] {
       }
     }
   }
-  // Verbetes do campo mais amplo — as práticas da PNPIC e o vocabulário das tradições.
+  // Verbetes do campo mais amplo: as práticas da PNPIC e o vocabulário das tradições.
   // Não sobrescrevem os termos das terapias atendidas aqui, que têm precedência.
   for (const extra of glossarioExtra) {
     const chave = normalizar(extra.termo)
@@ -59,7 +59,7 @@ export default function PaginaGlossario() {
 
   return (
     <>
-      <BarraCompartilhar titulo="Glossário — Caio Gracco" />
+      <BarraCompartilhar titulo="Glossário, Caio Gracco" />
       <JsonLd
         dados={[
           schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Glossário', href: '/glossario' }]),
@@ -67,7 +67,7 @@ export default function PaginaGlossario() {
             '@context': 'https://schema.org',
             '@type': 'DefinedTermSet',
             '@id': `${site.url}/glossario#conjunto`,
-            name: 'Glossário de Terapias Integrativas — Terapias da Completude',
+            name: 'Glossário de Terapias Integrativas, Terapias da Completude',
             description: 'Termos das tradições japonesas, chinesas e contemporâneas praticadas por Caio Gracco.',
             url: `${site.url}/glossario`,
             hasDefinedTerm: verbetes.map((v) => ({

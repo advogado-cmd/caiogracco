@@ -25,7 +25,7 @@ export const navLegal: ItemNav[] = [
   { href: '/privacidade', rotulo: 'Privacidade e LGPD', icone: 'escudo' },
 ]
 
-/** Tudo junto, para o rodapé e o mapa do site — sem repetir o que aparece nos dois grupos. */
+/** Tudo junto, para o rodapé e o mapa do site, sem repetir o que aparece nos dois grupos. */
 export const navegacao = [...navPrincipal, ...navDrawer].filter(
   (item, i, lista) => lista.findIndex((x) => x.href === item.href) === i,
 )

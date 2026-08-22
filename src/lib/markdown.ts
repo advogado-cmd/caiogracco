@@ -15,12 +15,12 @@ import { createElement as h, Fragment } from 'react'
  *   1. item            lista numerada
  *   > citação          bloco destacado
  *   :::destaque        caixa clara, para o ponto central de uma seção
- *   :::cuidado         caixa de ressalva — limites, contraindicações, quando procurar médico
+ *   :::cuidado         caixa de ressalva: limites, contraindicações, quando procurar médico
  *   | tabela |         tabela simples com cabeçalho
  *   **negrito**  *itálico*  [texto](link)  `código`
  */
 
-/** Âncora estável para um título — usada no sumário e nos links diretos. */
+/** Âncora estável para um título, usada no sumário e nos links diretos. */
 export function idDeTitulo(texto: string) {
   return texto
     .toLowerCase()
@@ -294,7 +294,7 @@ export function renderizarMarkdown(
   )
 }
 
-/** Texto puro do artigo — alimenta a busca interna e o resumo do RSS. */
+/** Texto puro do artigo: alimenta a busca interna e o resumo do RSS. */
 export function textoPuro(md: string) {
   return md
     .replace(/^---json[\s\S]*?---/m, '')

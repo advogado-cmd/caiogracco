@@ -8,7 +8,7 @@ import { terapias } from '@/content/terapias'
 /**
  * Formulário de contato sem servidor: monta a mensagem e abre o cliente de
  * e-mail do visitante já preenchido, endereçado ao Caio. Nada é enviado para
- * terceiros nem armazenado — o que também simplifica a conformidade com a LGPD.
+ * terceiros nem armazenado, o que também simplifica a conformidade com a LGPD.
  * Quem preferir, tem o atalho de enviar o mesmo texto pelo WhatsApp.
  */
 export function FormularioContato() {
@@ -32,7 +32,7 @@ export function FormularioContato() {
       'Mensagem:',
       mensagem,
       '',
-      '— Enviado pelo formulário do site caiogracco',
+      'Enviado pelo formulário do site caiogracco',
     ]
       .filter(Boolean)
       .join('\n')
@@ -40,7 +40,7 @@ export function FormularioContato() {
   const validar = () => {
     if (!nome.trim()) return 'Por favor, escreva seu nome.'
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return 'Confira o e-mail: ele parece incompleto.'
-    if (mensagem.trim().length < 10) return 'Conte um pouco mais sobre o que você busca — algumas linhas bastam.'
+    if (mensagem.trim().length < 10) return 'Conte um pouco mais sobre o que você busca. Algumas linhas bastam.'
     if (!consentimento) return 'Para continuar, é preciso concordar com o uso dos dados para responder ao contato.'
     return ''
   }
@@ -50,7 +50,7 @@ export function FormularioContato() {
     const problema = validar()
     setErro(problema)
     if (problema) return
-    const assunto = encodeURIComponent(`Contato pelo site — ${nome}${interesse ? ` — ${interesse}` : ''}`)
+    const assunto = encodeURIComponent(`Contato pelo site: ${nome}${interesse ? `, ${interesse}` : ''}`)
     window.location.href = `mailto:${site.email}?subject=${assunto}&body=${encodeURIComponent(corpo())}`
   }
 
@@ -106,7 +106,7 @@ export function FormularioContato() {
           <label htmlFor="interesse" className={rotulo}>Terapia de interesse</label>
           <select id="interesse" name="interesse" value={interesse}
             onChange={(e) => setInteresse(e.target.value)} className={campo}>
-            <option value="">Ainda não sei — quero orientação</option>
+            <option value="">Ainda não sei, quero orientação</option>
             {terapias.map((t) => <option key={t.slug} value={t.nome}>{t.nome}</option>)}
           </select>
         </div>
@@ -127,7 +127,7 @@ export function FormularioContato() {
           </label>
           <textarea id="mensagem" name="mensagem" required rows={6} value={mensagem}
             onChange={(e) => setMensagem(e.target.value)} className={`${campo} resize-y`}
-            placeholder="Conte com suas palavras. Não precisa usar termos técnicos — há quanto tempo isso vem acontecendo já ajuda muito." />
+            placeholder="Conte com suas palavras. Não precisa usar termos técnicos. Há quanto tempo isso vem acontecendo já ajuda muito." />
         </div>
       </div>
 

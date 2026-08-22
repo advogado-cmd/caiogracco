@@ -11,7 +11,7 @@ type Props = { numero: number; className?: string; prioridade?: boolean }
 
 /**
  * Espaço de foto numerado. Se a imagem já foi entregue, renderiza a foto.
- * Se ainda não, não renderiza nada — o espaço reservado é só um controle
+ * Se ainda não, não renderiza nada, porque o espaço reservado é só um controle
  * interno (ver `src/content/fotos.ts`) e nunca chega ao visitante.
  */
 export function Foto({ numero, className = '', prioridade = false }: Props) {

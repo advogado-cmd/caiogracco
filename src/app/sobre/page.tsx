@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   description:
     'Caio Gracco começou sua missão como terapeuta aos 14 anos. Atende online para todo o Brasil e presencialmente, com oito abordagens integrativas.',
   alternates: { canonical: '/sobre' },
-  openGraph: { url: `${site.url}/sobre`, title: 'Sobre Caio Gracco — Terapias da Completude', type: 'profile' },
+  openGraph: { url: `${site.url}/sobre`, title: 'Sobre Caio Gracco, Terapias da Completude', type: 'profile' },
 }
 
 export default function PaginaSobre() {
   return (
     <>
-      <BarraCompartilhar titulo="Sobre Caio Gracco — Caio Gracco" />
+      <BarraCompartilhar titulo="Sobre Caio Gracco" />
       <JsonLd
         dados={[
           {
@@ -62,22 +62,22 @@ export default function PaginaSobre() {
           <div className="max-w-3xl">
             <div className="prosa">
               <p>
-                A caminhada de Caio Gracco começou cedo — aos 14 anos, quando o cuidado com o outro
+                A caminhada de Caio Gracco começou cedo, aos 14 anos, quando o cuidado com o outro
                 deixou de ser curiosidade e virou vocação. De lá para cá, foram décadas de estudo e de
                 prática, passando por tradições muito diferentes entre si: o toque das terapias manuais
                 japonesas, os pontos da medicina chinesa, o trabalho energético contemporâneo e, mais
-                recentemente, o Osatoshi — a técnica japonesa transmitida pela Shinri, à qual ele hoje
+                recentemente, o Osatoshi, a técnica japonesa transmitida pela Shinri, à qual ele hoje
                 mais se dedica.
               </p>
               <p>
                 O <strong>Terapias da Completude</strong> nasceu dessa reunião. O nome não é acidental:
-                a proposta é olhar a pessoa inteira — corpo, emoção, história e sentido — em vez de
+                a proposta é olhar a pessoa inteira (corpo, emoção, história e sentido) em vez de
                 atacar sintomas isolados. Em muitos atendimentos, mais de uma abordagem se combina, e
                 em alguns o caminho mais honesto é encaminhar para outro profissional. Essa honestidade
                 faz parte do trabalho.
               </p>
               <p>
-                Boa parte do trabalho acontece à distância, com pessoas de todo o Brasil — o Osatoshi,
+                Boa parte do trabalho acontece à distância, com pessoas de todo o Brasil. O Osatoshi,
                 o EMF Balancing e o Reiki não pedem que você esteja na mesma sala. As terapias de toque
                 são atendidas presencialmente, no espaço do Caio. Quem chega costuma vir com
                 algo que se repete: uma dor que volta, um ciclo que não fecha, um cansaço que dormir
@@ -139,7 +139,7 @@ export default function PaginaSobre() {
               </h2>
               <p className="mt-4 max-w-2xl text-[1.05rem] leading-relaxed text-tinta-700">
                 Décadas de estudo deixam rastro. Estas são imagens dos cursos, formaturas e exames
-                internacionais que sustentam o trabalho de hoje — do curso de Acupuntura do CEMETRAC
+                internacionais que sustentam o trabalho de hoje, do curso de Acupuntura do CEMETRAC
                 ao exame de proficiência da Federação Mundial das Sociedades de Medicina Chinesa.
                 Clique em qualquer foto para ampliar.
               </p>
@@ -161,7 +161,7 @@ export default function PaginaSobre() {
                 <p>
                   Então é isso que ofereço. Escuto sem pressa. Explico o que vamos fazer e por quê,
                   em palavras que você entenda. E digo com franqueza quando percebo que o caminho é
-                  outro — às vezes o melhor que posso fazer por alguém é indicar um médico, um
+                  outro. Às vezes o melhor que posso fazer por alguém é indicar um médico, um
                   psicólogo, alguém mais preparado para o que aquela pessoa está atravessando.
                 </p>
                 <p>

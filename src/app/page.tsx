@@ -20,7 +20,7 @@ import { schemaFAQ } from '@/lib/estrutura'
 
 export const metadata: Metadata = {
   // Título da aba do navegador, pedido pelo cliente. As palavras-chave ficam no H1
-  // e na descrição — o Google usa os dois para montar o resultado de busca.
+  // e na descrição. O Google usa os dois para montar o resultado de busca.
   title: 'Caio Gracco - Terapias da Completude',
   description:
     'Osatoshi, EMF Balancing Technique®, Reiki, Shiatsu e mais quatro terapias com Caio Gracco. Atendimento online para todo o Brasil e presencial, com hora marcada.',
@@ -33,23 +33,23 @@ const MOTIVOS: { icone: NomeIcone; titulo: string; texto: string }[] = [
   { icone: 'mente', titulo: 'A cabeça não desliga', texto: 'Ansiedade, pensamento acelerado, noites em claro, aperto no peito sem causa aparente.' },
   { icone: 'casa', titulo: 'A casa anda pesada', texto: 'Brigas que se repetem, clima carregado no ambiente, relações que se desgastam.' },
   { icone: 'trabalho', titulo: 'O trabalho não flui', texto: 'Negócios que emperram, projetos que não saem do lugar, dificuldade financeira recorrente.' },
-  { icone: 'semente', titulo: 'Você quer se conhecer', texto: 'Nada está errado — você só sente que existe mais, e quer caminhar com mais consciência.' },
+  { icone: 'semente', titulo: 'Você quer se conhecer', texto: 'Nada está errado. Você só sente que existe mais, e quer caminhar com mais consciência.' },
 ]
 
 const ETAPAS: { icone: NomeIcone; titulo: string; texto: string }[] = [
   { icone: 'conversa', titulo: 'Você escreve', texto: 'Manda uma mensagem no WhatsApp contando, com suas palavras, o que está acontecendo.' },
-  { icone: 'coracao', titulo: 'Conversamos', texto: 'Caio ouve, tira dúvidas e indica qual abordagem faz sentido — ou se o caminho é outro.' },
-  { icone: 'relogio', titulo: 'Marcamos', texto: 'Online, de onde você estiver, ou presencial — conforme a terapia e a sua disponibilidade.' },
+  { icone: 'coracao', titulo: 'Conversamos', texto: 'Caio ouve, tira dúvidas e indica qual abordagem faz sentido, ou se o caminho é outro.' },
+  { icone: 'relogio', titulo: 'Marcamos', texto: 'Online, de onde você estiver, ou presencial, conforme a terapia e a sua disponibilidade.' },
   { icone: 'folha', titulo: 'Seguimos juntos', texto: 'Algumas práticas pedem um ciclo. Você é orientado sobre o que esperar em cada etapa.' },
 ]
 
 const PERGUNTAS_GERAIS = [
   { pergunta: 'Quem é Caio Gracco?', resposta: 'Caio Gracco é terapeuta integrativo. Começou sua caminhada como terapeuta aos 14 anos e hoje se dedica sobretudo ao Osatoshi, técnica japonesa da Shinri, além de EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Atende à distância, para todo o Brasil, e também presencialmente em seu espaço.' },
   { pergunta: 'Quais terapias Caio Gracco oferece?', resposta: 'Oito abordagens: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Massagem Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Osatoshi, EMF Balancing e Reiki podem ser feitos à distância; as demais são presenciais.' },
-  { pergunta: 'O atendimento pode ser feito online?', resposta: 'Sim. Osatoshi, EMF Balancing Technique® e Reiki são atendidos à distância, para qualquer lugar do Brasil — a tradição permite. Já as terapias manuais (Shiatsu, Seitai, Acupuntura e Auriculoterapia) dependem do toque e por isso são presenciais.' },
-  { pergunta: 'Como escolher a terapia certa para o meu caso?', resposta: 'Não é preciso escolher sozinho. Escreva contando o que está acontecendo e o Caio indica o caminho que faz mais sentido — inclusive dizendo quando o melhor caminho é outro profissional, e não uma sessão.' },
+  { pergunta: 'O atendimento pode ser feito online?', resposta: 'Sim. Osatoshi, EMF Balancing Technique® e Reiki são atendidos à distância, para qualquer lugar do Brasil, porque a tradição permite. Já as terapias manuais (Shiatsu, Seitai, Acupuntura e Auriculoterapia) dependem do toque e por isso são presenciais.' },
+  { pergunta: 'Como escolher a terapia certa para o meu caso?', resposta: 'Não é preciso escolher sozinho. Escreva contando o que está acontecendo e o Caio indica o caminho que faz mais sentido, inclusive dizendo quando o melhor caminho é outro profissional, e não uma sessão.' },
   { pergunta: 'Essas terapias substituem tratamento médico?', resposta: 'Não, em nenhuma hipótese. São práticas complementares de bem-estar. Não substituem diagnóstico, medicação, cirurgia, psicoterapia ou acompanhamento psiquiátrico, e nenhum tratamento em curso deve ser interrompido por causa delas.' },
-  { pergunta: 'Onde Caio Gracco atende?', resposta: `As terapias à distância — Osatoshi, EMF Balancing Technique® e Reiki — atendem todo o Brasil, por WhatsApp ou chamada de vídeo. As presenciais acontecem no espaço do Caio, na ${site.endereco.rua}, ${site.endereco.bairro}, ${site.endereco.cidade}/${site.endereco.estado}, CEP ${site.endereco.cep}, sempre com hora marcada.` },
+  { pergunta: 'Onde Caio Gracco atende?', resposta: `As terapias à distância (Osatoshi, EMF Balancing Technique® e Reiki) atendem todo o Brasil, por WhatsApp ou chamada de vídeo. As presenciais acontecem no espaço do Caio, na ${site.endereco.rua}, ${site.endereco.bairro}, ${site.endereco.cidade}/${site.endereco.estado}, CEP ${site.endereco.cep}, sempre com hora marcada.` },
 ]
 
 export default function Home() {
@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <>
       <JsonLd dados={schemaFAQ(PERGUNTAS_GERAIS)} />
-      <BarraCompartilhar titulo="Caio Gracco — Terapias da Completude" />
+      <BarraCompartilhar titulo="Caio Gracco, Terapias da Completude" />
 
       {/* ---------- Abertura ---------- */}
       <div className="aurora relative">
@@ -72,7 +72,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-xl text-[1.15rem] leading-relaxed text-noite-200">
               Comecei minha missão como terapeuta aos 14 anos e não parei mais. Hoje reúno oito
-              caminhos de cuidado — do Osatoshi japonês ao toque do Shiatsu — para acompanhar
+              caminhos de cuidado, do Osatoshi japonês ao toque do Shiatsu, para acompanhar
               quem está atravessando algo difícil e quer recomeçar com clareza.
             </p>
 
@@ -198,7 +198,7 @@ export default function Home() {
             icone="foto"
             sobretitulo="Formação e trajetória"
             titulo="Décadas de estudo deixam rastro"
-            texto="Cursos, formaturas e exames internacionais — do curso de Acupuntura do CEMETRAC ao exame de proficiência da Federação Mundial das Sociedades de Medicina Chinesa."
+            texto="Cursos, formaturas e exames internacionais, do curso de Acupuntura do CEMETRAC ao exame de proficiência da Federação Mundial das Sociedades de Medicina Chinesa."
           />
           <div className="mt-10">
             <Carrossel />
@@ -282,7 +282,7 @@ export default function Home() {
           <Foto numero={3} />
           <CTA
             titulo="Se você chegou até aqui, já deu o primeiro passo"
-            texto="Escreva sem compromisso. Contar o que está acontecendo já é parte do processo — e o Caio responde pessoalmente."
+            texto="Escreva sem compromisso. Contar o que está acontecendo já é parte do processo, e o Caio responde pessoalmente."
           />
         </div>
       </Secao>

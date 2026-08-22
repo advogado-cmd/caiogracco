@@ -26,7 +26,7 @@ export type MetaArtigo = {
   tituloCurto?: string
   slug: string
   resumo: string
-  /** Descrição para o Google — até 158 caracteres. */
+  /** Descrição para o Google, até 158 caracteres. */
   descricao: string
   categoria: CategoriaBlog
   publicadoEm: string
@@ -36,7 +36,7 @@ export type MetaArtigo = {
   palavrasChave: string[]
   /** Peso editorial: ordena a vitrine da home enquanto não há dados de audiência. */
   peso?: number
-  /** Perguntas frequentes do artigo — viram FAQPage nos dados estruturados. */
+  /** Perguntas frequentes do artigo: viram FAQPage nos dados estruturados. */
   faq?: { pergunta: string; resposta: string }[]
 }
 
@@ -86,7 +86,7 @@ export const CATEGORIAS: Record<CategoriaBlog, { nome: string; slug: string; des
   corpo: {
     nome: 'Corpo e sintomas',
     slug: 'corpo-e-sintomas',
-    descricao: 'O que o corpo diz quando dói, não dorme ou não descansa — e o que fazer quando o exame não aponta nada.',
+    descricao: 'O que o corpo diz quando dói, não dorme ou não descansa, e o que fazer quando o exame não aponta nada.',
     icone: 'coracao',
   },
   espiritual: {
@@ -233,7 +233,7 @@ export function artigosRelacionados(artigo: Artigo, limite = 3): Artigo[] {
     .map((r) => r.a)
 }
 
-/** Artigos que tratam de uma terapia específica — alimenta a seção de leitura das páginas de terapia. */
+/** Artigos que tratam de uma terapia específica: alimenta a seção de leitura das páginas de terapia. */
 export function artigosDaTerapia(slugTerapia: string, limite = 6): Artigo[] {
   return todosArtigos()
     .filter((a) => (a.terapias ?? []).includes(slugTerapia))

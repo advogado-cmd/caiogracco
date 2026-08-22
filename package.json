@@ -2,7 +2,7 @@
   "name": "espaco-da-completude",
   "version": "1.0.0",
   "private": true,
-  "description": "Site institucional do Espaço da Completude — Caio Gracco, terapeuta holístico",
+  "description": "Site institucional do Espaço da Completude, com Caio Gracco, terapeuta holístico",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

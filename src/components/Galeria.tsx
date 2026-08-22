@@ -94,7 +94,7 @@ export function Galeria() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={grande(item.id)}
-                alt={`${item.legenda} — ${item.contexto}`}
+                alt={`${item.legenda}, ${item.contexto}`}
                 className="max-h-[70vh] w-auto max-w-full rounded-xl object-contain"
               />
               <figcaption className="mt-4 max-w-xl text-center">

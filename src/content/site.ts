@@ -4,7 +4,7 @@ const URL_PADRAO = 'https://caiogracco.com.br'
  * Normaliza a URL vinda de variável de ambiente.
  *
  * Sem isto, um valor digitado sem o esquema (ex.: "beta.droliveira.adv.br")
- * faz `new URL()` lançar e derruba o build inteiro com exit 1 — um erro caro,
+ * faz `new URL()` lançar e derruba o build inteiro com exit 1, um erro caro,
  * porque só aparece no deploy e a mensagem não aponta para a causa.
  * Aqui: apara espaços e barras finais, acrescenta https:// quando falta e,
  * se ainda assim o valor for inválido, cai no padrão em vez de quebrar.
@@ -23,7 +23,7 @@ function normalizarUrl(valor: string | undefined): string {
 export const site = {
   /** Nome de exibição do site: o terapeuta vem primeiro, o espaço em seguida. */
   nomeSite: 'Caio Gracco',
-  /** Nome do espaço terapêutico — a entidade de negócio. */
+  /** Nome do espaço terapêutico, a entidade de negócio. */
   nome: 'Terapias da Completude',
   terapeuta: 'Caio Gracco',
   nomeCompleto: 'Caio Gracco de Freitas Araújo',

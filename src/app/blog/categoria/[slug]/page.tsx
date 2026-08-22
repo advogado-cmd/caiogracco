@@ -21,10 +21,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const cat = PORSLUG.find((c) => c.slug === slug)
   if (!cat) return {}
   return {
-    title: `${cat.nome} — Blog`,
+    title: `${cat.nome}, Blog`,
     description: cat.descricao,
     alternates: { canonical: `/blog/categoria/${cat.slug}` },
-    openGraph: { url: `${site.url}/blog/categoria/${cat.slug}`, title: `${cat.nome} — Blog de ${site.terapeuta}` },
+    openGraph: { url: `${site.url}/blog/categoria/${cat.slug}`, title: `${cat.nome}, Blog de ${site.terapeuta}` },
   }
 }
 

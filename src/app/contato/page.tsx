@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: 'Contato e agendamento',
   description: `Agende com Caio Gracco pelo WhatsApp ${site.telefoneFormatado}. Terapias da Completude, ${site.endereco.rua}, ${site.endereco.cidade}/${site.endereco.estado}. Presencial e online.`,
   alternates: { canonical: '/contato' },
-  openGraph: { url: `${site.url}/contato`, title: 'Contato — Terapias da Completude' },
+  openGraph: { url: `${site.url}/contato`, title: 'Contato, Terapias da Completude' },
 }
 
 const mapa = `https://www.google.com/maps?q=${encodeURIComponent(
@@ -28,7 +28,7 @@ export default function PaginaContato() {
 
   return (
     <>
-      <BarraCompartilhar titulo="Contato — Caio Gracco" />
+      <BarraCompartilhar titulo="Contato, Caio Gracco" />
       <JsonLd dados={[schemaNegocio(), schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Contato', href: '/contato' }])]} />
 
       <div className="aurora">
@@ -39,7 +39,7 @@ export default function PaginaContato() {
             sobretitulo="Contato"
             titulo="Vamos conversar"
             nivel={1}
-            texto="O primeiro passo é uma mensagem. Conte o que está acontecendo, com suas palavras — não precisa saber o nome da terapia."
+            texto="O primeiro passo é uma mensagem. Conte o que está acontecendo, com suas palavras. Não precisa saber o nome da terapia."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -77,7 +77,7 @@ export default function PaginaContato() {
               <address className="mt-3 not-italic text-[0.98rem] leading-relaxed text-tinta-700">
                 {site.nome}
                 <br />
-                {site.endereco.rua} — {site.endereco.bairro}
+                {site.endereco.rua}, {site.endereco.bairro}
                 <br />
                 {site.endereco.cidade}/{site.endereco.estado} · CEP {site.endereco.cep}
               </address>
@@ -146,7 +146,7 @@ export default function PaginaContato() {
             <div className="mt-8 rounded-2xl border border-ouro-500/45 bg-areia-200/40 p-6">
               <h3 className="font-display text-lg text-noite-800">O que escrever na primeira mensagem</h3>
               <ul className="mt-3 flex flex-col gap-2 text-[0.92rem] leading-relaxed text-tinta-700">
-                <li>· O que está acontecendo, do seu jeito — sem precisar de termos técnicos.</li>
+                <li>· O que está acontecendo, do seu jeito, sem precisar de termos técnicos.</li>
                 <li>· Há quanto tempo isso vem acontecendo.</li>
                 <li>· Se você prefere atendimento presencial ou online.</li>
                 <li>· Se já faz algum acompanhamento de saúde (isso ajuda, e não impede nada).</li>
