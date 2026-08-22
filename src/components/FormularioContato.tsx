@@ -25,6 +25,12 @@ import { terapias } from '@/content/terapias'
  *   NEXT_PUBLIC_FORMULARIO_CHAVE     chave, quando o serviço pedir uma
  *   NEXT_PUBLIC_FORMULARIO_ALVO      o alias do FormSubmit, para tirar o
  *                                    e-mail do código e reduzir spam
+ *   NEXT_PUBLIC_FORMULARIO_COPIA     endereços que recebem cópia, separados
+ *                                    por vírgula
+ *
+ * Enquanto a ativação não acontece, o serviço devolve HTTP 200 com
+ * success: "false" no corpo. Por isso não basta olhar o status: se olhássemos
+ * só ele, o site diria "mensagem enviada" sem nada ter sido entregue.
  *
  * O mailto e o texto para copiar continuam existindo, mas só aparecem se o
  * envio falhar. Ninguém fica sem saída.
@@ -130,6 +136,7 @@ export function FormularioContato() {
           _captcha: 'false',
           _autoresponse: RESPOSTA_AUTOMATICA,
           _honey: '',
+          _cc: process.env.NEXT_PUBLIC_FORMULARIO_COPIA || undefined,
           // Web3Forms e Formspree leem estes.
           access_key: process.env.NEXT_PUBLIC_FORMULARIO_CHAVE || undefined,
           subject: assunto(),
@@ -147,12 +154,23 @@ export function FormularioContato() {
         }),
       })
 
+      // O FormSubmit responde HTTP 200 mesmo quando recusa. Quem diz a verdade
+      // é o campo success do JSON, que vem como texto ("true" / "false").
       let deuCerto = resposta.ok
-      try {
-        const json = await resposta.json()
-        if (json && (json.success === false || json.success === 'false')) deuCerto = false
-      } catch {
-        // Resposta sem JSON. O status HTTP já basta.
+      const json = await resposta.json().catch(() => null)
+      if (json && (json.success === false || json.success === 'false')) {
+        deuCerto = false
+        const recado = typeof json.message === 'string' ? json.message : ''
+        if (/activat/i.test(recado)) {
+          console.warn(
+            '[formulário] O endereço ainda não foi ativado no FormSubmit. Chegou um e-mail ' +
+              `em ${ALVO} com o botão "Activate Form". Depois de clicar nele, os envios passam ` +
+              'a funcionar. Resposta do serviço: ' +
+              recado,
+          )
+        } else if (recado) {
+          console.warn('[formulário] Envio recusado pelo serviço: ' + recado)
+        }
       }
 
       if (!deuCerto) throw new Error('envio recusado')
