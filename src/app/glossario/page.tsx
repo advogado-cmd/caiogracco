@@ -4,7 +4,6 @@ import { Secao, TituloSecao } from '@/components/Secao'
 import { BuscaIA } from '@/components/BuscaIA'
 import { JsonLd } from '@/components/JsonLd'
 import { terapias } from '@/content/terapias'
-import { construirIndice } from '@/lib/indice'
 import { slugificar, normalizar } from '@/lib/busca'
 import { schemaBreadcrumb } from '@/lib/estrutura'
 import { site } from '@/content/site'
@@ -47,7 +46,6 @@ function montarVerbetes(): Verbete[] {
 
 export default function PaginaGlossario() {
   const verbetes = montarVerbetes()
-  const indice = construirIndice()
 
   const grupos = new Map<string, Verbete[]>()
   for (const v of verbetes) {
@@ -91,7 +89,7 @@ export default function PaginaGlossario() {
             texto="Ki, carma, egrégora, meridiano, tsubo. Cada tradição chegou até aqui trazendo as próprias palavras, e ninguém é obrigado a saber o que elas querem dizer. Procure a que travou a leitura."
           />
           <div className="mt-8 max-w-xl">
-            <BuscaIA indice={indice} variante="escura" />
+            <BuscaIA variante="escura" />
           </div>
         </Secao>
       </div>

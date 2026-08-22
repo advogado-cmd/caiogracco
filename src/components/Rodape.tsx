@@ -29,7 +29,7 @@ export function Rodape() {
             <ul className="mt-4 flex flex-col gap-2.5">
               {terapias.map((t) => (
                 <li key={t.slug}>
-                  <Link href={`/terapias/${t.slug}`} className="text-noite-200 transition hover:text-areia-50">
+                  <Link prefetch={false} href={`/terapias/${t.slug}`} className="text-noite-200 transition hover:text-areia-50">
                     {t.nome}
                   </Link>
                 </li>
@@ -42,14 +42,14 @@ export function Rodape() {
             <ul className="mt-4 flex flex-col gap-2.5">
               {navegacao.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="text-noite-200 transition hover:text-areia-50">
+                  <Link prefetch={false} href={item.href} className="text-noite-200 transition hover:text-areia-50">
                     {item.rotulo}
                   </Link>
                 </li>
               ))}
               {navLegal.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="text-noite-200 transition hover:text-areia-50">
+                  <Link prefetch={false} href={item.href} className="text-noite-200 transition hover:text-areia-50">
                     {item.rotulo}
                   </Link>
                 </li>

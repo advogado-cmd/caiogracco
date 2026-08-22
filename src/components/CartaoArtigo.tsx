@@ -25,7 +25,7 @@ export function CartaoArtigo({ artigo, compacto = false }: { artigo: Artigo; com
         </div>
 
         <h3 className={`mt-4 font-display leading-snug text-noite-800 ${compacto ? 'text-lg' : 'text-xl'}`}>
-          <Link href={`/blog/${artigo.slug}`} className="after:absolute after:inset-0 after:content-['']">
+          <Link prefetch={false} href={`/blog/${artigo.slug}`} className="after:absolute after:inset-0 after:content-['']">
             {artigo.tituloCurto ?? artigo.titulo}
           </Link>
         </h3>

@@ -5,7 +5,6 @@ import { Perguntas } from '@/components/Perguntas'
 import { BuscaIA } from '@/components/BuscaIA'
 import { JsonLd } from '@/components/JsonLd'
 import { terapias } from '@/content/terapias'
-import { construirIndice } from '@/lib/indice'
 import { schemaBreadcrumb, schemaFAQ } from '@/lib/estrutura'
 import { site } from '@/content/site'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
@@ -20,7 +19,6 @@ export const metadata: Metadata = {
 }
 
 export default function PaginaPerguntas() {
-  const indice = construirIndice()
   const todas = terapias.flatMap((t) => t.faq)
 
   return (
@@ -44,7 +42,7 @@ export default function PaginaPerguntas() {
             texto="Dói? Preciso tirar a roupa? Quantas sessões? Funciona à distância? As perguntas que quase ninguém faz em voz alta, respondidas sem rodeio."
           />
           <div className="mt-8 max-w-xl">
-            <BuscaIA indice={indice} variante="escura" />
+            <BuscaIA variante="escura" />
           </div>
         </Secao>
       </div>

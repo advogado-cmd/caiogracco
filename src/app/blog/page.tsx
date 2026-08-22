@@ -34,7 +34,9 @@ export default function PaginaBlog() {
       <JsonLd
         dados={[
           schemaBreadcrumb([{ nome: 'Início', href: '/' }, { nome: 'Blog', href: '/blog' }]),
-          schemaBlog(artigos.map((a) => ({ titulo: a.titulo, slug: a.slug, publicadoEm: a.publicadoEm, resumo: a.resumo }))),
+          // Só os mais recentes entram no schema. A descoberta do resto é trabalho do
+          // sitemap, e listar 169 posts aqui pesaria a página sem ganho de indexação.
+          schemaBlog(artigos.slice(0, 24).map((a) => ({ titulo: a.titulo, slug: a.slug, publicadoEm: a.publicadoEm, resumo: a.resumo }))),
         ]}
       />
 
@@ -92,6 +94,7 @@ export default function PaginaBlog() {
             {ordem.map((c) => {
               const daCategoria = restantes.filter((a) => a.categoria === c)
               if (!daCategoria.length) return null
+              const mostrados = daCategoria.slice(0, 6)
               return (
                 <div key={c}>
                   <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-areia-200 pb-3">
@@ -106,10 +109,19 @@ export default function PaginaBlog() {
                   </div>
                   <p className="mt-3 max-w-2xl text-[0.98rem] leading-relaxed text-tinta-700">{CATEGORIAS[c].descricao}</p>
                   <div className="mt-7 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {daCategoria.map((a) => (
+                    {mostrados.map((a) => (
                       <CartaoArtigo key={a.slug} artigo={a} compacto />
                     ))}
                   </div>
+                  {daCategoria.length > mostrados.length && (
+                    <Link
+                      href={`/blog/categoria/${CATEGORIAS[c].slug}`}
+                      className="mt-6 inline-flex items-center gap-2 rounded-full border border-noite-200 px-5 py-2.5 text-[0.9rem] font-medium text-noite-700 transition hover:border-ouro-400 hover:text-noite-800"
+                    >
+                      Ver os outros {daCategoria.length - mostrados.length} de {CATEGORIAS[c].nome.toLowerCase()}
+                      <Icone nome="seta" tamanho={16} />
+                    </Link>
+                  )}
                 </div>
               )
             })}

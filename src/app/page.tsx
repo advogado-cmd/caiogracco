@@ -15,7 +15,6 @@ import { Carrossel } from '@/components/Carrossel'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { terapias, terapiasDestaque } from '@/content/terapias'
 import { site, whatsappLink } from '@/content/site'
-import { construirIndice } from '@/lib/indice'
 import { schemaFAQ } from '@/lib/estrutura'
 
 export const metadata: Metadata = {
@@ -53,7 +52,6 @@ const PERGUNTAS_GERAIS = [
 ]
 
 export default function Home() {
-  const indice = construirIndice()
 
   return (
     <>
@@ -99,12 +97,12 @@ export default function Home() {
               <p className="mb-2.5 text-[0.82rem] uppercase tracking-[0.2em] text-noite-300">
                 Ou pergunte com suas palavras
               </p>
-              <BuscaIA indice={indice} variante="escura" />
+              <BuscaIA variante="escura" />
             </div>
           </div>
 
           <div className="relative flex flex-col items-center gap-6">
-            <Foto numero={1} prioridade className="max-w-[22rem] border border-noite-400/25" />
+            <Foto numero={1} prioridade larguras="(min-width: 1024px) 352px, 90vw" className="max-w-[22rem] border border-noite-400/25" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/brand/logo-mark-escuro.svg"
@@ -279,7 +277,7 @@ export default function Home() {
       {/* ---------- Chamada final ---------- */}
       <Secao className="py-16 lg:py-24">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.25fr] lg:items-center">
-          <Foto numero={3} />
+          <Foto numero={3} larguras="(min-width: 1152px) 1152px, 100vw" />
           <CTA
             titulo="Se você chegou até aqui, já deu o primeiro passo"
             texto="Escreva sem compromisso. Contar o que está acontecendo já é parte do processo, e o Caio responde pessoalmente."

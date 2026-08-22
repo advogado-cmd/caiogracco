@@ -22,17 +22,50 @@ const CORES: Record<Documento['tipo'], string> = {
   Artigo: 'bg-magenta-400/20 text-magenta-500',
 }
 
-export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; variante?: 'clara' | 'escura' }) {
+type Compacto = { i: string; t: string; r: string; h: string; p: Documento['tipo']; c?: string; b: string }
+
+/** Cache no módulo: o índice é baixado uma vez por sessão, não uma vez por campo. */
+let indiceEmMemoria: Documento[] | null = null
+let baixando: Promise<Documento[]> | null = null
+
+async function carregarIndice(): Promise<Documento[]> {
+  if (indiceEmMemoria) return indiceEmMemoria
+  if (baixando) return baixando
+  baixando = fetch('/busca-indice.json')
+    .then((r) => r.json())
+    .then((dados: Compacto[]) => {
+      indiceEmMemoria = dados.map((d) => ({
+        id: d.i, titulo: d.t, trecho: d.r, href: d.h, tipo: d.p, contexto: d.c, corpo: d.b,
+      }))
+      return indiceEmMemoria
+    })
+    .catch(() => {
+      baixando = null
+      return []
+    })
+  return baixando
+}
+
+export function BuscaIA({ variante = 'clara' }: { variante?: 'clara' | 'escura' }) {
   const [consulta, setConsulta] = useState('')
   const [aberto, setAberto] = useState(false)
   const [destaque, setDestaque] = useState(-1)
+  const [indice, setIndice] = useState<Documento[] | null>(indiceEmMemoria)
   const containerRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
+  // O índice desce na primeira vez que alguém encosta na busca, e não antes.
+  const puxarIndice = () => {
+    if (indice) return
+    carregarIndice().then(setIndice)
+  }
+
   const resultados = useMemo(
-    () => (consulta.trim().length > 1 ? buscar(indice, consulta, 7) : []),
+    () => (indice && consulta.trim().length > 1 ? buscar(indice, consulta, 7) : []),
     [consulta, indice],
   )
+
+  const carregando = !indice && consulta.trim().length > 1
 
   useEffect(() => {
     const aoClicarFora = (e: MouseEvent) => {
@@ -73,8 +106,9 @@ export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; v
           ref={inputRef}
           type="search"
           value={consulta}
-          onChange={(e) => { setConsulta(e.target.value); setAberto(true) }}
-          onFocus={() => setAberto(true)}
+          onChange={(e) => { puxarIndice(); setConsulta(e.target.value); setAberto(true) }}
+          onFocus={() => { puxarIndice(); setAberto(true) }}
+          onPointerEnter={puxarIndice}
           onKeyDown={aoTeclar}
           placeholder="Descreva o que você procura, com suas palavras"
           aria-label="Buscar no site"
@@ -113,6 +147,11 @@ export function BuscaIA({ indice, variante = 'clara' }: { indice: Documento[]; v
                   </button>
                 ))}
               </div>
+            </div>
+          ) : carregando ? (
+            <div className="flex items-center gap-3 p-4 text-sm text-tinta-500">
+              <span aria-hidden="true" className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-noite-200 border-t-ouro-500" />
+              Procurando
             </div>
           ) : resultados.length === 0 ? (
             <div className="p-4">

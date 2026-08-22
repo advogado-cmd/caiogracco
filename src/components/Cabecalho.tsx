@@ -47,6 +47,9 @@ export function Cabecalho() {
             <nav aria-label="Navegação principal" className="hidden items-center gap-1 md:flex">
               {navPrincipal.map((item) => (
                 <Link
+                  // As páginas são estáticas e vêm do CDN. Pré-carregar cada uma
+                  // custava mais banda do que economizava tempo.
+                  prefetch={false}
                   key={item.href}
                   href={item.href}
                   aria-current={ativo(item.href) ? 'page' : undefined}

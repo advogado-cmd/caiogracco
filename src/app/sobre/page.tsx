@@ -177,7 +177,7 @@ export default function PaginaSobre() {
 
           <aside className="lg:sticky lg:top-24 lg:h-fit">
             <div className="overflow-hidden rounded-2xl border border-noite-100 bg-cartao">
-              <Foto numero={4} className="rounded-none" />
+              <Foto numero={4} larguras="(min-width: 1024px) 340px, 100vw" className="rounded-none" />
               <div className="p-6">
                 <p className="font-display text-lg text-noite-800">{site.nomeCompleto}</p>
                 <p className="mt-1 text-[0.9rem] text-tinta-500">Terapeuta integrativo</p>

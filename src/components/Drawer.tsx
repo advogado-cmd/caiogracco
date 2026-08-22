@@ -83,6 +83,7 @@ export function Drawer({ aberto, aoFechar }: Props) {
             {navPrincipal.map((item) => (
               <li key={item.href}>
                 <Link
+                  prefetch={false}
                   href={item.href}
                   onClick={aoFechar}
                   aria-current={ativo(item.href) ? 'page' : undefined}
@@ -106,6 +107,7 @@ export function Drawer({ aberto, aoFechar }: Props) {
             {navDrawer.map((item) => (
               <li key={item.href}>
                 <Link
+                  prefetch={false}
                   href={item.href}
                   onClick={aoFechar}
                   aria-current={ativo(item.href) ? 'page' : undefined}
@@ -138,6 +140,7 @@ export function Drawer({ aberto, aoFechar }: Props) {
             {terapias.map((t) => (
               <li key={t.slug}>
                 <Link
+                  prefetch={false}
                   href={`/terapias/${t.slug}`}
                   onClick={aoFechar}
                   className={`flex items-center gap-2 rounded-lg px-2.5 py-2.5 text-[0.85rem] transition ${
@@ -187,7 +190,7 @@ export function Drawer({ aberto, aoFechar }: Props) {
           <ul className="mt-5 flex flex-wrap justify-center gap-x-4 gap-y-1 text-[0.75rem] text-tinta-500">
             {navLegal.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} onClick={aoFechar} className="hover:text-noite-600">
+                <Link prefetch={false} href={item.href} onClick={aoFechar} className="hover:text-noite-600">
                   {item.rotulo}
                 </Link>
               </li>
