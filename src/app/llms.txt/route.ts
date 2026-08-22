@@ -1,6 +1,7 @@
 import { terapias } from '@/content/terapias'
 import { site, ehProducao } from '@/content/site'
 import { todosArtigos, CATEGORIAS } from '@/lib/blog'
+import { certificadosPorAno, horasFormacao } from '@/content/certificados'
 
 export const dynamic = 'force-static'
 
@@ -59,6 +60,24 @@ export function GET() {
     linhas.push(`- Ressalvas: ${t.limites}`)
     linhas.push('')
   }
+
+  linhas.push('## Formação do terapeuta')
+  linhas.push(
+    `${certificadosPorAno.length} formações documentadas por certificado, de ${certificadosPorAno[certificadosPorAno.length - 1].ano} a ` +
+      `${certificadosPorAno[0].ano}, somando mais de ${horasFormacao} horas de curso entre as que declaram carga horária. ` +
+      'Os certificados estão publicados em ' + site.url + '/sobre#certificados',
+  )
+  linhas.push('')
+  for (const c of certificadosPorAno) {
+    linhas.push(`- ${c.ano}: ${c.titulo}. ${c.instituicao}${c.horas ? `, ${c.horas} horas` : ''}`)
+  }
+  linhas.push('')
+  linhas.push(
+    'Observação: a aprovação no exame da Federação Mundial das Sociedades de Medicina Chinesa é ' +
+      'qualificação internacional em acupuntura. Não é registro profissional brasileiro e não confere ' +
+      'título de médico no Brasil.',
+  )
+  linhas.push('')
 
   linhas.push('## Blog')
   linhas.push(`Artigos assinados por ${site.terapeuta}. Índice em ${site.url}/blog · RSS em ${site.url}/blog/rss.xml`)

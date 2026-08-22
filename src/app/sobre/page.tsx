@@ -9,6 +9,8 @@ import { Foto } from '@/components/Foto'
 import { Icone } from '@/components/Icone'
 import { CTA } from '@/components/CTA'
 import { Galeria } from '@/components/Galeria'
+import { Certificados } from '@/components/Certificados'
+import { certificados, certificadosPorAno, horasFormacao } from '@/content/certificados'
 import { galeria, grande } from '@/content/galeria'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 
@@ -68,6 +70,17 @@ export default function PaginaSobre() {
                 japonesas, os pontos da medicina chinesa, o trabalho energético contemporâneo e, mais
                 recentemente, o Osatoshi, a técnica japonesa transmitida pela Shinri, à qual ele hoje
                 mais se dedica.
+              </p>
+              <p>
+                A primeira formação é de 1997, em Reiki, quando ele tinha 16 anos. Depois vieram o
+                Shiatsu, em 2002, e o curso mais longo de todos: dois anos de Acupuntura Tradicional
+                Chinesa no CEMETRAC, em São Paulo, sob direção do Mestre Liu Chih Ming, com 1.206
+                horas de aula. Em 2011 prestou e foi aprovado no exame internacional de qualificação
+                em acupuntura da Federação Mundial das Sociedades de Medicina Chinesa. De lá para cá
+                não parou: craniopuntura de Yamamoto, acupuntura da língua, Seitai com o professor
+                Jóji Enómoto, mesmerismo, hipnose e, em 2026, o credenciamento nas quatro primeiras
+                fases do EMF Balancing Technique®. São dezessete formações guardadas em papel, e
+                todas estão logo abaixo, para quem quiser conferir.
               </p>
               <p>
                 O <strong>Terapias da Completude</strong> nasceu dessa reunião. O nome não é acidental:
@@ -130,18 +143,53 @@ export default function PaginaSobre() {
               </ul>
             </section>
 
+            <section id="certificados" aria-labelledby="certificados-titulo" className="mt-14 scroll-mt-24">
+              <h2 id="certificados-titulo" className="flex items-center gap-3 font-display text-2xl text-noite-800 sm:text-3xl">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
+                  <Icone nome="livro" tamanho={21} />
+                </span>
+                Onde ele estudou
+              </h2>
+              <p className="mt-4 max-w-2xl text-[1.05rem] leading-relaxed text-tinta-700">
+                São {certificados.length} formações guardadas em papel, de 1997 até hoje, somando mais de{' '}
+                {horasFormacao.toLocaleString('pt-BR')} horas de curso entre as que declaram carga horária.
+                Toque em qualquer uma para ver o certificado inteiro.
+              </p>
+
+              <dl className="mt-7 grid grid-cols-2 gap-4 sm:grid-cols-4">
+                {[
+                  ['Formações', String(certificados.length)],
+                  ['Horas de curso', `${horasFormacao.toLocaleString('pt-BR')}+`],
+                  ['Desde', String(certificadosPorAno[certificadosPorAno.length - 1].ano)],
+                  ['Curso mais longo', '1.206 h'],
+                ].map(([rotulo, valor]) => (
+                  <div key={rotulo} className="rounded-2xl border border-areia-200 bg-cartao p-4">
+                    <dt className="text-[0.72rem] font-semibold uppercase tracking-wide text-tinta-500">{rotulo}</dt>
+                    <dd className="mt-1 font-display text-2xl text-noite-800">{valor}</dd>
+                  </div>
+                ))}
+              </dl>
+
+              <div className="mt-8">
+                <Certificados />
+              </div>
+
+              <p className="mt-6 max-w-2xl text-[0.85rem] leading-relaxed text-tinta-500">
+                O exame da Federação Mundial das Sociedades de Medicina Chinesa é uma qualificação
+                internacional em acupuntura, prestada e aprovada em 2011. Não é registro profissional
+                brasileiro e não confere título de médico no Brasil.
+              </p>
+            </section>
+
             <section id="galeria" aria-labelledby="galeria-titulo" className="mt-14 scroll-mt-24">
               <h2 id="galeria-titulo" className="flex items-center gap-3 font-display text-2xl text-noite-800 sm:text-3xl">
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
                   <Icone nome="foto" tamanho={21} />
                 </span>
-                Formação e trajetória
+                As turmas, as salas, os mestres
               </h2>
               <p className="mt-4 max-w-2xl text-[1.05rem] leading-relaxed text-tinta-700">
-                Décadas de estudo deixam rastro. Estas são imagens dos cursos, formaturas e exames
-                internacionais que sustentam o trabalho de hoje, do curso de Acupuntura do CEMETRAC
-                ao exame de proficiência da Federação Mundial das Sociedades de Medicina Chinesa.
-                Clique em qualquer foto para ampliar.
+                Formaturas, aulas e viagens de estudo. Clique em qualquer foto para ampliar.
               </p>
               <div className="mt-8">
                 <Galeria />

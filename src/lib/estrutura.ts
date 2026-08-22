@@ -1,5 +1,6 @@
 import { site } from '@/content/site'
 import type { FAQ, Terapia } from '@/content/tipos'
+import { certificados } from '@/content/certificados'
 
 const enderecoSchema = {
   '@type': 'PostalAddress',
@@ -77,6 +78,17 @@ export function schemaPessoa() {
     email: site.email,
     telephone: site.telefone,
     worksFor: { '@id': `${site.url}/#espaco` },
+    // Formações declaradas uma a uma. É o que permite ao Google e aos motores de
+    // resposta atribuírem experiência a uma pessoa real, em tema de saúde e
+    // bem-estar, onde a autoria pesa mais do que em qualquer outro assunto.
+    hasCredential: certificados.map((c) => ({
+      '@type': 'EducationalOccupationalCredential',
+      name: c.titulo,
+      credentialCategory: 'Certificado de curso',
+      dateCreated: String(c.ano),
+      recognizedBy: { '@type': 'Organization', name: c.instituicao },
+      ...(c.horas ? { educationalLevel: `${c.horas} horas` } : {}),
+    })),
     address: enderecoSchema,
     knowsAbout: [
       'Osatoshi', 'Shinri', 'EMF Balancing Technique', 'Elementoterapia Magnética',
