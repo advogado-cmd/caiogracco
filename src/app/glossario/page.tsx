@@ -6,7 +6,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { terapias } from '@/content/terapias'
 import { slugificar, normalizar } from '@/lib/busca'
 import { schemaBreadcrumb } from '@/lib/estrutura'
-import { site } from '@/content/site'
+import { site, imagemCompartilhamento } from '@/content/site'
 import type { Termo } from '@/content/tipos'
 import { glossarioExtra } from '@/content/glossario-extra'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
@@ -17,7 +17,8 @@ export const metadata: Metadata = {
   description:
     'Ki, carma, egrégora, meridiano, PNPIC e as 29 práticas integrativas do SUS: o vocabulário das terapias explicado em uma ou duas frases.',
   alternates: { canonical: '/glossario' },
-  openGraph: { url: `${site.url}/glossario`, title: 'Glossário das terapias integrativas' },
+  openGraph: { url: `${site.url}/glossario`, title: 'Glossário das terapias integrativas', images: imagemCompartilhamento,
+  },
 }
 
 type Verbete = Termo & { terapiaNome?: string; terapiaSlug?: string; grupo?: string }

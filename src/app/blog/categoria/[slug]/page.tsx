@@ -8,7 +8,7 @@ import { CTA } from '@/components/CTA'
 import { Icone, type NomeIcone } from '@/components/Icone'
 import { CATEGORIAS, artigosDaCategoria, type CategoriaBlog } from '@/lib/blog'
 import { schemaBreadcrumb } from '@/lib/estrutura'
-import { site } from '@/content/site'
+import { site, imagemCompartilhamento } from '@/content/site'
 
 const PORSLUG = Object.entries(CATEGORIAS).map(([chave, dados]) => ({ chave: chave as CategoriaBlog, ...dados }))
 
@@ -24,7 +24,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${cat.nome}, Blog`,
     description: cat.descricao,
     alternates: { canonical: `/blog/categoria/${cat.slug}` },
-    openGraph: { url: `${site.url}/blog/categoria/${cat.slug}`, title: `${cat.nome}, Blog de ${site.terapeuta}` },
+    openGraph: { url: `${site.url}/blog/categoria/${cat.slug}`, title: `${cat.nome}, Blog de ${site.terapeuta}`, images: imagemCompartilhamento,
+    },
   }
 }
 

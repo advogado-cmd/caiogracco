@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Secao, TituloSecao } from '@/components/Secao'
 import { AvisoCuidado } from '@/components/AvisoCuidado'
 import { JsonLd } from '@/components/JsonLd'
-import { site, whatsappLink } from '@/content/site'
+import { site, whatsappLink, imagemCompartilhamento } from '@/content/site'
 import { terapias } from '@/content/terapias'
 import { schemaBreadcrumb, schemaNegocio } from '@/lib/estrutura'
 import { FormularioContato } from '@/components/FormularioContato'
@@ -15,7 +15,8 @@ export const metadata: Metadata = {
   title: 'Contato e agendamento',
   description: `Agende com Caio Gracco pelo WhatsApp ${site.telefoneFormatado}. Terapias da Completude, ${site.endereco.rua}, ${site.endereco.cidade}/${site.endereco.estado}. Presencial e online.`,
   alternates: { canonical: '/contato' },
-  openGraph: { url: `${site.url}/contato`, title: 'Contato, Terapias da Completude' },
+  openGraph: { url: `${site.url}/contato`, title: 'Contato, Terapias da Completude', images: imagemCompartilhamento,
+  },
 }
 
 const mapa = `https://www.google.com/maps?q=${encodeURIComponent(

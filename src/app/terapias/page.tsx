@@ -5,7 +5,7 @@ import { AvisoCuidado } from '@/components/AvisoCuidado'
 import { JsonLd } from '@/components/JsonLd'
 import { terapias } from '@/content/terapias'
 import { schemaBreadcrumb } from '@/lib/estrutura'
-import { site } from '@/content/site'
+import { site, imagemCompartilhamento } from '@/content/site'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { CTA } from '@/components/CTA'
 
@@ -14,7 +14,8 @@ export const metadata: Metadata = {
   description:
     'As oito terapias atendidas por Caio Gracco: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura, Auriculoterapia e Seitai.',
   alternates: { canonical: '/terapias' },
-  openGraph: { url: `${site.url}/terapias`, title: 'Terapias oferecidas por Caio Gracco' },
+  openGraph: { url: `${site.url}/terapias`, title: 'Terapias oferecidas por Caio Gracco', images: imagemCompartilhamento,
+  },
 }
 
 export default function PaginaTerapias() {

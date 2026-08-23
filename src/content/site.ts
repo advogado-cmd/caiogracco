@@ -80,3 +80,21 @@ export function whatsappLink(mensagem?: string) {
   const texto = encodeURIComponent(mensagem || site.whatsappMensagem)
   return `https://wa.me/${site.whatsapp}?text=${texto}`
 }
+
+/**
+ * Imagem de compartilhamento, em formato pronto para o campo `images` do
+ * Open Graph e do Twitter.
+ *
+ * Precisa ser repetida em toda página que declara `openGraph`. O Next.js não
+ * herda o `openGraph` do layout quando a rota define o seu: ele substitui o
+ * objeto inteiro. Sem isto, cada página compartilhada no WhatsApp aparece como
+ * um link pelado, sem imagem, e ninguém clica.
+ */
+export const imagemCompartilhamento = [
+  {
+    url: '/og.jpg',
+    width: 1200,
+    height: 630,
+    alt: `${site.terapeuta}, ${site.nome}`,
+  },
+]

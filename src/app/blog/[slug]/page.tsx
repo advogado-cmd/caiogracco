@@ -13,7 +13,7 @@ import { dicionarioDeLigacoes } from '@/lib/ligacoes'
 import { OuvirTexto } from '@/components/OuvirTexto'
 import { schemaArtigo, schemaBreadcrumb, schemaFAQ } from '@/lib/estrutura'
 import { getTerapia } from '@/content/terapias'
-import { site } from '@/content/site'
+import { site, imagemCompartilhamento } from '@/content/site'
 
 export function generateStaticParams() {
   return todosArtigos().map((a) => ({ slug: a.slug }))
@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       publishedTime: a.publicadoEm,
       modifiedTime: a.atualizadoEm ?? a.publicadoEm,
       authors: [site.terapeuta],
+      images: imagemCompartilhamento,
     },
   }
 }

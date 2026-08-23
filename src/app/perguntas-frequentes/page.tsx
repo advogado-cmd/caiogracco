@@ -6,7 +6,7 @@ import { BuscaIA } from '@/components/BuscaIA'
 import { JsonLd } from '@/components/JsonLd'
 import { terapias } from '@/content/terapias'
 import { schemaBreadcrumb, schemaFAQ } from '@/lib/estrutura'
-import { site } from '@/content/site'
+import { site, imagemCompartilhamento } from '@/content/site'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { CTA } from '@/components/CTA'
 
@@ -15,7 +15,8 @@ export const metadata: Metadata = {
   description:
     'Dúvidas respondidas terapia por terapia: como funciona, se dói, se pode ser online, quantas sessões e as contraindicações de cada prática.',
   alternates: { canonical: '/perguntas-frequentes' },
-  openGraph: { url: `${site.url}/perguntas-frequentes`, title: 'Perguntas frequentes, Terapias da Completude' },
+  openGraph: { url: `${site.url}/perguntas-frequentes`, title: 'Perguntas frequentes, Terapias da Completude', images: imagemCompartilhamento,
+  },
 }
 
 export default function PaginaPerguntas() {

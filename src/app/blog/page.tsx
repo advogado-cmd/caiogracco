@@ -8,14 +8,15 @@ import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { Icone, type NomeIcone } from '@/components/Icone'
 import { todosArtigos, artigosPopulares, CATEGORIAS, type CategoriaBlog } from '@/lib/blog'
 import { schemaBlog, schemaBreadcrumb } from '@/lib/estrutura'
-import { site } from '@/content/site'
+import { site, imagemCompartilhamento } from '@/content/site'
 
 export const metadata: Metadata = {
   title: 'Blog sobre carma, trauma e prosperidade',
   description:
     'Textos de Caio Gracco sobre limpeza espiritual, carma familiar, trauma guardado no corpo, bloqueio financeiro e as oito práticas que ele atende.',
   alternates: { canonical: '/blog', types: { 'application/rss+xml': `${site.url}/blog/rss.xml` } },
-  openGraph: { url: `${site.url}/blog`, title: `Blog, ${site.nome}` },
+  openGraph: { url: `${site.url}/blog`, title: `Blog, ${site.nome}`, images: imagemCompartilhamento,
+  },
 }
 
 export default function PaginaBlog() {

@@ -6,7 +6,7 @@ import { Perguntas } from '@/components/Perguntas'
 import { AvisoCuidado } from '@/components/AvisoCuidado'
 import { JsonLd } from '@/components/JsonLd'
 import { terapias, getTerapia } from '@/content/terapias'
-import { site, whatsappLink } from '@/content/site'
+import { site, whatsappLink, imagemCompartilhamento } from '@/content/site'
 import { schemaServico, schemaFAQ, schemaBreadcrumb } from '@/lib/estrutura'
 import { slugificar } from '@/lib/busca'
 import { Icone } from '@/components/Icone'
@@ -42,6 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: titulo,
       description: descricao,
       type: 'article',
+      images: imagemCompartilhamento,
     },
   }
 }

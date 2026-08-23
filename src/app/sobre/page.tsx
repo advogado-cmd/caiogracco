@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { Secao, TituloSecao } from '@/components/Secao'
 import { JsonLd } from '@/components/JsonLd'
-import { site, whatsappLink } from '@/content/site'
+import { site, whatsappLink, imagemCompartilhamento } from '@/content/site'
 import { terapias } from '@/content/terapias'
 import { schemaBreadcrumb, schemaPessoa } from '@/lib/estrutura'
 import { Foto } from '@/components/Foto'
@@ -19,7 +19,8 @@ export const metadata: Metadata = {
   description:
     'Caio Gracco começou sua missão como terapeuta aos 14 anos. Atende online para todo o Brasil e presencialmente, com oito abordagens integrativas.',
   alternates: { canonical: '/sobre' },
-  openGraph: { url: `${site.url}/sobre`, title: 'Sobre Caio Gracco, Terapias da Completude', type: 'profile' },
+  openGraph: { url: `${site.url}/sobre`, title: 'Sobre Caio Gracco, Terapias da Completude', type: 'profile', images: imagemCompartilhamento,
+  },
 }
 
 export default function PaginaSobre() {
