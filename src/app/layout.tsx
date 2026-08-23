@@ -48,13 +48,13 @@ export const metadata: Metadata = {
     siteName: `${site.nomeSite}, ${site.nome}`,
     title: site.titulo,
     description: site.descricao,
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Caio Gracco, Terapias da Completude' }],
+    images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'Caio Gracco, Terapias da Completude' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: site.titulo,
     description: site.descricao,
-    images: ['/og.png'],
+    images: ['/og.jpg'],
   },
   robots: ehProducao
     ? {

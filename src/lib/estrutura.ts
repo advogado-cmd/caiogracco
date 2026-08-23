@@ -23,7 +23,7 @@ export function schemaNegocio() {
     url: site.url,
     telephone: site.telefone,
     email: site.email,
-    image: `${site.url}/og.png`,
+    image: `${site.url}/og.jpg`,
     logo: `${site.url}/brand/logo-vertical.svg`,
     priceRange: 'Sob consulta',
     address: enderecoSchema,
@@ -205,7 +205,7 @@ export function schemaArtigo(artigo: {
     timeRequired: `PT${artigo.minutos}M`,
     author: { '@id': `${site.url}/#caio` },
     publisher: { '@id': `${site.url}/#espaco` },
-    image: `${site.url}/og.png`,
+    image: `${site.url}/og.jpg`,
     isAccessibleForFree: true,
   }
 }
