@@ -209,6 +209,18 @@ export const certificados: Certificado[] = [
     arquivo: 'hipnose',
   },
   {
+    id: 'elementoterapia',
+    titulo: 'Formação em Elementoterapia Magnética',
+    instituicao: 'Magnetium, com Karoly Jardim',
+    ano: 2025,
+    data: '1, 2 e 3 de agosto de 2025',
+    horas: 30,
+    local: 'Online, ao vivo',
+    nota: 'Formação direto com quem sistematizou o método no Brasil.',
+    terapia: 'elementoterapia-magnetica',
+    arquivo: '2025-elementoterapia',
+  },
+  {
     id: 'emf-balancing',
     titulo: 'EMF Balancing Technique®, Fases I a IV, praticante credenciado',
     instituicao: 'The Energy Extension, Inc.',
