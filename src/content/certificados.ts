@@ -221,6 +221,16 @@ export const certificados: Certificado[] = [
     arquivo: '2025-elementoterapia',
   },
   {
+    id: 'consciencia-monetaria',
+    titulo: 'Treinamento de Ativação, Riqueza! Bem-Estar! Consciência Monetária!',
+    instituicao: 'The Energy Extension, Inc., com Peggy Phoenix Dubro',
+    ano: 2025,
+    data: '11 de novembro de 2025',
+    nota: 'Ativação da mesma organização que detém a EMF Balancing Technique®, dedicada ao tema da prosperidade.',
+    terapia: 'emf-balancing-technique',
+    arquivo: '2025-consciencia-monetaria',
+  },
+  {
     id: 'emf-balancing',
     titulo: 'EMF Balancing Technique®, Fases I a IV, praticante credenciado',
     instituicao: 'The Energy Extension, Inc.',
