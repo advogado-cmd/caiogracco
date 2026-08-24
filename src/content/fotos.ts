@@ -25,7 +25,7 @@ export type EspacoFoto = {
 export const espacosFoto: EspacoFoto[] = [
   { numero: 1, local: 'Home: abertura', proporcao: '3/4', arquivo: '/fotos/01.webp',
     descricao: 'Retrato oficial do Caio, a imagem de abertura do site.',
-    alt: 'Caio Gracco, terapeuta integrativo, sorrindo ao ar livre diante de uma buganvília florida' },
+    alt: 'Caio Gracco, terapeuta integrativo, sorrindo ao ar livre, num parque arborizado' },
   { numero: 2, local: 'Home: seção "Quando procurar"', proporcao: '4/3', arquivo: '/fotos/02.webp',
     descricao: 'Detalhe de mãos em atendimento, ou das mãos do Caio em gesto de acolhimento. Sem rosto.',
     alt: 'Mãos unidas em confraternização de turma de formação em Medicina Chinesa' },
@@ -34,7 +34,7 @@ export const espacosFoto: EspacoFoto[] = [
     alt: 'Jardim onde Caio Gracco pratica meditação, com muro de pedra e vegetação' },
   { numero: 4, local: 'Sobre: retrato principal', proporcao: '3/4', arquivo: '/fotos/04.webp',
     descricao: 'Retrato oficial em enquadramento aberto, no cartão da página Sobre.',
-    alt: 'Caio Gracco de pé, com as mãos unidas, diante de uma buganvília em flor' },
+    alt: 'Caio Gracco ao ar livre, de camiseta azul e japamala, num dia de sol' },
   { numero: 5, local: 'Sobre: trajetória', proporcao: '4/3', arquivo: '/fotos/05.webp',
     descricao: 'Foto do Caio atendendo, em ação, ou uma imagem antiga da trajetória dele.',
     alt: 'Turma de formatura do curso de Acupuntura do CEMETRAC, em 2011' },
