@@ -111,7 +111,7 @@ export default function PaginaGlossario() {
         <div className="mt-12 flex flex-col gap-12">
           {letras.map((letra) => (
             <section key={letra} id={`letra-${letra}`} className="scroll-mt-24" aria-labelledby={`titulo-letra-${letra}`}>
-              <h2 id={`titulo-letra-${letra}`} className="font-display text-3xl text-ouro-500">{letra}</h2>
+              <h2 id={`titulo-letra-${letra}`} className="font-display text-3xl text-ouro-600">{letra}</h2>
               <div className="regua-ouro mt-2" />
               <dl className="mt-6 grid gap-5 sm:grid-cols-2">
                 {grupos.get(letra)!.map((v) => (

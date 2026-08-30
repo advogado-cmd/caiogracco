@@ -1,47 +1,47 @@
 import Link from 'next/link'
-import { SimboloSol } from './SimboloSol'
 
 type Props = {
+  /** 'escura' = sobre fundo claro (padrão). 'clara' = sobre fundo azul. */
   variante?: 'clara' | 'escura'
   compacta?: boolean
   className?: string
-  /** Símbolo animado (padrão). Desligue em contextos estáticos. */
-  animado?: boolean
 }
 
 /**
- * Assinatura da marca, montada a partir do símbolo oficial.
- * `variante`: 'escura' = sobre fundo champagne (padrão da marca);
- *             'clara'  = sobre fundo azul.
+ * Assinatura horizontal da marca.
+ *
+ * Antes o site montava a assinatura à mão: símbolo + "CAIO GRACCO" em Jost
+ * espaçado + slogan em itálico. O manual proíbe isso na página 04, "não
+ * recompor a assinatura nem trocar a tipografia". Agora entra o arquivo
+ * oficial inteiro, como uma peça só.
+ *
+ * O manual pede a horizontal justamente em cabeçalho de site (página 02) e
+ * fixa o mínimo em 160px de largura (página 03). Por isso a versão compacta
+ * para em 200px, com folga sobre o mínimo.
  */
-export function Logo({ variante = 'escura', compacta = false, className = '', animado = true }: Props) {
+export function Logo({ variante = 'escura', compacta = false, className = '' }: Props) {
   const sobreAzul = variante === 'clara'
-  const corNome = sobreAzul ? 'text-areia-50' : 'text-noite-800'
-  const corSub = sobreAzul ? 'text-magenta-400' : 'text-brasa-500'
+  const arquivo = sobreAzul ? 'escura' : 'clara'
+  const largura = compacta ? 200 : 244
 
   return (
     <Link
       href="/"
-      className={`grupo-marca group flex items-center gap-3 ${className}`}
+      className={`grupo-marca group flex items-center ${className}`}
       aria-label="Caio Gracco: Terapias da Completude, página inicial"
     >
-      <SimboloSol
-        variante={variante}
-        animado={animado}
-        className={`${compacta ? 'h-12 w-12' : 'h-16 w-16'} shrink-0 transition-transform duration-500 group-hover:scale-105`}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={`/marca/horizontal-fundo-${arquivo}-600.webp`}
+        srcSet={`/marca/horizontal-fundo-${arquivo}-600.webp 600w, /marca/horizontal-fundo-${arquivo}-900.webp 900w`}
+        sizes={`${largura}px`}
+        width={largura}
+        height={Math.round((largura * 820) / 2711)}
+        alt="Caio Gracco, Terapias da Completude"
+        className="h-auto w-full max-w-full transition-transform duration-500 group-hover:scale-[1.03]"
+        style={{ width: largura }}
+        draggable={false}
       />
-      <span className="flex flex-col leading-none">
-        <span
-          className={`font-sans font-light ${compacta ? 'text-[1.1rem]' : 'text-[1.3rem]'} tracking-[0.26em] uppercase ${corNome}`}
-        >
-          Caio Gracco
-        </span>
-        <span
-          className={`mt-1.5 font-display italic ${compacta ? 'text-[0.86rem]' : 'text-[1rem]'} tracking-[0.04em] ${corSub}`}
-        >
-          Terapias da Completude
-        </span>
-      </span>
     </Link>
   )
 }

@@ -27,7 +27,7 @@ export function TituloSecao({
         </span>
       )}
       {sobretitulo && (
-        <p className={`text-[0.72rem] font-semibold uppercase tracking-[0.24em] ${claro ? 'text-ouro-400' : 'text-ouro-600'}`}>
+        <p className={`text-[0.72rem] font-semibold uppercase tracking-[0.24em] ${claro ? 'text-ouro-300' : 'text-ouro-600'}`}>
           {sobretitulo}
         </p>
       )}

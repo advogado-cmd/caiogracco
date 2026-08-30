@@ -61,7 +61,7 @@ export function ConsentimentoCookies() {
         checked={ligado}
         disabled={fixo}
         onChange={(e) => aoMudar?.(e.target.checked)}
-        className="mt-1 h-5 w-5 shrink-0 rounded border-noite-300 accent-[#9c5d08] disabled:opacity-60"
+        className="mt-1 h-5 w-5 shrink-0 rounded border-noite-300 accent-[#764D17] disabled:opacity-60"
       />
       <label htmlFor={id} className="min-w-0">
         <span className="block text-[0.98rem] font-medium text-noite-800">

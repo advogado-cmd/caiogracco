@@ -3,11 +3,12 @@ import type { Artigo } from '@/lib/blog'
 import { CATEGORIAS } from '@/lib/blog'
 import { Icone, type NomeIcone } from './Icone'
 
+/** Mesma lógica do cartão de terapia: seis cores, pares distintos. */
 const ACENTO: Record<string, string> = {
-  corpo: 'from-brasa-400/85 to-brasa-500/85',
-  espiritual: 'from-ouro-400/85 to-ouro-500/85',
-  praticas: 'from-magenta-400/85 to-magenta-500/85',
-  orientacao: 'from-noite-400/85 to-noite-600/85',
+  corpo: 'from-areia-200 to-ouro-500/90',
+  espiritual: 'from-ouro-300/90 to-ouro-500/90',
+  praticas: 'from-ouro-500/90 to-ouro-600/90',
+  orientacao: 'from-noite-400/90 to-noite-600/90',
 }
 
 export function CartaoArtigo({ artigo, compacto = false }: { artigo: Artigo; compacto?: boolean }) {

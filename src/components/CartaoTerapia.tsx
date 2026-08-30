@@ -2,12 +2,18 @@ import Link from 'next/link'
 import type { Terapia } from '@/content/tipos'
 import { Icone } from './Icone'
 
+/**
+ * Filete de acento no topo do cartão. Os nomes vêm da identidade anterior,
+ * quando havia coral, magenta e violeta; a paleta do manual tem seis cores e
+ * nenhuma delas é rosa. Cada acento passou a ser um par distinto dentro
+ * dessas seis, para as terapias seguirem distinguíveis à primeira vista.
+ */
 const ACENTOS: Record<Terapia['acento'], string> = {
-  ouro: 'from-ouro-400/85 to-ouro-500/85',
-  coral: 'from-brasa-400/85 to-brasa-500/85',
-  magenta: 'from-magenta-400/85 to-magenta-500/85',
-  violeta: 'from-violeta-400/85 to-violeta-500/85',
-  agua: 'from-agua-400/85 to-agua-500/85',
+  ouro: 'from-ouro-300/90 to-ouro-500/90',
+  coral: 'from-ouro-500/90 to-ouro-600/90',
+  magenta: 'from-areia-200 to-ouro-500/90',
+  violeta: 'from-noite-500/90 to-noite-800/90',
+  agua: 'from-noite-200 to-noite-500/90',
 }
 
 export function CartaoTerapia({ terapia, destaque = false }: { terapia: Terapia; destaque?: boolean }) {

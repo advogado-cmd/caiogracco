@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Cormorant_Garamond, Jost } from 'next/font/google'
+import { Cinzel, Cormorant_Garamond, Jost } from 'next/font/google'
 import './globals.css'
 import { Cabecalho } from '@/components/Cabecalho'
 import { Rodape } from '@/components/Rodape'
@@ -10,10 +10,28 @@ import { JsonLd } from '@/components/JsonLd'
 import { schemaNegocio, schemaPessoa, schemaSite } from '@/lib/estrutura'
 import { site, ehProducao } from '@/content/site'
 
-const display = Cormorant_Garamond({
+/**
+ * Cinzel: títulos e assinaturas, conforme o manual de marca, página 06.
+ * Serifa romana capitular, próxima do logotipo. Não tem itálico nem
+ * minúsculas de verdade, então serve para título e para nada mais.
+ */
+const display = Cinzel({
   subsets: ['latin', 'latin-ext'],
   weight: ['400', '500', '600'],
   variable: '--fonte-display',
+  display: 'swap',
+})
+
+/**
+ * Cormorant Garamond fica só onde o manual não alcança: as duas linhas em
+ * itálico da marca. Cinzel não tem itálico, e forçar um falso itálico é
+ * exatamente o tipo de deformação que a página 04 proíbe.
+ */
+const citacao = Cormorant_Garamond({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500'],
+  style: ['italic'],
+  variable: '--fonte-citacao',
   display: 'swap',
 })
 
@@ -67,14 +85,14 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#0b1a5c',
+  themeColor: '#16324B',
   width: 'device-width',
   initialScale: 1,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${display.variable} ${sans.variable}`}>
+    <html lang="pt-BR" className={`${display.variable} ${citacao.variable} ${sans.variable}`}>
       <head>
         {/*
           Consent Mode v2: os sinais entram NEGADOS antes de qualquer tag.

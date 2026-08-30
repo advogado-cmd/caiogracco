@@ -13,19 +13,23 @@ export function Rodape() {
       <div className="mx-auto max-w-6xl px-5 py-14 lg:px-8">
         <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-4">
           <div className="lg:col-span-1">
+            {/* Assinatura vertical oficial, inteira. O manual proíbe remontar
+                a assinatura peça por peça, que era o que havia aqui. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/logo-mark-escuro.svg" alt="" aria-hidden="true" width={64} height={64} className="h-16 w-16" />
-            <p className="mt-4 font-display text-lg uppercase tracking-[0.24em] text-areia-50">
-              Caio Gracco
-            </p>
-            <p className="mt-1.5 text-[0.68rem] uppercase tracking-[0.26em] text-ouro-400">Terapias da Completude</p>
+            <img
+              src="/marca/vertical-fundo-escura-600.webp"
+              alt="Caio Gracco, Terapias da Completude"
+              width={200}
+              height={213}
+              className="h-auto w-[11.5rem]"
+            />
             <p className="mt-4 max-w-xs text-[0.86rem] leading-relaxed text-noite-200">
               Cuidado integrativo à distância, para todo o Brasil, e presencial, com hora marcada.
             </p>
           </div>
 
           <nav aria-label="Terapias" className="text-[0.88rem]">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-ouro-400">Terapias</h2>
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-ouro-300">Terapias</h2>
             <ul className="mt-4 flex flex-col gap-2.5">
               {terapias.map((t) => (
                 <li key={t.slug}>
@@ -38,7 +42,7 @@ export function Rodape() {
           </nav>
 
           <nav aria-label="Navegação do rodapé" className="text-[0.88rem]">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-ouro-400">Navegar</h2>
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-ouro-300">Navegar</h2>
             <ul className="mt-4 flex flex-col gap-2.5">
               {navegacao.map((item) => (
                 <li key={item.href}>
@@ -61,7 +65,7 @@ export function Rodape() {
           </nav>
 
           <div className="text-[0.88rem]">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-ouro-400">Contato</h2>
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-ouro-300">Contato</h2>
             <address className="mt-4 flex flex-col gap-2.5 not-italic text-noite-200">
               <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="transition hover:text-areia-50">
                 WhatsApp {site.telefoneFormatado}
@@ -99,7 +103,7 @@ export function Rodape() {
           </div>
         </div>
 
-        <p className="mt-12 text-center font-display text-3xl italic leading-tight text-ouro-400 sm:text-4xl">
+        <p className="mt-12 text-center font-citacao text-3xl italic leading-tight text-ouro-400 sm:text-4xl">
           Muito, Muito Agradecido Sempre!
         </p>
 

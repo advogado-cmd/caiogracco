@@ -214,13 +214,13 @@ export function FormularioContato() {
 
       <div className="mt-6 grid gap-5 sm:grid-cols-2">
         <div className="sm:col-span-2">
-          <label htmlFor="nome" className={rotulo}>Como você se chama <span className="text-brasa-500">*</span></label>
+          <label htmlFor="nome" className={rotulo}>Como você se chama <span className="text-alerta-600">*</span></label>
           <input id="nome" name="nome" type="text" autoComplete="name" required value={nome}
             onChange={(e) => setNome(e.target.value)} className={campo} placeholder="Seu nome" />
         </div>
 
         <div>
-          <label htmlFor="email" className={rotulo}>E-mail <span className="text-brasa-500">*</span></label>
+          <label htmlFor="email" className={rotulo}>E-mail <span className="text-alerta-600">*</span></label>
           <input id="email" name="email" type="email" autoComplete="email" required value={email}
             onChange={(e) => setEmail(e.target.value)} className={campo} placeholder="voce@email.com" />
         </div>
@@ -252,7 +252,7 @@ export function FormularioContato() {
 
         <div className="sm:col-span-2">
           <label htmlFor="mensagem" className={rotulo}>
-            O que está acontecendo <span className="text-brasa-500">*</span>
+            O que está acontecendo <span className="text-alerta-600">*</span>
           </label>
           <textarea id="mensagem" name="mensagem" required rows={6} value={mensagem}
             onChange={(e) => setMensagem(e.target.value)} className={`${campo} resize-y`}
@@ -270,16 +270,16 @@ export function FormularioContato() {
       <div className="mt-5 flex items-start gap-3 rounded-xl bg-areia-200/35 p-4">
         <input id="consentimento" name="consentimento" type="checkbox" required checked={consentimento}
           onChange={(e) => setConsentimento(e.target.checked)}
-          className="mt-1 h-5 w-5 shrink-0 rounded border-noite-300 accent-[#9c5d08]" />
+          className="mt-1 h-5 w-5 shrink-0 rounded border-noite-300 accent-[#764D17]" />
         <label htmlFor="consentimento" className="text-[0.92rem] leading-relaxed text-tinta-700">
           Concordo que meus dados sejam usados apenas para responder a este contato, conforme a{' '}
           <a href="/privacidade" className="underline underline-offset-2 hover:text-noite-600">Política de Privacidade</a>.
-          <span className="text-brasa-500"> *</span>
+          <span className="text-alerta-600"> *</span>
         </label>
       </div>
 
       {erro && (
-        <p role="alert" className="mt-4 rounded-xl border border-brasa-400/40 bg-brasa-400/10 px-4 py-3 text-[0.92rem] text-brasa-500">
+        <p role="alert" className="mt-4 rounded-xl border border-alerta-600/35 bg-alerta-600/[0.07] px-4 py-3 text-[0.92rem] text-alerta-600">
           {erro}
         </p>
       )}
@@ -291,7 +291,7 @@ export function FormularioContato() {
         </p>
       )}
       {estado === 'falhou' && (
-        <p role="alert" className="mt-4 rounded-xl border border-brasa-400/40 bg-brasa-400/10 px-4 py-3 text-[0.92rem] text-brasa-500">
+        <p role="alert" className="mt-4 rounded-xl border border-alerta-600/35 bg-alerta-600/[0.07] px-4 py-3 text-[0.92rem] text-alerta-600">
           Não consegui enviar agora. Pode ser a conexão. Tente de novo, use o WhatsApp aqui embaixo
           ou copie a mensagem e me mande por e-mail.
         </p>
@@ -341,7 +341,7 @@ ${corpo()}`}
       )}
 
       <p className="mt-4 text-[0.85rem] text-tinta-500">
-        Campos com <span className="text-brasa-500">*</span> são obrigatórios. Prefere escrever do
+        Campos com <span className="text-alerta-600">*</span> são obrigatórios. Prefere escrever do
         seu jeito? Meu e-mail é{' '}
         <a href={`mailto:${site.email}`} className="underline underline-offset-2">{site.email}</a>.
       </p>

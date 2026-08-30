@@ -7,6 +7,7 @@ import { Perguntas } from '@/components/Perguntas'
 import { AvisoCuidado } from '@/components/AvisoCuidado'
 import { JsonLd } from '@/components/JsonLd'
 import { Icone, type NomeIcone } from '@/components/Icone'
+import { SimboloMarca } from '@/components/SimboloMarca'
 import { Foto } from '@/components/Foto'
 import { CTA } from '@/components/CTA'
 import { SecaoVideos } from '@/components/SecaoVideos'
@@ -63,7 +64,7 @@ export default function Home() {
       <div className="aurora relative">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-28 lg:pt-24">
           <div>
-            <p className="text-[0.75rem] font-semibold uppercase tracking-[0.28em] text-ouro-400">
+            <p className="text-[0.75rem] font-semibold uppercase tracking-[0.28em] text-ouro-300">
               Terapias integrativas · online para todo o Brasil
             </p>
             <h1 className="mt-5 font-display text-4xl leading-[1.1] text-areia-50 sm:text-5xl lg:text-[3.5rem]">
@@ -104,13 +105,10 @@ export default function Home() {
 
           <div className="relative flex flex-col items-center gap-6">
             <Foto numero={1} prioridade larguras="(min-width: 1024px) 352px, 90vw" className="max-w-[22rem] border border-noite-400/25" />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/brand/logo-mark-escuro.svg"
-              alt="Símbolo de Caio Gracco: um sol de raios dourados e rosados irradiando de um núcleo de ouro, dentro de um círculo delicado."
-              width={220}
-              height={220}
-              className="w-32 drop-shadow-2xl sm:w-40"
+            <SimboloMarca
+              tamanho={160}
+              decorativo={false}
+              className="w-32 sm:w-40"
             />
           </div>
         </div>
@@ -261,7 +259,7 @@ export default function Home() {
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-areia-200/55 text-brasa-500">
                   <Icone nome={e.icone} tamanho={21} />
                 </span>
-                <span className="font-display text-3xl text-ouro-500">{String(i + 1).padStart(2, '0')}</span>
+                <span className="font-display text-3xl text-ouro-600">{String(i + 1).padStart(2, '0')}</span>
               </div>
               <h3 className="mt-4 font-display text-xl text-noite-800">{e.titulo}</h3>
               <p className="mt-2 text-[0.98rem] leading-relaxed text-tinta-700">{e.texto}</p>

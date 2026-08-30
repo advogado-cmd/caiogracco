@@ -27,7 +27,8 @@ src/
   lib/
     busca.ts              índice e motor da busca embarcada
     estrutura.ts          dados estruturados JSON-LD
-public/brand/             logo em SVG: marca, horizontal, vertical, monocromática, ícone
+public/marca/             marca 2.0 em PNG/WebP: símbolo, assinatura horizontal,
+                          assinatura vertical, avatar e ícones
 ```
 
 ## Editar conteúdo
@@ -88,3 +89,30 @@ landmarks e headings semânticos, skip link.
 As terapias aqui descritas são práticas complementares de bem-estar. Nenhum texto do site promete
 cura ou resultado, e todas as páginas trazem a ressalva de que não substituem acompanhamento
 médico, psicológico ou psiquiátrico. Mantenha esse padrão ao editar.
+
+
+## Marca
+
+Identidade 2.0, de agosto de 2026, conforme o Manual de Marca 1.0.
+
+O símbolo são duas mãos abertas sustentando uma luz. Substituiu o sol da
+identidade anterior, que saiu do site inteiro, animação incluída.
+
+Regras do manual que o código precisa respeitar:
+
+- **Nunca dentro de círculo, quadrado ou moldura.** O círculo é exclusividade
+  do avatar de perfil (`public/marca/avatar-512.png`).
+- **Sem sombra, contorno, brilho, rotação ou distorção acrescentados.** Foi por
+  isso que a animação dos raios morreu junto com o sol.
+- **Não remontar a assinatura.** O cabeçalho e o rodapé usam os arquivos
+  oficiais inteiros, e não símbolo + nome em tipografia própria.
+- **Tamanhos mínimos:** assinatura horizontal 160px, símbolo 40px.
+- **Paleta:** seis cores, em `globals.css`. Fundo claro 55%, azul 30%, dourado
+  10% só como acento, areia 5%. O dourado nunca é fundo de área grande.
+- **Tipografia:** Cinzel nos títulos, Jost no texto. Cormorant Garamond
+  sobrevive só nas duas linhas em itálico da marca, porque Cinzel não tem
+  itálico e falsear um é deformação proibida.
+
+Pendência registrada no próprio manual: a marca ainda é imagem, não vetor.
+Para impressão grande e reduções abaixo de 25 mm é preciso redesenhar símbolo
+e logotipo em vetor, sem alterar o traço.

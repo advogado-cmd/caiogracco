@@ -24,7 +24,7 @@ export function schemaNegocio() {
     telephone: site.telefone,
     email: site.email,
     image: `${site.url}/og.jpg`,
-    logo: `${site.url}/brand/logo-vertical.svg`,
+    logo: `${site.url}/marca/simbolo-512.png`,
     priceRange: 'Sob consulta',
     address: enderecoSchema,
     geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },

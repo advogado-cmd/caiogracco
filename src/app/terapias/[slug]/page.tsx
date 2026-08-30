@@ -93,7 +93,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
               <li aria-hidden="true">·</li>
               <li><Link href="/terapias" className="hover:text-areia-100">Terapias</Link></li>
               <li aria-hidden="true">·</li>
-              <li aria-current="page" className="text-ouro-400">{t.nome}</li>
+              <li aria-current="page" className="text-ouro-300">{t.nome}</li>
             </ol>
           </nav>
 
@@ -101,7 +101,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
             <Icone nome={t.icone} tamanho={32} />
           </span>
           <h1 className="mt-5 max-w-3xl font-display text-4xl leading-tight text-areia-50 sm:text-5xl">{t.nome}</h1>
-          <p className="mt-3 text-[0.8rem] uppercase tracking-[0.24em] text-ouro-400">{t.tagline}</p>
+          <p className="mt-3 text-[0.8rem] uppercase tracking-[0.24em] text-ouro-300">{t.tagline}</p>
           <p className="mt-6 max-w-2xl text-[1.05rem] leading-relaxed text-noite-200">{t.resumo}</p>
 
           <dl className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -112,7 +112,7 @@ export default async function PaginaTerapia({ params }: { params: Promise<{ slug
               ['Onde', ALCANCE[t.sessao.distancia]],
             ].map(([rotulo, valor]) => (
               <div key={rotulo} className="rounded-2xl border border-noite-400/30 bg-noite-900/25 p-4">
-                <dt className="text-[0.7rem] font-semibold uppercase tracking-wider text-ouro-400">{rotulo}</dt>
+                <dt className="text-[0.7rem] font-semibold uppercase tracking-wider text-ouro-300">{rotulo}</dt>
                 <dd className="mt-1.5 text-[0.9rem] leading-snug text-areia-100">{valor}</dd>
               </div>
             ))}

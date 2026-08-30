@@ -3,52 +3,73 @@
 @theme {
   /* =====================================================================
      PALETA OFICIAL: Caio Gracco · Terapias da Completude
-     Tokens conforme o manual de marca. Os nomes históricos foram mantidos
-     para não quebrar as classes já espalhadas pelo site; o que mudou foram
-     os VALORES. Assim a troca alcança todas as páginas de uma só vez.
+     Manual de Marca 1.0, agosto de 2026, página 05.
+
+     Seis cores, e só. Os nomes dos tokens são os históricos, para não
+     quebrar as classes espalhadas pelo site; o que mudou foram os VALORES,
+     e assim a troca alcança as 197 páginas de uma vez.
+
+     Proporção que o manual pede: fundo claro 55%, azul 30%, dourado 10%
+     (só acento, nunca fundo de área grande), areia 5%.
      ===================================================================== */
 
-  /* --- Escala de azuis --- */
-  --color-noite-900: #071033;  /* rodapé                        */
-  --color-noite-800: #0d1a4a;  /* base da marca, topo e rodapé  */
-  --color-noite-700: #16305f;  /* seções cheias                 */
-  --color-noite-600: #24487f;  /* botões e links                */
-  --color-noite-500: #2c5596;
-  --color-noite-400: #4a72ab;  /* hover, ícones                 */
-  --color-noite-300: #7fa0cb;
-  --color-noite-200: #a6c2df;  /* bordas, gráficos              */
-  --color-noite-100: #dce8f5;  /* filetes suaves                */
+  /* --- Azuis. Base: Azul Profundo #16324B e Azul Sereno #3A6489 --- */
+  --color-noite-900: #0E2337;  /* rodapé, o mais fundo da escala   */
+  --color-noite-800: #16324B;  /* AZUL PROFUNDO · base da marca    */
+  --color-noite-700: #1D4263;  /* seções cheias                    */
+  --color-noite-600: #2A5478;  /* botões e links · 7.3:1 no claro  */
+  --color-noite-500: #3A6489;  /* AZUL SERENO · 5.75:1 no claro    */
+  --color-noite-400: #5B84A8;  /* hover e ícones sobre azul        */
+  --color-noite-300: #A3BACE;  /* legendas sobre azul · 5.1:1 no ponto mais claro do gradiente */
+  --color-noite-200: #BACBDA;  /* bordas                           */
+  --color-noite-100: #DEE7EF;  /* filetes suaves                   */
 
-  /* --- Champagne e cartões --- */
-  --color-areia-50: #f7eedb;   /* CHAMPAGNE 100 · fundo padrão e texto sobre azul */
-  --color-areia-100: #eef4fa;  /* BLUE 50 · cards e faixas claras                 */
-  --color-areia-200: #e4d2b2;  /* CHAMPAGNE 300 · divisores                       */
-  --color-cartao: #eef4fa;     /* fundo de cartão                                 */
+  /* --- Claros. Base: Branco Cálido #FAF5EC e Areia #E6D3B8 --- */
+  --color-areia-50: #FAF5EC;   /* BRANCO CÁLIDO · fundo padrão     */
+  --color-areia-100: #F4EDDF;  /* faixas claras                    */
+  --color-areia-200: #E6D3B8;  /* AREIA · divisores                */
+  --color-cartao: #FFFCF5;     /* cartão, um degrau acima do fundo */
 
-  /* --- Ouro: filetes, números e detalhes --- */
-  --color-ouro-600: #8c5c14;   /* texto sobre claro, escurecido para atingir 4.98:1 */
-  --color-ouro-500: #d89b2a;   /* GOLD 500 · acento nobre  */
-  --color-ouro-400: #d89b2a;   /* acento sobre azul        */
-  --color-ouro-300: #e8b65a;   /* realce e hover sobre azul */
-  --color-ouro-200: #e4d2b2;   /* tinta de fundo quente     */
+  /* --- Ouro. Base: Ouro Solar #D89A48 e Luz Dourada #F2C978 ---
+     O manual autoriza ouro sobre claro só em títulos grandes: o Ouro Solar
+     dá 2.24:1 sobre o Branco Cálido, longe dos 4.5:1 de que texto precisa.
+     Por isso ouro-600 é um ouro escurecido, reservado a texto. */
+  --color-ouro-600: #764D17;   /* texto sobre claro. 6.8:1 no Branco Cálido e
+                                  5.05:1 sobre a Areia, que é o fundo mais
+                                  escuro em que este ouro chega a cair. */
+  --color-ouro-500: #D89A48;   /* OURO SOLAR · acento              */
+  --color-ouro-400: #D89A48;   /* acento sobre azul · 5.42:1       */
+  --color-ouro-300: #F2C978;   /* LUZ DOURADA · realce sobre azul  */
+  --color-ouro-200: #E6D3B8;   /* tinta de fundo quente            */
 
-  /* --- Rosa: títulos de apoio e ícones --- */
-  --color-brasa-500: #a64375;  /* texto sobre claro, 4.95:1 */
-  --color-brasa-400: #e289ae;
-  --color-magenta-500: #b1477c; /* ROSE 600 · sobre champagne */
-  --color-magenta-400: #e289ae; /* ROSE 300 · sobre azul      */
-  --color-violeta-500: #b1477c;
-  --color-violeta-400: #e289ae;
-  --color-agua-500: #24487f;
-  --color-agua-400: #a6c2df;
+  /* --- Tokens herdados do vinho e do rosa da marca antiga.
+     O manual 1.0 não tem essas cores: a paleta é azul, ouro e areia.
+     Ficam apontando para o ouro e para o azul, em vez de sumirem, porque
+     estão espalhados por dezenas de componentes. Quem ler o site vê a
+     paleta nova; quem ler o código entende por que os nomes sobreviveram. */
+  --color-brasa-500: #764D17;
+  --color-brasa-400: #F2C978;
+  --color-magenta-500: #764D17;
+  --color-magenta-400: #F2C978;
+  --color-violeta-500: #764D17;
+  --color-violeta-400: #F2C978;
+  --color-agua-500: #2A5478;
+  --color-agua-400: #BACBDA;
+
+  /* --- Alerta. Não é cor de marca: é sinal de erro de formulário.
+     Erro em dourado não lê como erro, e acessibilidade não é assunto de
+     identidade visual. --- */
+  --color-alerta-600: #9B3016;
 
   /* --- Texto --- */
-  --color-tinta-900: #2e2a24;  /* INK · texto corrido    */
-  --color-tinta-700: #4c463d;  /* corpo de texto         */
-  --color-tinta-500: #5c554a;  /* apoio e legendas, 4.66:1 sobre champagne-300 */
+  --color-tinta-900: #2E2A24;  /* texto corrido · 13.1:1           */
+  --color-tinta-700: #4C463D;  /* corpo · 8.6:1                    */
+  --color-tinta-500: #5C554A;  /* apoio e legendas · 6.8:1         */
 
   --font-display: var(--fonte-display), Georgia, 'Times New Roman', serif;
   --font-sans: var(--fonte-sans), ui-sans-serif, system-ui, sans-serif;
+  /* Só para as duas linhas em itálico da marca: Cinzel não tem itálico. */
+  --font-citacao: var(--fonte-citacao), Georgia, 'Times New Roman', serif;
 
   --radius-xl2: 1.75rem;
 }
@@ -91,15 +112,17 @@ body {
 
 /* Fundo noturno com auras, assinatura visual da marca */
 .aurora {
+  /* Azul Profundo com Azul Sereno clareando o canto e um calor dourado do
+     outro lado. O rosa da identidade anterior saiu daqui também. */
   background:
-    radial-gradient(62% 52% at 18% 18%, rgba(74, 114, 171, 0.30) 0%, transparent 64%),
-    radial-gradient(52% 46% at 82% 26%, rgba(177, 71, 124, 0.16) 0%, transparent 66%),
-    linear-gradient(162deg, #0d1a4a 0%, #16305f 52%, #0b1740 100%);
+    radial-gradient(62% 52% at 18% 18%, rgba(58, 100, 137, 0.20) 0%, transparent 64%),
+    radial-gradient(52% 46% at 82% 26%, rgba(216, 154, 72, 0.10) 0%, transparent 66%),
+    linear-gradient(162deg, #16324B 0%, #1A3B57 52%, #10263A 100%);
 }
 
 
 .texto-ouro {
-  background: linear-gradient(92deg, #f0c878 0%, #d89b2a 48%, #b4761a 100%);
+  background: linear-gradient(92deg, #F2C978 0%, #D89A48 48%, #A66E28 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -124,57 +147,13 @@ body {
 .prosa a:hover { color: var(--color-noite-400); }
 
 /* ---------------------------------------------------------------------------
-   O sol da marca. Só os raios se movem.
-   Os raios longos e os curtos irradiam em tempos opostos: um se estende
-   enquanto o outro recolhe. O anel externo, o núcleo e a divisão
-   dourado/rosa ficam parados, exatamente como no manual.
+   O sol animado saiu com a identidade antiga.
+   O símbolo novo, as mãos com a luz, tem volume, degradê e brilho próprios,
+   e o manual de marca proíbe na página 04 acrescentar sombra, contorno ou
+   brilho, distorcer ou rotacionar. Uma animação de escala em cima dele seria
+   exatamente isso. O que ficou é o leve avanço da assinatura no hover,
+   abaixo, que move a peça inteira sem deformar nada.
 --------------------------------------------------------------------------- */
-.sol {
-  display: block;
-  overflow: visible;
-}
-.sol .sol-raios-longos,
-.sol .sol-raios-curtos {
-  transform-box: view-box;
-  transform-origin: 50% 50%;
-  will-change: transform;
-}
-
-.sol .sol-raios-longos {
-  animation: sol-irradia 5s ease-in-out infinite;
-}
-.sol .sol-raios-curtos {
-  animation: sol-irradia 5s ease-in-out infinite;
-  animation-delay: -2.5s;
-}
-
-.sol--parado .sol-raios-longos,
-.sol--parado .sol-raios-curtos {
-  animation: none;
-}
-
-/* Ao passar o mouse na assinatura, os raios pulsam um pouco mais vivos. */
-.grupo-marca:hover .sol .sol-raios-longos,
-.grupo-marca:hover .sol .sol-raios-curtos,
-.grupo-marca:focus-visible .sol .sol-raios-longos,
-.grupo-marca:focus-visible .sol .sol-raios-curtos {
-  animation-duration: 2.6s;
-}
-
-@keyframes sol-irradia {
-  0%, 100% { transform: scale(1); }
-  50%      { transform: scale(1.05); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .sol .sol-raios-longos,
-  .sol .sol-raios-curtos { animation: none !important; }
-}
-
-@media print {
-  .sol .sol-raios-longos,
-  .sol .sol-raios-curtos { animation: none !important; }
-}
 
 /* Impressão limpa */
 @media print {
