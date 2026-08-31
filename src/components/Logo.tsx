@@ -19,9 +19,12 @@ type Props = {
  * fixa o mínimo em 160px de largura (página 03). Por isso a versão compacta
  * para em 200px, com folga sobre o mínimo.
  */
-/** Proporção do arquivo oficial aparado, para a altura sair sem achatar nada. */
-const LARGURA = 2536
-const ALTURA = 793
+/**
+ * Proporção da assinatura montada, para a altura sair sem achatar nada.
+ * Não é a do PNG oficial: o nome vem do vetor, que é um pouco mais alto.
+ */
+const LARGURA = 5482
+const ALTURA = 1454
 
 export function Logo({ variante = 'escura', compacta = false, className = '' }: Props) {
   const sobreAzul = variante === 'clara'

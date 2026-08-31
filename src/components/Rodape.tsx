@@ -20,7 +20,7 @@ export function Rodape() {
               src="/marca/vertical-fundo-escura-600.webp"
               alt="Caio Gracco, Terapias da Completude"
               width={184}
-              height={210}
+              height={228}
               className="h-auto w-[11.5rem]"
             />
             <p className="mt-4 max-w-xs text-[0.86rem] leading-relaxed text-noite-200">
