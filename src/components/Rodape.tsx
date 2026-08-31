@@ -19,8 +19,8 @@ export function Rodape() {
             <img
               src="/marca/vertical-fundo-escura-600.webp"
               alt="Caio Gracco, Terapias da Completude"
-              width={200}
-              height={213}
+              width={184}
+              height={210}
               className="h-auto w-[11.5rem]"
             />
             <p className="mt-4 max-w-xs text-[0.86rem] leading-relaxed text-noite-200">

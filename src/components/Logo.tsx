@@ -19,6 +19,10 @@ type Props = {
  * fixa o mínimo em 160px de largura (página 03). Por isso a versão compacta
  * para em 200px, com folga sobre o mínimo.
  */
+/** Proporção do arquivo oficial aparado, para a altura sair sem achatar nada. */
+const LARGURA = 2536
+const ALTURA = 793
+
 export function Logo({ variante = 'escura', compacta = false, className = '' }: Props) {
   const sobreAzul = variante === 'clara'
   const arquivo = sobreAzul ? 'escura' : 'clara'
@@ -36,7 +40,7 @@ export function Logo({ variante = 'escura', compacta = false, className = '' }: 
         srcSet={`/marca/horizontal-fundo-${arquivo}-600.webp 600w, /marca/horizontal-fundo-${arquivo}-900.webp 900w`}
         sizes={`${largura}px`}
         width={largura}
-        height={Math.round((largura * 820) / 2711)}
+        height={Math.round((largura * ALTURA) / LARGURA)}
         alt="Caio Gracco, Terapias da Completude"
         className="h-auto w-full max-w-full transition-transform duration-500 group-hover:scale-[1.03]"
         style={{ width: largura }}
