@@ -1,0 +1,5 @@
+Esta pasta guarda as imagens enviadas pelo painel do site (/admin).
+
+Não é preciso mexer aqui. O painel grava e apaga sozinho.
+Se a pasta ficar vazia, o Git não a guarda, e o painel reclama
+na primeira imagem enviada. Este arquivo existe só para isso.

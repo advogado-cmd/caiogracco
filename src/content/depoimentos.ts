@@ -31,35 +31,14 @@ export type Depoimento = {
   terapia?: string
 }
 
-export const depoimentos: Depoimento[] = [
-  {
-    id: 'daiane',
-    texto: [
-      'Meu nome é Daiane. Conheci o Osatoshi numa propaganda do Caio no Instagram.',
-      'Ele é um terapeuta que me acolheu pra ouvir e ajudar, isso até hoje.',
-      'E foi muito boa a experiência e a evolução. Tive melhora no ambiente de trabalho, na saúde, eu fiz numa questão de caroços na cabeça e não sinto mais eles.',
-      'Foi muito fantástico e maravilhoso.',
-      'Foi o melhor atendimento espiritual que já fiz. Muito agradecida sempre.',
-      'Vale a pena.',
-    ],
-    autor: 'Daiane',
-    contexto: 'atendida à distância',
-    hora: '22:29',
-    terapia: 'osatoshi',
-  },
-  {
-    id: 'serie-osatoshi',
-    texto: [
-      'Bom dia meu amigo!! Quero novamente dar o meu testemunho: a minha saúde tem melhorado bastante e do último Osatoshi pra cá tenho me sentido mais alegre, animado, mais positivo.',
-      'Sei que tudo é um processo e que a nossa libertação é gradativa e que a cada Osatoshi vamos deixando o passado para trás para podermos desfrutar de um presente e futuro bem melhores.',
-      'Gratidão 🙏',
-    ],
-    autor: 'R.',
-    contexto: 'em série de atendimentos',
-    hora: '09:36',
-    terapia: 'osatoshi',
-  },
-]
+/**
+ * Os relatos moram em `dados/depoimentos.json`, para o Caio poder acrescentar
+ * um novo pelo painel sem abrir o código. As regras acima continuam valendo:
+ * o painel não as aplica sozinho, quem aplica é quem publica.
+ */
+import arquivo from './dados/depoimentos.json'
+
+export const depoimentos: Depoimento[] = arquivo.itens as Depoimento[]
 
 export function depoimentosDaTerapia(slug: string) {
   return depoimentos.filter((d) => d.terapia === slug)

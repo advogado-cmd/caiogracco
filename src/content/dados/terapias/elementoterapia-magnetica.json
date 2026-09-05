@@ -1,0 +1,143 @@
+{
+  "slug": "elementoterapia-magnetica",
+  "nome": "Elementoterapia Magnética",
+  "nomeCurto": "Elementoterapia",
+  "tagline": "Ímãs e elementos naturais em conjunto",
+  "resumo": "Sistematização brasileira que combina ímãs terapêuticos com elementos naturais (cristais, plantas, florais), buscando equilíbrio em cinco planos: biológico, emocional, mental, psicológico e espiritual.",
+  "destaque": true,
+  "ordem": 3,
+  "acento": "magenta",
+  "icone": "elementoterapia",
+  "origem": "A Elementoterapia Magnética foi sistematizada por Karoly Vieira Jardim, biomagnetista, diretora da Magnetium, a partir de estudos de alquimia, filosofia e fitoterapia. Insere-se no campo mais amplo do biomagnetismo e das chamadas PICMAG, as Práticas Integrativas e Complementares Magnéticas. É uma sistematização recente e brasileira, distinta do biomagnetismo clássico mexicano de Isaac Goiz Durán.",
+  "oQueE": [
+    "A Elementoterapia Magnética combina o uso de ímãs posicionados em pontos do corpo com outros elementos naturais (cristais, pedras, plantas e florais), buscando equilíbrio em cinco planos que a técnica considera interligados: biológico, emocional, mental, psicológico e espiritual. A premissa é que um desequilíbrio em um desses planos se reflete nos demais.",
+    "Na prática, o terapeuta trabalha com protocolos que combinam o posicionamento dos ímãs a recursos como florais magnéticos, aromas e música. É apresentada como cuidado natural complementar de bem-estar, nunca como substituto de acompanhamento de saúde."
+  ],
+  "comoFunciona": [
+    "Segundo a proposta da técnica, o magnetismo dos ímãs combinado a elementos naturais favoreceria processos de limpeza, reequilíbrio e autorregulação.",
+    "O trabalho parte da leitura das cinco esferas interligadas, buscando causas e não apenas sintomas.",
+    "Os protocolos são escolhidos conforme a queixa e a avaliação inicial, e podem incluir florais magnéticos e outros recursos complementares."
+  ],
+  "evidencia": "Não há evidência científica reconhecida de que ímãs terapêuticos de baixa intensidade produzam os efeitos amplos descritos pela técnica. Os estudos sobre magnetoterapia em geral são limitados e inconclusivos. Afirmações amplas de eficácia pertencem à tradição da técnica, não à literatura científica.",
+  "sessao": {
+    "duracao": "Varia conforme o protocolo",
+    "formato": "Presencial, com posicionamento de ímãs em pontos específicos do corpo, podendo incluir florais e outros elementos naturais.",
+    "sensacao": "Relaxamento, leveza e conforto durante e após a aplicação.",
+    "frequencia": "Definida caso a caso, conforme o protocolo e a avaliação do terapeuta.",
+    "distancia": "parcial"
+  },
+  "indicacoes": [
+    "Tensão e sobrecarga emocional",
+    "Dificuldade para dormir",
+    "Dores de cabeça recorrentes",
+    "Desconfortos digestivos ligados à tensão",
+    "Cansaço e falta de disposição",
+    "Períodos de estresse prolongado",
+    "Busca por cuidado natural complementar",
+    "Acompanhamento de processos de mudança de hábitos"
+  ],
+  "limites": "A Elementoterapia Magnética não é tratamento médico, não diagnostica e não cura doenças. Pessoas com marca-passo, implantes eletrônicos, gestantes e quem tem condições de saúde específicas devem consultar o médico antes de qualquer terapia com ímãs, e informar o terapeuta.",
+  "faq": [
+    {
+      "pergunta": "Terapia com ímãs tem comprovação científica?",
+      "resposta": "Os estudos sobre magnetoterapia são limitados e inconclusivos. A prática é oferecida como recurso complementar de bem-estar, não como tratamento de saúde."
+    },
+    {
+      "pergunta": "Ímãs no corpo podem fazer mal?",
+      "resposta": "Ímãs externos de baixa intensidade costumam ter risco baixo, mas quem tem marca-passo, bomba de insulina ou outro implante eletrônico deve consultar o médico antes e informar o terapeuta."
+    },
+    {
+      "pergunta": "Pode ser feita à distância?",
+      "resposta": "A aplicação dos ímãs é presencial. Orientações iniciais e conversas de avaliação podem ser feitas online."
+    },
+    {
+      "pergunta": "Quem criou a técnica?",
+      "resposta": "Karoly Vieira Jardim, biomagnetista e diretora da Magnetium, no Brasil."
+    },
+    {
+      "pergunta": "Substitui remédios ou tratamento médico?",
+      "resposta": "Não, em nenhuma hipótese. Nenhum medicamento deve ser suspenso por causa de uma sessão."
+    },
+    {
+      "pergunta": "O que são florais magnéticos?",
+      "resposta": "São preparações da terapia floral que, nessa abordagem, são combinadas ao trabalho com ímãs dentro dos protocolos da técnica."
+    },
+    {
+      "pergunta": "Os ímãs ficam colados no corpo depois da sessão?",
+      "resposta": "Depende do protocolo. Em algumas aplicações os ímãs são posicionados apenas durante o atendimento; em outras, o terapeuta pode orientar o uso por um período em casa. Isso é combinado na hora e você deve sair sabendo exatamente o que fazer."
+    },
+    {
+      "pergunta": "Preciso tirar a roupa?",
+      "resposta": "Não. A aplicação é feita com você vestido, com os ímãs posicionados sobre a roupa ou sobre a pele em áreas de fácil acesso. Roupa leve e confortável facilita."
+    },
+    {
+      "pergunta": "A Elementoterapia Magnética emagrece?",
+      "resposta": "Não. Nenhuma aplicação de ímãs emagrece, e prometer isso seria desonesto. Perda de peso envolve alimentação, atividade física e acompanhamento profissional de nutricionista e médico."
+    },
+    {
+      "pergunta": "Posso fazer se tomo remédio de uso contínuo?",
+      "resposta": "Sim, e é fundamental contar ao terapeuta quais medicações você usa. A sessão não interfere no efeito dos remédios e, principalmente, nenhuma dose deve ser reduzida ou suspensa por causa dela. Só o médico que prescreveu pode alterar um tratamento."
+    },
+    {
+      "pergunta": "Grávida pode fazer?",
+      "resposta": "Gestantes devem conversar com o médico que acompanha o pré-natal antes e informar a gravidez ao terapeuta. Na dúvida, o cuidado prudente é adiar ou optar por práticas mais bem estabelecidas para esse período."
+    },
+    {
+      "pergunta": "O que eu sinto durante a aplicação?",
+      "resposta": "Os relatos mais comuns são de relaxamento, leve calor ou formigamento no ponto onde o ímã está, e sonolência. Muita gente não sente nada em particular além de estar deitada e tranquila, o que também é esperado."
+    },
+    {
+      "pergunta": "Quantas sessões costumam ser feitas?",
+      "resposta": "Não existe número padrão. O terapeuta define conforme a avaliação inicial e a queixa, e é razoável reavaliar depois de algumas sessões se faz sentido continuar. Desconfie de pacote fechado longo vendido antes de qualquer avaliação."
+    },
+    {
+      "pergunta": "Dá para combinar com acupuntura, Reiki ou psicoterapia?",
+      "resposta": "Sim, não há conflito entre elas. O que vale sempre é contar a cada profissional o que você está fazendo, para que o cuidado seja coerente no conjunto."
+    }
+  ],
+  "termos": [
+    {
+      "termo": "Elementoterapia Magnética",
+      "definicao": "Abordagem que combina magnetismo terapêutico com elementos naturais como cristais, plantas e florais."
+    },
+    {
+      "termo": "Biomagnetismo",
+      "definicao": "Campo mais amplo das práticas que utilizam ímãs com finalidade terapêutica."
+    },
+    {
+      "termo": "Cinco esferas do ser",
+      "definicao": "Modelo da técnica que considera as dimensões biológica, emocional, mental, psicológica e espiritual como interligadas."
+    },
+    {
+      "termo": "Protocolo",
+      "definicao": "Conjunto padronizado de posicionamento de ímãs e recursos complementares para uma determinada finalidade."
+    },
+    {
+      "termo": "Florais magnéticos",
+      "definicao": "Recurso que une a terapia floral ao trabalho com ímãs dentro da abordagem."
+    },
+    {
+      "termo": "PICMAG",
+      "definicao": "Sigla de Práticas Integrativas e Complementares Magnéticas."
+    },
+    {
+      "termo": "Magnetoterapia",
+      "definicao": "Uso de campos magnéticos com finalidade terapêutica."
+    }
+  ],
+  "keywords": [
+    "elementoterapia magnética o que é",
+    "terapia com ímãs",
+    "biomagnetismo terapêutico",
+    "florais magnéticos",
+    "karoly jardim elementoterapia",
+    "terapia magnética natural",
+    "terapeuta elementoterapia magnética"
+  ],
+  "fontes": [
+    {
+      "titulo": "Magnetium: Elementoterapia Magnética",
+      "url": "https://magnetium.com.br/"
+    }
+  ]
+}

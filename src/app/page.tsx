@@ -18,6 +18,7 @@ import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 import { terapias, terapiasDestaque } from '@/content/terapias'
 import { site, whatsappLink } from '@/content/site'
 import { schemaFAQ } from '@/lib/estrutura'
+import home from '@/content/dados/home.json'
 
 export const metadata: Metadata = {
   // Título da aba do navegador, pedido pelo cliente. As palavras-chave ficam no H1
@@ -28,30 +29,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
 }
 
-const MOTIVOS: { icone: NomeIcone; titulo: string; texto: string }[] = [
-  { icone: 'bussola', titulo: 'Algo trava e você não sabe o quê', texto: 'Dificuldades que se repetem em ciclo, sem desfecho, mesmo quando você faz tudo certo.' },
-  { icone: 'onda', titulo: 'O corpo pesa', texto: 'Dores nas costas, no pescoço, nos ombros. Cansaço que dormir não resolve.' },
-  { icone: 'mente', titulo: 'A cabeça não desliga', texto: 'Ansiedade, pensamento acelerado, noites em claro, aperto no peito sem causa aparente.' },
-  { icone: 'casa', titulo: 'A casa anda pesada', texto: 'Brigas que se repetem, clima carregado no ambiente, relações que se desgastam.' },
-  { icone: 'trabalho', titulo: 'O trabalho não flui', texto: 'Negócios que emperram, projetos que não saem do lugar, dificuldade financeira recorrente.' },
-  { icone: 'semente', titulo: 'Você quer se conhecer', texto: 'Nada está errado. Você só sente que existe mais, e quer caminhar com mais consciência.' },
-]
-
-const ETAPAS: { icone: NomeIcone; titulo: string; texto: string }[] = [
-  { icone: 'conversa', titulo: 'Você escreve', texto: 'Manda uma mensagem no WhatsApp contando, com suas palavras, o que está acontecendo.' },
-  { icone: 'coracao', titulo: 'Conversamos', texto: 'Eu escuto, tiro dúvidas e indico qual abordagem faz sentido, ou se o caminho é outro.' },
-  { icone: 'relogio', titulo: 'Marcamos', texto: 'Online, de onde você estiver, ou presencial, conforme a terapia e a sua disponibilidade.' },
-  { icone: 'folha', titulo: 'Seguimos juntos', texto: 'Algumas práticas pedem um ciclo. Você é orientado sobre o que esperar em cada etapa.' },
-]
-
-const PERGUNTAS_GERAIS = [
-  { pergunta: 'Quem é Caio Gracco?', resposta: 'Sou terapeuta integrativo. Comecei aos 14 anos e hoje me dedico sobretudo ao Osatoshi, técnica japonesa da Shinri, além de EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Atendo à distância, para todo o Brasil, e também presencialmente no meu espaço.' },
-  { pergunta: 'Quais terapias Caio Gracco oferece?', resposta: 'Oito abordagens: Osatoshi, EMF Balancing Technique®, Elementoterapia Magnética, Reiki, Massagem Shiatsu, Acupuntura sistêmica, Auriculoterapia e Seitai. Osatoshi, EMF Balancing e Reiki podem ser feitos à distância; as demais são presenciais.' },
-  { pergunta: 'O atendimento pode ser feito online?', resposta: 'Sim. Osatoshi, EMF Balancing Technique® e Reiki são atendidos à distância, para qualquer lugar do Brasil, porque a tradição permite. Já as terapias manuais (Shiatsu, Seitai, Acupuntura e Auriculoterapia) dependem do toque e por isso são presenciais.' },
-  { pergunta: 'Como escolher a terapia certa para o meu caso?', resposta: 'Não é preciso escolher sozinho. Escreva contando o que está acontecendo e eu indico o caminho que faz mais sentido, inclusive quando esse caminho é outro profissional, e não uma sessão.' },
-  { pergunta: 'Essas terapias substituem tratamento médico?', resposta: 'Não, em nenhuma hipótese. São práticas complementares de bem-estar. Não substituem diagnóstico, medicação, cirurgia, psicoterapia ou acompanhamento psiquiátrico, e nenhum tratamento em curso deve ser interrompido por causa delas.' },
-  { pergunta: 'Onde Caio Gracco atende?', resposta: `As terapias à distância (Osatoshi, EMF Balancing Technique® e Reiki) atendem todo o Brasil, por WhatsApp ou chamada de vídeo. As presenciais acontecem no espaço do Caio, na ${site.endereco.rua}, ${site.endereco.bairro}, ${site.endereco.cidade}/${site.endereco.estado}, CEP ${site.endereco.cep}, sempre com hora marcada.` },
-]
+/**
+ * Todo o texto desta página mora em `src/content/dados/home.json`, editável
+ * pelo painel em /admin. O que fica aqui é só a montagem: quem escreve o
+ * conteúdo é o Caio, quem decide como ele aparece na tela é o código.
+ */
+const MOTIVOS = home.motivos as { icone: NomeIcone; titulo: string; texto: string }[]
+const ETAPAS = home.etapas as { icone: NomeIcone; titulo: string; texto: string }[]
+const PERGUNTAS_GERAIS = home.perguntas
 
 export default function Home() {
 
@@ -65,15 +50,13 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-28 lg:pt-24">
           <div>
             <p className="text-[0.75rem] font-semibold uppercase tracking-[0.28em] text-ouro-300">
-              Terapias integrativas · online para todo o Brasil
+              {home.hero.sobretitulo}
             </p>
             <h1 className="mt-5 font-display text-4xl leading-[1.1] text-areia-50 sm:text-5xl lg:text-[3.5rem]">
-              Um lugar para você <span className="texto-ouro">voltar a ser inteiro</span>.
+              {home.hero.tituloInicio} <span className="texto-ouro">{home.hero.tituloDestaque}</span>{home.hero.tituloFim}
             </h1>
             <p className="mt-6 max-w-xl text-[1.15rem] leading-relaxed text-noite-200">
-              Comecei minha missão como terapeuta aos 14 anos e não parei mais. Hoje reúno oito
-              caminhos de cuidado, do Osatoshi japonês ao toque do Shiatsu, para acompanhar
-              quem está atravessando algo difícil e quer recomeçar com clareza.
+              {home.hero.texto}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -84,20 +67,20 @@ export default function Home() {
                 className="inline-flex items-center gap-2.5 rounded-full bg-ouro-400 px-6 py-3.5 text-[1rem] font-semibold text-noite-900 transition hover:bg-ouro-300"
               >
                 <Icone nome="whatsapp" tamanho={20} />
-                Quero iniciar minha terapia agora
+                {home.hero.botaoWhatsapp}
               </a>
               <Link
                 href="/terapias"
                 className="inline-flex items-center gap-2 rounded-full border border-noite-300/50 px-6 py-3.5 text-[1rem] font-medium text-areia-100 transition hover:border-ouro-400 hover:text-ouro-300"
               >
-                Ver as terapias
+                {home.hero.botaoTerapias}
                 <Icone nome="seta" tamanho={18} />
               </Link>
             </div>
 
             <div className="relative mt-10 max-w-xl">
               <p className="mb-2.5 text-[0.82rem] uppercase tracking-[0.2em] text-noite-300">
-                Ou pergunte com suas palavras
+                {home.hero.rotuloBusca}
               </p>
               <BuscaIA variante="escura" />
             </div>
@@ -118,9 +101,9 @@ export default function Home() {
       <Secao className="py-16 lg:py-24">
         <TituloSecao
           icone="bussola"
-          sobretitulo="Quando procurar"
-          titulo="Talvez você tenha chegado até aqui por um destes motivos"
-          texto="Não é preciso saber o nome da terapia. Basta reconhecer onde dói."
+          sobretitulo={home.secaoMotivos.sobretitulo}
+          titulo={home.secaoMotivos.titulo}
+          texto={home.secaoMotivos.texto}
         />
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.5fr_1fr]">
           <ul className="grid gap-4 sm:grid-cols-2">
@@ -143,8 +126,8 @@ export default function Home() {
         <CTA
           variante="discreto"
           className="mt-10"
-          titulo="Reconheceu o seu caso em algum desses?"
-          rotulo="Quero iniciar minha terapia agora"
+          titulo={home.secaoMotivos.chamada}
+          rotulo={home.secaoMotivos.rotuloChamada}
         />
       </Secao>
 
@@ -153,9 +136,9 @@ export default function Home() {
         <Secao>
           <TituloSecao
             icone="estrela"
-            sobretitulo="O trabalho principal"
-            titulo="Osatoshi, e o que mais tem sido pedido hoje"
-            texto="Três abordagens concentram a maior parte dos meus atendimentos. O Osatoshi, técnica japonesa da Shinri, é o trabalho ao qual mais tenho me dedicado."
+            sobretitulo={home.secaoDestaque.sobretitulo}
+            titulo={home.secaoDestaque.titulo}
+            texto={home.secaoDestaque.texto}
           />
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {terapiasDestaque.map((t) => (
@@ -169,9 +152,9 @@ export default function Home() {
       <Secao className="py-16 lg:py-24">
         <TituloSecao
           icone="folha"
-          sobretitulo="Todas as abordagens"
-          titulo="Oito caminhos, um mesmo cuidado"
-          texto="Cada tradição olha para a pessoa de um ângulo diferente. Em muitos casos, elas se combinam."
+          sobretitulo={home.secaoTodas.sobretitulo}
+          titulo={home.secaoTodas.titulo}
+          texto={home.secaoTodas.texto}
         />
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {terapias.map((t) => (
@@ -182,7 +165,7 @@ export default function Home() {
           href="/terapias"
           className="mt-10 inline-flex items-center gap-2 rounded-full border border-noite-200 px-6 py-3 text-[0.95rem] font-medium text-noite-700 transition hover:border-ouro-400 hover:text-noite-800"
         >
-          Comparar todas as terapias
+          {home.secaoTodas.rotuloLink}
           <Icone nome="seta" tamanho={17} />
         </Link>
       </Secao>
@@ -193,9 +176,9 @@ export default function Home() {
           <TituloSecao
             claro
             icone="foto"
-            sobretitulo="Formação e trajetória"
-            titulo="Décadas de estudo deixam rastro"
-            texto="Cursos, formaturas e exames internacionais, do curso de Acupuntura do CEMETRAC ao exame de proficiência da Federação Mundial das Sociedades de Medicina Chinesa."
+            sobretitulo={home.secaoFormacao.sobretitulo}
+            titulo={home.secaoFormacao.titulo}
+            texto={home.secaoFormacao.texto}
           />
           <div className="mt-10">
             <Carrossel />
@@ -208,9 +191,9 @@ export default function Home() {
         <Secao>
           <TituloSecao
             icone="conversa"
-            sobretitulo="Depoimentos"
-            titulo="Elas voltaram para contar"
-            texto="Não pedi nada disso. São mensagens que chegaram no meu WhatsApp depois do atendimento, e que eu guardei. Estão aqui como vieram, sem retoque."
+            sobretitulo={home.secaoDepoimentos.sobretitulo}
+            titulo={home.secaoDepoimentos.titulo}
+            texto={home.secaoDepoimentos.texto}
           />
           <Depoimentos className="mt-10" />
         </Secao>
@@ -220,9 +203,9 @@ export default function Home() {
       <Secao className="py-16 lg:py-24">
         <TituloSecao
           icone="artigo"
-          sobretitulo="Do blog"
-          titulo="Talvez você reconheça alguma coisa aqui"
-          texto="O que se repete na família. A dor que os exames não explicam. O dinheiro que não para na mão. O vínculo que não se desfaz."
+          sobretitulo={home.secaoBlog.sobretitulo}
+          titulo={home.secaoBlog.titulo}
+          texto={home.secaoBlog.texto}
         />
         <div className="mt-10">
           <SecaoBlog />
@@ -234,9 +217,9 @@ export default function Home() {
         <Secao>
           <TituloSecao
             icone="video"
-            sobretitulo="No canal"
-            titulo="Eu explicando, com as minhas palavras"
-            texto="Conversas curtas sobre carmas, proteção, como funciona o Osatoshi e o que esperar de cada terapia."
+            sobretitulo={home.secaoVideos.sobretitulo}
+            titulo={home.secaoVideos.titulo}
+            texto={home.secaoVideos.texto}
           />
           <div className="mt-10">
             <SecaoVideos />
@@ -248,9 +231,9 @@ export default function Home() {
       <Secao className="py-16 lg:py-24">
         <TituloSecao
           icone="mapa"
-          sobretitulo="Como começa"
-          titulo="Do primeiro contato à sessão"
-          texto="Sem formulário longo, sem burocracia. Uma conversa basta para saber se faz sentido."
+          sobretitulo={home.secaoEtapas.sobretitulo}
+          titulo={home.secaoEtapas.titulo}
+          texto={home.secaoEtapas.texto}
         />
         <ol className="mt-10 grid gap-6 md:grid-cols-4">
           {ETAPAS.map((e, i) => (
@@ -273,14 +256,14 @@ export default function Home() {
         <Secao>
           <TituloSecao
             icone="mente"
-            sobretitulo="Perguntas frequentes"
-            titulo="O que costumam querer saber antes de marcar"
+            sobretitulo={home.secaoPerguntas.sobretitulo}
+            titulo={home.secaoPerguntas.titulo}
           />
           <div className="mt-8">
             <Perguntas perguntas={PERGUNTAS_GERAIS} />
           </div>
           <Link href="/perguntas-frequentes" className="mt-6 inline-flex items-center gap-2 text-[0.95rem] font-medium text-noite-600 underline underline-offset-4">
-            Ver todas as perguntas, terapia por terapia
+            {home.secaoPerguntas.rotuloLink}
             <Icone nome="seta" tamanho={16} />
           </Link>
         </Secao>
@@ -291,8 +274,8 @@ export default function Home() {
         <div className="grid gap-10 lg:grid-cols-[1fr_1.25fr] lg:items-center">
           <Foto numero={3} larguras="(min-width: 1152px) 1152px, 100vw" />
           <CTA
-            titulo="Se você chegou até aqui, já deu o primeiro passo"
-            texto="Escreva sem compromisso. Contar o que está acontecendo já é parte do processo, e quem responde sou eu."
+            titulo={home.chamadaFinal.titulo}
+            texto={home.chamadaFinal.texto}
           />
         </div>
       </Secao>

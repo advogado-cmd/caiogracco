@@ -1,0 +1,148 @@
+{
+  "slug": "reiki",
+  "nome": "Reiki",
+  "nomeCurto": "Reiki",
+  "tagline": "Imposição de mãos e relaxamento profundo",
+  "resumo": "Prática japonesa de imposição de mãos criada por Mikao Usui em 1922. A pessoa permanece deitada e vestida enquanto o terapeuta posiciona as mãos sobre ou próximo ao corpo. Integra as práticas do SUS desde 2017.",
+  "destaque": false,
+  "ordem": 4,
+  "acento": "agua",
+  "icone": "reiki",
+  "origem": "O Reiki foi desenvolvido no Japão por Mikao Usui (1865 a 1926), que em 1922 fundou em Tóquio a Usui Reiki Ryoho Gakkai. A linhagem mais difundida no Ocidente passa por Chujiro Hayashi (1880 a 1940) e por Hawayo Takata (1900 a 1980), responsável por levar o Reiki aos Estados Unidos. Chegou ao Brasil pelas décadas de 1980 e 1990. O nome vem do japonês rei (universal) e ki (energia vital).",
+  "oQueE": [
+    "O Reiki é uma prática de imposição de mãos: o terapeuta posiciona as mãos sobre ou próximo ao corpo da pessoa, sem exercer pressão, com a intenção de canalizar aquilo que a tradição chama de energia vital universal. A pessoa permanece deitada e vestida durante toda a sessão, em ambiente silencioso e acolhedor.",
+    "Diferente de terapias manuais como o Shiatsu, o Reiki não envolve manipulação física, pressão ou massagem. É uma prática sutil, baseada na presença e na intenção, que segue sequências de posições de mãos sobre a cabeça, o tronco e as demais regiões do corpo."
+  ],
+  "comoFunciona": [
+    "Segundo a tradição, existe uma energia vital universal que pode ser canalizada pelas mãos de quem passou pelo processo de sintonização, transmitido por um mestre.",
+    "Essa energia, ao ser canalizada, favoreceria relaxamento, redução do estresse e reequilíbrio geral, apoiando os mecanismos naturais de autorregulação do corpo.",
+    "Na tradição, entende-se que a energia flui para onde é necessária, sem que o praticante precise direcioná-la conscientemente."
+  ],
+  "evidencia": "A evidência científica sobre o Reiki é limitada e heterogênea. Alguns estudos sugerem redução da ansiedade e da dor percebida em contextos como cuidados paliativos e pré e pós-operatório, mas revisões mais rigorosas apontam qualidade metodológica baixa e alto risco de viés. Não há comprovação do mecanismo energético proposto pela tradição. O Reiki integra a Política Nacional de Práticas Integrativas e Complementares do SUS desde a Portaria GM/MS nº 849/2017. Isso representa reconhecimento institucional como recurso de cuidado, e não validação científica de eficácia.",
+  "sessao": {
+    "duracao": "45 a 60 minutos",
+    "formato": "A pessoa permanece deitada e vestida, geralmente de olhos fechados, com música suave ao fundo. O toque é leve ou inexistente.",
+    "sensacao": "Muitos relatam calor, formigamento ou peso sob as mãos do terapeuta, além de relaxamento profundo. As sensações variam bastante, e algumas pessoas sentem apenas o relaxamento.",
+    "frequencia": "Pode ser pontual ou em ciclos semanais, especialmente em períodos de maior estresse ou durante tratamentos de saúde desgastantes.",
+    "distancia": "sim"
+  },
+  "indicacoes": [
+    "Relaxamento profundo e redução do estresse",
+    "Ansiedade e sobrecarga emocional",
+    "Dificuldade para dormir",
+    "Apoio complementar durante tratamentos médicos intensivos",
+    "Cuidados paliativos, como suporte de conforto",
+    "Momentos de luto, transição e crise pessoal",
+    "Recuperação pós-cirúrgica, como suporte ao conforto",
+    "Autoconhecimento e conexão espiritual"
+  ],
+  "limites": "O Reiki não é tratamento médico, não diagnostica e não cura doenças. Jamais deve substituir ou atrasar diagnóstico, cirurgia, medicação, quimioterapia ou acompanhamento psiquiátrico e psicológico. É recurso complementar de relaxamento e apoio emocional.",
+  "faq": [
+    {
+      "pergunta": "O Reiki tem comprovação científica?",
+      "resposta": "A evidência é limitada e heterogênea. Alguns estudos sugerem benefício em relaxamento e ansiedade, mas revisões rigorosas apontam baixa qualidade metodológica. É uma prática de baixo risco, com eficácia clínica ainda não estabelecida."
+    },
+    {
+      "pergunta": "Preciso acreditar em energia para receber Reiki?",
+      "resposta": "Não é exigida nenhuma crença específica. A maior parte das pessoas relata relaxamento independentemente de suas convicções."
+    },
+    {
+      "pergunta": "O Reiki substitui tratamento médico ou psicológico?",
+      "resposta": "Não, em nenhuma hipótese. É complementar e deve caminhar junto ao acompanhamento de saúde."
+    },
+    {
+      "pergunta": "É preciso tocar o corpo durante a sessão?",
+      "resposta": "Não necessariamente. Muitas vezes as mãos ficam levemente próximas ao corpo, sem contato direto, especialmente em áreas mais sensíveis."
+    },
+    {
+      "pergunta": "O que é a sintonização?",
+      "resposta": "É o processo de iniciação pelo qual um mestre transmite ao aluno, segundo a tradição, a capacidade de canalizar o Reiki. Em japonês, reiju."
+    },
+    {
+      "pergunta": "O Reiki está disponível no SUS?",
+      "resposta": "Sim. Desde 2017 integra formalmente a lista de práticas da PNPIC, podendo ser ofertado por unidades de saúde que decidam implementá-lo, embora a disponibilidade varie muito entre municípios."
+    },
+    {
+      "pergunta": "Preciso fazer alguma coisa antes da sessão?",
+      "resposta": "Nada obrigatório. Use roupa confortável, evite chegar correndo e, se puder, vá ao banheiro antes, porque são 45 a 60 minutos deitado. Não há jejum nem restrição alimentar."
+    },
+    {
+      "pergunta": "O Reiki tem contraindicação?",
+      "resposta": "Por não envolver pressão, agulha, substância ou manipulação, não há contraindicação clínica conhecida. O risco real é outro: usar o Reiki para adiar uma consulta, um exame ou um tratamento que você precisa fazer."
+    },
+    {
+      "pergunta": "Grávida pode receber Reiki?",
+      "resposta": "Sim, é uma das práticas mais frequentemente procuradas na gestação justamente por não haver toque com pressão nem estímulo de pontos. Informe a gravidez ao terapeuta, para que a posição na maca seja confortável para você."
+    },
+    {
+      "pergunta": "Criança pode receber Reiki?",
+      "resposta": "Pode, com o consentimento e a presença de quem é responsável, e em sessões geralmente mais curtas. Vale lembrar que qualquer sintoma persistente da criança precisa de avaliação pediátrica, e o Reiki não ocupa esse lugar."
+    },
+    {
+      "pergunta": "E se eu não sentir calor nem formigamento?",
+      "resposta": "É absolutamente comum. Boa parte das pessoas relata só um relaxamento discreto, e há quem não note nada além de ter descansado. Sensação forte não é sinal de sessão boa, assim como a ausência dela não é sinal de sessão ruim."
+    },
+    {
+      "pergunta": "O Reiki cura doença?",
+      "resposta": "Não. Ele não cura, não trata e não diagnostica nada. O que os relatos descrevem, e alguns estudos de qualidade limitada sugerem, é alívio de tensão e ansiedade percebida. Isso é diferente de tratar uma doença, e a distinção importa."
+    },
+    {
+      "pergunta": "Como me sinto depois? Posso voltar a trabalhar?",
+      "resposta": "Na maioria dos casos sim, sem qualquer restrição. Os relatos mais comuns são de sonolência, calma e vontade de beber água. Se você sair muito relaxado, evite compromisso que exija pressa logo em seguida."
+    },
+    {
+      "pergunta": "Reiki à distância funciona igual ao presencial?",
+      "resposta": "Dentro da tradição, sim: o sistema prevê a prática à distância desde sua formulação. Fora dela, não há como comparar as duas formas em termos de evidência, porque a eficácia clínica do Reiki em si não está estabelecida. Quem faz online costuma relatar a mesma sensação de descanso."
+    },
+    {
+      "pergunta": "Posso fazer Reiki junto com acupuntura, psicoterapia ou tratamento médico?",
+      "resposta": "Sim, e é assim que ele funciona melhor: ao lado do resto, nunca no lugar. Conte ao terapeuta o que você já faz e não suspenda nenhuma medicação ou consulta por causa das sessões."
+    }
+  ],
+  "termos": [
+    {
+      "termo": "Ki",
+      "definicao": "Energia vital universal, conceito central do Reiki, equivalente ao Qi chinês."
+    },
+    {
+      "termo": "Reiju / sintonização",
+      "definicao": "Processo de iniciação transmitido por um mestre, que habilitaria o aluno a canalizar a energia."
+    },
+    {
+      "termo": "Gassho",
+      "definicao": "Postura de meditação com as palmas unidas diante do peito, praticada antes e depois das sessões."
+    },
+    {
+      "termo": "Usui Shiki Ryoho",
+      "definicao": "Nome do sistema de Reiki tal como sistematizado por Mikao Usui."
+    },
+    {
+      "termo": "Byosen",
+      "definicao": "Percepção, pelas mãos do praticante, de variações de sensação em determinadas regiões do corpo."
+    },
+    {
+      "termo": "Reiki à distância",
+      "definicao": "Modalidade em que a prática é realizada sem a presença física da pessoa, segundo a tradição do sistema."
+    },
+    {
+      "termo": "PNPIC",
+      "definicao": "Política Nacional de Práticas Integrativas e Complementares, do Ministério da Saúde, que inclui o Reiki desde 2017."
+    }
+  ],
+  "keywords": [
+    "o que é reiki",
+    "sessão de reiki",
+    "reiki para ansiedade",
+    "reiki à distância",
+    "reiki funciona",
+    "reiki no SUS",
+    "benefícios do reiki",
+    "reiki perto de mim"
+  ],
+  "fontes": [
+    {
+      "titulo": "Ministério da Saúde: Práticas Integrativas e Complementares",
+      "url": "https://www.gov.br/saude/pt-br/composicao/saps/pics"
+    }
+  ]
+}

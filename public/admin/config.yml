@@ -1,0 +1,1038 @@
+{
+  "backend": {
+    "name": "github",
+    "repo": "advogado-cmd/caiogracco",
+    "branch": "main",
+    "base_url": "https://caiogracco.com.br",
+    "auth_endpoint": "api/auth",
+    "commit_messages": {
+      "create": "Painel: novo {{collection}} \"{{slug}}\"",
+      "update": "Painel: {{collection}} \"{{slug}}\" atualizado",
+      "delete": "Painel: {{collection}} \"{{slug}}\" removido",
+      "uploadMedia": "Painel: imagem {{path}} enviada",
+      "deleteMedia": "Painel: imagem {{path}} removida"
+    }
+  },
+  "locale": "pt",
+  "media_folder": "public/enviados",
+  "public_folder": "/enviados",
+  "publish_mode": "simple",
+  "site_url": "https://caiogracco.com.br",
+  "logo_url": "/marca/simbolo-256.webp",
+  "collections": [
+    {
+      "name": "blog",
+      "label": "Blog",
+      "label_singular": "artigo",
+      "description": "Escrever, editar e despublicar artigos. O que sair daqui entra no site, no mapa do Google e na busca interna sozinho.",
+      "folder": "src/content/blog",
+      "create": true,
+      "slug": "{{slug}}",
+      "extension": "md",
+      "format": "json-frontmatter",
+      "frontmatter_delimiter": [
+        "---json",
+        "---"
+      ],
+      "sortable_fields": [
+        "publicadoEm",
+        "titulo"
+      ],
+      "view_filters": [
+        {
+          "label": "Publicados este ano",
+          "field": "publicadoEm",
+          "pattern": "2026"
+        }
+      ],
+      "fields": [
+        {
+          "name": "titulo",
+          "label": "Título",
+          "widget": "string"
+        },
+        {
+          "name": "tituloCurto",
+          "label": "Título curto (cartões e menus)",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "slug",
+          "label": "Endereço",
+          "widget": "string",
+          "hint": "Só letras minúsculas e hífens. Não mude depois de publicado: quem já tem o link perde a página."
+        },
+        {
+          "name": "resumo",
+          "label": "Resumo (aparece no cartão)",
+          "widget": "text"
+        },
+        {
+          "name": "descricao",
+          "label": "Descrição para o Google",
+          "widget": "text",
+          "hint": "Até 158 caracteres."
+        },
+        {
+          "name": "categoria",
+          "label": "Categoria",
+          "widget": "select",
+          "options": [
+            {
+              "label": "Osatoshi",
+              "value": "osatoshi"
+            },
+            {
+              "label": "Relacionamentos",
+              "value": "relacionamentos"
+            },
+            {
+              "label": "Família e filhos",
+              "value": "familia"
+            },
+            {
+              "label": "Amizades e convivência",
+              "value": "convivencia"
+            },
+            {
+              "label": "Dinheiro e prosperidade",
+              "value": "prosperidade"
+            },
+            {
+              "label": "Corpo e sintomas",
+              "value": "corpo"
+            },
+            {
+              "label": "Espiritualidade e emoções",
+              "value": "espiritual"
+            },
+            {
+              "label": "As práticas",
+              "value": "praticas"
+            },
+            {
+              "label": "Antes de começar",
+              "value": "orientacao"
+            }
+          ]
+        },
+        {
+          "name": "publicadoEm",
+          "label": "Publicado em",
+          "widget": "datetime",
+          "date_format": "YYYY-MM-DD",
+          "time_format": false,
+          "picker_utc": true,
+          "format": "YYYY-MM-DD"
+        },
+        {
+          "name": "atualizadoEm",
+          "label": "Atualizado em",
+          "widget": "datetime",
+          "required": false,
+          "date_format": "YYYY-MM-DD",
+          "time_format": false,
+          "picker_utc": true,
+          "format": "YYYY-MM-DD"
+        },
+        {
+          "name": "terapias",
+          "label": "Terapias relacionadas",
+          "widget": "list",
+          "required": false,
+          "field": {
+            "name": "slug",
+            "label": "Endereço da terapia",
+            "widget": "string"
+          }
+        },
+        {
+          "name": "palavrasChave",
+          "label": "Palavras-chave",
+          "widget": "list",
+          "field": {
+            "name": "palavra",
+            "label": "Palavra",
+            "widget": "string"
+          }
+        },
+        {
+          "name": "peso",
+          "label": "Peso editorial",
+          "widget": "number",
+          "required": false,
+          "value_type": "int",
+          "hint": "Ordena a vitrine da home. Maior aparece antes."
+        },
+        {
+          "name": "faq",
+          "label": "Perguntas frequentes",
+          "widget": "list",
+          "required": false,
+          "fields": [
+            {
+              "name": "pergunta",
+              "label": "Pergunta",
+              "widget": "string"
+            },
+            {
+              "name": "resposta",
+              "label": "Resposta",
+              "widget": "text"
+            }
+          ]
+        },
+        {
+          "name": "body",
+          "label": "Texto do artigo",
+          "widget": "markdown"
+        }
+      ]
+    },
+    {
+      "name": "terapias",
+      "label": "Terapias",
+      "label_singular": "terapia",
+      "description": "As oito abordagens. Cada campo aqui alimenta a página da terapia, os cartões da home e os dados que o Google lê.",
+      "folder": "src/content/dados/terapias",
+      "create": false,
+      "extension": "json",
+      "format": "json",
+      "identifier_field": "nome",
+      "fields": [
+        {
+          "name": "slug",
+          "label": "Endereço (não mude depois de publicado)",
+          "widget": "string"
+        },
+        {
+          "name": "nome",
+          "label": "Nome",
+          "widget": "string"
+        },
+        {
+          "name": "nomeCurto",
+          "label": "Nome curto",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "tagline",
+          "label": "Linha de apoio",
+          "widget": "string"
+        },
+        {
+          "name": "resumo",
+          "label": "Resumo",
+          "widget": "text"
+        },
+        {
+          "name": "destaque",
+          "label": "Aparece em destaque na home",
+          "widget": "boolean",
+          "required": false,
+          "default": false
+        },
+        {
+          "name": "ordem",
+          "label": "Ordem",
+          "widget": "number",
+          "value_type": "int"
+        },
+        {
+          "name": "acento",
+          "label": "Cor de acento",
+          "widget": "select",
+          "options": [
+            "ouro",
+            "coral",
+            "magenta",
+            "violeta",
+            "agua"
+          ]
+        },
+        {
+          "name": "icone",
+          "label": "Ícone",
+          "widget": "string"
+        },
+        {
+          "name": "origem",
+          "label": "Origem e história",
+          "widget": "text"
+        },
+        {
+          "name": "oQueE",
+          "label": "O que é",
+          "widget": "list",
+          "field": {
+            "name": "paragrafo",
+            "label": "Parágrafo",
+            "widget": "text"
+          }
+        },
+        {
+          "name": "comoFunciona",
+          "label": "Como funciona",
+          "widget": "list",
+          "field": {
+            "name": "item",
+            "label": "Item",
+            "widget": "text"
+          }
+        },
+        {
+          "name": "evidencia",
+          "label": "Evidência e limites",
+          "widget": "text"
+        },
+        {
+          "name": "sessao",
+          "label": "A sessão",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "duracao",
+              "label": "Duração",
+              "widget": "string"
+            },
+            {
+              "name": "formato",
+              "label": "Formato",
+              "widget": "text"
+            },
+            {
+              "name": "sensacao",
+              "label": "O que se sente",
+              "widget": "text"
+            },
+            {
+              "name": "frequencia",
+              "label": "Frequência",
+              "widget": "string"
+            },
+            {
+              "name": "distancia",
+              "label": "Atende à distância",
+              "widget": "select",
+              "options": [
+                "sim",
+                "nao",
+                "parcial"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "indicacoes",
+          "label": "Procurada para",
+          "widget": "list",
+          "field": {
+            "name": "item",
+            "label": "Item",
+            "widget": "string"
+          }
+        },
+        {
+          "name": "cuidados",
+          "label": "Cuidados e contraindicações",
+          "widget": "list",
+          "required": false,
+          "field": {
+            "name": "item",
+            "label": "Item",
+            "widget": "text"
+          }
+        },
+        {
+          "name": "ressalvas",
+          "label": "Ressalvas",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "faq",
+          "label": "Perguntas frequentes",
+          "widget": "list",
+          "required": false,
+          "fields": [
+            {
+              "name": "pergunta",
+              "label": "Pergunta",
+              "widget": "string"
+            },
+            {
+              "name": "resposta",
+              "label": "Resposta",
+              "widget": "text"
+            }
+          ]
+        },
+        {
+          "name": "termos",
+          "label": "Glossário da terapia",
+          "widget": "list",
+          "required": false,
+          "fields": [
+            {
+              "name": "termo",
+              "label": "Termo",
+              "widget": "string"
+            },
+            {
+              "name": "definicao",
+              "label": "Definição",
+              "widget": "text"
+            }
+          ]
+        },
+        {
+          "name": "keywords",
+          "label": "Palavras-chave (SEO)",
+          "widget": "list",
+          "required": false,
+          "field": {
+            "name": "palavra",
+            "label": "Palavra",
+            "widget": "string"
+          }
+        },
+        {
+          "name": "fontes",
+          "label": "Fontes",
+          "widget": "list",
+          "required": false,
+          "fields": [
+            {
+              "name": "titulo",
+              "label": "Título",
+              "widget": "string"
+            },
+            {
+              "name": "url",
+              "label": "Endereço",
+              "widget": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "paginas",
+      "label": "Páginas",
+      "files": [
+        {
+          "name": "home",
+          "label": "Início",
+          "file": "src/content/dados/home.json",
+          "fields": [
+            {
+              "name": "hero",
+              "label": "Abertura",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "tituloInicio",
+                  "label": "Título, primeira parte",
+                  "widget": "string"
+                },
+                {
+                  "name": "tituloDestaque",
+                  "label": "Título, parte em dourado",
+                  "widget": "string"
+                },
+                {
+                  "name": "tituloFim",
+                  "label": "Título, fecho",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "texto",
+                  "label": "Parágrafo de abertura",
+                  "widget": "text"
+                },
+                {
+                  "name": "botaoWhatsapp",
+                  "label": "Botão do WhatsApp",
+                  "widget": "string"
+                },
+                {
+                  "name": "botaoTerapias",
+                  "label": "Botão das terapias",
+                  "widget": "string"
+                },
+                {
+                  "name": "rotuloBusca",
+                  "label": "Rótulo acima da busca",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "secaoMotivos",
+              "label": "Seção: quando procurar",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                },
+                {
+                  "name": "chamada",
+                  "label": "Chamada ao final",
+                  "widget": "string"
+                },
+                {
+                  "name": "rotuloChamada",
+                  "label": "Rótulo do botão",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "motivos",
+              "label": "Motivos",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "icone",
+                  "label": "Ícone",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "secaoDestaque",
+              "label": "Seção: trabalho principal",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "secaoTodas",
+              "label": "Seção: todas as abordagens",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                },
+                {
+                  "name": "rotuloLink",
+                  "label": "Rótulo do link",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "secaoFormacao",
+              "label": "Seção: formação",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "secaoDepoimentos",
+              "label": "Seção: depoimentos",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "secaoBlog",
+              "label": "Seção: blog",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "secaoVideos",
+              "label": "Seção: vídeos",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "secaoEtapas",
+              "label": "Seção: como começa",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "etapas",
+              "label": "Etapas",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "icone",
+                  "label": "Ícone",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "secaoPerguntas",
+              "label": "Seção: perguntas",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "rotuloLink",
+                  "label": "Rótulo do link",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "perguntas",
+              "label": "Perguntas frequentes da home",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "pergunta",
+                  "label": "Pergunta",
+                  "widget": "string"
+                },
+                {
+                  "name": "resposta",
+                  "label": "Resposta",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "chamadaFinal",
+              "label": "Chamada final",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sobre",
+          "label": "Quem eu sou",
+          "file": "src/content/dados/sobre.json",
+          "fields": [
+            {
+              "name": "hero",
+              "label": "Abertura",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "paragrafos",
+              "label": "Parágrafos",
+              "widget": "list",
+              "field": {
+                "name": "paragrafo",
+                "label": "Parágrafo",
+                "widget": "text"
+              },
+              "hint": "Aceita **negrito** e [link](endereço)."
+            },
+            {
+              "name": "chamada",
+              "label": "Chamada no meio da página",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "contato",
+          "label": "Contato",
+          "file": "src/content/dados/contato.json",
+          "fields": [
+            {
+              "name": "hero",
+              "label": "Abertura",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sobretitulo",
+                  "label": "Linha de cima",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Texto",
+                  "widget": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "fotos",
+          "label": "Fotos do site",
+          "file": "src/content/dados/fotos.json",
+          "description": "Cada espaço é um lugar fixo do site. Trocar o arquivo troca a foto.",
+          "fields": [
+            {
+              "name": "itens",
+              "label": "Espaços",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "numero",
+                  "label": "Número",
+                  "widget": "number",
+                  "value_type": "int"
+                },
+                {
+                  "name": "local",
+                  "label": "Onde aparece",
+                  "widget": "string"
+                },
+                {
+                  "name": "descricao",
+                  "label": "O que entra aqui",
+                  "widget": "text"
+                },
+                {
+                  "name": "proporcao",
+                  "label": "Proporção",
+                  "widget": "select",
+                  "options": [
+                    "3/4",
+                    "4/3",
+                    "16/9",
+                    "1/1"
+                  ]
+                },
+                {
+                  "name": "arquivo",
+                  "label": "Imagem",
+                  "widget": "image",
+                  "required": false,
+                  "media_library": {
+                    "config": {
+                      "max_file_size": 3000000
+                    }
+                  }
+                },
+                {
+                  "name": "alt",
+                  "label": "Descrição para quem não enxerga",
+                  "widget": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "depoimentos",
+          "label": "Depoimentos",
+          "file": "src/content/dados/depoimentos.json",
+          "description": "Publicar exige autorização por escrito de quem escreveu, guardada fora do site. Sem nome completo e sem foto.",
+          "fields": [
+            {
+              "name": "itens",
+              "label": "Relatos",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "Identificador",
+                  "widget": "string"
+                },
+                {
+                  "name": "texto",
+                  "label": "Mensagem, linha por linha",
+                  "widget": "list",
+                  "field": {
+                    "name": "linha",
+                    "label": "Linha",
+                    "widget": "text"
+                  },
+                  "hint": "Do jeito que a pessoa escreveu. Não reescreva."
+                },
+                {
+                  "name": "autor",
+                  "label": "Como assina",
+                  "widget": "string"
+                },
+                {
+                  "name": "contexto",
+                  "label": "Contexto curto",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "hora",
+                  "label": "Hora na bolha",
+                  "widget": "string"
+                },
+                {
+                  "name": "terapia",
+                  "label": "Terapia",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "certificados",
+          "label": "Certificados",
+          "file": "src/content/dados/certificados.json",
+          "fields": [
+            {
+              "name": "itens",
+              "label": "Formações",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "Identificador",
+                  "widget": "string"
+                },
+                {
+                  "name": "titulo",
+                  "label": "Curso ou qualificação",
+                  "widget": "string"
+                },
+                {
+                  "name": "instituicao",
+                  "label": "Instituição",
+                  "widget": "string"
+                },
+                {
+                  "name": "ano",
+                  "label": "Ano",
+                  "widget": "number",
+                  "value_type": "int"
+                },
+                {
+                  "name": "data",
+                  "label": "Data por extenso",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "horas",
+                  "label": "Carga horária",
+                  "widget": "number",
+                  "required": false,
+                  "value_type": "int"
+                },
+                {
+                  "name": "local",
+                  "label": "Local",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "nota",
+                  "label": "Uma linha sobre o curso",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "name": "terapia",
+                  "label": "Terapia ligada",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "arquivo",
+                  "label": "Arquivo da imagem, sem extensão",
+                  "widget": "string",
+                  "hint": "O arquivo precisa existir em public/certificados/."
+                },
+                {
+                  "name": "destaque",
+                  "label": "Destacar",
+                  "widget": "boolean",
+                  "required": false,
+                  "default": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

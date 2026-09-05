@@ -1,0 +1,143 @@
+{
+  "slug": "auriculoterapia",
+  "nome": "Auriculoterapia",
+  "nomeCurto": "Auriculoterapia",
+  "tagline": "A orelha como mapa do corpo",
+  "resumo": "Estimulação de pontos específicos no pavilhão auricular com sementes, esferas ou agulhas semipermanentes. Pouco invasiva, rápida e amplamente utilizada no SUS, sobretudo no manejo da ansiedade e da dor.",
+  "destaque": false,
+  "ordem": 7,
+  "acento": "coral",
+  "icone": "auriculoterapia",
+  "origem": "A auriculoterapia tem duas raízes. A chinesa antiga: textos como o Huangdi Neijing já mencionavam a relação entre a orelha e os órgãos internos. E a francesa moderna: o médico Paul Nogier (1908 a 1996), de Lyon, sistematizou a técnica a partir de 1956, desenvolvendo o mapa dos pontos auriculares, o chamado \"homúnculo invertido\", em que a orelha representa um feto de cabeça para baixo. Seus estudos foram levados de volta à China e ali expandidos, num diálogo de mão dupla entre Oriente e Ocidente.",
+  "oQueE": [
+    "A auriculoterapia consiste na estimulação de pontos específicos do pavilhão auricular, a orelha externa, por meio de sementes, esferas metálicas fixadas com micropore, agulhas semipermanentes, laser ou pressão manual. A ideia central é que a orelha funcionaria como um microssistema: um mapa reduzido de todo o corpo, no qual cada região, órgão ou função encontraria correspondência em um ponto.",
+    "Por ser pouco invasiva, rápida de aplicar e não exigir que a pessoa se dispa, tornou-se uma das práticas integrativas mais utilizadas na saúde pública brasileira, isolada ou como complemento à acupuntura sistêmica, especialmente no manejo da ansiedade, dor crônica, insônia e apoio à cessação do tabagismo."
+  ],
+  "comoFunciona": [
+    "Segundo a tradição, a estimulação dos pontos auriculares atuaria sobre o fluxo de energia e sobre os órgãos e sistemas correspondentes.",
+    "No modelo de Nogier, a orelha reflete todo o corpo como um feto invertido; na tradição chinesa, os pontos auriculares se conectam à rede mais ampla dos meridianos.",
+    "Após a aplicação, é comum orientar a pessoa a pressionar os pontos algumas vezes ao dia, para reforçar o estímulo ao longo da semana."
+  ],
+  "evidencia": "A auriculoterapia é uma das práticas integrativas com volume relativamente maior de estudos clínicos, incluindo revisões sistemáticas indexadas. Há evidência de qualidade moderada sugerindo benefício na redução de ansiedade, estresse e sintomas depressivos leves a moderados, no manejo auxiliar da dor e no apoio à cessação do tabagismo. Ainda assim, persistem limitações metodológicas (amostras pequenas, dificuldade de cegamento, protocolos heterogêneos), o que a posiciona como recurso complementar com evidência favorável, mas não conclusiva.",
+  "sessao": {
+    "duracao": "20 a 40 minutos",
+    "formato": "Presencial, com breve anamnese e aplicação de sementes, esferas ou agulhas semipermanentes na orelha.",
+    "sensacao": "Leve pressão ou pontada rápida na aplicação, seguida de relaxamento. As sementes ou agulhas permanecem de 3 a 7 dias.",
+    "frequencia": "Sessões semanais ou quinzenais, em ciclos de 4 a 10 sessões conforme o objetivo.",
+    "distancia": "nao"
+  },
+  "indicacoes": [
+    "Ansiedade e sintomas de estresse",
+    "Insônia e distúrbios do sono",
+    "Apoio à cessação do tabagismo",
+    "Compulsão alimentar e apoio à reeducação alimentar",
+    "Dores crônicas: enxaqueca, lombar, articulares",
+    "Tensão diante de exames e situações pontuais",
+    "Enjoos e náuseas",
+    "Sintomas do ciclo menstrual e da menopausa"
+  ],
+  "limites": "A auriculoterapia não diagnostica doenças, não substitui exames nem tratamentos prescritos, e não deve ser apresentada como cura de dependências químicas, transtornos psiquiátricos ou doenças crônicas. Contraindicações: infecções ou lesões na orelha, alergia a metais ou ao adesivo, gestação (certos pontos), distúrbios importantes de coagulação. A aplicação de agulhas, por ser invasiva, é reservada a profissionais de saúde regulamentados.",
+  "faq": [
+    {
+      "pergunta": "A auriculoterapia dói?",
+      "resposta": "A aplicação costuma causar apenas uma sensação rápida de pressão ou beliscão leve, seguida de conforto. Não é um procedimento doloroso na maioria dos relatos."
+    },
+    {
+      "pergunta": "Por quanto tempo as sementes ficam na orelha?",
+      "resposta": "Em geral de 3 a 7 dias. É importante manter a região limpa e seca nesse período."
+    },
+    {
+      "pergunta": "Auriculoterapia ajuda a emagrecer?",
+      "resposta": "Pode ser apoio complementar dentro de um processo de reeducação alimentar, ajudando no manejo da compulsão e da ansiedade. Não emagrece por si só, nem substitui orientação nutricional."
+    },
+    {
+      "pergunta": "Serve para parar de fumar?",
+      "resposta": "É usada como apoio complementar em programas de cessação do tabagismo, inclusive no SUS, geralmente associada a acompanhamento médico ou psicológico."
+    },
+    {
+      "pergunta": "Posso fazer grávida?",
+      "resposta": "Alguns pontos são contraindicados na gestação. É indispensável informar a gravidez antes da sessão."
+    },
+    {
+      "pergunta": "Qual a diferença para a acupuntura sistêmica?",
+      "resposta": "A auriculoterapia trabalha exclusivamente pontos na orelha; a acupuntura sistêmica usa pontos por todo o corpo. Muitas vezes as duas são combinadas."
+    },
+    {
+      "pergunta": "Posso tomar banho e lavar o cabelo com as sementinhas?",
+      "resposta": "Pode tomar banho normalmente, evitando molhar a orelha em excesso e secando bem depois, com cuidado. Piscina, mar e sauna soltam o adesivo mais rápido. Manter a região limpa e seca é a principal orientação do período."
+    },
+    {
+      "pergunta": "E se a sementinha cair antes do tempo?",
+      "resposta": "Acontece com frequência, sobretudo em quem tem pele oleosa ou dorme de lado, e não é problema. Não tente recolocar em casa, porque o ponto exato importa. Anote quando caiu e conte na sessão seguinte."
+    },
+    {
+      "pergunta": "Posso dormir de lado com as sementes?",
+      "resposta": "Pode, e é o que a maioria faz. Pode haver um incômodo nos primeiros dias sobre o lado aplicado, que costuma diminuir. Se estiver doendo de verdade ou incomodando o sono, retire e avise o terapeuta."
+    },
+    {
+      "pergunta": "Quem tem alergia a esparadrapo pode fazer?",
+      "resposta": "Avise antes. Alergia a metais ou a adesivo é contraindicação relativa, e existem alternativas: micropore hipoalergênico, esferas de material diferente ou apenas pressão manual. Se aparecer vermelhidão, coceira ou irritação, retire e comunique o terapeuta."
+    },
+    {
+      "pergunta": "A auriculoterapia cura ansiedade?",
+      "resposta": "Não. Ela é um recurso complementar, e a evidência disponível, ainda que favorável em alguns estudos, não é conclusiva. Ansiedade que atrapalha o sono, o trabalho ou a vida cotidiana pede avaliação com profissional de saúde mental. As duas coisas podem caminhar juntas."
+    },
+    {
+      "pergunta": "Criança pode fazer auriculoterapia?",
+      "resposta": "Com consentimento e presença de quem é responsável, e em geral só com sementes, sem agulha. A orelha infantil é pequena e a pele mais sensível, então o tempo de permanência costuma ser menor. Sintoma persistente em criança precisa de avaliação pediátrica."
+    },
+    {
+      "pergunta": "A auriculoterapia está no SUS?",
+      "resposta": "Ela não tem entrada própria na lista da PNPIC: é uma técnica dentro da Medicina Tradicional Chinesa, essa sim na política desde 2006. O Ministério da Saúde mantém formação nacional de auriculoterapia para a Atenção Primária, e ela é muito usada na rede. Reconhecimento em política pública, porém, não é o mesmo que comprovação de eficácia."
+    },
+    {
+      "pergunta": "Faz nas duas orelhas ao mesmo tempo?",
+      "resposta": "Costuma-se aplicar em uma orelha por sessão, alternando na seguinte, para não sobrecarregar e para dar descanso à pele. Alguns protocolos usam as duas. Isso varia com a abordagem do profissional e com o seu caso."
+    }
+  ],
+  "termos": [
+    {
+      "termo": "Pavilhão auricular",
+      "definicao": "A parte externa e visível da orelha, onde ficam os pontos trabalhados."
+    },
+    {
+      "termo": "Homúnculo invertido",
+      "definicao": "Modelo de Paul Nogier que projeta o corpo humano de cabeça para baixo sobre a orelha."
+    },
+    {
+      "termo": "Microssistema",
+      "definicao": "Conceito segundo o qual uma parte do corpo (orelha, mão, pé) contém a representação do organismo inteiro."
+    },
+    {
+      "termo": "Protocolo NADA",
+      "definicao": "Protocolo padronizado de cinco pontos auriculares, criado nos EUA e amplamente usado no apoio a dependências químicas."
+    },
+    {
+      "termo": "Vaccaria",
+      "definicao": "Pequenas sementes fixadas com adesivo sobre os pontos auriculares, alternativa não invasiva às agulhas."
+    },
+    {
+      "termo": "Agulha semipermanente",
+      "definicao": "Agulha muito fina e curta, fixada na orelha por alguns dias para estímulo contínuo."
+    },
+    {
+      "termo": "Auriculomapa",
+      "definicao": "Representação gráfica dos pontos auriculares e suas correspondências corporais."
+    }
+  ],
+  "keywords": [
+    "o que é auriculoterapia",
+    "auriculoterapia para ansiedade",
+    "auriculoterapia para emagrecer",
+    "auriculoterapia sementes",
+    "auriculoterapia para parar de fumar",
+    "auriculoterapia contraindicações",
+    "auriculoterapia perto de mim"
+  ],
+  "fontes": [
+    {
+      "titulo": "Ministério da Saúde: Práticas Integrativas e Complementares",
+      "url": "https://www.gov.br/saude/pt-br/composicao/saps/pics"
+    }
+  ]
+}

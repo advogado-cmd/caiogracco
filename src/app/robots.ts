@@ -10,7 +10,10 @@ export default function robots(): MetadataRoute.Robots {
 
   return {
     rules: [
-      { userAgent: '*', allow: '/' },
+      // O painel e as rotas de login não têm por que ser rastreados. Não é
+      // segurança (quem entra precisa de conta autorizada), é higiene: página
+      // de administração em resultado de busca é convite para tentativa.
+      { userAgent: '*', allow: '/', disallow: ['/admin', '/api/'] },
       // Motores de resposta e assistentes: liberados de propósito (estratégia GEO).
       { userAgent: ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'PerplexityBot', 'Google-Extended', 'Applebot-Extended', 'CCBot'], allow: '/' },
     ],

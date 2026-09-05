@@ -1,0 +1,155 @@
+{
+  "slug": "acupuntura-sistemica",
+  "nome": "Acupuntura Sistêmica",
+  "nomeCurto": "Acupuntura",
+  "tagline": "Pontos por todo o corpo, leitura do todo",
+  "resumo": "Técnica da Medicina Tradicional Chinesa com mais de dois mil anos, que utiliza agulhas finas e descartáveis em pontos distribuídos por todo o corpo. É a prática integrativa com maior corpo de evidência científica, sobretudo no manejo da dor.",
+  "destaque": false,
+  "ordem": 6,
+  "acento": "agua",
+  "icone": "acupuntura",
+  "origem": "A acupuntura é uma das práticas mais antigas da Medicina Tradicional Chinesa, sistematizada sobretudo no clássico Huangdi Neijing. Não tem um criador único: é fruto de uma tradição médica coletiva desenvolvida ao longo de séculos. Chegou ao Ocidente em ondas sucessivas e se difundiu de forma decisiva a partir da década de 1970. No Brasil, é especialidade médica reconhecida pelo Conselho Federal de Medicina desde 1995 e integra a PNPIC desde 2006.",
+  "oQueE": [
+    "A acupuntura sistêmica consiste na inserção de agulhas finas, estéreis e descartáveis em pontos específicos distribuídos por todo o corpo: membros, tronco, face e couro cabeludo. O termo \"sistêmica\" a distingue da auriculoterapia e de outras variantes localizadas: aqui o corpo é lido como um todo.",
+    "Na tradição chinesa, cada ponto está associado a um meridiano, um dos canais pelos quais a energia vital circularia conectando órgãos, tecidos e funções. Antes de aplicar as agulhas, faz-se uma avaliação segundo os princípios da Medicina Tradicional Chinesa (observação da língua, palpação do pulso, escuta dos sintomas) para identificar padrões de desequilíbrio e escolher os pontos de cada sessão."
+  ],
+  "comoFunciona": [
+    "Segundo a tradição, o mal-estar resultaria de um desequilíbrio no fluxo do Qi pelos meridianos ou entre as forças complementares Yin e Yang.",
+    "A inserção das agulhas teria o papel de desobstruir, tonificar ou dispersar esse fluxo, restabelecendo o equilíbrio.",
+    "A escolha dos pontos varia a cada sessão, conforme a leitura do momento da pessoa."
+  ],
+  "evidencia": "A acupuntura é uma das práticas integrativas mais estudadas, com milhares de ensaios clínicos e revisões sistemáticas. A evidência é mais consistente no manejo da dor (lombalgia crônica, cervicalgia, enxaqueca, cefaleia tensional, osteoartrite de joelho), com recomendação em diretrizes clínicas internacionais. Para outras finalidades a evidência é mais heterogênea. Um debate honesto e relevante: estudos que comparam acupuntura \"verdadeira\" com acupuntura simulada costumam mostrar diferenças pequenas, o que sugere que parte do efeito venha de componentes inespecíficos. Ainda assim, o benefício percebido em dor crônica é real e mensurável em muitos estudos.",
+  "sessao": {
+    "duracao": "30 a 60 minutos",
+    "formato": "Presencial, com avaliação inicial segundo a Medicina Tradicional Chinesa e permanência das agulhas por 20 a 40 minutos.",
+    "sensacao": "Uma picada fina e rápida na inserção, seguida por vezes da sensação chamada De Qi (peso, formigamento ou leve distensão no ponto) e, na maioria dos relatos, relaxamento profundo. Muita gente adormece durante a sessão.",
+    "frequencia": "De sessões pontuais para alívio agudo a ciclos de 6 a 12 sessões, semanais ou quinzenais, em quadros crônicos.",
+    "distancia": "nao"
+  },
+  "indicacoes": [
+    "Dores crônicas: lombalgia, cervicalgia, dores articulares",
+    "Enxaqueca e cefaleia tensional",
+    "Estresse e ansiedade",
+    "Insônia e distúrbios do sono",
+    "Sintomas da menopausa",
+    "Recuperação de lesões, como complemento",
+    "Desconfortos digestivos funcionais",
+    "Fadiga e baixa energia"
+  ],
+  "limites": "A acupuntura não diagnostica nem trata doenças graves isoladamente e não substitui avaliação médica, exames ou tratamentos convencionais. A aplicação de agulhas é procedimento invasivo, reservado por lei a profissionais de saúde regulamentados e habilitados. Há contraindicações: distúrbios de coagulação, uso de anticoagulantes, gestação (certos pontos), infecções na região a agulhar, jejum prolongado e imunossupressão exigem cautela ou avaliação prévia.",
+  "faq": [
+    {
+      "pergunta": "Acupuntura dói?",
+      "resposta": "As agulhas são muito mais finas que as de injeção. A maioria das pessoas sente apenas uma picada leve e passageira, seguida de peso ou formigamento no ponto, e depois relaxamento."
+    },
+    {
+      "pergunta": "Quantas sessões são necessárias?",
+      "resposta": "Depende do caso. Dores agudas podem melhorar em poucas sessões; quadros crônicos costumam pedir ciclos de 6 a 12 sessões, com reavaliação periódica."
+    },
+    {
+      "pergunta": "A acupuntura é reconhecida pela medicina?",
+      "resposta": "Sim. No Brasil é especialidade médica reconhecida pelo CFM desde 1995 e integra a PNPIC do SUS desde 2006, com respaldo científico mais consistente no manejo da dor."
+    },
+    {
+      "pergunta": "Quem pode aplicar acupuntura?",
+      "resposta": "A aplicação de agulhas é procedimento invasivo, reservado a profissionais de saúde regulamentados e capacitados conforme seus conselhos profissionais."
+    },
+    {
+      "pergunta": "Existe algum risco?",
+      "resposta": "Com profissional qualificado e material estéril e descartável, os riscos são baixos. Os efeitos adversos mais comuns são pequenos hematomas ou dor leve no local."
+    },
+    {
+      "pergunta": "É a mesma coisa que auriculoterapia?",
+      "resposta": "Não. A acupuntura sistêmica usa pontos por todo o corpo; a auriculoterapia trabalha apenas pontos na orelha. As duas podem ser combinadas."
+    },
+    {
+      "pergunta": "Posso comer antes da acupuntura?",
+      "resposta": "Sim, e é melhor que você não vá em jejum. Jejum prolongado aumenta a chance de tontura ou mal-estar durante a sessão. Faça uma refeição leve uma ou duas horas antes, sem exagero."
+    },
+    {
+      "pergunta": "O que vestir para a sessão?",
+      "resposta": "Roupa larga e fácil de dobrar, que permita expor braços e pernas até o joelho e a região lombar. Peças justas nos punhos e tornozelos atrapalham, porque muitos pontos importantes ficam ali."
+    },
+    {
+      "pergunta": "Como me sinto depois? Posso dirigir?",
+      "resposta": "A maioria sai relaxada e apta a seguir o dia normalmente. Sonolência, leve tontura ao levantar e vontade de dormir mais cedo são relatos comuns nas primeiras sessões. Se você se sentir muito mole, espere alguns minutos sentado antes de sair dirigindo."
+    },
+    {
+      "pergunta": "Acupuntura funciona para enxaqueca?",
+      "resposta": "É a indicação com melhor respaldo. A revisão Cochrane de Linde e colaboradores indica certeza moderada de benefício na prevenção de enxaqueca, com pelo menos seis sessões. Isso vale para prevenção de enxaqueca. Não é possível estender esse achado a outras condições."
+    },
+    {
+      "pergunta": "Posso fazer acupuntura grávida?",
+      "resposta": "Alguns pontos são contraindicados na gestação e outros exigem cautela conforme o trimestre. Informe a gravidez antes de qualquer sessão e converse com quem acompanha o pré-natal. Com essa conversa feita e um profissional habilitado, existem protocolos adaptados."
+    },
+    {
+      "pergunta": "Posso fazer acupuntura tomando meus remédios?",
+      "resposta": "Sim, não há interação. Conte ao profissional tudo o que você usa, sobretudo anticoagulantes e imunossupressores, porque isso muda a conduta. E nenhuma medicação deve ser reduzida ou suspensa por causa das sessões. Só quem prescreveu pode mexer nisso."
+    },
+    {
+      "pergunta": "A acupuntura substitui o remédio para dor?",
+      "resposta": "Não, e não deve ser apresentada assim. Ela é usada como recurso complementar no manejo da dor, com evidência mais consistente em quadros crônicos. Qualquer redução de medicação é decisão do médico que acompanha você, tomada com base na sua evolução."
+    },
+    {
+      "pergunta": "As agulhas são reaproveitadas?",
+      "resposta": "Não. As agulhas são estéreis, de uso único e descartadas em recipiente próprio na sua frente. Se em algum lugar isso não estiver claro, pergunte antes de começar. Você tem todo o direito de ver a embalagem sendo aberta."
+    },
+    {
+      "pergunta": "Existe acupuntura à distância?",
+      "resposta": "Não. A inserção de agulhas exige presença física e profissional habilitado. Consulta online serve para avaliação e orientação, mas a aplicação em si é sempre presencial."
+    }
+  ],
+  "termos": [
+    {
+      "termo": "Qi",
+      "definicao": "Energia vital que, segundo a Medicina Tradicional Chinesa, circula pelo corpo e sustenta suas funções."
+    },
+    {
+      "termo": "Meridianos",
+      "definicao": "Canais pelos quais o Qi circularia, conectando pontos de acupuntura a órgãos e funções."
+    },
+    {
+      "termo": "Yin e Yang",
+      "definicao": "Princípio chinês de forças complementares e opostas, cujo equilíbrio seria a base da saúde."
+    },
+    {
+      "termo": "De Qi",
+      "definicao": "Sensação de peso, formigamento ou distensão no ponto quando a agulha é corretamente inserida, sinal de estímulo eficaz na tradição."
+    },
+    {
+      "termo": "Zang-Fu",
+      "definicao": "Teoria dos órgãos internos na MTC, que associa cada órgão a funções energéticas e emocionais."
+    },
+    {
+      "termo": "Eletroacupuntura",
+      "definicao": "Variante em que se aplica leve corrente elétrica entre pares de agulhas para intensificar o estímulo."
+    },
+    {
+      "termo": "Moxabustão",
+      "definicao": "Técnica complementar que usa o calor da combustão da Artemisia próxima aos pontos, para aquecer e tonificar."
+    },
+    {
+      "termo": "Diagnóstico pelo pulso e pela língua",
+      "definicao": "Métodos tradicionais de avaliação usados na MTC antes de definir os pontos a tratar."
+    },
+    {
+      "termo": "Huangdi Neijing",
+      "definicao": "Clássico Interno do Imperador Amarelo, texto fundador da Medicina Tradicional Chinesa."
+    }
+  ],
+  "keywords": [
+    "o que é acupuntura sistêmica",
+    "acupuntura para dor nas costas",
+    "acupuntura para ansiedade",
+    "quantas sessões de acupuntura",
+    "acupuntura dói",
+    "acupuntura para enxaqueca",
+    "acupuntura sistêmica x auricular"
+  ],
+  "fontes": [
+    {
+      "titulo": "Ministério da Saúde: Práticas Integrativas e Complementares",
+      "url": "https://www.gov.br/saude/pt-br/composicao/saps/pics"
+    }
+  ]
+}

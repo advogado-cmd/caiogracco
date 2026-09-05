@@ -1,0 +1,156 @@
+{
+  "slug": "shiatsu",
+  "nome": "Massagem Shiatsu",
+  "nomeCurto": "Shiatsu",
+  "tagline": "Pressão dos dedos, escuta pelo toque",
+  "resumo": "Terapia manual japonesa em que o terapeuta aplica pressão rítmica com polegares, palmas e cotovelos sobre pontos do corpo. Feita com a pessoa vestida, sem óleos, combinando pressão, alongamentos e mobilizações.",
+  "destaque": false,
+  "ordem": 5,
+  "acento": "coral",
+  "icone": "shiatsu",
+  "origem": "O Shiatsu, de shi (dedo) e atsu (pressão), nasce das práticas manuais japonesas como o Anma, somadas a princípios da Medicina Tradicional Chinesa. Foi sistematizado no início do século XX por Tokujiro Namikoshi (1905 a 2000), responsável pelo reconhecimento oficial da técnica pelo Ministério da Saúde japonês em 1964, e ampliado por Shizuto Masunaga (1925 a 1981), criador do Shiatsu Zen. Chegou ao Brasil nas décadas de 1970 e 1980.",
+  "oQueE": [
+    "O Shiatsu é uma terapia manual japonesa em que o terapeuta aplica pressão rítmica e sustentada sobre pontos específicos, principalmente com os polegares, mas também com palmas, cotovelos e joelhos, seguindo trajetos que a tradição chama de meridianos. Não usa óleos e é realizado com a pessoa vestida, sobre futon ou maca.",
+    "Na tradição japonesa, o objetivo é favorecer o reequilíbrio do fluxo de energia vital, aliviar tensões musculares e promover relaxamento profundo. É uma prática que valoriza o toque presente: o terapeuta \"escuta\" com as mãos as áreas de tensão antes de decidir onde e como aplicar a pressão."
+  ],
+  "comoFunciona": [
+    "Segundo a tradição, uma energia vital chamada Ki circula pelo corpo por canais chamados meridianos; quando esse fluxo estaria bloqueado ou estagnado, surgiriam desconfortos físicos e emocionais.",
+    "A pressão nos tsubos, os pontos ao longo dos meridianos, teria a função de estimular, tonificar ou dispersar esse fluxo.",
+    "A avaliação do hara, a região abdominal, orienta a escolha das áreas a trabalhar."
+  ],
+  "evidencia": "O nível de evidência é baixo a moderado. Há estudos, inclusive brasileiros, sugerindo benefício na redução de dor, ansiedade e melhora do sono, mas com amostras pequenas e metodologia heterogênea. Os efeitos mais consistentemente relatados (relaxamento e redução da tensão percebida) são compatíveis com os de qualquer toque terapêutico cuidadoso. O Shiatsu não consta entre as práticas da PNPIC em nível federal.",
+  "sessao": {
+    "duracao": "40 a 60 minutos",
+    "formato": "Com roupas leves e confortáveis, sobre futon no chão ou maca. Sem óleos.",
+    "sensacao": "Pressão firme e progressiva, por vezes com desconforto pontual e passageiro em áreas de maior tensão, seguida de relaxamento e leveza.",
+    "frequencia": "De uma sessão pontual a ciclos de 4 a 8 sessões, semanais ou quinzenais, para queixas mais persistentes.",
+    "distancia": "nao"
+  },
+  "indicacoes": [
+    "Tensão muscular e dores nas costas, pescoço e ombros",
+    "Estresse e ansiedade do dia a dia",
+    "Dificuldade para dormir",
+    "Cansaço e fadiga",
+    "Dores de cabeça tensionais",
+    "Sobrecarga emocional",
+    "Consciência corporal e postura",
+    "Momentos de autocuidado e desaceleração"
+  ],
+  "limites": "O Shiatsu não é procedimento médico, não diagnostica doenças e não substitui consultas, exames ou tratamentos prescritos. Há contraindicações: gestação de risco ou primeiro trimestre sem liberação médica, fraturas recentes, trombose, osteoporose grave, febre e infecções agudas, áreas com câncer ativo ou pós-cirúrgico recente, distúrbios de coagulação e uso de anticoagulantes. Informe sempre o terapeuta sobre sua condição de saúde.",
+  "faq": [
+    {
+      "pergunta": "O Shiatsu dói?",
+      "resposta": "Pode haver desconforto pontual em áreas de tensão mais intensa, mas a pressão é sempre ajustada à sua tolerância. Não deve haver dor incapacitante."
+    },
+    {
+      "pergunta": "Preciso tirar a roupa?",
+      "resposta": "Não. O Shiatsu é feito com a pessoa vestida, de preferência com roupas leves e confortáveis."
+    },
+    {
+      "pergunta": "Shiatsu é a mesma coisa que acupuntura?",
+      "resposta": "Não. Compartilham a base teórica dos meridianos, mas a acupuntura usa agulhas e o Shiatsu usa exclusivamente pressão manual, alongamentos e mobilizações."
+    },
+    {
+      "pergunta": "Gestantes podem fazer Shiatsu?",
+      "resposta": "Em gestações sem complicações e com liberação médica, existem protocolos adaptados que evitam pontos contraindicados. Informe a gestação antes da sessão."
+    },
+    {
+      "pergunta": "Quantas sessões para sentir efeito?",
+      "resposta": "Muita gente relata relaxamento já na primeira. Para queixas persistentes, costuma-se recomendar um ciclo de sessões com frequência regular."
+    },
+    {
+      "pergunta": "Qual a diferença entre Shiatsu e massagem relaxante?",
+      "resposta": "A massagem relaxante trabalha o deslizamento sobre a musculatura, geralmente com óleo. O Shiatsu trabalha pressão sustentada em pontos, com a pessoa vestida, seguindo os trajetos dos meridianos."
+    },
+    {
+      "pergunta": "O que devo vestir para a sessão?",
+      "resposta": "Roupa leve, de tecido que estique: legging, moletom fino, camiseta de algodão. Evite jeans, cinto, saia justa e acessórios que apertem. Meias são bem-vindas, e brincos e relógio costumam sair antes de começar."
+    },
+    {
+      "pergunta": "Posso comer antes do Shiatsu?",
+      "resposta": "Pode, mas evite refeição pesada nas duas horas anteriores. Há trabalho de pressão sobre o abdome e posições deitado de bruços, e estômago cheio deixa isso desconfortável. Um lanche leve não atrapalha."
+    },
+    {
+      "pergunta": "É normal ficar dolorido no dia seguinte?",
+      "resposta": "Um leve dolorimento em áreas muito tensas pode aparecer e costuma passar em um ou dois dias, parecido com o de um alongamento intenso. Beba água e evite esforço pesado logo depois. Dor forte ou que aumenta não é esperada. Avise o terapeuta."
+    },
+    {
+      "pergunta": "Posso fazer Shiatsu se tomo anticoagulante?",
+      "resposta": "Anticoagulantes e distúrbios de coagulação exigem cautela, porque a pressão firme favorece hematomas. Fale com seu médico antes e informe o terapeuta: em geral se opta por pressão mais leve ou por outra abordagem."
+    },
+    {
+      "pergunta": "Shiatsu resolve hérnia de disco?",
+      "resposta": "Não. Hérnia de disco é diagnóstico médico e pede avaliação ortopédica e, muitas vezes, fisioterapia. O Shiatsu pode, no máximo, ajudar na tensão muscular ao redor, e só depois de liberação de quem acompanha o caso."
+    },
+    {
+      "pergunta": "O Shiatsu está no SUS?",
+      "resposta": "Não nominalmente. A lista oficial da PNPIC tem 29 práticas e o Shiatsu não é uma delas. O que consta desde 2006 é a Medicina Tradicional Chinesa na modalidade acupuntura, campo do qual o Shiatsu é vizinho por compartilhar a teoria dos meridianos."
+    },
+    {
+      "pergunta": "Dá para fazer Shiatsu à distância?",
+      "resposta": "Não. É uma terapia de toque e depende da presença física. O que pode ser feito remotamente é orientação de Do-In, o conjunto de automassagens que a própria pessoa aplica, mas isso é outra coisa."
+    },
+    {
+      "pergunta": "Posso combinar Shiatsu com acupuntura ou fisioterapia?",
+      "resposta": "Sim, são abordagens compatíveis e muita gente faz as duas. Só evite marcar Shiatsu e acupuntura no mesmo dia, para não sobrecarregar, e conte ao fisioterapeuta o que está fazendo."
+    },
+    {
+      "pergunta": "Quem pode aplicar Shiatsu?",
+      "resposta": "O Shiatsu não é profissão regulamentada no Brasil, o que torna a formação do profissional a informação mais importante. Pergunte onde ele estudou, por quantas horas e em qual linha: Namikoshi, Zen ou outra."
+    }
+  ],
+  "termos": [
+    {
+      "termo": "Ki",
+      "definicao": "Na tradição japonesa, a energia vital que circularia pelo corpo, equivalente ao Qi chinês."
+    },
+    {
+      "termo": "Meridianos",
+      "definicao": "Canais pelos quais, segundo a Medicina Tradicional Chinesa, o Ki circula conectando órgãos e regiões."
+    },
+    {
+      "termo": "Tsubo",
+      "definicao": "Ponto específico de pressão ao longo de um meridiano, correspondente aos pontos de acupuntura."
+    },
+    {
+      "termo": "Hara",
+      "definicao": "A região abdominal, considerada na tradição japonesa o centro energético e físico do corpo."
+    },
+    {
+      "termo": "Kyo e Jitsu",
+      "definicao": "Conceitos de vazio (kyo) e excesso (jitsu) de energia numa região, usados para orientar a pressão."
+    },
+    {
+      "termo": "Anma",
+      "definicao": "Massagem tradicional japonesa mais antiga, precursora do Shiatsu."
+    },
+    {
+      "termo": "Shiatsu Namikoshi",
+      "definicao": "Estilo criado por Tokujiro Namikoshi, com abordagem mais próxima da fisiologia ocidental."
+    },
+    {
+      "termo": "Shiatsu Zen",
+      "definicao": "Estilo desenvolvido por Shizuto Masunaga, com ênfase ampliada nos meridianos e na dimensão psicoemocional."
+    },
+    {
+      "termo": "Do-In",
+      "definicao": "Conjunto de automassagens e alongamentos inspirados nos mesmos princípios, praticados pela própria pessoa."
+    }
+  ],
+  "keywords": [
+    "o que é shiatsu",
+    "massagem shiatsu para que serve",
+    "shiatsu para dor nas costas",
+    "shiatsu para ansiedade",
+    "benefícios do shiatsu",
+    "shiatsu contraindicações",
+    "diferença entre shiatsu e massagem",
+    "terapeuta shiatsu"
+  ],
+  "fontes": [
+    {
+      "titulo": "Ministério da Saúde: Práticas Integrativas e Complementares",
+      "url": "https://www.gov.br/saude/pt-br/composicao/saps/pics"
+    }
+  ]
+}

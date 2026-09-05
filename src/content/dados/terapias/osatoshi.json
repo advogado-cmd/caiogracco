@@ -1,0 +1,162 @@
+{
+  "slug": "osatoshi",
+  "nome": "Osatoshi",
+  "nomeCurto": "Osatoshi",
+  "tagline": "Limpeza espiritual de tradição japonesa",
+  "resumo": "Prática espiritual japonesa transmitida pela Shinri, voltada ao que a tradição entende como questões de origem espiritual. É o trabalho ao qual Caio Gracco mais tem se dedicado hoje, realizado presencialmente e à distância.",
+  "destaque": true,
+  "ordem": 1,
+  "acento": "ouro",
+  "icone": "osatoshi",
+  "origem": "O Osatoshi foi desenvolvido no Japão por Masao Utsumi (nascido em 1943), que em 2001 recebeu o nome espiritual Reisui Kinsei. Segundo o relato da própria tradição, seus treinamentos espirituais começaram em 1975, no templo do Monte Minobu, e a partir de 1985 ele passou a desenvolver o método. A Associação Shinri (\"Associação de Estudos da Verdade = Lei de Deus\") foi fundada formalmente em 15 de outubro de 2006. No Brasil, a expansão é conduzida por Choko Tereza Ito, representante internacional, com sede em Curitiba. Só pode praticar Osatoshi quem passou pela formação e recebeu credenciamento da Shinri.",
+  "oQueE": [
+    "Osatoshi é uma prática espiritual de origem japonesa que se propõe a atuar sobre aquilo que a tradição da Shinri chama de \"problemas de origem espiritual\": situações de vida que, dentro dessa cosmovisão, estariam ligadas à presença de espíritos perturbadores, a heranças espirituais familiares ou a carmas acumulados. O trabalho é conduzido por terapeutas formados e credenciados pela associação.",
+    "É importante situar o Osatoshi no universo de crenças ao qual pertence: trata-se de uma prática espiritual, com cosmovisão própria sobre espíritos, obsessão e salvação. Não é um procedimento com base em evidência científica. Para quem se identifica com essa visão de mundo, costuma ser buscado como um cuidado complementar de natureza espiritual, associado a alívio, alento e ressignificação diante de dificuldades persistentes."
+  ],
+  "comoFunciona": [
+    "Segundo a tradição, o terapeuta credenciado atua como intermediário entre a pessoa que pede o trabalho e os espíritos identificados como causadores de perturbação.",
+    "Na sessão, o terapeuta busca contato com esses espíritos para orientá-los e encaminhá-los, no que a tradição chama de \"salvação\", aliviando sua influência sobre a vida da pessoa.",
+    "Um mesmo atendimento pode envolver o encaminhamento de vários grupos de entidades, conforme relatos da própria associação.",
+    "O Omamori é oferecido como prática complementar de autoproteção espiritual, que a própria pessoa pode realizar no dia a dia.",
+    "Não há explicação em termos biomédicos: o funcionamento é descrito integralmente dentro do arcabouço de crenças da Shinri."
+  ],
+  "evidencia": "O Osatoshi é uma prática espiritual e religiosa. Não existem estudos científicos revisados por pares que comprovem seus efeitos, e ele não deve ser apresentado nem compreendido como tratamento de saúde.",
+  "sessao": {
+    "duracao": "Varia conforme o atendimento",
+    "formato": "À distância, para qualquer lugar do Brasil, ou presencial. Em ambos os casos são necessários nome completo, data e local de nascimento e a descrição de até três questões principais.",
+    "sensacao": "Por ser um trabalho espiritual, a vivência relatada é sobretudo subjetiva: sensação de alívio, leveza, clareza e desanuviamento nos dias seguintes.",
+    "frequencia": "A tradição recomenda um ciclo de três atendimentos, com cerca de uma semana de intervalo entre eles.",
+    "distancia": "sim"
+  },
+  "indicacoes": [
+    "Sensação de estar \"travado\" sem explicação aparente",
+    "Dificuldades que se repetem em ciclos, sem desfecho",
+    "Questões financeiras recorrentes",
+    "Conflitos e padrões repetidos em relacionamentos",
+    "Sensação de peso, cansaço ou desconforto energético",
+    "Ambientes (casa, sala comercial) que parecem \"carregados\"",
+    "Interesse em práticas de proteção espiritual",
+    "Períodos de luto e transição",
+    "Harmonização de negócios e ambientes de trabalho",
+    "Continuidade de trabalhos espirituais já iniciados"
+  ],
+  "limites": "O Osatoshi não é tratamento médico, psicológico ou psiquiátrico e não substitui nenhum deles. Depressão, ansiedade, pensamentos de morte, dores persistentes e qualquer sintoma físico ou mental devem ser avaliados por profissionais habilitados. Quem já está em acompanhamento de saúde mental não deve interrompê-lo. A prática está vinculada a uma cosmovisão religiosa específica. Não se identificar com ela é legítimo.",
+  "faq": [
+    {
+      "pergunta": "O Osatoshi tem comprovação científica?",
+      "resposta": "Não. É uma prática espiritual fundamentada nas crenças da Shinri, sem estudos científicos que comprovem seus efeitos. Ela é oferecida como cuidado espiritual complementar, nunca como tratamento de saúde."
+    },
+    {
+      "pergunta": "Preciso acreditar em espíritos para receber um Osatoshi?",
+      "resposta": "A prática parte de uma cosmovisão específica sobre espíritos e carma. Ela faz mais sentido para quem se identifica com esse universo, e não há problema algum em não se identificar."
+    },
+    {
+      "pergunta": "A sessão pode ser feita totalmente online?",
+      "resposta": "Sim. O Osatoshi é tradicionalmente realizado à distância, a partir do nome completo, data e local de nascimento e da descrição das questões que a pessoa quer trabalhar."
+    },
+    {
+      "pergunta": "Quantos atendimentos são recomendados?",
+      "resposta": "Em geral, um ciclo de três, com cerca de uma semana de intervalo entre eles. A avaliação de continuidade é feita ao longo do processo."
+    },
+    {
+      "pergunta": "O Osatoshi substitui terapia psicológica ou tratamento médico?",
+      "resposta": "Não, em nenhuma hipótese. É um cuidado de natureza espiritual, que pode caminhar ao lado do acompanhamento de saúde, nunca no lugar dele."
+    },
+    {
+      "pergunta": "Qualquer pessoa pode aplicar Osatoshi?",
+      "resposta": "Não. É necessário passar pela formação e ser credenciado pela Shinri. Caio Gracco é terapeuta credenciado, listado no site oficial da Shinri do Brasil."
+    },
+    {
+      "pergunta": "Quais informações preciso enviar antes?",
+      "resposta": "Nome completo, data de nascimento e local de nascimento, além da descrição de até três questões que você quer trabalhar. Escreva com suas palavras, do jeito que a coisa aparece na sua vida. Não é preciso usar termo técnico nenhum."
+    },
+    {
+      "pergunta": "Preciso estar acordado ou em algum lugar específico na hora do atendimento?",
+      "resposta": "Não. O trabalho é conduzido pelo terapeuta e não exige que você esteja em posição, horário ou local determinado. Muita gente prefere reservar um tempo tranquilo no dia, mas isso é escolha sua, não exigência da prática."
+    },
+    {
+      "pergunta": "Preciso fazer alguma preparação antes?",
+      "resposta": "Não há jejum, restrição alimentar nem ritual obrigatório. O que costuma ajudar é organizar antes, por escrito, o que você quer tratar. Chegar com as questões claras torna a conversa mais objetiva."
+    },
+    {
+      "pergunta": "O Osatoshi tem contraindicação?",
+      "resposta": "Como não envolve toque, agulha, substância ou manipulação física, não há contraindicação clínica. A ressalva é outra: quem está em sofrimento psíquico intenso (crises de ansiedade, depressão, pensamentos de morte) precisa de avaliação profissional de saúde, e o Osatoshi não ocupa esse lugar."
+    },
+    {
+      "pergunta": "Posso pedir um Osatoshi para outra pessoa?",
+      "resposta": "A prática é conduzida a partir dos dados e das questões de quem vai receber, então o ideal é que a própria pessoa saiba e concorde. Pedir um trabalho para alguém sem que essa pessoa queira não é o caminho."
+    },
+    {
+      "pergunta": "E se eu não sentir nada depois da sessão?",
+      "resposta": "Acontece, e não significa que algo deu errado. As percepções relatadas variam muito: algumas pessoas descrevem alívio nos dias seguintes, outras não notam nada de imediato. O Osatoshi não garante sensação nem resultado."
+    },
+    {
+      "pergunta": "Posso fazer Osatoshi junto com Reiki, terapia ou tratamento médico?",
+      "resposta": "Sim. Não há incompatibilidade com outras práticas nem com acompanhamento de saúde. O que não se deve fazer, em nenhuma hipótese, é interromper medicação, consulta ou terapia por causa de um atendimento espiritual."
+    },
+    {
+      "pergunta": "Dá para fazer um trabalho para a casa ou para o comércio?",
+      "resposta": "Sim, a tradição prevê trabalhos voltados a ambientes: residência, sala comercial, negócio. Vale o mesmo enquadramento: é cuidado espiritual dentro da cosmovisão da Shinri, não uma solução para questões estruturais, financeiras ou jurídicas do lugar."
+    }
+  ],
+  "termos": [
+    {
+      "termo": "Shinri",
+      "definicao": "Associação espiritual japonesa cujo nome significa \"Verdade = Lei de Deus\", dentro da qual o Osatoshi é ensinado e transmitido."
+    },
+    {
+      "termo": "Osatoshi",
+      "definicao": "Método de trabalho espiritual da Shinri, voltado ao que a tradição chama de salvação e encaminhamento de espíritos."
+    },
+    {
+      "termo": "Omamori",
+      "definicao": "Prática complementar de autoproteção espiritual, realizada pela própria pessoa no dia a dia."
+    },
+    {
+      "termo": "Kisha",
+      "definicao": "Nome dado à contribuição financeira que acompanha um atendimento de Osatoshi."
+    },
+    {
+      "termo": "Reisui Kinsei",
+      "definicao": "Nome espiritual recebido em 2001 por Masao Utsumi, fundador da Shinri."
+    },
+    {
+      "termo": "Salvação de espíritos",
+      "definicao": "Na tradição, o ato de orientar e encaminhar entidades consideradas perturbadoras, aliviando sua influência sobre a pessoa."
+    },
+    {
+      "termo": "Terapeuta credenciado",
+      "definicao": "Praticante que concluiu a formação da Shinri e está autorizado a conduzir atendimentos de Osatoshi."
+    },
+    {
+      "termo": "Carma",
+      "definicao": "Na cosmovisão da tradição, o acúmulo de consequências de ações passadas, desta ou de outras vidas, que se refletiria na vida presente."
+    }
+  ],
+  "keywords": [
+    "o que é osatoshi",
+    "osatoshi terapia japonesa",
+    "sessão de osatoshi online",
+    "osatoshi à distância",
+    "limpeza espiritual japonesa",
+    "shinri osatoshi",
+    "omamori proteção espiritual",
+    "terapeuta osatoshi credenciado",
+    "osatoshi para negócios",
+    "desobsessão espiritual japonesa"
+  ],
+  "fontes": [
+    {
+      "titulo": "Shinri do Brasil: O trabalho de Osatoshi",
+      "url": "https://www.osatoshi.com.br/o-trabalho-de-osatoshi"
+    },
+    {
+      "titulo": "Shinri do Brasil: Sr. Masao Utsumi",
+      "url": "https://www.osatoshi.com.br/masao-utsumi-bio"
+    },
+    {
+      "titulo": "Shinri do Brasil: Terapeutas credenciados",
+      "url": "https://www.osatoshi.com.br/terapeutas-credenciados"
+    }
+  ]
+}

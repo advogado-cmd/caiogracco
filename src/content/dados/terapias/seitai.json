@@ -1,0 +1,143 @@
+{
+  "slug": "seitai",
+  "nome": "Seitai",
+  "nomeCurto": "Seitai",
+  "tagline": "Organizar o corpo",
+  "resumo": "Terapia manual japonesa de reequilíbrio postural e estrutural. O nome significa literalmente \"organizar o corpo\": por manobras manuais, busca-se criar condições para que o corpo reencontre seu próprio equilíbrio.",
+  "destaque": false,
+  "ordem": 8,
+  "acento": "violeta",
+  "icone": "seitai",
+  "origem": "O Seitai (整体) tem raízes em técnicas manuais japonesas antigas e foi sistematizado em sua forma moderna por Haruchika Noguchi (1911 a 1976). Dele vêm dois conceitos centrais: o Taiheki, tipologia constitucional do corpo, e o Katsugen Undo, o movimento regenerador espontâneo. Foi levado ao Ocidente por discípulos como Itsuo Tsuda. No Brasil convivem a linha mais fiel à tradição de Noguchi e versões comerciais adaptadas.",
+  "oQueE": [
+    "O Seitai é uma terapia manual japonesa voltada ao reequilíbrio postural e estrutural. Por manobras manuais e, em algumas linhas, com instrumentos específicos, o terapeuta ajuda o corpo a se reorganizar, aliviando tensões, dores e compensações posturais acumuladas.",
+    "Um princípio central da tradição de Noguchi é a confiança na capacidade natural do corpo de se regular. Mais do que impor uma correção externa, o Seitai busca criar condições para que o corpo reencontre seu equilíbrio."
+  ],
+  "comoFunciona": [
+    "O corpo é lido como uma estrutura interconectada: um desequilíbrio numa região pode gerar compensações e dores em pontos distantes.",
+    "O terapeuta avalia padrões posturais e usa manobras manuais para estimular o realinhamento de articulações, músculos e tendões.",
+    "Na vertente mais próxima de Noguchi, o Katsugen Undo propõe que, ao suspender o controle consciente, o corpo expressa movimentos espontâneos de função regeneradora."
+  ],
+  "evidencia": "Os mecanismos específicos propostos pelo Seitai (autorregulação, katsugen undo) não têm comprovação em fisiologia médica convencional, e não há estudos controlados que os validem. Parte do alívio relatado é compatível com o que já se sabe sobre terapias manuais em geral, o que não constitui validação científica do Seitai em si.",
+  "sessao": {
+    "duracao": "Cerca de 40 a 60 minutos",
+    "formato": "Presencial, com a pessoa vestida, deitada em maca. Manobras manuais suaves, sem manipulações bruscas.",
+    "sensacao": "Indolor e não invasivo. Relaxamento profundo, alívio de tensões e, em muitos relatos, bem-estar emocional.",
+    "frequencia": "Costuma-se propor um ciclo inicial de quatro sessões, seguido de manutenção mensal.",
+    "distancia": "nao"
+  },
+  "indicacoes": [
+    "Dores crônicas nas costas, pescoço e ombros",
+    "Dores agudas por esforço ou má postura",
+    "Desalinhamento postural percebido",
+    "Tensão muscular ligada ao estresse",
+    "Rigidez corporal",
+    "Recuperação após esforços intensos",
+    "Relaxamento profundo",
+    "Interesse em práticas corporais orientais"
+  ],
+  "limites": "O Seitai não é fisioterapia, quiropraxia nem procedimento médico regulamentado, e não substitui avaliação médica, ortopédica ou fisioterapêutica, especialmente em dores persistentes, lesões, hérnias de disco, fraturas ou doenças estruturais. Pessoas com condições ósseas, articulares ou neurológicas devem consultar o médico antes e informar o terapeuta.",
+  "faq": [
+    {
+      "pergunta": "O Seitai tem comprovação científica?",
+      "resposta": "Os mecanismos específicos da tradição não têm comprovação própria. Parte do alívio é compatível com o efeito de terapias manuais em geral, mas isso não valida cientificamente o Seitai em si."
+    },
+    {
+      "pergunta": "Dói fazer uma sessão?",
+      "resposta": "Não. É descrita como indolor e não invasiva, sem manipulações bruscas."
+    },
+    {
+      "pergunta": "Quantas sessões são recomendadas?",
+      "resposta": "Costuma-se propor um ciclo inicial de quatro sessões, seguido de manutenção mensal conforme a necessidade."
+    },
+    {
+      "pergunta": "Qual a diferença entre Seitai e quiropraxia?",
+      "resposta": "A quiropraxia é uma profissão regulamentada com técnicas próprias de ajuste articular. O Seitai é uma tradição japonesa de terapia manual, com princípios e manobras distintos."
+    },
+    {
+      "pergunta": "Pode ser feito online?",
+      "resposta": "Não. O Seitai é essencialmente presencial e manual."
+    },
+    {
+      "pergunta": "Substitui fisioterapia ou tratamento ortopédico?",
+      "resposta": "Não. É complementar e não deve atrasar avaliação e tratamento adequados."
+    },
+    {
+      "pergunta": "O que devo vestir?",
+      "resposta": "Roupa confortável que permita movimento: legging, moletom leve, camiseta de algodão. Você permanece vestido durante toda a sessão. Cinto, jeans rígido e acessórios atrapalham as manobras."
+    },
+    {
+      "pergunta": "Tem estalo, como na quiropraxia?",
+      "resposta": "Não é o que caracteriza o Seitai. As manobras são suaves e não dependem de manipulação brusca ou de ajuste com estalo. Se um profissional propuser esse tipo de manobra, pergunte qual é a formação dele para fazê-la."
+    },
+    {
+      "pergunta": "Como me sinto no dia seguinte?",
+      "resposta": "Os relatos mais comuns são de leveza, sono mais profundo e alívio de tensão. Algumas pessoas descrevem um cansaço leve nas primeiras horas. Beba água e evite esforço pesado no mesmo dia."
+    },
+    {
+      "pergunta": "O Seitai tem contraindicação?",
+      "resposta": "Sim. Fraturas recentes, osteoporose importante, inflamação aguda, febre, trombose, uso de anticoagulante e quadros neurológicos exigem avaliação médica antes. Informe sempre o terapeuta sobre cirurgias, lesões e diagnósticos que você tem."
+    },
+    {
+      "pergunta": "O Seitai corrige escoliose ou hérnia de disco?",
+      "resposta": "Não. Escoliose e hérnia de disco são diagnósticos médicos e pedem acompanhamento ortopédico e fisioterapêutico. O Seitai não reverte alteração estrutural, e apresentá-lo assim seria falso. Ele pode, no máximo, oferecer alívio de tensão em torno da área."
+    },
+    {
+      "pergunta": "O Seitai está no SUS?",
+      "resposta": "Não. A lista oficial da PNPIC tem 29 práticas e o Seitai não é uma delas. Também há praticamente nenhuma literatura científica indexada sobre a técnica. Ela se sustenta como tradição japonesa e experiência prática, e é honesto dizer isso."
+    },
+    {
+      "pergunta": "Posso fazer com dor aguda ou depois de uma lesão?",
+      "resposta": "Dor aguda que apareceu de repente, depois de queda, torção ou acidente, precisa primeiro de avaliação médica. Depois do diagnóstico e com liberação de quem acompanha, o Seitai pode entrar como cuidado complementar."
+    },
+    {
+      "pergunta": "Posso combinar com fisioterapia, acupuntura ou musculação?",
+      "resposta": "Sim, são compatíveis. Só conte a cada profissional o que você está fazendo, e evite marcar duas terapias manuais no mesmo dia, porque o corpo pede um intervalo entre elas."
+    },
+    {
+      "pergunta": "Quem pode aplicar Seitai?",
+      "resposta": "Não é profissão regulamentada no Brasil, e por isso a formação do profissional é a informação que importa. Pergunte onde ele estudou, quanto tempo durou o curso e se a linha segue a tradição de Noguchi ou uma versão adaptada."
+    }
+  ],
+  "termos": [
+    {
+      "termo": "Seitai (整体)",
+      "definicao": "Literalmente \"organizar o corpo\"; terapia manual japonesa de reequilíbrio postural."
+    },
+    {
+      "termo": "Haruchika Noguchi",
+      "definicao": "Sistematizador do Seitai moderno (1911 a 1976), autor dos conceitos de Taiheki e Katsugen Undo."
+    },
+    {
+      "termo": "Taiheki",
+      "definicao": "Tipologia das tendências constitucionais do corpo, associadas na tradição à coluna lombar."
+    },
+    {
+      "termo": "Katsugen Undo (活元運動)",
+      "definicao": "Movimento regenerador espontâneo: prática em que, suspendendo o controle consciente, o corpo se move por si."
+    },
+    {
+      "termo": "Itsuo Tsuda",
+      "definicao": "Discípulo de Noguchi responsável por difundir o Seitai na Europa."
+    },
+    {
+      "termo": "Autorregulação corporal",
+      "definicao": "Princípio central da tradição: a confiança na capacidade natural do corpo de reencontrar seu equilíbrio."
+    }
+  ],
+  "keywords": [
+    "seitai o que é",
+    "terapia manual japonesa",
+    "seitai dor nas costas",
+    "seitai realinhamento postural",
+    "haruchika noguchi seitai",
+    "katsugen undo",
+    "sessão de seitai"
+  ],
+  "fontes": [
+    {
+      "titulo": "Sei-Tai, Taiheki and Katsugen Undo (TraditionalBodywork)",
+      "url": "https://www.traditionalbodywork.com/seitai-therapy-and-taiheki-haruchika-noguchi/"
+    }
+  ]
+}

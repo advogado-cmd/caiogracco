@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import contato from '@/content/dados/contato.json'
 import { Secao, TituloSecao } from '@/components/Secao'
 import { AvisoCuidado } from '@/components/AvisoCuidado'
 import { JsonLd } from '@/components/JsonLd'
@@ -37,10 +38,10 @@ export default function PaginaContato() {
           <TituloSecao
             claro
             icone="conversa"
-            sobretitulo="Contato"
-            titulo="Vamos conversar"
+            sobretitulo={contato.hero.sobretitulo}
+            titulo={contato.hero.titulo}
             nivel={1}
-            texto="O primeiro passo é uma mensagem. Conte o que está acontecendo, com suas palavras. Não precisa saber o nome da terapia."
+            texto={contato.hero.texto}
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <a

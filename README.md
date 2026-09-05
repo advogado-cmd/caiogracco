@@ -116,3 +116,25 @@ Regras do manual que o código precisa respeitar:
 Pendência registrada no próprio manual: a marca ainda é imagem, não vetor.
 Para impressão grande e reduções abaixo de 25 mm é preciso redesenhar símbolo
 e logotipo em vetor, sem alterar o traço.
+
+
+## Painel de administração
+
+O conteúdo do site é editado em `/admin`, sem terminal e sem Git à vista.
+
+- **Para quem edita:** `docs/PAINEL-PASSO-A-PASSO-CAIO.md`
+- **Para ligar o painel:** `docs/CONFIGURAR-PAINEL-CARLOS.md`
+
+Decap CMS 3.8.4, servido do próprio site em `public/admin/`, com login pelo
+GitHub. Cada salvamento vira um commit e a Vercel reconstrói sozinha.
+
+Duas variáveis de ambiente, só no servidor:
+
+```
+GITHUB_OAUTH_ID
+GITHUB_OAUTH_SECRET
+```
+
+O conteúdo mora em `src/content/dados/` (JSON) e `src/content/blog/`
+(Markdown). Os tipos em TypeScript continuam mandando no formato: arquivo
+com campo faltando quebra a build, antes de ir ao ar.

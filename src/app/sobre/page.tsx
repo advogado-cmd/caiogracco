@@ -12,6 +12,8 @@ import { Galeria } from '@/components/Galeria'
 import { Certificados } from '@/components/Certificados'
 import { certificados, certificadosPorAno, horasFormacao } from '@/content/certificados'
 import { galeria, grande } from '@/content/galeria'
+import { renderizarMarkdown } from '@/lib/markdown'
+import sobre from '@/content/dados/sobre.json'
 import { BarraCompartilhar } from '@/components/BarraCompartilhar'
 
 export const metadata: Metadata = {
@@ -52,10 +54,10 @@ export default function PaginaSobre() {
           <TituloSecao
             claro
             icone="coracao"
-            sobretitulo="Quem eu sou"
-            titulo="Prazer, sou o Caio"
+            sobretitulo={sobre.hero.sobretitulo}
+            titulo={sobre.hero.titulo}
             nivel={1}
-            texto="Comecei minha missão como terapeuta aos 14 anos de idade e venho me dedicando até hoje."
+            texto={sobre.hero.texto}
           />
         </Secao>
       </div>
@@ -64,43 +66,14 @@ export default function PaginaSobre() {
         <div className="grid gap-12 lg:grid-cols-[1fr_20rem]">
           <div className="max-w-3xl">
             <div className="prosa">
-              <p>
-                Comecei cedo, aos 14 anos. Não foi uma escolha de carreira, foi uma coisa que se
-                impôs: o cuidado com o outro deixou de ser curiosidade e virou o que eu queria fazer
-                da vida. De lá para cá foram quase trinta anos passando por tradições bem diferentes
-                entre si, o toque das terapias manuais japonesas, os pontos da medicina chinesa, o
-                trabalho energético contemporâneo e, nos últimos anos, o Osatoshi, a prática
-                espiritual transmitida pela Shinri, à qual hoje me dedico mais.
-              </p>
-              <p>
-                Meu primeiro certificado é de 1997, em Reiki, quando eu tinha 16 anos. Depois veio o
-                Shiatsu, em 2002, e o curso mais longo que já fiz: dois anos de Acupuntura Tradicional
-                Chinesa no CEMETRAC, em São Paulo, com o Mestre Liu Chih Ming. Em 2011 prestei e passei
-                no exame internacional de qualificação em acupuntura da Federação Mundial das Sociedades
-                de Medicina Chinesa. Depois disso não parei mais: craniopuntura de Yamamoto, acupuntura
-                da língua, Seitai com o professor Jóji Enómoto, mesmerismo, hipnose e, em fevereiro
-                deste ano, o credenciamento nas quatro primeiras fases do EMF Balancing Technique®.
-                Guardei tudo, e deixei tudo aqui embaixo para quem quiser conferir.
-              </p>
-              <p>
-                O <strong>Terapias da Completude</strong> nasceu dessa reunião toda. O nome não é
-                acidental: eu quero olhar a pessoa inteira, corpo, emoção, história e sentido, em vez
-                de atacar sintoma isolado. Em muitos atendimentos mais de uma abordagem se combina. E
-                em alguns o caminho mais honesto é dizer que não sou eu, e indicar outro profissional.
-                Isso também faz parte do trabalho.
-              </p>
-              <p>
-                Boa parte do que faço acontece à distância, com pessoas de todo o Brasil. O Osatoshi,
-                o EMF Balancing e o Reiki não pedem que você esteja na mesma sala comigo. As terapias
-                de toque eu atendo presencialmente, no meu espaço. Quem me procura costuma chegar com
-                algo que se repete: uma dor que volta, um ciclo que não fecha, um cansaço que dormir
-                não resolve.
-              </p>
+              {/* Os parágrafos vêm de dados/sobre.json, editáveis no painel.
+                  Aceitam **negrito** e o resto do Markdown que o site já entende. */}
+              {renderizarMarkdown(sobre.paragrafos.join('\n\n'))}
             </div>
 
             <Foto numero={5} className="mt-10" />
 
-            <CTA variante="discreto" className="mt-10" titulo="Quer conversar comigo?" />
+            <CTA variante="discreto" className="mt-10" titulo={sobre.chamada} />
 
             <section aria-labelledby="formacao" className="mt-12">
               <h2 id="formacao" className="font-display text-2xl text-noite-800 sm:text-3xl">
