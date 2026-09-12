@@ -16,20 +16,22 @@ type Props = {
  * oficial inteiro, como uma peça só.
  *
  * O manual pede a horizontal justamente em cabeçalho de site (página 02) e
- * fixa o mínimo em 160px de largura (página 03). Por isso a versão compacta
- * para em 200px, com folga sobre o mínimo.
+ * fixa o mínimo em 160px de largura (página 03). A assinatura nova tem o
+ * símbolo proporcionalmente maior, e o slogan encolhe junto: por isso aqui
+ * vai a 216px, acima do mínimo, para "Terapias da Completude" continuar
+ * legível no topo.
  */
 /**
  * Proporção da assinatura montada, para a altura sair sem achatar nada.
  * Não é a do PNG oficial: o nome vem do vetor, que é um pouco mais alto.
  */
-const LARGURA = 5482
-const ALTURA = 1454
+const LARGURA = 2233
+const ALTURA = 1002
 
 export function Logo({ variante = 'escura', compacta = false, className = '' }: Props) {
   const sobreAzul = variante === 'clara'
   const arquivo = sobreAzul ? 'escura' : 'clara'
-  const largura = compacta ? 200 : 244
+  const largura = compacta ? 216 : 264
 
   return (
     <Link
